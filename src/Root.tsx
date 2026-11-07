@@ -11,6 +11,7 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
     <Composition id="AiIceberg" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: false}} />
+    <Composition id="AiIcebergV3" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: false, v3: true}} />
     <Composition id="AiIceberg2D" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: true}} />
     <Composition
       id="ChipSupplyChain"

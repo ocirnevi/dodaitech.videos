@@ -16,11 +16,12 @@ import {triggerFrameIn} from '../script';
 import {brand, palette, theme} from '../theme';
 import {CameraRig, Iceberg, Water, cameraFor, layerCenterY} from './Iceberg';
 import {IcebergScene2D, useIconProgress} from './Iceberg2D';
+import {BrandTags, IcebergV3, revealAt} from './IcebergV3';
 import {OUTRO_FRAMES, SHORT, TimedShortScene, buildShortTimeline, makeSpeakingFn} from './script';
 
-// Layout 9:16 dentro de la zona segura (texto entre y 290–1250): capítulo arriba, dato debajo, iceberg al centro-bajo, subtítulos ≈ y 1130.
-const LAYOUT = {chapterTop: 300, beatsTop: 560, captionsBottom: 860};
-const BEATS_LAYOUT = {left: 96, top: LAYOUT.beatsTop, width: 880, numberSize: 150, calloutSize: 44, labelSize: 32};
+// Layout 9:16 dentro de la zona segura (texto entre y 290–1250): capítulo arriba, dato debajo, iceberg al centro-bajo, subtítulos ≈ y 1010.
+const LAYOUT = {chapterTop: 300, beatsTop: 540, captionsBottom: 1010};
+const BEATS_LAYOUT = {left: 96, top: LAYOUT.beatsTop, width: 520, numberSize: 112, calloutSize: 40, labelSize: 30};
 
 const useScene = (scenes: TimedShortScene[], frame: number) => {
   let cur = scenes[0];
@@ -28,12 +29,13 @@ const useScene = (scenes: TimedShortScene[], frame: number) => {
   return cur;
 };
 
-/** Profundidad de cámara continua: salta de capa en capa con easing en los primeros 18 frames de cada escena. */
+/** Profundidad de cámara continua. El giro baja durante toda la escena; el resto entra en 18 frames. */
 const depthAt = (scenes: TimedShortScene[], frame: number) => {
   let prev = scenes[0].depth;
   for (const s of scenes) {
     if (frame < s.from) break;
-    const t = interpolate(frame - s.from, [0, 18], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.ease.outQuint});
+    const span = s.kind === 'turn' ? Math.max(24, s.durationInFrames - 4) : 18;
+    const t = interpolate(frame - s.from, [0, span], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: s.kind === 'turn' ? Easing.in(Easing.cubic) : theme.ease.outQuint});
     prev = prev + (s.depth - prev) * t;
   }
   return prev;
@@ -55,11 +57,8 @@ const Hook: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
             </div>
           );
         })}
-        <div style={{marginTop: 26, fontSize: 38, color: p.text2, opacity: interpolate(frame, [12, 26], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>
-          OpenAI makes ChatGPT. Who makes it possible?
-        </div>
       </div>
-      <Beats scene={scene} layout={{...BEATS_LAYOUT, top: 640}} />
+      <Beats scene={scene} layout={{...BEATS_LAYOUT, top: 590}} />
       <Sfx name="lib/glassy-snap" at={sixAt} volume={0.5} />
     </AbsoluteFill>
   );
@@ -67,7 +66,7 @@ const Hook: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
 
 const Layer: React.FC<{scene: TimedShortScene}> = ({scene}) => (
   <AbsoluteFill>
-    <Chapter label={scene.label} title={scene.title} mode={scene.mode} top={LAYOUT.chapterTop} titleSize={96} width={900} />
+    <Chapter label={scene.label} title={scene.title} mode={scene.mode} top={LAYOUT.chapterTop} titleSize={84} width={620} />
     <Beats scene={scene} layout={BEATS_LAYOUT} />
   </AbsoluteFill>
 );
@@ -75,6 +74,7 @@ const Layer: React.FC<{scene: TimedShortScene}> = ({scene}) => (
 const Turn: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => {
   const frame = useCurrentFrame();
   const s = spring({frame: frame - 4, fps, config: theme.spring.snappy, durationInFrames: 16});
+  void scene;
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 96, right: 96, top: 420, opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.92, 1])})`, transformOrigin: 'left center'}}>
@@ -85,30 +85,35 @@ const Turn: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
   );
 };
 
-const Breath: React.FC<{scene: TimedShortScene}> = () => (
-  <AbsoluteFill>
-    <div style={{position: 'absolute', left: 96, right: 96, top: 440}}>
-      <div style={{...theme.display, fontSize: 92, color: palette('dark').text2}}>And the machine that draws them?</div>
-    </div>
-  </AbsoluteFill>
-);
+const Breath: React.FC<{scene: TimedShortScene}> = ({scene}) => {
+  void scene;
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 96, right: 96, top: 440}}>
+        <div style={{...theme.display, fontSize: 92, color: palette('dark').text2}}>And the machine that draws them?</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
 
 const Payoff: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => {
   const frame = useCurrentFrame();
   const restsAt = triggerFrameIn(scene.words, 'rests', fps, scene.id);
+  const solo = interpolate(frame, [restsAt - 2, restsAt + 8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const items = ['one machine', 'one factory', 'one design'];
   return (
     <AbsoluteFill>
-      <Chapter label={scene.label} title="The bottom of the iceberg" mode="dark" top={LAYOUT.chapterTop} titleSize={88} width={900} />
-      <Beats scene={scene} layout={BEATS_LAYOUT} endAt={restsAt} />
-      {/* al final, las tres unidades grandes */}
-      <div style={{position: 'absolute', left: 96, top: 560, display: 'flex', flexDirection: 'column', gap: 4, opacity: frame >= restsAt ? 1 : 0}}>
+      <div style={{opacity: 1 - solo}}>
+        <Chapter label={scene.label} title="The bottom" mode="dark" top={LAYOUT.chapterTop} titleSize={84} width={620} />
+        <Beats scene={scene} layout={BEATS_LAYOUT} endAt={restsAt} />
+      </div>
+      <div style={{position: 'absolute', left: 96, right: 96, top: 720, display: 'flex', flexDirection: 'column', gap: 10, opacity: solo}}>
         {items.map((it, i) => {
           const s = spring({frame: frame - restsAt - i * 8, fps, config: theme.spring.snappy, durationInFrames: 14});
           return (
-            <div key={it} style={{display: 'flex', alignItems: 'baseline', gap: 22, opacity: s, transform: `translateX(${interpolate(s, [0, 1], [-30, 0])}px)`}}>
-              <span style={{...theme.display, fontSize: 112, lineHeight: 1, color: brand.accent, fontVariantNumeric: 'tabular-nums', width: 90}}>1</span>
-              <span style={{...theme.display, fontSize: 56, color: palette('dark').text}}>{it.replace('one ', '')}</span>
+            <div key={it} style={{display: 'flex', alignItems: 'baseline', gap: 28, opacity: s, transform: `translateX(${interpolate(s, [0, 1], [-30, 0])}px)`}}>
+              <span style={{...theme.display, fontSize: 132, lineHeight: 1, color: brand.accent, fontVariantNumeric: 'tabular-nums', width: 100}}>1</span>
+              <span style={{...theme.display, fontSize: 68, color: palette('dark').text}}>{it.replace('one ', '')}</span>
             </div>
           );
         })}
@@ -124,6 +129,7 @@ const Close: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) =>
   const frame = useCurrentFrame();
   const p = palette('light');
   const s = spring({frame, fps, config: theme.spring.snappy, durationInFrames: 12});
+  void scene;
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 96, right: 96, top: 330}}>
@@ -150,17 +156,23 @@ const Outro: React.FC = () => {
   );
 };
 
-export const AiIceberg: React.FC<{flat?: boolean}> = ({flat = false}) => {
+export const AiIceberg: React.FC<{flat?: boolean; v3?: boolean}> = ({flat = false, v3 = false}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const {scenes, outroFrom} = buildShortTimeline();
   const scene = useScene(scenes, frame);
   const speaking = makeSpeakingFn(scenes);
   const depth = depthAt(scenes, frame);
-  // zoom-out del hook: desde "Six layers down" hasta el corte a la capa 1
   const hook = scenes[0];
   const sixAt = hook.from + triggerFrameIn(hook.words, 'Six', fps, hook.id);
-  const zoom = interpolate(frame, [sixAt - 6, hook.durationInFrames - 2], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.ease.outQuint});
+  const whoAt = hook.from + triggerFrameIn(hook.words, 'who', fps, hook.id);
+  // El alejamiento termina antes de "Six" y el iceberg entero se queda en pantalla hasta el corte.
+  const zoom = interpolate(frame, [whoAt, sixAt - 4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.ease.inOut});
+  const turnScene = scenes.find((s) => s.id === 'turn')!;
+  const plunge = scene.id === 'turn' ? interpolate(frame, [turnScene.from + 8, turnScene.from + turnScene.durationInFrames - 2], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.cubic)}) : 0;
+  const payoff = scenes.find((s) => s.id === 'l6')!;
+  const restsAtGlobal = payoff.from + triggerFrameIn(payoff.words, 'rests', fps, payoff.id);
+  const clear = scene.id === 'l6' ? interpolate(frame, [restsAtGlobal, restsAtGlobal + 10], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0;
   const cam = cameraFor(depth, zoom);
   const activeLayer = Math.round(scene.depth);
   const inOutro = frame >= outroFrom;
@@ -174,6 +186,8 @@ export const AiIceberg: React.FC<{flat?: boolean}> = ({flat = false}) => {
     const fade = interpolate(f, [outroFrom + OUTRO_FRAMES - 20, outroFrom + OUTRO_FRAMES], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
     return base * duck * fade;
   };
+  // v3: en "turn" y "breath" la capa anterior sigue encendida
+  const v3Active = scene.kind === 'layer' || scene.kind === 'payoff' ? activeLayer : scene.kind === 'turn' ? 3 : scene.kind === 'breath' ? 5 : 0;
 
   return (
     <AbsoluteFill style={{background: brand.soot, fontFamily: theme.font}}>
@@ -182,24 +196,29 @@ export const AiIceberg: React.FC<{flat?: boolean}> = ({flat = false}) => {
         <>
           <Background mode={mode} />
           <PunchIn beats={punchBeats} amount={0.03} origin="50% 60%">
-            {flat ? (
-              <IcebergScene2D depth={depth} zoom={zoom} activeLayer={activeLayer} pulse={payoffPulse} light={mode === 'light'} iconKind={scene.kind === 'layer' || scene.kind === 'payoff' ? scene.id : undefined} iconProgress={iconProgress} />
+            {v3 ? (
+              <>
+                <IcebergV3 activeLayer={v3Active} reveal={revealAt(frame, sixAt)} pulse={payoffPulse} light={mode === 'light'} />
+                {(scene.kind === 'layer' || scene.kind === 'payoff') && scene.brands ? <BrandTags names={scene.brands} layer={activeLayer} from={scene.from} /> : null}
+              </>
+            ) : flat ? (
+              <IcebergScene2D depth={depth} zoom={zoom} activeLayer={activeLayer} pulse={payoffPulse} light={mode === 'light'} waterOpacity={mode === 'light' ? 0.55 : 0} iconKind={scene.kind === 'layer' || scene.kind === 'payoff' ? scene.id : undefined} iconProgress={iconProgress} plunge={plunge} clear={clear} />
             ) : (
               <Scene3D camera={{position: [0, 2, 16], fov: 50}}>
-              <CameraRig y={cam.y} z={cam.z} lookY={cam.lookY} />
-              <Iceberg activeLayer={activeLayer} visited={activeLayer} pulse={payoffPulse} />
-              <Water opacity={mode === 'light' ? 0.55 : 0.9} />
-              {scene.id === 'l5' ? (
-                <group position={[2.5, layerCenterY(5) + 0.3, 3.6]} scale={0.42}>
-                  <Wafer accent={brand.accent} layersFrom={scene.from + 10 - scene.from} layersTo={scene.audioFrames} />
-                </group>
-              ) : null}
-              {scene.id === 'l6' || scene.id === 'breath' ? (
-                <group position={[-2.3, layerCenterY(6) + 1.0, 3.4]} scale={0.36}>
-                  <EuvMachine accent={brand.accent} />
-                </group>
-              ) : null}
-              {scene.id === 'l6' ? (
+                <CameraRig y={cam.y} z={cam.z} lookY={cam.lookY} />
+                <Iceberg activeLayer={activeLayer} visited={activeLayer} pulse={payoffPulse} />
+                <Water opacity={mode === 'light' ? 0.55 : 0.9} />
+                {scene.id === 'l5' ? (
+                  <group position={[2.5, layerCenterY(5) + 0.3, 3.6]} scale={0.42}>
+                    <Wafer accent={brand.accent} layersFrom={10} layersTo={scene.audioFrames} />
+                  </group>
+                ) : null}
+                {(scene.id === 'breath' || (scene.id === 'l6' && clear < 0.5)) ? (
+                  <group position={[-2.3, layerCenterY(6) + 1.0, 3.4]} scale={0.36}>
+                    <EuvMachine accent={brand.accent} />
+                  </group>
+                ) : null}
+                {scene.id === 'l6' && clear < 0.5 ? (
                 <group position={[2.5, layerCenterY(6) - 0.3, 3.6]} scale={0.4}>
                   <GpuDie accent={brand.accent} waveFrom={triggerFrameIn(scene.words, 'NVIDIA', fps, scene.id)} waveTo={triggerFrameIn(scene.words, 'rests', fps, scene.id)} />
                 </group>
@@ -220,24 +239,18 @@ export const AiIceberg: React.FC<{flat?: boolean}> = ({flat = false}) => {
           </PunchIn>
           <Post mode={mode} />
           {scenes.map((s) => (
-            <Sequence key={`cap-${s.id}`} from={s.from} durationInFrames={s.durationInFrames} name={`captions:${s.id}`} layout="none">
-              <Captions words={s.words} mode={s.mode} bottom={LAYOUT.captionsBottom} fontSize={60} combineMs={800} maxWidth={900} />
+            <Sequence key={`cap-${s.id}`} from={s.from} durationInFrames={s.kind === 'payoff' ? Math.max(1, triggerFrameIn(s.words, 'rests', fps, s.id)) : s.durationInFrames} name={`captions:${s.id}`} layout="none">
+              <Captions words={s.words} mode={s.mode} bottom={LAYOUT.captionsBottom} fontSize={56} combineMs={800} maxWidth={880} />
             </Sequence>
           ))}
-          {/* cortes: cada escena menos la primera; el respiro entra sin golpe */}
           {scenes.slice(1).map((s) => (
             <Cut key={`cut-${s.id}`} at={s.from} strength={s.kind === 'breath' ? 0.2 : s.kind === 'payoff' ? 0.8 : 0.5} bass={s.kind !== 'breath'} whoosh={s.kind !== 'breath'} />
           ))}
-          {/* riser que termina en el corte a la capa 4 (después del giro) */}
           <Sfx name="lib/bass-drop" at={1} lead={1} volume={0.6} />
-          {/* zambullida bajo el agua al pasar del hook a la capa 1 */}
           <Sfx name="lib/submerge" at={scenes[1].from} lead={0} volume={0.7} />
-          {/* giro: el hielo cruje; braam que termina en el corte a la capa 4 */}
           <Sfx name="lib/ice-crack" at={scenes.find((s) => s.id === 'turn')!.from + 4} lead={0} volume={0.6} />
           <Sfx name="lib/braam" at={scenes.find((s) => s.id === 'l4')!.from} lead={0} volume={0.45} />
-          {/* respiro: un solo crujido lejano */}
           <Sfx name="lib/ice-snap" at={scenes.find((s) => s.id === 'breath')!.from + 6} lead={0} volume={0.35} />
-          {/* payoff: acorde de impacto */}
           <Sfx name="lib/impact-chord" at={scenes.find((s) => s.id === 'l6')!.from} lead={1} volume={0.7} />
         </>
       ) : null}

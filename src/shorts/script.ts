@@ -16,6 +16,7 @@ export type ShortScene = {
   narration: string;
   beats: Beat[];
   sources?: string[];
+  brands?: string[];
 };
 export type TimedShortScene = ShortScene & {from: number; durationInFrames: number; audioFrames: number; audioSrc: string; words: Word[]};
 

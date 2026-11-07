@@ -42,6 +42,11 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   cierre en loop; sin "dale like"; ≤120 palabras a 150–175 wpm; but/therefore, nunca "and then". Ver `docs/00-PLAYBOOK.md`.
 - **Ritmo.** Cambio visual cada 1.5–3 s; ningún tramo de 5 s sin corte, zoom, texto o SFX; nada estático >5 s.
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
+- **Simple y refinado antes que complejo (Enrico, 7 nov).** 2D vectorial plano, bien resuelto, por encima de 3D ambicioso que luego
+  se ve de juguete. El 3D solo si una forma simple (una pieza, una cámara) lo justifica; nunca props 3D pequeños "de adorno".
+  Un solo protagonista visual por escena; iconos de línea mínimos (dos colores) en vez de modelos.
+  La metáfora debe reconocerse en un frame cualquiera (un iceberg se ve entero, no un trozo). Marcas como nombres tipografiados en pills;
+  logos reales solo desde press kits oficiales y sin modificar (OpenAI y NVIDIA son estrictos; ver `docs/04`).
 - **Nada lineal.** Springs o curvas con clamp; entradas de 2–3 propiedades; salidas más rápidas que entradas;
   5 capas (fondo → assets → gráficos → grade → grano + viñeta). Nada animado por `useFrame()` de R3F.
 - **Sonido siempre.** Hits y clicks 0–1 frame antes del visual; whooshes y risers alineados por su pico/final al

@@ -45,6 +45,9 @@
           "kind": "callout",
           "text": "Easy to build. Useless alone."
         }
+      ],
+      "brands": [
+        "ChatGPT"
       ]
     },
     {
@@ -75,6 +78,10 @@
       ],
       "sources": [
         "Epoch AI, training cost estimates 2024–2025 (rango)"
+      ],
+      "brands": [
+        "OpenAI",
+        "DeepSeek"
       ]
     },
     {
@@ -95,6 +102,11 @@
       ],
       "sources": [
         "IEA, Energy and AI (2025)"
+      ],
+      "brands": [
+        "Microsoft",
+        "Google",
+        "Amazon"
       ]
     },
     {
@@ -102,7 +114,7 @@
       "kind": "turn",
       "targetStart": 16,
       "mode": "dark",
-      "depth": 3.6,
+      "depth": 4,
       "label": "",
       "title": "Nobody shows you this part",
       "narration": "And here's the part nobody shows you.",
@@ -114,18 +126,20 @@
       "targetStart": 20,
       "mode": "dark",
       "depth": 4,
-      "label": "Layer 04 · Supply",
-      "title": "Who gets the chips",
-      "narration": "Layer four: who gets the chips. The U.S. decides, and China mostly doesn't.",
+      "label": "Layer 04 · Cleanroom",
+      "title": "The wafer",
+      "narration": "Layer four: the wafer. A thousand steps, people in suits.",
       "beats": [
         {
-          "trigger": "decides",
-          "kind": "callout",
-          "text": "U.S. export controls"
+          "trigger": "thousand",
+          "kind": "counter",
+          "value": 1000,
+          "suffix": "+",
+          "label": "steps on one wafer"
         }
       ],
       "sources": [
-        "BIS, Advanced Computing rules (2022–2025)"
+        "Foundry process flow: a finished wafer takes 1,000+ steps (same fact as the chip short)"
       ]
     },
     {
@@ -136,7 +150,7 @@
       "depth": 5,
       "label": "Layer 05 · Production",
       "title": "The factory",
-      "narration": "Layer five: the factory. One company, TSMC, makes almost all advanced AI chips, in Taiwan.",
+      "narration": "Layer five: the factory. One company, TSMC, makes almost all advanced AI chips.",
       "beats": [
         {
           "trigger": "almost",
@@ -149,6 +163,9 @@
       ],
       "sources": [
         "TrendForce / Reuters 2025 (verificar cifra)"
+      ],
+      "brands": [
+        "TSMC"
       ]
     },
     {
@@ -194,6 +211,10 @@
       "sources": [
         "Reuters / ASML (EUV > $200M)",
         "NVIDIA Blackwell, TSMC 4NP"
+      ],
+      "brands": [
+        "ASML",
+        "NVIDIA"
       ]
     },
     {

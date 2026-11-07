@@ -298,144 +298,119 @@
   {
    "word": "Layer",
    "start": 0.0,
-   "end": 0.28
+   "end": 0.32
   },
   {
    "word": "four:",
-   "start": 0.28,
-   "end": 0.7
-  },
-  {
-   "word": "who",
-   "start": 0.8,
-   "end": 0.98
-  },
-  {
-   "word": "gets",
-   "start": 0.98,
-   "end": 1.22
+   "start": 0.32,
+   "end": 0.76
   },
   {
    "word": "the",
-   "start": 1.22,
-   "end": 1.42
+   "start": 0.92,
+   "end": 1.14
   },
   {
-   "word": "chips.",
-   "start": 1.42,
-   "end": 1.7
+   "word": "wafer.",
+   "start": 1.14,
+   "end": 1.54
   },
   {
-   "word": "The",
-   "start": 2.02,
-   "end": 2.14
+   "word": "A",
+   "start": 1.74,
+   "end": 1.94
   },
   {
-   "word": "U.S.",
-   "start": 2.14,
-   "end": 2.4
+   "word": "thousand",
+   "start": 1.94,
+   "end": 2.28
   },
   {
-   "word": "decides,",
-   "start": 2.4,
-   "end": 2.96
+   "word": "steps,",
+   "start": 2.28,
+   "end": 2.8
   },
   {
-   "word": "and",
-   "start": 3.26,
-   "end": 3.42
+   "word": "people",
+   "start": 3.14,
+   "end": 3.4
   },
   {
-   "word": "China",
-   "start": 3.42,
-   "end": 3.66
+   "word": "in",
+   "start": 3.4,
+   "end": 3.7
   },
   {
-   "word": "mostly",
-   "start": 3.66,
-   "end": 4.02
-  },
-  {
-   "word": "doesn't.",
-   "start": 4.02,
-   "end": 4.4
+   "word": "suits.",
+   "start": 3.7,
+   "end": 3.98
   }
  ],
  "l5": [
   {
    "word": "Layer",
    "start": 0.0,
-   "end": 0.28
+   "end": 0.32
   },
   {
    "word": "five:",
-   "start": 0.28,
-   "end": 0.76
+   "start": 0.32,
+   "end": 0.86
   },
   {
    "word": "the",
-   "start": 0.92,
-   "end": 1.08
+   "start": 1.04,
+   "end": 1.22
   },
   {
    "word": "factory.",
-   "start": 1.08,
-   "end": 1.56
+   "start": 1.22,
+   "end": 1.8
   },
   {
    "word": "One",
-   "start": 1.8,
-   "end": 2.02
+   "start": 2.02,
+   "end": 2.26
   },
   {
    "word": "company,",
-   "start": 2.02,
-   "end": 2.5
+   "start": 2.26,
+   "end": 2.8
   },
   {
    "word": "TSMC,",
-   "start": 2.78,
-   "end": 3.66
+   "start": 3.14,
+   "end": 4.1
   },
   {
    "word": "makes",
-   "start": 3.92,
-   "end": 4.02
+   "start": 4.4,
+   "end": 4.5
   },
   {
    "word": "almost",
-   "start": 4.02,
-   "end": 4.42
+   "start": 4.5,
+   "end": 4.96
   },
   {
    "word": "all",
-   "start": 4.42,
-   "end": 4.68
+   "start": 4.96,
+   "end": 5.24
   },
   {
    "word": "advanced",
-   "start": 4.68,
-   "end": 5.08
+   "start": 5.24,
+   "end": 5.72
   },
   {
    "word": "AI",
-   "start": 5.08,
-   "end": 5.34
+   "start": 5.72,
+   "end": 6.02
   },
   {
-   "word": "chips,",
-   "start": 5.34,
-   "end": 5.74
-  },
-  {
-   "word": "in",
-   "start": 6.0,
-   "end": 6.14
-  },
-  {
-   "word": "Taiwan.",
-   "start": 6.14,
-   "end": 6.52
+   "word": "chips.",
+   "start": 6.02,
+   "end": 6.36
   }
  ],
  "breath": [
