@@ -1,0 +1,12 @@
+{
+  "hook": { "src": "narration/ai-iceberg/hook.wav", "durationInSeconds": 5.614688 },
+  "l1": { "src": "narration/ai-iceberg/l1.wav", "durationInSeconds": 3.106375 },
+  "l2": { "src": "narration/ai-iceberg/l2.wav", "durationInSeconds": 4.546021 },
+  "l3": { "src": "narration/ai-iceberg/l3.wav", "durationInSeconds": 3.152833 },
+  "turn": { "src": "narration/ai-iceberg/turn.wav", "durationInSeconds": 1.692333 },
+  "l4": { "src": "narration/ai-iceberg/l4.wav", "durationInSeconds": 4.429917 },
+  "l5": { "src": "narration/ai-iceberg/l5.wav", "durationInSeconds": 6.635813 },
+  "breath": { "src": "narration/ai-iceberg/breath.wav", "durationInSeconds": 1.309188 },
+  "l6": { "src": "narration/ai-iceberg/l6.wav", "durationInSeconds": 9.991646 },
+  "close": { "src": "narration/ai-iceberg/close.wav", "durationInSeconds": 1.030458 }
+}

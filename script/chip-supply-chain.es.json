@@ -1,0 +1,76 @@
+{
+  "id": "chip-supply-chain",
+  "title": "¿Qué hay detrás de un chip?",
+  "language": "es-MX",
+  "voice": "Paulina",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "music": "music/muted-pulse.mp3",
+  "scenes": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "label": "INTRO",
+      "accent": "#e2e8f0",
+      "title": "¿Qué hay detrás de un chip?",
+      "narration": "Cada vez que desbloqueas tu celular, tocas el resultado de una de las cadenas industriales más complejas del planeta. ¿Qué hay realmente detrás de un chip? Son tres niveles. Y ninguno funciona sin el otro.",
+      "beats": []
+    },
+    {
+      "id": "asml",
+      "kind": "asml",
+      "label": "NIVEL 1 · PAÍSES BAJOS",
+      "accent": "#a78bfa",
+      "title": "ASML",
+      "subtitle": "Las máquinas que dibujan los chips",
+      "narration": "Nivel uno: Países Bajos. ASML es la única empresa del mundo que fabrica máquinas de litografía ultravioleta extrema. Cada una cuesta más de doscientos millones de dólares y viaja en cuarenta contenedores. Dentro, una docena de espejos casi perfectos guían la luz para dibujar transistores de pocos nanómetros.",
+      "beats": [
+        {"trigger": "única", "kind": "counter", "value": 1, "label": "sola empresa en el mundo fabrica EUV"},
+        {"trigger": "doscientos", "kind": "counter", "value": 200, "prefix": "+", "suffix": " M", "label": "dólares por máquina"},
+        {"trigger": "cuarenta", "kind": "counter", "value": 40, "label": "contenedores para enviar una"},
+        {"trigger": "docena", "kind": "counter", "value": 12, "label": "espejos casi perfectos"},
+        {"trigger": "nanómetros", "kind": "callout", "text": "Transistores de pocos nanómetros"}
+      ]
+    },
+    {
+      "id": "tsmc",
+      "kind": "tsmc",
+      "label": "NIVEL 2 · TAIWÁN",
+      "accent": "#2dd4bf",
+      "title": "TSMC",
+      "subtitle": "La fábrica que convierte silicio en chips",
+      "narration": "Nivel dos: Taiwán. TSMC compra esas máquinas y fabrica los chips. Una oblea de silicio pasa por más de mil pasos de proceso, y en los nodos más avanzados, por más de diez capas expuestas con EUV. Al final, de cada oblea salen cientos de chips.",
+      "beats": [
+        {"trigger": "compra", "kind": "callout", "text": "Compra las máquinas de ASML"},
+        {"trigger": "mil", "kind": "counter", "value": 1000, "prefix": "+", "label": "pasos de proceso por oblea"},
+        {"trigger": "diez", "kind": "counter", "value": 12, "label": "capas expuestas con EUV"},
+        {"trigger": "cientos", "kind": "callout", "text": "Cientos de chips por oblea"}
+      ]
+    },
+    {
+      "id": "nvidia",
+      "kind": "nvidia",
+      "label": "NIVEL 3 · ESTADOS UNIDOS",
+      "accent": "#76b900",
+      "title": "NVIDIA",
+      "subtitle": "El diseño que todos quieren",
+      "narration": "Nivel tres: Estados Unidos. NVIDIA no fabrica nada: diseña. Dibuja la arquitectura de la GPU, con decenas de miles de millones de transistores, y manda ese diseño a TSMC. Luego el chip termina en los centros de datos que entrenan la inteligencia artificial.",
+      "beats": [
+        {"trigger": "fabrica", "kind": "callout", "text": "No fabrica. Diseña."},
+        {"trigger": "decenas", "kind": "counter", "value": 208, "suffix": " mil M", "label": "transistores en un Blackwell"},
+        {"trigger": "manda", "kind": "callout", "text": "El diseño viaja a TSMC"},
+        {"trigger": "centros", "kind": "callout", "text": "Centros de datos de IA"}
+      ]
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "label": "RESUMEN",
+      "accent": "#e2e8f0",
+      "title": "Tres niveles, una sola cadena",
+      "narration": "Una máquina holandesa, una fábrica taiwanesa y un diseño americano. Tres niveles, una sola cadena. Y si uno falla, el mundo entero lo siente.",
+      "beats": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+ "prompt": "Cinematic minimal electronic documentary underscore, 120 BPM, C minor, instrumental only, 46 seconds. Start immediately with just one deep kick hit on the downbeat and a low drone, no intro swell. Keep a steady four-on-the-floor soft kick, sidechained warm analog pad and ticking closed hi-hats, dry modern mix, lots of space for a narrator. At 20 seconds bring in a short filter-sweep riser and a new hi-hat layer, tension rises. From 24 to 38 seconds get denser and darker with sub bass pulses, no melody. At 38 seconds land an impact hit on the downbeat, pad opens wide and bright, kick drops out for two beats then returns. Last 3 seconds return to the sparse hook pulse and end clean on a downbeat so it loops. No vocals, no guitar, no orchestral epic.",
+ "music_length_ms": 46000,
+ "force_instrumental": true,
+ "output_format": "mp3_44100_192"
+}

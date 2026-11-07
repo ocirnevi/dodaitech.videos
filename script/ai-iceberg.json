@@ -1,0 +1,211 @@
+{
+  "id": "ai-iceberg",
+  "title": "The Hidden World Behind ChatGPT",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "scratchVoice": "Samantha",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/ai-iceberg/bed.mp3",
+  "beatsFile": "music/ai-iceberg/bed.beats.json",
+  "frame1Text": "The hidden world behind ChatGPT",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "The hidden world behind ChatGPT",
+      "narration": "OpenAI makes ChatGPT. But who makes the technology that makes it possible? Six layers down.",
+      "beats": [
+        {
+          "trigger": "Six",
+          "kind": "counter",
+          "value": 6,
+          "label": "layers down"
+        }
+      ]
+    },
+    {
+      "id": "l1",
+      "kind": "layer",
+      "targetStart": 6,
+      "mode": "dark",
+      "depth": 1,
+      "label": "Layer 01 · Applications",
+      "title": "The app",
+      "narration": "Layer one: the app. Easy to build, useless alone.",
+      "beats": [
+        {
+          "trigger": "useless",
+          "kind": "callout",
+          "text": "Easy to build. Useless alone."
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "kind": "layer",
+      "targetStart": 9,
+      "mode": "dark",
+      "depth": 2,
+      "label": "Layer 02 · Large language models",
+      "title": "The model",
+      "narration": "Layer two: the model. Training it costs hundreds of millions and thousands of GPUs.",
+      "beats": [
+        {
+          "trigger": "hundreds",
+          "kind": "counter",
+          "value": 100,
+          "prefix": "$",
+          "suffix": "M+",
+          "label": "to train one model"
+        },
+        {
+          "trigger": "thousands",
+          "kind": "counter",
+          "value": 10000,
+          "suffix": "+",
+          "label": "GPUs"
+        }
+      ],
+      "sources": [
+        "Epoch AI, training cost estimates 2024–2025 (rango)"
+      ]
+    },
+    {
+      "id": "l3",
+      "kind": "layer",
+      "targetStart": 13,
+      "mode": "dark",
+      "depth": 3,
+      "label": "Layer 03 · Infrastructure",
+      "title": "Data centers",
+      "narration": "Layer three: data centers that burn as much power as a city.",
+      "beats": [
+        {
+          "trigger": "city",
+          "kind": "callout",
+          "text": "City-scale power"
+        }
+      ],
+      "sources": [
+        "IEA, Energy and AI (2025)"
+      ]
+    },
+    {
+      "id": "turn",
+      "kind": "turn",
+      "targetStart": 16,
+      "mode": "dark",
+      "depth": 3.6,
+      "label": "",
+      "title": "Nobody shows you this part",
+      "narration": "And here's the part nobody shows you.",
+      "beats": []
+    },
+    {
+      "id": "l4",
+      "kind": "layer",
+      "targetStart": 20,
+      "mode": "dark",
+      "depth": 4,
+      "label": "Layer 04 · Supply",
+      "title": "Who gets the chips",
+      "narration": "Layer four: who gets the chips. The U.S. decides, and China mostly doesn't.",
+      "beats": [
+        {
+          "trigger": "decides",
+          "kind": "callout",
+          "text": "U.S. export controls"
+        }
+      ],
+      "sources": [
+        "BIS, Advanced Computing rules (2022–2025)"
+      ]
+    },
+    {
+      "id": "l5",
+      "kind": "layer",
+      "targetStart": 25,
+      "mode": "dark",
+      "depth": 5,
+      "label": "Layer 05 · Production",
+      "title": "The factory",
+      "narration": "Layer five: the factory. One company, TSMC, makes almost all advanced AI chips, in Taiwan.",
+      "beats": [
+        {
+          "trigger": "almost",
+          "kind": "counter",
+          "value": 90,
+          "prefix": "~",
+          "suffix": "%",
+          "label": "of advanced AI chips, TSMC"
+        }
+      ],
+      "sources": [
+        "TrendForce / Reuters 2025 (verificar cifra)"
+      ]
+    },
+    {
+      "id": "breath",
+      "kind": "breath",
+      "targetStart": 30,
+      "mode": "dark",
+      "depth": 5.5,
+      "label": "",
+      "title": "",
+      "narration": "And the machine that draws them?",
+      "beats": []
+    },
+    {
+      "id": "l6",
+      "kind": "payoff",
+      "targetStart": 32,
+      "mode": "dark",
+      "depth": 6,
+      "label": "Layer 06 · Design",
+      "title": "One machine. One factory. One design.",
+      "narration": "Only ASML builds it. Two hundred million dollars each. Layer six: the design. NVIDIA draws it. So your chat rests on one machine, one factory, one design.",
+      "beats": [
+        {
+          "trigger": "ASML",
+          "kind": "callout",
+          "text": "Only ASML builds it"
+        },
+        {
+          "trigger": "hundred",
+          "kind": "counter",
+          "value": 200,
+          "prefix": "$",
+          "suffix": "M",
+          "label": "per machine"
+        },
+        {
+          "trigger": "NVIDIA",
+          "kind": "callout",
+          "text": "NVIDIA designs it"
+        }
+      ],
+      "sources": [
+        "Reuters / ASML (EUV > $200M)",
+        "NVIDIA Blackwell, TSMC 4NP"
+      ]
+    },
+    {
+      "id": "close",
+      "kind": "close",
+      "targetStart": 42,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "The hidden world behind ChatGPT",
+      "narration": "Not OpenAI.",
+      "beats": []
+    }
+  ]
+}

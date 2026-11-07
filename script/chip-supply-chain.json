@@ -1,0 +1,145 @@
+{
+  "id": "chip-supply-chain",
+  "title": "What's behind a chip?",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "music": "music/muted-pulse.mp3",
+  "scenes": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "label": "Intro",
+      "accent": "#fb5618",
+      "title": "What's behind a chip?",
+      "narration": "Every time you unlock your phone, you're touching the result of one of the most complex industrial chains on the planet. So what's really behind a chip? Three levels. And none of them works without the others.",
+      "beats": [],
+      "mode": "light"
+    },
+    {
+      "id": "asml",
+      "kind": "asml",
+      "label": "Level 01 · Netherlands",
+      "accent": "#fb5618",
+      "title": "ASML",
+      "subtitle": "The machines that draw the chips",
+      "narration": "Level one: the Netherlands. ASML is the only company in the world that builds extreme ultraviolet lithography machines. Each one costs over two hundred million dollars and ships in forty containers. Inside, a dozen near-perfect mirrors guide the light to draw transistors just a few nanometers wide.",
+      "beats": [
+        {
+          "trigger": "only",
+          "kind": "counter",
+          "value": 1,
+          "label": "company in the world builds EUV"
+        },
+        {
+          "trigger": "hundred",
+          "kind": "counter",
+          "value": 200,
+          "prefix": "$",
+          "suffix": "M+",
+          "label": "per machine"
+        },
+        {
+          "trigger": "forty",
+          "kind": "counter",
+          "value": 40,
+          "label": "containers to ship one"
+        },
+        {
+          "trigger": "dozen",
+          "kind": "counter",
+          "value": 12,
+          "label": "near-perfect mirrors"
+        },
+        {
+          "trigger": "nanometers",
+          "kind": "callout",
+          "text": "Transistors a few nanometers wide"
+        }
+      ],
+      "mode": "dark"
+    },
+    {
+      "id": "tsmc",
+      "kind": "tsmc",
+      "label": "Level 02 · Taiwan",
+      "accent": "#fb5618",
+      "title": "TSMC",
+      "subtitle": "The factory that turns silicon into chips",
+      "narration": "Level two: Taiwan. TSMC buys those machines and manufactures the chips. A silicon wafer goes through more than a thousand process steps, and on the most advanced nodes, through more than ten layers exposed with EUV. In the end, every wafer yields hundreds of chips.",
+      "beats": [
+        {
+          "trigger": "buys",
+          "kind": "callout",
+          "text": "Buys the machines from ASML"
+        },
+        {
+          "trigger": "thousand",
+          "kind": "counter",
+          "value": 1000,
+          "prefix": "+",
+          "label": "process steps per wafer"
+        },
+        {
+          "trigger": "ten",
+          "kind": "counter",
+          "value": 12,
+          "label": "layers exposed with EUV"
+        },
+        {
+          "trigger": "hundreds",
+          "kind": "callout",
+          "text": "Hundreds of chips per wafer"
+        }
+      ],
+      "mode": "dark"
+    },
+    {
+      "id": "nvidia",
+      "kind": "nvidia",
+      "label": "Level 03 · United States",
+      "accent": "#fb5618",
+      "title": "NVIDIA",
+      "subtitle": "The design everyone wants",
+      "narration": "Level three: the United States. NVIDIA doesn't manufacture anything. It designs. It draws the architecture of the GPU, with tens of billions of transistors, and sends that design to TSMC. Then the chip ends up in the data centers that train artificial intelligence.",
+      "beats": [
+        {
+          "trigger": "manufacture",
+          "kind": "callout",
+          "text": "Doesn't manufacture. Designs."
+        },
+        {
+          "trigger": "tens",
+          "kind": "counter",
+          "value": 208,
+          "suffix": "B",
+          "label": "transistors in one Blackwell"
+        },
+        {
+          "trigger": "sends",
+          "kind": "callout",
+          "text": "The design ships to TSMC"
+        },
+        {
+          "trigger": "centers",
+          "kind": "callout",
+          "text": "AI data centers"
+        }
+      ],
+      "mode": "dark"
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "label": "Recap",
+      "accent": "#fb5618",
+      "title": "Three levels, one chain",
+      "narration": "A Dutch machine, a Taiwanese factory, and an American design. Three levels, one chain. And if one of them fails, the whole world feels it.",
+      "beats": [],
+      "mode": "light"
+    }
+  ],
+  "voiceName": "Alex - Upbeat, Energetic and Clear"
+}

@@ -1,0 +1,22 @@
+{
+  "intro": {
+    "src": "narration/chip-supply-chain/intro.wav",
+    "durationInSeconds": 11.311021
+  },
+  "asml": {
+    "src": "narration/chip-supply-chain/asml.wav",
+    "durationInSeconds": 17.92
+  },
+  "tsmc": {
+    "src": "narration/chip-supply-chain/tsmc.wav",
+    "durationInSeconds": 17.136333
+  },
+  "nvidia": {
+    "src": "narration/chip-supply-chain/nvidia.wav",
+    "durationInSeconds": 15.595104
+  },
+  "outro": {
+    "src": "narration/chip-supply-chain/outro.wav",
+    "durationInSeconds": 8.437563
+  }
+}

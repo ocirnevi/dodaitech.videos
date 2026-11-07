@@ -1,0 +1,122 @@
+{
+ "composition_plan": {
+  "positive_global_styles": [
+   "cinematic minimal electronic documentary underscore",
+   "120 BPM",
+   "C minor",
+   "four-on-the-floor soft kick",
+   "sidechained warm analog pad",
+   "ticking closed hi-hats",
+   "deep clean sub bass",
+   "dry modern mix",
+   "subtle tension",
+   "instrumental",
+   "great production quality"
+  ],
+  "negative_global_styles": [
+   "vocals",
+   "lyrics",
+   "singing",
+   "lead melody",
+   "guitar",
+   "orchestral epic",
+   "cheesy",
+   "lo-fi hiss",
+   "reverb wash",
+   "busy arrangement"
+  ],
+  "sections": [
+   {
+    "section_name": "Hook",
+    "duration_ms": 6000,
+    "positive_local_styles": [
+     "starts immediately with a single deep kick hit on the downbeat",
+     "sparse pulse",
+     "low drone",
+     "space for narration"
+    ],
+    "negative_local_styles": [
+     "intro swell",
+     "fade in"
+    ],
+    "lines": []
+   },
+   {
+    "section_name": "Descent A",
+    "duration_ms": 14000,
+    "positive_local_styles": [
+     "steady minimal pulse",
+     "soft kick every beat",
+     "quiet pad",
+     "small ticking percussion",
+     "understated"
+    ],
+    "negative_local_styles": [
+     "build",
+     "climax"
+    ],
+    "lines": []
+   },
+   {
+    "section_name": "Turn",
+    "duration_ms": 4000,
+    "positive_local_styles": [
+     "short filter sweep riser",
+     "new hi-hat layer enters",
+     "tension rises",
+     "one bass drop on the last beat"
+    ],
+    "negative_local_styles": [
+     "vocals"
+    ],
+    "lines": []
+   },
+   {
+    "section_name": "Descent B",
+    "duration_ms": 14000,
+    "positive_local_styles": [
+     "denser pulse",
+     "ticking sixteenth hi-hats",
+     "darker pad",
+     "sub bass pulses",
+     "tension holds",
+     "still space for narration"
+    ],
+    "negative_local_styles": [
+     "climax",
+     "melody"
+    ],
+    "lines": []
+   },
+   {
+    "section_name": "Payoff",
+    "duration_ms": 5000,
+    "positive_local_styles": [
+     "impact hit on the downbeat",
+     "pad opens wide and bright",
+     "kick drops out for two beats then returns",
+     "resolution"
+    ],
+    "negative_local_styles": [
+     "vocals"
+    ],
+    "lines": []
+   },
+   {
+    "section_name": "Loop tail",
+    "duration_ms": 3000,
+    "positive_local_styles": [
+     "returns to the sparse hook pulse",
+     "ends clean on a downbeat so it loops seamlessly into the start"
+    ],
+    "negative_local_styles": [
+     "fade out",
+     "ending flourish"
+    ],
+    "lines": []
+   }
+  ]
+ },
+ "respect_sections_durations": true,
+ "output_format": "mp3_44100_192"
+}

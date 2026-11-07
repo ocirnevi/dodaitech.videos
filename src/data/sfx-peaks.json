@@ -1,0 +1,112 @@
+{
+ "lib/arp-down": {
+  "peak": 0.287,
+  "duration": 1.166,
+  "peak_db": -5.6
+ },
+ "lib/bass-drop": {
+  "peak": 0.918,
+  "duration": 1.4,
+  "peak_db": -5.1
+ },
+ "lib/braam": {
+  "peak": 1.971,
+  "duration": 3.2,
+  "peak_db": -7.9
+ },
+ "lib/coin": {
+  "peak": 0.073,
+  "duration": 0.9,
+  "peak_db": -4.5
+ },
+ "lib/fire-whoosh": {
+  "peak": 0.697,
+  "duration": 1.6,
+  "peak_db": -1.5
+ },
+ "lib/glassy-snap": {
+  "peak": 0.006,
+  "duration": 0.427,
+  "peak_db": -9.1
+ },
+ "lib/glitch": {
+  "peak": 0.301,
+  "duration": 0.6,
+  "peak_db": -10.9
+ },
+ "lib/ice-crack": {
+  "peak": 0.021,
+  "duration": 2.4,
+  "peak_db": -0.0
+ },
+ "lib/ice-snap": {
+  "peak": 0.093,
+  "duration": 2.0,
+  "peak_db": -0.5
+ },
+ "lib/impact-chord": {
+  "peak": 0.859,
+  "duration": 2.6,
+  "peak_db": -1.9
+ },
+ "lib/ping-down": {
+  "peak": 0.11,
+  "duration": 0.743,
+  "peak_db": -3.4
+ },
+ "lib/pop": {
+  "peak": 0.0,
+  "duration": 0.5,
+  "peak_db": -0.8
+ },
+ "lib/snap": {
+  "peak": 0.163,
+  "duration": 0.5,
+  "peak_db": -5.2
+ },
+ "lib/submerge": {
+  "peak": 0.025,
+  "duration": 2.0,
+  "peak_db": -1.5
+ },
+ "lib/twinkle": {
+  "peak": 0.171,
+  "duration": 1.8,
+  "peak_db": -4.5
+ },
+ "lib/woosh": {
+  "peak": 0.043,
+  "duration": 0.475,
+  "peak_db": -0.4
+ },
+ "bass": {
+  "peak": 0.002,
+  "duration": 0.5,
+  "peak_db": -0.0
+ },
+ "pop": {
+  "peak": 0.0,
+  "duration": 0.13,
+  "peak_db": -2.7
+ },
+ "riser": {
+  "peak": 0.567,
+  "duration": 0.6,
+  "peak_db": -3.9
+ },
+ "shimmer": {
+  "peak": 0.001,
+  "duration": 0.9,
+  "peak_db": -8.2
+ },
+ "tick": {
+  "peak": 0.0,
+  "duration": 0.045,
+  "peak_db": -7.2
+ },
+ "whoosh": {
+  "peak": 0.104,
+  "duration": 0.38,
+  "peak_db": -3.5
+ }
+}
