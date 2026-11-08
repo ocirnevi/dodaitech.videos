@@ -1,70 +1,70 @@
 {
   "hook": {
     "src": "narration/ai-memory/hook.wav",
-    "durationInSeconds": 2.674938
+    "durationInSeconds": 2.951854
   },
   "brain": {
     "src": "narration/ai-memory/brain.wav",
-    "durationInSeconds": 1.714188
+    "durationInSeconds": 2.037563
   },
   "meet": {
     "src": "narration/ai-memory/meet.wav",
-    "durationInSeconds": 2.3
+    "durationInSeconds": 2.873479
   },
   "devices": {
     "src": "narration/ai-memory/devices.wav",
-    "durationInSeconds": 4.55025
+    "durationInSeconds": 5.015521
   },
   "how": {
     "src": "narration/ai-memory/how.wav",
-    "durationInSeconds": 0.85725
+    "durationInSeconds": 1.071021
   },
   "pipeline": {
     "src": "narration/ai-memory/pipeline.wav",
-    "durationInSeconds": 4.461313
+    "durationInSeconds": 5.015521
   },
   "boss": {
     "src": "narration/ai-memory/boss.wav",
-    "durationInSeconds": 1.820938
+    "durationInSeconds": 3.160833
   },
   "coffee": {
     "src": "narration/ai-memory/coffee.wav",
-    "durationInSeconds": 1.815688
+    "durationInSeconds": 2.168167
   },
   "ask": {
     "src": "narration/ai-memory/ask.wav",
-    "durationInSeconds": 3.31975
+    "durationInSeconds": 3.761646
   },
   "allday": {
     "src": "narration/ai-memory/allday.wav",
-    "durationInSeconds": 3.48025
+    "durationInSeconds": 3.709396
   },
   "incredible": {
     "src": "narration/ai-memory/incredible.wav",
-    "durationInSeconds": 1.52925
+    "durationInSeconds": 1.28
   },
   "catch": {
     "src": "narration/ai-memory/catch.wav",
-    "durationInSeconds": 1.01775
+    "durationInSeconds": 1.253896
   },
   "yours": {
     "src": "narration/ai-memory/yours.wav",
-    "durationInSeconds": 1.741688
+    "durationInSeconds": 2.455521
   },
   "others": {
     "src": "narration/ai-memory/others.wav",
-    "durationInSeconds": 3.234
+    "durationInSeconds": 3.239188
   },
   "question": {
     "src": "narration/ai-memory/question.wav",
-    "durationInSeconds": 4.3755
+    "durationInSeconds": 4.623688
   },
   "life": {
     "src": "narration/ai-memory/life.wav",
-    "durationInSeconds": 1.7225
+    "durationInSeconds": 2.586125
   },
   "want": {
     "src": "narration/ai-memory/want.wav",
-    "durationInSeconds": 1.359875
+    "durationInSeconds": 1.802458
   }
 }

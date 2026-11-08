@@ -1,8 +1,9 @@
 # Short · "Would you want AI to remember your entire life?" — compuertas 0 y 1
 
-**Estado:** v1 completa (`out/ai-memory/final-v1.mp4`, 48.8 s, 1080×1920, 30 fps, −14 LUFS / −1 dBTP) hecha de corrido el 8 nov
-a partir del guion que pasó Enrico ("mejor este"). Voz scratch (espeak-ng/mbrola, Linux), música `public/music/muted-pulse.mp3`
-(95.9 BPM detectados con `scripts/beats-numpy.py`), SFX Sonniss. Costo fal: $0. Pendiente: revisión de Enrico, voz Alex (≈ 850 caracteres).
+**Estado:** v2 con voz final (`out/ai-memory/final-v2.mp4`, 56.1 s, 1080×1920, 30 fps, −14 LUFS / −1 dBTP), 8 nov. Enrico aprobó la v1
+(voz scratch, 48.8 s) y pidió la voz de Alex: generada con ElevenLabs multilingual-v2 vía el MCP de fal (17 clips, 863 caracteres, $0.09;
+`speed` 1.05, `previous_text`/`next_text` para continuidad). Tiempos por palabra de los timestamps de ElevenLabs (sin whisper). Música `public/music/muted-pulse.mp3`
+(95.9 BPM detectados con `scripts/beats-numpy.py`), SFX Sonniss. Pendiente: revisión de la v2; decidir si se recorta a ≤45 s.
 
 **Guion:** el de Enrico, palabra por palabra (147 palabras). Está por encima de las 120 palabras / 45 s del playbook; si hay que recortar,
 candidatos: "Here's how they work." (L5) y "And suddenly, a device that helps you remember everything raises a much bigger question." → "And suddenly, that raises a much bigger question." (−8 palabras, −3 s).
