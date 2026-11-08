@@ -230,6 +230,18 @@
         "desk": "6c9bbada4ab0e43f1633039beddb4350",
         "sofa": "2ab886bcf03b5653540acd993a375cc9",
         "dark": "8a0e14a2a96ea45d2a25b1ca3e31316f"
+      },
+      "avatar2": {
+        "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+        "photo_look_id": "d058fd46feb6439c24a9fa9c6291ae87",
+        "photo_asset_id": "4a8fe4153db540b6a525ea9d30ee8d99",
+        "looks": {
+          "desk": "cfc2fbd766a71dfe7ea3db4887d88f57",
+          "wall": "2cfd3a3ea916dff546bc7b1c22e54ced"
+        },
+        "look_prompt_desk": "The same man from the reference photo, exact same face and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip over a black t-shirt. Tech YouTuber studio, vertical 9:16, photorealistic: he sits at a dark wooden desk facing the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. On the desk, off to one side, a podcast microphone on a boom arm and the edge of a monitor with a soft glow. Behind him, out of focus: a dark charcoal wall with a warm orange LED strip under a floating shelf holding a few books, a camera and a small plant, plus a warm practical lamp. Lighting: soft key light from the front, warm orange rim light from the back-left matching the reference photo. Relaxed confident posture, hands on the desk, friendly natural smile, looking at the camera. Realistic skin, no retouching, natural color grading.",
+        "look_prompt_wall": "The same man from the reference photo, exact same face and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip over a black t-shirt. Creator studio, vertical 9:16, photorealistic: he stands casually facing the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Behind him, out of focus: a dark wall with vertical wooden acoustic slats lit by a warm orange backlight, a tall green plant on one side, a low shelf with a vintage camera and a couple of books, a small warm lamp. Lighting: soft key light from the front, warm orange rim light from behind matching the reference photo, moody but natural. Relaxed posture with hands loosely together, friendly natural expression, looking at the camera. Realistic skin, no retouching, natural color grading.",
+        "note": "8 nov: Enrico pidió otro avatar con su segunda foto (fondo oscuro, luz naranja) y un set de YouTuber. Pruebas C (escritorio) y D (pared) en out/ai-memory/heygen-tests; pendiente su elección."
       }
     },
     "note": "Enrico eligió la prueba B (8 nov). Formato mitad y mitad como el reel de referencia; solo hook y cierre (docs/06)."
