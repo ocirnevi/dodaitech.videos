@@ -215,8 +215,8 @@
     "layout": "split",
     "split": 960,
     "clips": {
-      "hook": "avatar/ai-memory/hook-studio.mp4",
-      "want": "avatar/ai-memory/want-studio.mp4"
+      "hook": "avatar/ai-memory/hook-p2.mp4",
+      "want": "avatar/ai-memory/want-p2.mp4"
     },
     "heygen": {
       "group_id": "f9cf7896951d4c5ca24ca40572828a23",
@@ -289,8 +289,23 @@
             "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip. Expression: calm, neutral resting face with lips closed, no smile, relaxed, looking into the lens. Loft studio, vertical 9:16, photorealistic: he sits on a tall wooden stool with his body turned about thirty degrees to the side and his head turned toward the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Background out of focus: exposed brick wall, a big industrial window with soft daylight, a bookshelf, a floor lamp with warm light, a bicycle leaning on the wall far behind. Mixed daylight and warm lamp light, realistic skin texture, no retouching, natural color grading."
           }
         }
+      },
+      "chosen": {
+        "name": "P2 · escritorio neutro",
+        "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+        "look_id": "329327dec229991ace01dff9237155b2",
+        "engine": "avatar_iv",
+        "expressiveness": "high",
+        "resolution": "1080p",
+        "aspect_ratio": "9:16",
+        "output_format": "mp4",
+        "motion_prompt_hook": "Talks with natural hand gestures like explaining something to a friend, leans slightly toward the camera, nods once, natural blinking.",
+        "motion_prompt_close": "Asks the question to the viewer with natural hand gestures like talking to a friend, leans slightly toward the camera, small head tilt at the end, natural blinking.",
+        "look_prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing a plain charcoal gray crew-neck sweater. Expression: calm, neutral resting face with lips closed, no smile, relaxed, direct eye contact with the lens. Tech YouTuber desk, vertical 9:16, photorealistic: he sits at a dark wooden desk slightly turned toward the camera, framed from the chest up to the top of the desk with generous headroom, camera about 1.8 meters away at eye level, 35mm lens. A podcast microphone on a boom arm enters from the right edge, the edge of a monitor glows softly on the left. Background out of focus: charcoal wall, floating shelf with a few books and a small plant, a warm orange LED strip under the shelf, a warm desk lamp. Soft key light from the front-left, warm rim light from behind. Realistic skin texture, no retouching, natural color grading.",
+        "note": "Elegido por Enrico el 8 nov entre P1–P5. Cara neutra en el look; el movimiento lo da Avatar IV con motion_prompt."
       }
     },
-    "note": "Enrico eligió la prueba B (8 nov). Formato mitad y mitad como el reel de referencia; solo hook y cierre (docs/06)."
+    "note": "Enrico eligió P2 (8 nov). Formato mitad y mitad como el reel de referencia; solo hook y cierre (docs/06).",
+    "focusY": 0.18
   }
 }

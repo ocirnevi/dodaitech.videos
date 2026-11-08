@@ -32,9 +32,10 @@ export const AI_MEMORY = {fps: scriptJson.fps, width: scriptJson.width, height: 
 
 const LAYOUT = {headlineTop: 300, heroCY: 860, captionsBottom: 620};
 // Host HeyGen (WebM alfa 1080×1920): escala y posición del recorte; se ajustan tras ver el clip.
-const HOST = (scriptJson as {host?: {enabled: boolean; layout?: 'card' | 'split'; split?: number; clips: {hook?: string; want?: string}}}).host ?? {enabled: false, clips: {}};
+const HOST = (scriptJson as {host?: {enabled: boolean; layout?: 'card' | 'split'; split?: number; focusY?: number; clips: {hook?: string; want?: string}}}).host ?? {enabled: false, clips: {}};
 const HOST_SPLIT = HOST.enabled && HOST.layout === 'split';
 const SPLIT_Y = HOST.split ?? 960;
+const HOST_FOCUS_Y = HOST.focusY ?? 0.32; // franja vertical del clip que se ve en la mitad inferior (P2: la cara va más arriba)
 const HOST_LAYOUT = {scale: 0.48, top: 600, pillsTop: 1130};
 /** Subtítulos: en las escenas con host mitad y mitad van sobre la línea del corte; en el resto, como siempre. */
 const captionsBottomFor = (sceneId: string) => (HOST_SPLIT && ((sceneId === 'hook' && HOST.clips.hook) || (sceneId === 'want' && HOST.clips.want)) ? 1920 - SPLIT_Y - 60 : LAYOUT.captionsBottom);
@@ -120,7 +121,7 @@ const Hook: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
             );
           })}
         </div>
-        <HostSplit src={host} mode="light" split={SPLIT_Y} durationInFrames={scene.durationInFrames} enterLead={10} />
+        <HostSplit src={host} mode="light" split={SPLIT_Y} focusY={HOST_FOCUS_Y} durationInFrames={scene.durationInFrames} enterLead={10} />
         {bubbles.slice(0, 5).map((_, i) => (
           <Sfx key={i} name="lib/pop" at={2 + i * 7} volume={0.18} />
         ))}
@@ -557,7 +558,7 @@ const Close: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) =>
         <svg width={W} height={1920} viewBox={`0 0 ${W} 1920`} style={{position: 'absolute', inset: 0}}>
           <Pendant cx={540} cy={690} r={72} mode="light" listen={1 - k * 0.8} frame={frame} />
         </svg>
-        <HostSplit src={HOST.clips.want} mode="light" split={SPLIT_Y} durationInFrames={scene.durationInFrames} enterLead={6} />
+        <HostSplit src={HOST.clips.want} mode="light" split={SPLIT_Y} focusY={HOST_FOCUS_Y} durationInFrames={scene.durationInFrames} enterLead={6} />
         <Sfx name="lib/ping-down" at={atWant} volume={0.45} />
       </AbsoluteFill>
     );

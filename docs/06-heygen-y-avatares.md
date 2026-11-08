@@ -52,7 +52,7 @@ Solo HeyGen (WebM alfa) y Tavus dan transparencia nativa.
 
 No verificado: README del repo en GitHub (404), páginas de fal para Hedra/InfiniteTalk, tabla API de D-ID, docs públicas de "Avatar Hub".
 
-## 7. Receta que eligió Enrico (8 nov 2026): look "home studio" + mitad y mitad
+## 7. Receta anterior (8 nov 2026, descartada después): look "home studio" + mitad y mitad
 
 - **Look** (photo avatar generado por prompt a partir de su foto, grupo `f9cf7896951d4c5ca24ca40572828a23`, look `4da97a64ac28f83e7174eb3e4502b64a`), creado con `create_prompt_avatar` + `avatarId` de la foto original, `aspectRatio 9:16`. Prompt guardado en `script/ai-memory.json → host.heygen.look_prompt`:
   > The same man from the reference photo, exact same face, short dark hair and light stubble, wearing a dark navy fleece quarter-zip. He is sitting casually in a cozy home studio talking to camera like a YouTuber: medium shot from the chest up, centered, natural relaxed posture, slight friendly smile. Background softly out of focus: a warm wooden shelf with a few books and a small plant, a warm desk lamp glow on the left, neutral beige wall. Soft natural window light from the right, realistic skin, no heavy retouching, shot on a mirrorless camera 35mm, vertical 9:16 framing, photorealistic.
@@ -64,3 +64,13 @@ No verificado: README del repo en GitHub (404), páginas de fal para Hedra/Infin
 - La "sonrisa falsa" viene del **look** (la imagen base), no del motor: pedir en el prompt "calm neutral resting face, lips closed, no smile" produce un punto de partida natural.
 - Con photo avatars, `motion_prompt` y `expressiveness` **sí** funcionan en `avatar_iv`; en `avatar_v` se rechazan si el grupo no tiene Digital Twin (también `more_blinking`).
 - Variar encuadre/fondo cuesta ~1 crédito por look (imagen) y ~3 por clip de 3 s. Prompts completos y ajustes de cada prueba en `script/ai-memory.json → host.heygen.tests_8nov`.
+
+## 8. Receta vigente (8 nov 2026, tarde): P2 "escritorio neutro" + Avatar IV con movimiento
+
+Elegida por Enrico entre cinco pruebas (P1–P5). Prompt completo, ids y ajustes en `script/ai-memory.json → host.heygen.chosen`.
+
+- **Foto base**: segundo retrato (fondo oscuro, luz naranja), asset `4a8fe4153db540b6a525ea9d30ee8d99`, grupo `d058fd46feb6439c24a9fa9c6291ae87`.
+- **Look** (`create_prompt_avatar`, 9:16, look `329327dec229991ace01dff9237155b2`):
+  > The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing a plain charcoal gray crew-neck sweater. Expression: calm, neutral resting face with lips closed, no smile, relaxed, direct eye contact with the lens. Tech YouTuber desk, vertical 9:16, photorealistic: he sits at a dark wooden desk slightly turned toward the camera, framed from the chest up to the top of the desk with generous headroom, camera about 1.8 meters away at eye level, 35mm lens. A podcast microphone on a boom arm enters from the right edge, the edge of a monitor glows softly on the left. Background out of focus: charcoal wall, floating shelf with a few books and a small plant, a warm orange LED strip under the shelf, a warm desk lamp. Soft key light from the front-left, warm rim light from behind. Realistic skin texture, no retouching, natural color grading.
+- **Clip** (`create_video_from_avatar`): `audio_asset_id` del clip de Alex, `engine avatar_iv`, `expressiveness high`, `motion_prompt` ("Talks with natural hand gestures like explaining something to a friend, leans slightly toward the camera, nods once, natural blinking."), `9:16`, `1080p`, `mp4`. ≈ 3 créditos por 3 s.
+- **Composición**: `HostSplit` (gráficos arriba, Enrico abajo), solo hook y cierre.

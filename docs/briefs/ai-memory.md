@@ -1,13 +1,9 @@
 # Short · "Would you want AI to remember your entire life?" — compuertas 0 y 1
 
-**Estado:** v4 con voz final y host mitad y mitad (`out/ai-memory/final-v4.mp4`, 56.2 s, 1080×1920, 30 fps, −14 LUFS / −1 dBTP), 8 nov.
-Host: look "home studio" de Enrico (HeyGen, generado por prompt a partir de su foto; prompt e ids en `script/ai-memory.json → host.heygen` y `docs/06 §7`),
-Avatar V, con el audio de Alex en el hook (3 s) y el cierre (1.8 s). Formato reel: gráficos arriba, Enrico abajo (`HostSplit`), subtítulos en la línea,
-etiqueta "AI avatar". Enrico descartó la v3 (tarjeta con WebM alfa: "no se ve natural"). Clips en `public/avatar/ai-memory/*-studio.mp4`.
-v2 (sin host) fue Enrico aprobó la v1
-(voz scratch, 48.8 s) y pidió la voz de Alex: generada con ElevenLabs multilingual-v2 vía el MCP de fal (17 clips, 863 caracteres, $0.09;
-`speed` 1.05, `previous_text`/`next_text` para continuidad). Tiempos por palabra de los timestamps de ElevenLabs (sin whisper). Música `public/music/muted-pulse.mp3`
-(95.9 BPM detectados con `scripts/beats-numpy.py`), SFX Sonniss. Pendiente: revisión de la v2; decidir si se recorta a ≤45 s.
+**Estado:** v5 con voz final y host mitad y mitad (`out/ai-memory/final-v5.mp4`, 56.2 s, 1080×1920, 30 fps, −14 LUFS / −1 dBTP), 8 nov.
+Host: look P2 "escritorio neutro" de Enrico (HeyGen, generado por prompt a partir de su segundo retrato; receta en `docs/06 §8` y `script/ai-memory.json → host.heygen.chosen`),
+Avatar IV con expresividad alta y motion prompt, audio de Alex, en el hook (3 s) y el cierre (1.8 s). Formato reel: gráficos arriba, Enrico abajo (`HostSplit`, `focusY 0.18`),
+subtítulos en la línea, etiqueta "AI avatar". Elegido entre cinco pruebas (P1–P5) tras descartar la tarjeta con alfa y el look "home studio". Clips en `public/avatar/ai-memory/*-p2.mp4`.
 
 **Guion:** el de Enrico, palabra por palabra (147 palabras). Está por encima de las 120 palabras / 45 s del playbook; si hay que recortar,
 candidatos: "Here's how they work." (L5) y "And suddenly, a device that helps you remember everything raises a much bigger question." → "And suddenly, that raises a much bigger question." (−8 palabras, −3 s).
