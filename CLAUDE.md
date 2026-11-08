@@ -61,13 +61,17 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 ## Mapa del repo
 
 - `script/<slug>.json` guion: escenas, narración, `beats` (dato + palabra gatillo), `mode` (light/dark), voz, formato.
-- `scripts/` `tts.sh` (say) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `align.py` (whisper → words.json) ·
+- `scripts/` `tts.sh` (say) · `tts-espeak.py` (voz scratch en Linux con tiempos por palabra) · `beats-numpy.py` (BPM sin librosa) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `align.py` (whisper → words.json) ·
   `music-fal.mjs` (ElevenLabs Music) · `analyze-music.py` · `sfx-index.mjs` (Sonniss) · `gen-sfx.mjs` (kit sintético) · `storyboard.mjs` (hoja de aprobación).
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
-  `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
+  `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
 - `public/` `narration/` · `sfx/` · `music/` · `brand/` · `fonts/` · `storyboard/` (paneles temporales).
 - `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md` + `briefs/<slug>.md` (compuertas 0–1 de cada video).
-- Chrome: `remotion.config.ts` usa el Chrome del sistema (el headless de Remotion falla en esta Mac).
+- Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
+- `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar
+  Remotion; reglas que ya seguimos: `useCurrentFrame()` en el componente más pequeño (`MusicBed`, `ByScene`), `<Audio>` de `@remotion/media`,
+  `<Track name>` para escenas y subtítulos, `fps` de `useVideoConfig()`. Actualizar con `npx skills add remotion-dev/skills -y --agent claude-code`
+  cuando se suba de versión Remotion (ver skill `remotion-upgrade`).
 
 ## Comandos
 
@@ -86,4 +90,4 @@ npx remotion render <Comp> out/<slug>/final-vN.mp4 --crf 17                     
 
 Datos por video: `src/data/<slug>/{narration,words,beats}.json`; audio en `public/narration/<slug>/`; música en `public/music/<slug>/`.
 SFX reales en `public/sfx/lib/` (Sonniss GDC 2026, picos en `src/data/sfx-peaks.json`; `<Sfx>` alinea el transiente al frame).
-Shorts: `src/shorts/` (timeline pegado a `targetStart` de cada escena y a los beats de la música; ver `src/shorts/script.ts`).
+Shorts: `src/shorts/` (timeline pegado a `targetStart` de cada escena y a los beats de la música; `src/shorts/timeline.ts` es la fábrica reutilizable, `script.ts` la de ai-iceberg).

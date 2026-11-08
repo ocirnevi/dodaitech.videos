@@ -1,9 +1,12 @@
-import {AbsoluteFill, Audio, Easing, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Audio} from '@remotion/media';
+import {AbsoluteFill, Easing, Sequence, Track, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import scriptJson from '../../script/ai-memory.json';
 import narration from '../data/ai-memory/narration.json';
 import wordsJson from '../data/ai-memory/words.json';
 import beatsJson from '../data/ai-memory/beats.json';
 import {Background} from '../components/Background';
+import {ByScene} from '../components/ByScene';
+import {MusicBed} from '../components/MusicBed';
 import {Captions} from '../components/Captions';
 import {Chapter} from '../components/Chapter';
 import {Cut} from '../components/Cut';
@@ -560,50 +563,39 @@ const SceneView: React.FC<{s: TimedShortScene; fps: number}> = ({s, fps}) => {
 const BASS_SCENES = new Set(['meet', 'catch', 'question', 'want']);
 
 export const AiMemory: React.FC = () => {
-  const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const {scenes, outroFrom, totalFrames} = TL.build();
-  const speaking = TL.speakingFn(scenes);
-  let scene = scenes[0];
-  for (const s of scenes) if (frame >= s.from) scene = s;
-  const inOutro = frame >= outroFrom;
   const punchBeats = scenes.slice(1).map((s) => s.from);
   const catchScene = scenes.find((s) => s.id === 'catch')!;
-  const musicVol = (f: number) => {
-    const base = f < fps ? interpolate(f, [0, fps], [0.2, 0.28]) : f < catchScene.from ? 0.28 : 0.34;
-    const duck = speaking(f) ? 0.45 : 1;
-    const fade = interpolate(f, [totalFrames - 26, totalFrames - 2], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-    return base * duck * fade;
-  };
   return (
     <AbsoluteFill style={{background: brand.soot, fontFamily: theme.font}}>
-      <Audio src={staticFile(scriptJson.music)} volume={musicVol} />
-      {!inOutro ? (
-        <>
-          <Background mode={scene.mode} />
-          <PunchIn beats={punchBeats} amount={0.025} origin="50% 55%">
-            {scenes.map((s) => (
-              <Sequence key={s.id} from={s.from} durationInFrames={s.durationInFrames} name={s.id}>
-                <Audio src={staticFile(s.audioSrc)} />
-                <SceneView s={s} fps={fps} />
-              </Sequence>
-            ))}
-          </PunchIn>
-          <Post mode={scene.mode} />
+      <MusicBed src={scriptJson.music} scenes={scenes} totalFrames={totalFrames} base={0.28} levels={[{from: catchScene.from, base: 0.34}]} fadeInFrames={fps} />
+      <ByScene scenes={scenes} until={outroFrom}>{(s) => <Background mode={s.mode} />}</ByScene>
+      <PunchIn beats={punchBeats} amount={0.025} origin="50% 55%">
+        <Track name="scenes">
           {scenes.map((s) => (
-            <Sequence key={`cap-${s.id}`} from={s.from} durationInFrames={s.durationInFrames} name={`captions:${s.id}`} layout="none">
-              <Captions words={s.words} mode={s.mode} bottom={LAYOUT.captionsBottom} fontSize={64} combineMs={700} maxWidth={880} />
+            <Sequence key={s.id} name={s.id} from={s.from} durationInFrames={s.durationInFrames}>
+              <Audio name={`voice:${s.id}`} src={staticFile(s.audioSrc)} />
+              <SceneView s={s} fps={fps} />
             </Sequence>
           ))}
-          {scenes.slice(1).map((s) => (
-            <Cut key={`cut-${s.id}`} at={s.from} strength={s.id === 'catch' ? 0.8 : BASS_SCENES.has(s.id) ? 0.5 : 0.22} bass={BASS_SCENES.has(s.id)} whoosh={(s.kind as string) !== 'query'} />
-          ))}
-          <Sfx name="lib/bass-drop" at={1} lead={1} volume={0.5} />
-          <Sfx name="lib/glitch" at={catchScene.from} lead={0} volume={0.5} />
-          <Sfx name="lib/submerge" at={catchScene.from} lead={0} volume={0.5} />
-        </>
-      ) : null}
-      <Sequence from={outroFrom} durationInFrames={TL.OUTRO_FRAMES} name="outro">
+        </Track>
+      </PunchIn>
+      <ByScene scenes={scenes} until={outroFrom}>{(s) => <Post mode={s.mode} />}</ByScene>
+      <Track name="captions">
+        {scenes.map((s) => (
+          <Sequence key={`cap-${s.id}`} name={`captions:${s.id}`} from={s.from} durationInFrames={s.durationInFrames} layout="none">
+            <Captions words={s.words} mode={s.mode} bottom={LAYOUT.captionsBottom} fontSize={64} combineMs={700} maxWidth={880} />
+          </Sequence>
+        ))}
+      </Track>
+      {scenes.slice(1).map((s) => (
+        <Cut key={`cut-${s.id}`} at={s.from} strength={s.id === 'catch' ? 0.8 : BASS_SCENES.has(s.id) ? 0.5 : 0.22} bass={BASS_SCENES.has(s.id)} whoosh={(s.kind as string) !== 'query'} />
+      ))}
+      <Sfx name="lib/bass-drop" at={1} lead={1} volume={0.5} />
+      <Sfx name="lib/glitch" at={catchScene.from} lead={0} volume={0.5} />
+      <Sfx name="lib/submerge" at={catchScene.from} lead={0} volume={0.5} />
+      <Sequence name="outro" from={outroFrom} durationInFrames={TL.OUTRO_FRAMES}>
         <Outro />
       </Sequence>
     </AbsoluteFill>
