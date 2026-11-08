@@ -44,7 +44,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
 - **"Se siente largo" no es la duración (Enrico, 8 nov, ai-agents 59 s).** Videos de 1:30 pueden sentirse bien; lo que cansa es la lista plana
   de escenas del mismo peso con cortes uniformes y giro tardío. Estructura en 3 bloques con energía creciente, variar duración de planos,
-  giro ≤ 15 s, fusionar escenas gemelas. Registro de feedback por video en `videos/FEEDBACK.md`.
+  giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 3 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/FEEDBACK.md`.
 - **Simple y refinado antes que complejo (Enrico, 7 nov).** 2D vectorial plano, bien resuelto, por encima de 3D ambicioso que luego
   se ve de juguete. El 3D solo si una forma simple (una pieza, una cámara) lo justifica; nunca props 3D pequeños "de adorno".
   Un solo protagonista visual por escena; iconos de línea mínimos (dos colores) en vez de modelos.

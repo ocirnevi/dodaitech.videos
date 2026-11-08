@@ -9,4 +9,4 @@ audio en `public/narration/<slug>/`, clips de avatar en `public/avatar/<slug>/`,
 | `ai-iceberg` | The Hidden World Behind ChatGPT | storyboard v3 en revisión |
 | `three-nm` | Nothing in a 3 nm chip is 3 nm | prueba de 10 s, voz scratch |
 | `ai-memory` | Would you want AI to remember your entire life? | v5 final con voz Alex y host P2 |
-| `ai-agents` | Don't let AI replace you. Make it work for you. | v1 final con voz Alex y host P2 |
+| `ai-agents` | Don't let AI replace you. Make it work for you. | v2 final (feedback de ritmo aplicado) |

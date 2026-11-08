@@ -1,6 +1,8 @@
 # Short · "Don't let AI replace you. Make it work for you." — compuertas 0 y 1
 
-**Estado:** v1 final (`out/ai-agents/final-v1.mp4`, 58.8 s, 1080×1920, −14.2 LUFS), 8 nov 2026. Guion de Enrico, palabra por palabra (19 escenas, ≈150 palabras, 51 s de voz).
+**Estado:** v2 final (`out/ai-agents/final-v2.mp4`, 55.4 s, 1080×1920, −14.2 LUFS), 8 nov 2026. v1 (58.8 s) fue la que Enrico vio y sintió larga;
+v2 aplica su feedback sin tocar guion ni voz: GAP 7→3 frames y ajuste a beat ≤4 frames (−3.4 s), owners+needed y next+agents2 fusionadas en un plano
+que crece (sin corte), música en tres bloques de energía (0.24 → 0.29 → 0.36 → 0.40) con riser antes del giro. Guion de Enrico, palabra por palabra (19 escenas, ≈150 palabras, 51 s de voz).
 Voz Alex (ElevenLabs multilingual-v2 vía fal MCP, ≈ $0.11), host P2 "escritorio neutro" (HeyGen Avatar IV, receta `docs/06 §8`)
 mitad y mitad en hook y cierre, música `muted-pulse.mp3`, SFX Sonniss. Render esperado ≈ 59 s.
 

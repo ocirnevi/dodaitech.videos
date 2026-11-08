@@ -16,6 +16,8 @@ Así que el problema está en el ritmo y la estructura, no en el reloj.
 4. **Dos bloques que repiten la misma idea.** "owners / needed" y "future / build2 / next / agents2" dicen lo mismo dos veces cada uno; son 4 escenas de payoff seguidas.
 5. **Sin pregunta abierta en medio.** ai-memory tenía una tensión ("your conversations aren't just yours") que empujaba al final; aquí la única tensión es el hook.
 
+**Aplicado en ai-agents v2 (mismo día):** GAP 7→3 frames y ajuste a beat ≤4 (−3.4 s); owners+needed y next+agents2 fusionadas sin corte; música en tres bloques (0.24/0.29/0.36/0.40) + riser antes del giro. Medido: el silencio real en los clips era casi cero (0.9 s de colas), así que recortar silencios no era la palanca.
+
 **Qué probar en el próximo video (sin cambiar el guion de Enrico):**
 - Agrupar las escenas en **3 bloques con energía creciente** (problema → herramientas → agentes/payoff) y que la música y los SFX lo marquen: un riser antes del giro, cama más alta en el payoff.
 - **Variar la duración de los planos:** una lista rápida (3 tarjetas en 1 s cada una) seguida de un plano que respira 4 s.

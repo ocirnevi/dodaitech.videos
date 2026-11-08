@@ -27,7 +27,8 @@ import {makeShortTimeline} from './timeline';
  * construir con IA (tarjetas). Giro: los agentes trabajan solos. Payoff: una persona rodeada de agentes. Cierre: "Why not you?".
  * Host (HeyGen P2) mitad y mitad en hook y cierre.
  */
-const TL = makeShortTimeline(scriptJson, narration, wordsJson as Record<string, Word[]>, beatsJson, {gap: 7, outroFrames: 45});
+// v2 (feedback "se siente largo"): menos aire entre escenas (3 frames) y el corte solo se mueve ≤4 frames para caer en beat.
+const TL = makeShortTimeline(scriptJson, narration, wordsJson as Record<string, Word[]>, beatsJson, {gap: 3, outroFrames: 45, snapTolerance: 4});
 export const aiAgentsTimeline = TL.build;
 export const AI_AGENTS = {fps: scriptJson.fps, width: scriptJson.width, height: scriptJson.height};
 
@@ -344,22 +345,26 @@ const Owners: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) =
   );
 };
 
+/** Continuación de Owners sin corte: la misma cuadrícula de 15 (ya encendida) se desvanece y queda la del centro, que crece. */
 const Needed: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => {
   const frame = useCurrentFrame();
-  const p = palette('dark');
   const atTeam = trig(scene, 'team', fps);
   const atStarted = trig(scene, 'started', fps);
-  const fade = clamp01((frame - atTeam - 4) / 14);
-  const solo = useSp(frame, fps, atStarted - 2, 14);
-  const team = [[-300, -120], [-150, -120], [0, -120], [150, -120], [300, -120], [-225, 60], [-75, 60], [75, 60], [225, 60]];
+  const fade = clamp01((frame - atTeam - 2) / 14);
+  const solo = useSp(frame, fps, atStarted - 2, 16, theme.spring.soft);
+  const cols = 5, rowsN = 3, center = 7;
   return (
     <AbsoluteFill>
       <Headline lines={['Once: an entire team.', 'Now: one person.']} mode="dark" frame={frame + 12} fps={fps} size={88} />
       <svg width={W} height={1920} viewBox={`0 0 ${W} 1920`} style={{position: 'absolute', inset: 0}}>
-        {team.map(([dx, dy], i) => <Person key={i} x={540 + dx} y={880 + dy} s={1} color={p.text3} o={(1 - fade) * useSp(frame, fps, 2 + i * 2, 12)} />)}
-        <Person x={540} y={880} s={1.6 + 0.3 * solo} color={brand.accent} o={fade} />
+        {Array.from({length: cols * rowsN}, (_, i) => {
+          if (i === center) return null;
+          const c = i % cols, r = Math.floor(i / cols);
+          return <Person key={i} x={200 + c * 170} y={720 + r * 190} s={1} color={brand.accent} o={1 - fade} />;
+        })}
+        <Person x={540} y={910} s={1 + 1.1 * solo} color={brand.accent} />
       </svg>
-      <Sfx name="lib/woosh" at={atTeam + 4} volume={0.4} />
+      <Sfx name="lib/woosh" at={atTeam + 2} volume={0.4} />
       <Sfx name="lib/coin" at={atStarted} volume={0.5} />
     </AbsoluteFill>
   );
@@ -385,7 +390,7 @@ const Next: React.FC<{scene: TimedShortScene; fps: number; withAgents?: boolean}
   const frame = useCurrentFrame();
   const p = palette('dark');
   const atAgents = withAgents ? trig(scene, 'agents', fps) : 9999;
-  const ring = useSp(frame, fps, 6, 20, theme.spring.soft);
+  const ring = withAgents ? 1 : useSp(frame, fps, 6, 20, theme.spring.soft);
   const orbit = [0, 1, 2, 3, 4, 5].map((i) => ({a: (i / 6) * Math.PI * 2 - Math.PI / 2, s: useSp(frame, fps, atAgents + i * 3, 16)}));
   return (
     <AbsoluteFill>
@@ -458,14 +463,19 @@ const SceneView: React.FC<{s: TimedShortScene; fps: number}> = ({s, fps}) => {
 };
 
 const BASS_SCENES = new Set(['agents', 'replace', 'next', 'why']);
+// escenas que continúan el plano anterior sin corte (fusión de gemelas: owners→needed, next→agents2)
+const CONTINUES = new Set(['needed', 'agents2']);
 
 export const AiAgents: React.FC = () => {
   const {fps} = useVideoConfig();
   const {scenes, outroFrom, totalFrames} = TL.build();
   const turn = scenes.find((s) => s.id === 'agents')!;
+  const tools = scenes.find((s) => s.id === 'research')!;
+  const payoff = scenes.find((s) => s.id === 'future')!;
   return (
     <AbsoluteFill style={{background: brand.soot, fontFamily: theme.font}}>
-      <MusicBed src={scriptJson.music} scenes={scenes} totalFrames={totalFrames} base={0.28} levels={[{from: turn.from, base: 0.34}]} fadeInFrames={fps} />
+      {/* tres bloques con energía creciente: problema → herramientas → agentes/payoff */}
+      <MusicBed src={scriptJson.music} scenes={scenes} totalFrames={totalFrames} base={0.24} levels={[{from: tools.from, base: 0.29}, {from: turn.from, base: 0.36}, {from: payoff.from, base: 0.4}]} fadeInFrames={fps} />
       <ByScene scenes={scenes} until={outroFrom}>{(s) => <Background mode={s.mode as Mode} />}</ByScene>
       <PunchIn beats={scenes.slice(1).map((s) => s.from)} amount={0.025} origin="50% 55%">
         <Track name="scenes">
@@ -485,9 +495,10 @@ export const AiAgents: React.FC = () => {
           </Sequence>
         ))}
       </Track>
-      {scenes.slice(1).map((s) => (
+      {scenes.slice(1).filter((s) => !CONTINUES.has(s.id)).map((s) => (
         <Cut key={`cut-${s.id}`} at={s.from} strength={s.id === 'agents' ? 0.8 : BASS_SCENES.has(s.id) ? 0.5 : 0.22} bass={BASS_SCENES.has(s.id)} whoosh />
       ))}
+      <Sfx name="lib/fire-whoosh" at={turn.from} lead={0} volume={0.5} />
       <Sfx name="lib/bass-drop" at={1} lead={1} volume={0.5} />
       <Sfx name="lib/glitch" at={turn.from} lead={0} volume={0.45} />
       <Sequence name="outro" from={outroFrom} durationInFrames={TL.OUTRO_FRAMES}>

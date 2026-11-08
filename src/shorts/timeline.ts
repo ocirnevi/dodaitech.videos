@@ -10,13 +10,14 @@ type BeatsJson = {beats: number[]; downbeats?: number[]};
  * Misma lógica que script.ts (que está pegado a ai-iceberg): cada escena arranca en max(fin de la voz anterior + GAP, targetStart),
  * ajustado al beat de música más cercano (≤ 8 frames). Devuelve escenas con `from`, `durationInFrames`, `words`.
  */
-export const makeShortTimeline = (script: ScriptJson, narration: Narration, words: Record<string, Word[]>, beats: BeatsJson, opts: {gap?: number; outroFrames?: number} = {}) => {
+export const makeShortTimeline = (script: ScriptJson, narration: Narration, words: Record<string, Word[]>, beats: BeatsJson, opts: {gap?: number; outroFrames?: number; snapTolerance?: number} = {}) => {
   const FPS = script.fps;
   const GAP = opts.gap ?? 8;
   const OUTRO_FRAMES = opts.outroFrames ?? 45;
+  const SNAP = opts.snapTolerance ?? 8; // frames máximos que un corte se mueve para caer en beat
   const beatFramesList = beats.beats.map((s) => Math.round(s * FPS));
   const snapToBeat = (frame: number, minFrame: number) => {
-    const candidates = beatFramesList.filter((b) => b >= minFrame && Math.abs(b - frame) <= 8);
+    const candidates = beatFramesList.filter((b) => b >= minFrame && Math.abs(b - frame) <= SNAP);
     if (!candidates.length) return Math.max(frame, minFrame);
     return candidates.reduce((best, b) => (Math.abs(b - frame) < Math.abs(best - frame) ? b : best));
   };
