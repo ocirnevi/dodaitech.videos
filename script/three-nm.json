@@ -1,0 +1,61 @@
+{
+  "id": "three-nm",
+  "title": "Nothing in a 3 nm chip is 3 nm",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "scratchVoice": "Samantha",
+  "scratchVoiceLinux": "us-mbrola-2",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSeconds": 10,
+  "music": "music/ai-iceberg/bed.mp3",
+  "beatsFile": "music/ai-iceberg/bed.beats.json",
+  "frame1Text": "Nothing here is 3 nanometers",
+  "armature": "The node name on a chip is a brand, not a measurement: nothing inside a '3 nm' chip is 3 nm.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Nothing here is 3 nanometers",
+      "narration": "Nothing in a 3-nanometer chip measures 3 nanometers.",
+      "beats": []
+    },
+    {
+      "id": "reveal",
+      "kind": "layer",
+      "targetStart": 2.9,
+      "mode": "dark",
+      "depth": 1,
+      "label": "TSMC N3 · real dimensions",
+      "title": "What is 3 nm, then?",
+      "narration": "Thinnest wires: 23 apart. Gates: 45.",
+      "beats": [
+        {"trigger": "23", "kind": "counter", "value": 23, "suffix": " nm", "label": "metal pitch (thinnest wires)"},
+        {"trigger": "45", "kind": "counter", "value": 45, "suffix": " nm", "label": "gate pitch"}
+      ],
+      "sources": [
+        "WikiChip, TSMC N3 process: contacted gate pitch 45 nm, minimum metal pitch 23 nm",
+        "IEEE Spectrum, 'The Nanosheet Transistor Is the Next (and Maybe Last) Step in Moore's Law' (2019): node names no longer describe any feature"
+      ]
+    },
+    {
+      "id": "close",
+      "kind": "close",
+      "targetStart": 6.5,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "A name. Not a size.",
+      "narration": "The number is a name. Not a size.",
+      "beats": [
+        {"trigger": "name", "kind": "callout", "text": "A name. Not a size."}
+      ]
+    }
+  ]
+}

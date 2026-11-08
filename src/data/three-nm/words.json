@@ -1,0 +1,118 @@
+{
+ "hook": [
+  {
+   "word": "Nothing",
+   "start": 0.0,
+   "end": 0.234
+  },
+  {
+   "word": "in",
+   "start": 0.264,
+   "end": 0.344
+  },
+  {
+   "word": "a",
+   "start": 0.365,
+   "end": 0.445
+  },
+  {
+   "word": "3-nanometer",
+   "start": 0.436,
+   "end": 1.005
+  },
+  {
+   "word": "chip",
+   "start": 1.035,
+   "end": 1.286
+  },
+  {
+   "word": "measures",
+   "start": 1.316,
+   "end": 1.605
+  },
+  {
+   "word": "3",
+   "start": 1.635,
+   "end": 1.815
+  },
+  {
+   "word": "nanometers.",
+   "start": 1.845,
+   "end": 2.422
+  }
+ ],
+ "reveal": [
+  {
+   "word": "Thinnest",
+   "start": 0.0,
+   "end": 0.296
+  },
+  {
+   "word": "wires:",
+   "start": 0.326,
+   "end": 0.89
+  },
+  {
+   "word": "23",
+   "start": 0.92,
+   "end": 1.415
+  },
+  {
+   "word": "apart.",
+   "start": 1.445,
+   "end": 2.043
+  },
+  {
+   "word": "Gates:",
+   "start": 2.073,
+   "end": 2.597
+  },
+  {
+   "word": "45.",
+   "start": 2.627,
+   "end": 3.272
+  }
+ ],
+ "close": [
+  {
+   "word": "The",
+   "start": 0.0,
+   "end": 0.08
+  },
+  {
+   "word": "number",
+   "start": 0.088,
+   "end": 0.348
+  },
+  {
+   "word": "is",
+   "start": 0.378,
+   "end": 0.458
+  },
+  {
+   "word": "a",
+   "start": 0.473,
+   "end": 0.553
+  },
+  {
+   "word": "name.",
+   "start": 0.523,
+   "end": 1.072
+  },
+  {
+   "word": "Not",
+   "start": 1.102,
+   "end": 1.182
+  },
+  {
+   "word": "a",
+   "start": 1.198,
+   "end": 1.278
+  },
+  {
+   "word": "size.",
+   "start": 1.293,
+   "end": 1.681
+  }
+ ]
+}

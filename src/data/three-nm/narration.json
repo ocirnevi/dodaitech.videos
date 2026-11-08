@@ -1,0 +1,14 @@
+{
+  "hook": {
+    "src": "narration/three-nm/hook.wav",
+    "durationInSeconds": 2.541813
+  },
+  "reveal": {
+    "src": "narration/three-nm/reveal.wav",
+    "durationInSeconds": 3.3915
+  },
+  "close": {
+    "src": "narration/three-nm/close.wav",
+    "durationInSeconds": 1.801313
+  }
+}

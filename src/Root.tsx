@@ -1,6 +1,7 @@
 import {Composition, staticFile} from 'remotion';
 import {Manifest, SHEET_W, sheetLayout, StoryboardSheet} from './StoryboardSheet';
 import {AiIceberg} from './shorts/AiIceberg';
+import {THREE_NM, ThreeNm, threeNmTimeline} from './shorts/ThreeNm';
 import {SHORT, buildShortTimeline} from './shorts/script';
 import {ChipSupplyChain} from './Video';
 import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
@@ -8,8 +9,10 @@ import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
 export const RemotionRoot: React.FC = () => {
   const {totalFrames} = buildTimeline();
   const short = buildShortTimeline();
+  const threeNm = threeNmTimeline();
   return (
     <>
+    <Composition id="ThreeNm" component={ThreeNm} durationInFrames={threeNm.totalFrames} fps={THREE_NM.fps} width={THREE_NM.width} height={THREE_NM.height} />
     <Composition id="AiIceberg" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: false}} />
     <Composition id="AiIcebergV3" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: false, v3: true}} />
     <Composition id="AiIceberg2D" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: true}} />
