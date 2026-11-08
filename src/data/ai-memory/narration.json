@@ -1,0 +1,70 @@
+{
+  "hook": {
+    "src": "narration/ai-memory/hook.wav",
+    "durationInSeconds": 2.674938
+  },
+  "brain": {
+    "src": "narration/ai-memory/brain.wav",
+    "durationInSeconds": 1.714188
+  },
+  "meet": {
+    "src": "narration/ai-memory/meet.wav",
+    "durationInSeconds": 2.3
+  },
+  "devices": {
+    "src": "narration/ai-memory/devices.wav",
+    "durationInSeconds": 4.55025
+  },
+  "how": {
+    "src": "narration/ai-memory/how.wav",
+    "durationInSeconds": 0.85725
+  },
+  "pipeline": {
+    "src": "narration/ai-memory/pipeline.wav",
+    "durationInSeconds": 4.461313
+  },
+  "boss": {
+    "src": "narration/ai-memory/boss.wav",
+    "durationInSeconds": 1.820938
+  },
+  "coffee": {
+    "src": "narration/ai-memory/coffee.wav",
+    "durationInSeconds": 1.815688
+  },
+  "ask": {
+    "src": "narration/ai-memory/ask.wav",
+    "durationInSeconds": 3.31975
+  },
+  "allday": {
+    "src": "narration/ai-memory/allday.wav",
+    "durationInSeconds": 3.48025
+  },
+  "incredible": {
+    "src": "narration/ai-memory/incredible.wav",
+    "durationInSeconds": 1.52925
+  },
+  "catch": {
+    "src": "narration/ai-memory/catch.wav",
+    "durationInSeconds": 1.01775
+  },
+  "yours": {
+    "src": "narration/ai-memory/yours.wav",
+    "durationInSeconds": 1.741688
+  },
+  "others": {
+    "src": "narration/ai-memory/others.wav",
+    "durationInSeconds": 3.234
+  },
+  "question": {
+    "src": "narration/ai-memory/question.wav",
+    "durationInSeconds": 4.3755
+  },
+  "life": {
+    "src": "narration/ai-memory/life.wav",
+    "durationInSeconds": 1.7225
+  },
+  "want": {
+    "src": "narration/ai-memory/want.wav",
+    "durationInSeconds": 1.359875
+  }
+}
