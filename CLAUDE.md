@@ -42,6 +42,9 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   cierre en loop; sin "dale like"; ≤120 palabras a 150–175 wpm; but/therefore, nunca "and then". Ver `docs/00-PLAYBOOK.md`.
 - **Ritmo.** Cambio visual cada 1.5–3 s; ningún tramo de 5 s sin corte, zoom, texto o SFX; nada estático >5 s.
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
+- **"Se siente largo" no es la duración (Enrico, 8 nov, ai-agents 59 s).** Videos de 1:30 pueden sentirse bien; lo que cansa es la lista plana
+  de escenas del mismo peso con cortes uniformes y giro tardío. Estructura en 3 bloques con energía creciente, variar duración de planos,
+  giro ≤ 15 s, fusionar escenas gemelas. Registro de feedback por video en `videos/FEEDBACK.md`.
 - **Simple y refinado antes que complejo (Enrico, 7 nov).** 2D vectorial plano, bien resuelto, por encima de 3D ambicioso que luego
   se ve de juguete. El 3D solo si una forma simple (una pieza, una cámara) lo justifica; nunca props 3D pequeños "de adorno".
   Un solo protagonista visual por escena; iconos de línea mínimos (dos colores) en vez de modelos.
@@ -66,7 +69,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
 - `public/` `narration/` · `sfx/` · `music/` · `brand/` · `fonts/` · `storyboard/` (paneles temporales).
-- `videos/<slug>/` una carpeta por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6). Índice en `videos/README.md`.
+- `videos/<slug>/` una carpeta por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6). Índice en `videos/README.md`; feedback de Enrico por video en `videos/FEEDBACK.md`.
 - `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md`.
 - Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
 - `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar

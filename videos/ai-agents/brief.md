@@ -52,3 +52,6 @@ Protagonista visual: **la persona** (icono de línea) y **los agentes** (nodos n
 - Duración ≈ 59 s (guion íntegro). Si se quiere ≤45 s: quitar "Here's how it works"-style líneas no hay; candidatos: `stop`, `future` o `needed`.
 - `replace`: ¿el beat honesto se siente bien o frena?
 - `agents`/`agents2`: ¿los nodos leen como "agentes" sin explicación?
+
+## Feedback de Enrico (8 nov)
+Le gustó; se queda tal cual. **Se sintió largo**, y aclaró que no es la duración (videos de 1:30 le parecen bien) sino la sensación. Hipótesis y qué probar en el siguiente en `videos/FEEDBACK.md`.
