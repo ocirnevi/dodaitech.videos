@@ -1,0 +1,49 @@
+{
+  "id": "ai-agents",
+  "title": "Don't let AI replace you. Make it work for you.",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "scratchVoice": "Samantha",
+  "scratchVoiceLinux": "us-mbrola-2",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "frame1Text": "Don't let AI replace you",
+  "armature": "AI will take some jobs, but it also lets one person do what used to take a whole team: the next big company can start with one person and a team of AI agents.",
+  "host": {
+    "enabled": true,
+    "layout": "split",
+    "split": 960,
+    "focusY": 0.18,
+    "clips": {"hook": "avatar/ai-agents/hook-p2.mp4", "why": "avatar/ai-agents/why-p2.mp4"},
+    "heygen": {"group_id": "d058fd46feb6439c24a9fa9c6291ae87", "look_id": "329327dec229991ace01dff9237155b2", "look_name": "P2 · escritorio neutro", "engine": "avatar_iv", "expressiveness": "high", "recipe": "docs/06 §8 · script/ai-memory.json → host.heygen.chosen"}
+  },
+  "scenes": [
+    {"id": "hook", "kind": "hook", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Don't let AI replace you.", "narration": "Don't let AI replace you. Make it work for you.", "beats": []},
+    {"id": "idea", "kind": "idea", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "A business idea. No team. No budget.", "narration": "Have a business idea, but no team? No big budget?", "beats": []},
+    {"id": "stop", "kind": "stop", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "That might not stop you anymore.", "narration": "That might not stop you anymore.", "beats": []},
+    {"id": "research", "kind": "tool", "targetStart": 0, "mode": "light", "depth": 0, "label": "01 · research", "title": "Research your market", "narration": "Use AI to research your market.", "beats": []},
+    {"id": "build", "kind": "tool", "targetStart": 0, "mode": "light", "depth": 0, "label": "02 · build", "title": "A website. An app.", "narration": "Build a website. Create an app.", "beats": []},
+    {"id": "video", "kind": "tool", "targetStart": 0, "mode": "light", "depth": 0, "label": "03 · video", "title": "Generate videos", "narration": "Generate videos with Grok Imagine.", "beats": [], "brands": ["Grok Imagine"]},
+    {"id": "launch", "kind": "launch", "targetStart": 0, "mode": "light", "depth": 0, "label": "04 · launch", "title": "Ads. Content. Your brand.", "narration": "Create ads. Write content. Launch your brand.", "beats": []},
+    {"id": "agents", "kind": "turn", "targetStart": 0, "mode": "dark", "depth": 0, "label": "— and now", "title": "AI agents", "narration": "And now, AI agents are taking things even further.", "beats": []},
+    {"id": "grokbot", "kind": "agent", "targetStart": 0, "mode": "dark", "depth": 0, "label": "agent · own cloud computer", "title": "Grok Bot", "narration": "Grok Bot can take on tasks using its own cloud computer.", "beats": [], "brands": ["Grok Bot"]},
+    {"id": "dots", "kind": "agent", "targetStart": 0, "mode": "dark", "depth": 0, "label": "agent · keeps working while you're away", "title": "OpenAI's Dots", "narration": "OpenAI's Dots can keep working on projects while you're away.", "beats": [], "brands": ["OpenAI Dots"]},
+    {"id": "goal", "kind": "goal", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Goal → action", "narration": "You give them a goal. They help turn it into action.", "beats": []},
+    {"id": "replace", "kind": "replace", "targetStart": 0, "mode": "dark", "depth": 0, "label": "— of course", "title": "Some tasks. Some jobs.", "narration": "Of course, AI will replace some tasks. And some jobs.", "beats": []},
+    {"id": "owners", "kind": "owners", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "A new generation of business owners", "narration": "But it could also create a new generation of business owners.", "beats": []},
+    {"id": "needed", "kind": "needed", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Once: an entire team. Now: one.", "narration": "People who once needed an entire team just to get started.", "beats": []},
+    {"id": "future", "kind": "big", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "The future isn't only about what AI can do.", "narration": "Because the future isn't only about what AI can do.", "beats": []},
+    {"id": "build2", "kind": "big2", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "It's about what you can build with it.", "narration": "It's about what you can build with it.", "beats": []},
+    {"id": "next", "kind": "next", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "One person…", "narration": "The next big company might start with one person…", "beats": []},
+    {"id": "agents2", "kind": "agents2", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "…and a team of AI agents.", "narration": "And a team of AI agents.", "beats": []},
+    {"id": "why", "kind": "close", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Why not you?", "narration": "Why not you?", "beats": []}
+  ],
+  "sources": [
+    "Guion de Enrico (8 nov 2026). Sin cifras en pantalla.",
+    "Grok Imagine (xAI), Grok Bot y OpenAI 'Dots': nombres tal como los escribió Enrico; no verificados por Claude en esta sesión. Marcas tipografiadas en pills, sin logos."
+  ]
+}

@@ -8,7 +8,7 @@ con revisiones de menos de 5 minutos y comentarios por número.
 ```
 0 Packaging ──► 1 Guion ──► 2 Storyboard ──► 3 Animatic ──► 4 Voz final ──► 5 Render final ──► 6 Publicación
   títulos+hook    JSON+tabla   PNG retícula     MP4 540p       fal ($)          MP4 1080p         publish.md
-  (docs/briefs)                voz scratch      voz scratch
+  (videos/<slug>)                voz scratch      voz scratch
 ```
 
 Lo que los estudios y los mejores creadores hacen igual (ver `05-flujo-de-estudios.md`): **el packaging es la

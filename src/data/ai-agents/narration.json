@@ -1,0 +1,78 @@
+{
+  "hook": {
+    "src": "narration/ai-agents/hook.wav",
+    "durationInSeconds": 3.004083
+  },
+  "idea": {
+    "src": "narration/ai-agents/idea.wav",
+    "durationInSeconds": 3.004083
+  },
+  "stop": {
+    "src": "narration/ai-agents/stop.wav",
+    "durationInSeconds": 1.697979
+  },
+  "research": {
+    "src": "narration/ai-agents/research.wav",
+    "durationInSeconds": 2.037563
+  },
+  "build": {
+    "src": "narration/ai-agents/build.wav",
+    "durationInSeconds": 1.933063
+  },
+  "video": {
+    "src": "narration/ai-agents/video.wav",
+    "durationInSeconds": 2.168167
+  },
+  "launch": {
+    "src": "narration/ai-agents/launch.wav",
+    "durationInSeconds": 3.291438
+  },
+  "agents": {
+    "src": "narration/ai-agents/agents.wav",
+    "durationInSeconds": 3.239188
+  },
+  "grokbot": {
+    "src": "narration/ai-agents/grokbot.wav",
+    "durationInSeconds": 3.422042
+  },
+  "dots": {
+    "src": "narration/ai-agents/dots.wav",
+    "durationInSeconds": 3.578792
+  },
+  "goal": {
+    "src": "narration/ai-agents/goal.wav",
+    "durationInSeconds": 2.821229
+  },
+  "replace": {
+    "src": "narration/ai-agents/replace.wav",
+    "durationInSeconds": 3.657146
+  },
+  "owners": {
+    "src": "narration/ai-agents/owners.wav",
+    "durationInSeconds": 3.239188
+  },
+  "needed": {
+    "src": "narration/ai-agents/needed.wav",
+    "durationInSeconds": 3.343688
+  },
+  "future": {
+    "src": "narration/ai-agents/future.wav",
+    "durationInSeconds": 3.369813
+  },
+  "build2": {
+    "src": "narration/ai-agents/build2.wav",
+    "durationInSeconds": 1.933063
+  },
+  "next": {
+    "src": "narration/ai-agents/next.wav",
+    "durationInSeconds": 2.586125
+  },
+  "agents2": {
+    "src": "narration/ai-agents/agents2.wav",
+    "durationInSeconds": 1.854708
+  },
+  "why": {
+    "src": "narration/ai-agents/why.wav",
+    "durationInSeconds": 1.071021
+  }
+}

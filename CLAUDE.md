@@ -19,11 +19,11 @@ Detalle y razones en `docs/WORKFLOW.md` y `docs/05-flujo-de-estudios.md`.
 | 3 | Animatic | `out/<slug>/animatic-vN.mp4` a 540p con voz scratch, música y SFX | ritmo, cortes, sonido |
 | 4 | Voz final | ElevenLabs vía fal; digo caracteres y costo antes y espero "sí" | — |
 | 5 | Render final | MP4 1080×1920, −14 LUFS / −1 dBTP, + 3 frames extraídos del MP4 | publicar o volver a 2 |
-| 6 | Publicación | `out/<slug>/publish.md`: título, descripción con fuentes, hashtags, frame de portada, registro de hipótesis de hook | — |
+| 6 | Publicación | `videos/<slug>/publish.md`: título, descripción con fuentes, hashtags, frame de portada, registro de hipótesis de hook | — |
 
 No saltar compuertas. Cambio de guion después de 2 reabre 1 (y digo cuántos paneles toca). Cambios de
 texto, color o timing de un panel no requieren voz nueva; cambios de narración sí. Versiones inmutables
-(`-v1`, `-v2`); costos de fal anotados en `out/<slug>/costs.md`.
+(`-v1`, `-v2`); costos de fal y HeyGen anotados en `videos/<slug>/costs.md` (copia en `out/<slug>/`).
 
 ## Reglas (aprendidas, no relitigar)
 
@@ -66,7 +66,8 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
 - `public/` `narration/` · `sfx/` · `music/` · `brand/` · `fonts/` · `storyboard/` (paneles temporales).
-- `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md` + `briefs/<slug>.md` (compuertas 0–1 de cada video).
+- `videos/<slug>/` una carpeta por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6). Índice en `videos/README.md`.
+- `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md`.
 - Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
 - `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar
   Remotion; reglas que ya seguimos: `useCurrentFrame()` en el componente más pequeño (`MusicBed`, `ByScene`), `<Audio>` de `@remotion/media`,

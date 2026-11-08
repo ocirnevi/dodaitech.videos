@@ -3,6 +3,7 @@ import {Manifest, SHEET_W, sheetLayout, StoryboardSheet} from './StoryboardSheet
 import {AiIceberg} from './shorts/AiIceberg';
 import {THREE_NM, ThreeNm, threeNmTimeline} from './shorts/ThreeNm';
 import {AI_MEMORY, AiMemory, aiMemoryTimeline} from './shorts/AiMemory';
+import {AI_AGENTS, AiAgents, aiAgentsTimeline} from './shorts/AiAgents';
 import {SHORT, buildShortTimeline} from './shorts/script';
 import {ChipSupplyChain} from './Video';
 import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
@@ -12,8 +13,10 @@ export const RemotionRoot: React.FC = () => {
   const short = buildShortTimeline();
   const threeNm = threeNmTimeline();
   const aiMemory = aiMemoryTimeline();
+  const aiAgents = aiAgentsTimeline();
   return (
     <>
+    <Composition id="AiAgents" component={AiAgents} durationInFrames={aiAgents.totalFrames} fps={AI_AGENTS.fps} width={AI_AGENTS.width} height={AI_AGENTS.height} />
     <Composition id="AiMemory" component={AiMemory} durationInFrames={aiMemory.totalFrames} fps={AI_MEMORY.fps} width={AI_MEMORY.width} height={AI_MEMORY.height} />
     <Composition id="ThreeNm" component={ThreeNm} durationInFrames={threeNm.totalFrames} fps={THREE_NM.fps} width={THREE_NM.width} height={THREE_NM.height} />
     <Composition id="AiIceberg" component={AiIceberg} durationInFrames={short.totalFrames} fps={SHORT.fps} width={SHORT.width} height={SHORT.height} defaultProps={{flat: false}} />
