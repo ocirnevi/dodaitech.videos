@@ -4,6 +4,7 @@ import scriptJson from '../../script/ai-memory.json';
 import narration from '../data/ai-memory/narration.json';
 import wordsJson from '../data/ai-memory/words.json';
 import beatsJson from '../data/ai-memory/beats.json';
+import {AvatarHost} from '../components/AvatarHost';
 import {Background} from '../components/Background';
 import {ByScene} from '../components/ByScene';
 import {MusicBed} from '../components/MusicBed';
@@ -29,6 +30,9 @@ export const aiMemoryTimeline = TL.build;
 export const AI_MEMORY = {fps: scriptJson.fps, width: scriptJson.width, height: scriptJson.height};
 
 const LAYOUT = {headlineTop: 300, heroCY: 860, captionsBottom: 620};
+// Host HeyGen (WebM alfa 1080×1920): escala y posición del recorte; se ajustan tras ver el clip.
+const HOST = (scriptJson as {host?: {enabled: boolean; clips: {hook?: string; want?: string}}}).host ?? {enabled: false, clips: {}};
+const HOST_LAYOUT = {scale: 0.48, top: 600, pillsTop: 1130};
 const W = 1080;
 const SN = theme.spring.snappy;
 const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
@@ -94,6 +98,15 @@ const Hook: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
     {w: 400, side: 0, t: 'the idea about…'}, {w: 330, side: 1, t: 'her name was…'}, {w: 420, side: 0, t: 'invoice before noon'}, {w: 280, side: 1, t: 'one more thing'},
   ];
   void scene;
+  const host = HOST.clips.hook;
+  if (HOST.enabled && host) {
+    return (
+      <AbsoluteFill>
+        <Headline lines={['What if you remembered', 'every conversation?']} mode="light" frame={frame + 14} fps={fps} size={82} />
+        <AvatarHost src={host} mode="light" scale={HOST_LAYOUT.scale} top={HOST_LAYOUT.top} durationInFrames={scene.durationInFrames} enterLead={12} />
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill>
       <Headline lines={['What if you remembered', 'every conversation?']} mode="light" frame={frame + 14} fps={fps} size={82} />
@@ -512,10 +525,14 @@ const Close: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) =>
   return (
     <AbsoluteFill>
       <Headline lines={['Would you actually', 'want it to?']} mode="light" frame={frame + 12} fps={fps} size={110} />
-      <svg width={W} height={1920} viewBox={`0 0 ${W} 1920`} style={{position: 'absolute', inset: 0}}>
-        <Pendant cx={540} cy={900} r={110} mode="light" listen={1 - k * 0.8} frame={frame} />
-      </svg>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 1090, display: 'flex', justifyContent: 'center', gap: 20, opacity: k}}>
+      {HOST.enabled && HOST.clips.want ? (
+        <AvatarHost src={HOST.clips.want} mode="light" scale={HOST_LAYOUT.scale} top={HOST_LAYOUT.top} durationInFrames={scene.durationInFrames} />
+      ) : (
+        <svg width={W} height={1920} viewBox={`0 0 ${W} 1920`} style={{position: 'absolute', inset: 0}}>
+          <Pendant cx={540} cy={900} r={110} mode="light" listen={1 - k * 0.8} frame={frame} />
+        </svg>
+      )}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1090, display: 'flex', justifyContent: 'center', gap: 20, opacity: HOST.enabled && HOST.clips.want ? 0 : k}}>
         {['yes', 'no'].map((t) => <div key={t} style={{padding: '14px 40px', borderRadius: 999, border: `3px solid ${t === 'yes' ? brand.accent : brand.ink2}`, color: t === 'yes' ? brand.accent : brand.ink2, fontSize: 40, fontWeight: 700}}>{t}</div>)}
       </div>
       <Sfx name="lib/ping-down" at={atWant} volume={0.45} />

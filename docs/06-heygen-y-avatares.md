@@ -4,6 +4,8 @@ Investigación 7 nov 2026. **[OFICIAL]** = páginas de HeyGen/fal/sync/Tavus; **
 
 ## 1. HeyGen MCP y API
 
+> **Actualización 8 nov 2026 (sesión en la nube).** El conector oficial "HeyGen" de claude.ai (OAuth, plan web) sí acepta nuestro audio: `create_asset_upload` → PUT → `complete_asset_upload`, y `create_video_from_avatar` con `audio_asset_id`, `aspect_ratio 9:16`, `resolution 1080p` (Creator) y `output_format webm` (alfa). Un photo avatar de 3 s costó 2 créditos del plan (4 por hook + cierre). Receta aplicada en `src/components/AvatarHost.tsx` (ai-memory). La nota de abajo sobre el MCP "solo texto" era del paquete `heygen-mcp` de PyPI, no del conector.
+
 - **MCP oficial** `heygen-com/heygen-mcp` (MIT, "early development"; [PyPI heygen-mcp](https://pypi.org/project/heygen-mcp/) v0.0.3, abr-2025; [Glama](https://glama.ai/mcp/servers/heygen-com/heygen-mcp)). Tools: `get_remaining_credits`, `get_voices`, `get_avatar_groups`, `get_avatars_in_avatar_group`, `generate_avatar_video` (avatar + **texto** + voz), `get_avatar_video_status`. **Limitación**: solo acepta texto (TTS de HeyGen); no sube nuestro MP3 de ElevenLabs ni pide 9:16/WebM. Sirve para explorar avatares; el pipeline real va por REST desde un script.
 - Instalación en Claude Code (requiere `uv`): `claude mcp add --env HEYGEN_API_KEY=TU_KEY --transport stdio --scope user heygen -- uvx heygen-mcp`
 - **API sin créditos gratis desde feb-2026**: pay-as-you-go, los créditos del plan web no sirven para la API ([HeyGen API plans](https://intercom.help/heygen/en/articles/10060327-new-heygen-api-plans)).

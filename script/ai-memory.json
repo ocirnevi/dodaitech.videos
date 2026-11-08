@@ -14,26 +14,208 @@
   "frame1Text": "What if you remembered every conversation?",
   "armature": "A device that remembers everything for you also remembers everyone around you: perfect memory is not only yours to choose.",
   "scenes": [
-    {"id": "hook", "kind": "hook", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "What if you remembered every conversation?", "narration": "What if you could remember every conversation you've ever had?", "beats": []},
-    {"id": "brain", "kind": "brain", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Not with your brain. With AI.", "narration": "Not with your brain. With AI.", "beats": []},
-    {"id": "meet", "kind": "meet", "targetStart": 0, "mode": "dark", "depth": 0, "label": "AI memory wearables", "title": "The next generation", "narration": "Meet the next generation of AI memory wearables.", "beats": []},
-    {"id": "devices", "kind": "devices", "targetStart": 0, "mode": "dark", "depth": 0, "label": "Omi · Plaud", "title": "Tiny devices", "narration": "Tiny devices like Omi and Plaud that you can wear on your shirt, wrist, or around your neck.", "beats": [], "brands": ["Omi", "Plaud"]},
-    {"id": "how", "kind": "how", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "How they work", "narration": "Here's how they work.", "beats": []},
-    {"id": "pipeline", "kind": "pipeline", "targetStart": 0, "mode": "dark", "depth": 0, "label": "record → text → organize", "title": "", "narration": "They record conversations, turn speech into text, and use AI to organize what was said.", "beats": []},
-    {"id": "boss", "kind": "query", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "What did my boss ask me to do?", "narration": "Forgot what your boss asked you to do?", "beats": []},
-    {"id": "coffee", "kind": "query", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "That idea I had over coffee?", "narration": "Or that brilliant idea you had over coffee?", "beats": []},
-    {"id": "ask", "kind": "ask", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Ask your AI memory", "narration": "Instead of searching through endless notes, you could ask your AI memory.", "beats": []},
-    {"id": "allday", "kind": "allday", "targetStart": 0, "mode": "dark", "depth": 0, "label": "always on", "title": "Throughout your day", "narration": "And some devices are designed to capture conversations throughout your day.", "beats": []},
-    {"id": "incredible", "kind": "big", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Sounds incredible, right?", "narration": "Sounds incredible, right?", "beats": []},
-    {"id": "catch", "kind": "turn", "targetStart": 0, "mode": "dark", "depth": 0, "label": "— but", "title": "Here's the catch.", "narration": "But here's the catch.", "beats": []},
-    {"id": "yours", "kind": "yours", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Your conversations aren't just yours.", "narration": "Your conversations aren't just yours.", "beats": []},
-    {"id": "others", "kind": "others", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "", "narration": "They involve friends, coworkers, and complete strangers.", "beats": []},
-    {"id": "question", "kind": "question", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "A much bigger question", "narration": "And suddenly, a device that helps you remember everything raises a much bigger question.", "beats": []},
-    {"id": "life", "kind": "life", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "If AI could remember your entire life…", "narration": "If AI could remember your entire life…", "beats": []},
-    {"id": "want", "kind": "close", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Would you actually want it to?", "narration": "Would you actually want it to?", "beats": []}
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "What if you remembered every conversation?",
+      "narration": "What if you could remember every conversation you've ever had?",
+      "beats": []
+    },
+    {
+      "id": "brain",
+      "kind": "brain",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Not with your brain. With AI.",
+      "narration": "Not with your brain. With AI.",
+      "beats": []
+    },
+    {
+      "id": "meet",
+      "kind": "meet",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "AI memory wearables",
+      "title": "The next generation",
+      "narration": "Meet the next generation of AI memory wearables.",
+      "beats": []
+    },
+    {
+      "id": "devices",
+      "kind": "devices",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "Omi · Plaud",
+      "title": "Tiny devices",
+      "narration": "Tiny devices like Omi and Plaud that you can wear on your shirt, wrist, or around your neck.",
+      "beats": [],
+      "brands": [
+        "Omi",
+        "Plaud"
+      ]
+    },
+    {
+      "id": "how",
+      "kind": "how",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "How they work",
+      "narration": "Here's how they work.",
+      "beats": []
+    },
+    {
+      "id": "pipeline",
+      "kind": "pipeline",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "record → text → organize",
+      "title": "",
+      "narration": "They record conversations, turn speech into text, and use AI to organize what was said.",
+      "beats": []
+    },
+    {
+      "id": "boss",
+      "kind": "query",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "What did my boss ask me to do?",
+      "narration": "Forgot what your boss asked you to do?",
+      "beats": []
+    },
+    {
+      "id": "coffee",
+      "kind": "query",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "That idea I had over coffee?",
+      "narration": "Or that brilliant idea you had over coffee?",
+      "beats": []
+    },
+    {
+      "id": "ask",
+      "kind": "ask",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Ask your AI memory",
+      "narration": "Instead of searching through endless notes, you could ask your AI memory.",
+      "beats": []
+    },
+    {
+      "id": "allday",
+      "kind": "allday",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "always on",
+      "title": "Throughout your day",
+      "narration": "And some devices are designed to capture conversations throughout your day.",
+      "beats": []
+    },
+    {
+      "id": "incredible",
+      "kind": "big",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Sounds incredible, right?",
+      "narration": "Sounds incredible, right?",
+      "beats": []
+    },
+    {
+      "id": "catch",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "— but",
+      "title": "Here's the catch.",
+      "narration": "But here's the catch.",
+      "beats": []
+    },
+    {
+      "id": "yours",
+      "kind": "yours",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Your conversations aren't just yours.",
+      "narration": "Your conversations aren't just yours.",
+      "beats": []
+    },
+    {
+      "id": "others",
+      "kind": "others",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "They involve friends, coworkers, and complete strangers.",
+      "beats": []
+    },
+    {
+      "id": "question",
+      "kind": "question",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "A much bigger question",
+      "narration": "And suddenly, a device that helps you remember everything raises a much bigger question.",
+      "beats": []
+    },
+    {
+      "id": "life",
+      "kind": "life",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "If AI could remember your entire life…",
+      "narration": "If AI could remember your entire life…",
+      "beats": []
+    },
+    {
+      "id": "want",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Would you actually want it to?",
+      "narration": "Would you actually want it to?",
+      "beats": []
+    }
   ],
   "sources": [
     "Guion de Enrico (8 nov 2026), basado en un reel compartido; sin cifras en pantalla.",
     "Omi (omi.me) y Plaud (plaud.ai): wearables de grabación y notas con IA; nombres tipografiados, sin logos."
-  ]
+  ],
+  "host": {
+    "enabled": true,
+    "clips": {
+      "hook": "avatar/ai-memory/hook.webm",
+      "want": "avatar/ai-memory/want.webm"
+    },
+    "note": "HeyGen photo avatar de Enrico con la voz de Alex; solo hook y cierre (docs/06)"
+  }
 }
