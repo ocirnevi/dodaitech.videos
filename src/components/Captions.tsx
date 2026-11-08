@@ -2,13 +2,14 @@ import {createTikTokStyleCaptions, type Caption} from '@remotion/captions';
 import {useMemo} from 'react';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Word} from '../script';
-import {brand, Mode, palette, theme} from '../theme';
+import {Mode, theme, useBrand, usePalette} from '../theme';
 
 /** Subtítulos karaoke: páginas de 2–4 palabras, palabra activa en naranja. Tiempos de faster-whisper alineados al guion. */
 export const Captions: React.FC<{words: Word[]; mode: Mode; bottom?: number; fontSize?: number; combineMs?: number; maxWidth?: number}> = ({words, mode, bottom = 84, fontSize = 46, combineMs = 1100, maxWidth = 1400}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   const pages = useMemo(() => {
     const captions: Caption[] = words.map((w) => ({text: ` ${w.word}`, startMs: w.start * 1000, endMs: w.end * 1000, timestampMs: w.start * 1000, confidence: null, pageBreakAfter: /[.!?:]$/.test(w.word)}));
     return createTikTokStyleCaptions({captions, combineTokensWithinMilliseconds: combineMs}).pages;

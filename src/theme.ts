@@ -1,4 +1,5 @@
 import {loadFont} from '@remotion/fonts';
+import {createContext, useContext} from 'react';
 import {Easing, staticFile} from 'remotion';
 
 // Bricolage Grotesque (variable: opsz, wdth, wght), la misma fuente del sitio dodaitech.
@@ -30,11 +31,37 @@ export const brand = {
   lineSoot: 'rgba(241,241,237,0.12)',
 } as const;
 
-/** Colores según el modo de la escena. */
-export const palette = (mode: Mode) =>
+/** Tokens de una marca (canal). `brand` (dodaitech) es la forma de referencia; cada canal define los mismos campos. */
+export type Brand = {[K in keyof typeof brand]: string} & {
+  /** nombre, sitio y logo para el outro/wordmark */
+  name: string;
+  site: string;
+  logo: string;
+  /** fuente del canal (ya cargada) */
+  font: string;
+  lineStrongSoot: string;
+};
+
+export const dodaitech: Brand = {
+  ...brand,
+  name: 'dodaitech',
+  site: 'dodaitech.com',
+  logo: 'brand/logo.png',
+  font: '"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif',
+  lineStrongSoot: 'rgba(241,241,237,0.22)',
+};
+
+/** La marca activa se inyecta por contexto; sin provider, dodaitech. Así los componentes sirven a cualquier canal. */
+export const BrandContext = createContext<Brand>(dodaitech);
+export const BrandProvider = BrandContext.Provider;
+export const useBrand = () => useContext(BrandContext);
+
+/** Colores según el modo de la escena, para la marca dada (por defecto dodaitech). */
+export const palette = (mode: Mode, b: Brand = dodaitech) =>
   mode === 'light'
-    ? {bg: brand.canvas, bg2: brand.canvas2, surface: brand.paper, text: brand.ink, text2: brand.ink2, text3: brand.ink3, line: brand.line, lineStrong: brand.lineStrong}
-    : {bg: brand.soot, bg2: brand.soot2, surface: brand.soot3, text: brand.onSoot, text2: brand.onSoot2, text3: brand.onSoot3, line: brand.lineSoot, lineStrong: 'rgba(241,241,237,0.22)'};
+    ? {bg: b.canvas, bg2: b.canvas2, surface: b.paper, text: b.ink, text2: b.ink2, text3: b.ink3, line: b.line, lineStrong: b.lineStrong}
+    : {bg: b.soot, bg2: b.soot2, surface: b.soot3, text: b.onSoot, text2: b.onSoot2, text3: b.onSoot3, line: b.lineSoot, lineStrong: b.lineStrongSoot};
+export const usePalette = (mode: Mode) => palette(mode, useBrand());
 
 export const theme = {
   font: '"Bricolage Grotesque", "Avenir Next", system-ui, sans-serif',

@@ -1,10 +1,11 @@
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {brand, Mode, palette, theme} from '../theme';
+import {Mode, theme, useBrand, usePalette} from '../theme';
 
 export const Chapter: React.FC<{label: string; title: string; subtitle?: string; mode: Mode; top?: number; titleSize?: number; width?: number}> = ({label, title, subtitle, mode, top = 88, titleSize = 124, width = 900}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   const sp = (d: number) => spring({frame: frame - d, fps, config: theme.spring.snappy, durationInFrames: 14});
   const enter = (s: number): React.CSSProperties => ({opacity: s, transform: `translateX(${interpolate(s, [0, 1], [-36, 0])}px)`, transformOrigin: 'left center'});
   return (

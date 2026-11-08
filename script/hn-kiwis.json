@@ -1,0 +1,37 @@
+{
+  "id": "hn-kiwis",
+  "channel": "hellonutrition",
+  "title": "Two kiwis a day",
+  "language": "en-US",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade)",
+  "scratchVoice": "Samantha",
+  "scratchVoiceLinux": "us-mbrola-1",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "frame1Text": "Two kiwis a day",
+  "armature": "Two green kiwis a day are a cheap, evidence-backed fix for constipation: fiber, water and actinidin do the work, no supplements needed.",
+  "host": {"enabled": false, "clips": {}},
+  "scenes": [
+    {"id": "hook", "kind": "hook", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Two kiwis a day", "narration": "Did you know that eating just two kiwis a day could help you poop more regularly?", "beats": []},
+    {"id": "yep", "kind": "yep", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Yep. Two kiwis!", "narration": "Yep. Two kiwis!", "beats": [{"trigger": "Two", "kind": "counter", "value": 2, "label": "green kiwis a day"}]},
+    {"id": "research", "kind": "research", "targetStart": 0, "mode": "light", "depth": 0, "label": "the research", "title": "Less constipation, less discomfort", "narration": "Research suggests that eating two green kiwis daily can help improve constipation and reduce digestive discomfort.", "beats": [], "sources": ["Gearry R. et al., Am J Gastroenterol 2023: 2 green kiwifruit/day for 4 weeks increased complete spontaneous bowel movements in constipation (multicenter RCT)", "Chey S.W. et al., Am J Gastroenterol 2021: kiwifruit vs prunes vs psyllium in chronic constipation"]},
+    {"id": "why", "kind": "why", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Here's why.", "narration": "Here's why.", "beats": []},
+    {"id": "contain", "kind": "contain", "targetStart": 0, "mode": "dark", "depth": 0, "label": "inside a kiwi", "title": "Fiber. Water. Actinidin.", "narration": "Kiwis contain fiber, water, and a natural enzyme called actinidin that helps break down proteins.", "beats": []},
+    {"id": "together", "kind": "together", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Together: healthy digestion", "narration": "Together, these may support healthy digestion.", "beats": []},
+    {"id": "best", "kind": "turn", "targetStart": 0, "mode": "light", "depth": 0, "label": "— and the best part", "title": "The best part?", "narration": "And the best part?", "beats": []},
+    {"id": "noneed", "kind": "noneed", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "No supplements. No routines.", "narration": "You don't need expensive supplements or complicated routines.", "beats": []},
+    {"id": "try", "kind": "try", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Two green kiwis. Daily.", "narration": "Just try adding two green kiwis to your daily diet.", "beats": []},
+    {"id": "small", "kind": "big", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Small changes. Big difference.", "narration": "Small changes can make a big difference.", "beats": []},
+    {"id": "follow", "kind": "close", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Follow Hello Nutrition AI", "narration": "Follow Hello Nutrition AI for more science-backed nutrition tips!", "beats": []}
+  ],
+  "sources": [
+    "Gearry R., Fukudo S., Barbara G. et al. Consumption of 2 Green Kiwifruits Daily Improves Constipation and Abdominal Comfort — Results of an International Multicenter Randomized Controlled Trial. Am J Gastroenterol. 2023;118(6):1058-1068.",
+    "Chey S.W., Chey W.D., Jackson K., Eswaran S. Exploratory Comparative Effectiveness Trial of Green Kiwifruit, Psyllium, or Prunes in US Patients With Chronic Constipation. Am J Gastroenterol. 2021;116(6):1304-1312.",
+    "Actinidin: cysteine protease of Actinidia deliciosa that aids gastric protein digestion (Kaur L. et al., J Agric Food Chem 2010).",
+    "Nota: el guion es de Enrico; las referencias las añadió Claude de memoria y conviene verificarlas antes de publicar."
+  ]
+}

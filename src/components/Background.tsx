@@ -1,10 +1,11 @@
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
-import {brand, Mode, palette} from '../theme';
+import {Mode, useBrand, usePalette} from '../theme';
 
 /** Fondo de marca: papel piedra con retícula de plano técnico (claro) o banda soot con brillo naranja (oscuro). */
 export const Background: React.FC<{mode: Mode}> = ({mode}) => {
   const frame = useCurrentFrame();
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   const drift = frame * 0.12;
   return (
     <AbsoluteFill>

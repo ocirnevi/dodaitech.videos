@@ -1,5 +1,5 @@
 import {OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {brand, type Mode, palette, theme} from '../theme';
+import {type Mode, theme, useBrand, usePalette} from '../theme';
 
 /**
  * Host "mitad y mitad" (formato reel): gráficos en la mitad superior y el clip del avatar (HeyGen, MP4 con su propio fondo)
@@ -10,7 +10,8 @@ import {brand, type Mode, palette, theme} from '../theme';
 export const HostSplit: React.FC<{src: string; mode: Mode; split?: number; focusY?: number; durationInFrames: number; enterLead?: number; label?: string}> = ({src, mode, split = 960, focusY = 0.32, durationInFrames, enterLead = 0, label = 'AI avatar'}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   const s = spring({frame: frame + enterLead, fps, config: theme.spring.snappy, durationInFrames: 16});
   const out = interpolate(frame, [durationInFrames - 5, durationInFrames - 1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const h = 1920 - split;

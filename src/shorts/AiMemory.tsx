@@ -17,7 +17,7 @@ import {PunchIn} from '../components/PunchIn';
 import {Sfx} from '../components/Sfx';
 import {Wordmark} from '../components/Wordmark';
 import {triggerFrameIn, type Word} from '../script';
-import {brand, palette, theme, type Mode} from '../theme';
+import {brand, palette, theme, useBrand, usePalette, type Mode} from '../theme';
 import type {TimedShortScene} from './script';
 import {makeShortTimeline} from './timeline';
 
@@ -47,7 +47,8 @@ const trig = (s: TimedShortScene, word: string, fps: number) => triggerFrameIn(s
 
 /* ---------- Titular de dos líneas (línea 2 en naranja) ---------- */
 export const Headline: React.FC<{lines: string[]; mode: Mode; frame: number; fps: number; size?: number; top?: number; accentLine?: number; delay?: number}> = ({lines, mode, frame, fps, size = 104, top = LAYOUT.headlineTop, accentLine = 1, delay = 0}) => {
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   return (
     <div style={{position: 'absolute', left: 96, right: 96, top}}>
       {lines.map((l, i) => {
@@ -85,7 +86,8 @@ const Pendant: React.FC<{cx: number; cy: number; r?: number; mode: Mode; listen?
 
 /* ---------- Pill tipográfica (marca sin logo) ---------- */
 export const Pill: React.FC<{text: string; x: number; y: number; s: number; mode: Mode; accent?: boolean; size?: number}> = ({text, x, y, s, mode, accent = false, size = 44}) => {
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   return (
     <div style={{position: 'absolute', left: x, top: y, transform: `translate(-50%, -50%) scale(${interpolate(s, [0, 1], [0.7, 1])})`, opacity: s, padding: `${size * 0.35}px ${size * 0.7}px`, borderRadius: 999, background: accent ? brand.accent : p.surface, color: accent ? brand.onSoot : p.text, border: `2px solid ${accent ? brand.accent : p.lineStrong}`, fontSize: size, fontWeight: 700, letterSpacing: '-0.02em', whiteSpace: 'nowrap', boxShadow: mode === 'light' ? '0 14px 36px rgba(27,25,23,0.10)' : '0 14px 36px rgba(0,0,0,0.4)'}}>
       {text}

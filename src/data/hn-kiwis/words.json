@@ -1,0 +1,504 @@
+{
+ "hook": [
+  {
+   "word": "Did",
+   "start": 0.058,
+   "end": 0.186
+  },
+  {
+   "word": "you",
+   "start": 0.232,
+   "end": 0.302
+  },
+  {
+   "word": "know",
+   "start": 0.348,
+   "end": 0.488
+  },
+  {
+   "word": "that",
+   "start": 0.534,
+   "end": 0.662
+  },
+  {
+   "word": "eating",
+   "start": 0.72,
+   "end": 0.964
+  },
+  {
+   "word": "just",
+   "start": 1.01,
+   "end": 1.207
+  },
+  {
+   "word": "two",
+   "start": 1.242,
+   "end": 1.428
+  },
+  {
+   "word": "kiwis",
+   "start": 1.509,
+   "end": 1.846
+  },
+  {
+   "word": "a",
+   "start": 1.892,
+   "end": 1.916
+  },
+  {
+   "word": "day",
+   "start": 1.974,
+   "end": 2.206
+  },
+  {
+   "word": "could",
+   "start": 2.276,
+   "end": 2.426
+  },
+  {
+   "word": "help",
+   "start": 2.473,
+   "end": 2.624
+  },
+  {
+   "word": "you",
+   "start": 2.67,
+   "end": 2.74
+  },
+  {
+   "word": "poop",
+   "start": 2.81,
+   "end": 3.03
+  },
+  {
+   "word": "more",
+   "start": 3.1,
+   "end": 3.274
+  },
+  {
+   "word": "regularly?",
+   "start": 3.32,
+   "end": 3.971
+  }
+ ],
+ "yep": [
+  {
+   "word": "Yep.",
+   "start": 0.035,
+   "end": 0.441
+  },
+  {
+   "word": "Two",
+   "start": 0.755,
+   "end": 0.998
+  },
+  {
+   "word": "kiwis!",
+   "start": 1.115,
+   "end": 1.811
+  }
+ ],
+ "research": [
+  {
+   "word": "Research",
+   "start": 0.023,
+   "end": 0.476
+  },
+  {
+   "word": "suggests",
+   "start": 0.522,
+   "end": 0.998
+  },
+  {
+   "word": "that",
+   "start": 1.057,
+   "end": 1.219
+  },
+  {
+   "word": "eating",
+   "start": 1.277,
+   "end": 1.509
+  },
+  {
+   "word": "two",
+   "start": 1.579,
+   "end": 1.788
+  },
+  {
+   "word": "green",
+   "start": 1.869,
+   "end": 2.113
+  },
+  {
+   "word": "kiwis",
+   "start": 2.183,
+   "end": 2.566
+  },
+  {
+   "word": "daily",
+   "start": 2.624,
+   "end": 2.995
+  },
+  {
+   "word": "can",
+   "start": 3.111,
+   "end": 3.251
+  },
+  {
+   "word": "help",
+   "start": 3.309,
+   "end": 3.483
+  },
+  {
+   "word": "improve",
+   "start": 3.541,
+   "end": 3.889
+  },
+  {
+   "word": "constipation",
+   "start": 3.924,
+   "end": 4.69
+  },
+  {
+   "word": "and",
+   "start": 4.923,
+   "end": 5.143
+  },
+  {
+   "word": "reduce",
+   "start": 5.201,
+   "end": 5.515
+  },
+  {
+   "word": "digestive",
+   "start": 5.561,
+   "end": 6.072
+  },
+  {
+   "word": "discomfort.",
+   "start": 6.095,
+   "end": 6.861
+  }
+ ],
+ "why": [
+  {
+   "word": "Here's",
+   "start": 0.023,
+   "end": 0.29
+  },
+  {
+   "word": "why.",
+   "start": 0.325,
+   "end": 0.743
+  }
+ ],
+ "contain": [
+  {
+   "word": "Kiwis",
+   "start": 0.046,
+   "end": 0.511
+  },
+  {
+   "word": "contain",
+   "start": 0.58,
+   "end": 0.917
+  },
+  {
+   "word": "fiber,",
+   "start": 0.998,
+   "end": 1.451
+  },
+  {
+   "word": "water,",
+   "start": 1.567,
+   "end": 2.02
+  },
+  {
+   "word": "and",
+   "start": 2.078,
+   "end": 2.229
+  },
+  {
+   "word": "a",
+   "start": 2.276,
+   "end": 2.299
+  },
+  {
+   "word": "natural",
+   "start": 2.357,
+   "end": 2.694
+  },
+  {
+   "word": "enzyme",
+   "start": 2.763,
+   "end": 3.251
+  },
+  {
+   "word": "called",
+   "start": 3.286,
+   "end": 3.541
+  },
+  {
+   "word": "actinidin",
+   "start": 3.576,
+   "end": 4.145
+  },
+  {
+   "word": "that",
+   "start": 4.458,
+   "end": 4.621
+  },
+  {
+   "word": "helps",
+   "start": 4.667,
+   "end": 4.911
+  },
+  {
+   "word": "break",
+   "start": 4.969,
+   "end": 5.19
+  },
+  {
+   "word": "down",
+   "start": 5.248,
+   "end": 5.457
+  },
+  {
+   "word": "proteins.",
+   "start": 5.515,
+   "end": 6.246
+  }
+ ],
+ "together": [
+  {
+   "word": "Together,",
+   "start": 0.023,
+   "end": 0.615
+  },
+  {
+   "word": "these",
+   "start": 0.731,
+   "end": 0.975
+  },
+  {
+   "word": "may",
+   "start": 1.022,
+   "end": 1.161
+  },
+  {
+   "word": "support",
+   "start": 1.219,
+   "end": 1.579
+  },
+  {
+   "word": "healthy",
+   "start": 1.637,
+   "end": 1.916
+  },
+  {
+   "word": "digestion.",
+   "start": 1.974,
+   "end": 2.67
+  }
+ ],
+ "best": [
+  {
+   "word": "And",
+   "start": 0.023,
+   "end": 0.163
+  },
+  {
+   "word": "the",
+   "start": 0.197,
+   "end": 0.267
+  },
+  {
+   "word": "best",
+   "start": 0.302,
+   "end": 0.488
+  },
+  {
+   "word": "part?",
+   "start": 0.546,
+   "end": 0.964
+  }
+ ],
+ "noneed": [
+  {
+   "word": "You",
+   "start": 0.035,
+   "end": 0.139
+  },
+  {
+   "word": "don't",
+   "start": 0.186,
+   "end": 0.348
+  },
+  {
+   "word": "need",
+   "start": 0.395,
+   "end": 0.557
+  },
+  {
+   "word": "expensive",
+   "start": 0.592,
+   "end": 1.068
+  },
+  {
+   "word": "supplements",
+   "start": 1.091,
+   "end": 1.579
+  },
+  {
+   "word": "or",
+   "start": 1.625,
+   "end": 1.718
+  },
+  {
+   "word": "complicated",
+   "start": 1.788,
+   "end": 2.334
+  },
+  {
+   "word": "routines.",
+   "start": 2.392,
+   "end": 3.019
+  }
+ ],
+ "try": [
+  {
+   "word": "Just",
+   "start": 0.023,
+   "end": 0.232
+  },
+  {
+   "word": "try",
+   "start": 0.267,
+   "end": 0.441
+  },
+  {
+   "word": "adding",
+   "start": 0.511,
+   "end": 0.755
+  },
+  {
+   "word": "two",
+   "start": 0.813,
+   "end": 0.998
+  },
+  {
+   "word": "green",
+   "start": 1.08,
+   "end": 1.3
+  },
+  {
+   "word": "kiwis",
+   "start": 1.37,
+   "end": 1.753
+  },
+  {
+   "word": "to",
+   "start": 1.8,
+   "end": 1.858
+  },
+  {
+   "word": "your",
+   "start": 1.927,
+   "end": 2.032
+  },
+  {
+   "word": "daily",
+   "start": 2.078,
+   "end": 2.322
+  },
+  {
+   "word": "diet.",
+   "start": 2.368,
+   "end": 2.856
+  }
+ ],
+ "small": [
+  {
+   "word": "Small",
+   "start": 0.023,
+   "end": 0.325
+  },
+  {
+   "word": "changes",
+   "start": 0.383,
+   "end": 0.789
+  },
+  {
+   "word": "can",
+   "start": 0.848,
+   "end": 0.964
+  },
+  {
+   "word": "make",
+   "start": 1.01,
+   "end": 1.161
+  },
+  {
+   "word": "a",
+   "start": 1.184,
+   "end": 1.219
+  },
+  {
+   "word": "big",
+   "start": 1.289,
+   "end": 1.474
+  },
+  {
+   "word": "difference.",
+   "start": 1.544,
+   "end": 2.171
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.023,
+   "end": 0.372
+  },
+  {
+   "word": "Hello",
+   "start": 0.441,
+   "end": 0.697
+  },
+  {
+   "word": "Nutrition",
+   "start": 0.755,
+   "end": 1.184
+  },
+  {
+   "word": "AI",
+   "start": 1.254,
+   "end": 1.625
+  },
+  {
+   "word": "for",
+   "start": 1.695,
+   "end": 1.834
+  },
+  {
+   "word": "more",
+   "start": 1.892,
+   "end": 2.067
+  },
+  {
+   "word": "science-backed",
+   "start": 2.101,
+   "end": 2.717
+  },
+  {
+   "word": "nutrition",
+   "start": 2.763,
+   "end": 3.181
+  },
+  {
+   "word": "tips!",
+   "start": 3.228,
+   "end": 3.646
+  }
+ ]
+}

@@ -19,11 +19,11 @@ Detalle y razones en `docs/WORKFLOW.md` y `docs/05-flujo-de-estudios.md`.
 | 3 | Animatic | `out/<slug>/animatic-vN.mp4` a 540p con voz scratch, música y SFX | ritmo, cortes, sonido |
 | 4 | Voz final | ElevenLabs vía fal; digo caracteres y costo antes y espero "sí" | — |
 | 5 | Render final | MP4 1080×1920, −14 LUFS / −1 dBTP, + 3 frames extraídos del MP4 | publicar o volver a 2 |
-| 6 | Publicación | `videos/<slug>/publish.md`: título, descripción con fuentes, hashtags, frame de portada, registro de hipótesis de hook | — |
+| 6 | Publicación | `videos/<canal>/<slug>/publish.md`: título, descripción con fuentes, hashtags, frame de portada, registro de hipótesis de hook | — |
 
 No saltar compuertas. Cambio de guion después de 2 reabre 1 (y digo cuántos paneles toca). Cambios de
 texto, color o timing de un panel no requieren voz nueva; cambios de narración sí. Versiones inmutables
-(`-v1`, `-v2`); costos de fal y HeyGen anotados en `videos/<slug>/costs.md` (copia en `out/<slug>/`).
+(`-v1`, `-v2`); costos de fal y HeyGen anotados en `videos/<canal>/<slug>/costs.md` (copia en `out/<slug>/`).
 
 ## Reglas (aprendidas, no relitigar)
 
@@ -44,7 +44,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
 - **"Se siente largo" no es la duración (Enrico, 8 nov, ai-agents 59 s).** Videos de 1:30 pueden sentirse bien; lo que cansa es la lista plana
   de escenas del mismo peso con cortes uniformes y giro tardío. Estructura en 3 bloques con energía creciente, variar duración de planos,
-  giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 3 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/FEEDBACK.md`.
+  giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 3 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/<canal>/FEEDBACK.md`.
 - **Simple y refinado antes que complejo (Enrico, 7 nov).** 2D vectorial plano, bien resuelto, por encima de 3D ambicioso que luego
   se ve de juguete. El 3D solo si una forma simple (una pieza, una cámara) lo justifica; nunca props 3D pequeños "de adorno".
   Un solo protagonista visual por escena; iconos de línea mínimos (dos colores) en vez de modelos.
@@ -56,7 +56,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   corte; música a 120 BPM (15 frames por beat a 30 fps), cortes en frases de 2/4 beats, 18–25 dB bajo la voz con
   ducking; master −14 LUFS / −1 dBTP (loudnorm dos pasadas, ver `docs/03-sonido.md`). SFX: Sonniss GDC y Freesound CC0.
 - **Verificar antes de entregar.** Renderizar, extraer frames del MP4, mirarlos, corregir, re-renderizar.
-- **Voz.** Alex (ElevenLabs id `yl2ZDV1MzN4HbQJbMihG`, `multilingual-v2`, `language_code` según el guion).
+- **Voz.** dodaitech: Alex (ElevenLabs id `yl2ZDV1MzN4HbQJbMihG`, `multilingual-v2`, `language_code` según el guion). Hello Nutrition AI: Matilda (premade). La voz va en `voice` del guion.
   Para borradores y storyboards, macOS `say` (gratis). Timestamps por palabra: faster-whisper local alineado al guion.
 - **Datos.** Toda cifra en pantalla lleva fuente en el guion (`sources[]`). Si dos fuentes no coinciden, se usa un rango o se omite.
 - **Git.** No commitear sin que lo pida. No tocar `.env`.
@@ -69,7 +69,11 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
 - `public/` `narration/` · `sfx/` · `music/` · `brand/` · `fonts/` · `storyboard/` (paneles temporales).
-- `videos/<slug>/` una carpeta por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6). Índice en `videos/README.md`; feedback de Enrico por video en `videos/FEEDBACK.md`.
+- `videos/<canal>/<slug>/` una carpeta por canal de YouTube (`dodaitech`, `hellonutrition`) y dentro una por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6).
+  Por canal: `channel.md` (identidad, voz, outro) y `FEEDBACK.md` (lo que sintió Enrico). Índice en `videos/README.md`.
+- `src/brands/` un tema por canal (`hellonutrition.ts`; dodaitech es el default de `src/theme.ts`). La composición del video envuelve sus escenas en
+  `<BrandProvider value={marca}>` y los componentes compartidos leen `useBrand()` / `usePalette(mode)`: color, fuente, logo, nombre y sitio del outro salen de ahí.
+  Hello Nutrition AI: acento verde `#2ECC70`, fuente Onest, voz Matilda, sin cara (ver `videos/hellonutrition/channel.md`).
 - `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md`.
 - Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
 - `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar

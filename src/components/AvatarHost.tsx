@@ -1,5 +1,5 @@
 import {OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
-import {brand, type Mode, palette, theme} from '../theme';
+import {type Mode, theme, useBrand, usePalette} from '../theme';
 
 /**
  * Host breve con avatar (HeyGen, WebM con alfa), según docs/06: solo hook 1–3 s y cierre, nunca a pantalla completa
@@ -11,7 +11,8 @@ import {brand, type Mode, palette, theme} from '../theme';
 export const AvatarHost: React.FC<{src: string; mode: Mode; scale?: number; top?: number; durationInFrames: number; label?: string; personTop?: number; personBottom?: number; enterLead?: number}> = ({src, mode, scale = 0.46, top = 600, durationInFrames, label = 'AI avatar', personTop = 440, personBottom = 1511, enterLead = 0}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = palette(mode);
+  const brand = useBrand();
+  const p = usePalette(mode);
   // enterLead > 0 adelanta la entrada: en el hook el host ya se ve en el frame 1 (regla del hook triple)
   const s = spring({frame: frame + enterLead, fps, config: theme.spring.soft, durationInFrames: 18});
   const out = interpolate(frame, [durationInFrames - 6, durationInFrames - 1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});

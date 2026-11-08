@@ -3,7 +3,7 @@ import {Beat, Word, triggerFrameIn} from '../script';
 
 type BeatScene = {id: string; mode: 'light' | 'dark'; beats: Beat[]; words: Word[]; audioFrames: number};
 export type BeatsLayout = {left?: number; top?: number; width?: number; numberSize?: number; calloutSize?: number; labelSize?: number};
-import {brand, palette, theme} from '../theme';
+import {theme, useBrand, usePalette} from '../theme';
 import {Sfx} from './Sfx';
 
 const fmt = (n: number) => Math.round(n).toLocaleString('en-US');
@@ -11,7 +11,8 @@ const fmt = (n: number) => Math.round(n).toLocaleString('en-US');
 const BeatCard: React.FC<{beat: Beat; scene: BeatScene; durationInFrames: number; layout: Required<BeatsLayout>}> = ({beat, scene, durationInFrames, layout}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = palette(scene.mode);
+  const brand = useBrand();
+  const p = usePalette(scene.mode);
   const enter = spring({frame, fps, config: theme.spring.snappy, durationInFrames: 14});
   const exit = interpolate(frame, [durationInFrames - 7, durationInFrames - 1], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: theme.ease.inOut});
   const opacity = enter * (1 - exit);

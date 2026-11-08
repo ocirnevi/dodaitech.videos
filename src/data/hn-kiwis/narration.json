@@ -1,0 +1,46 @@
+{
+  "hook": {
+    "src": "narration/hn-kiwis/hook.wav",
+    "durationInSeconds": 4.440833
+  },
+  "yep": {
+    "src": "narration/hn-kiwis/yep.wav",
+    "durationInSeconds": 2.455521
+  },
+  "research": {
+    "src": "narration/hn-kiwis/research.wav",
+    "durationInSeconds": 7.549396
+  },
+  "why": {
+    "src": "narration/hn-kiwis/why.wav",
+    "durationInSeconds": 1.28
+  },
+  "contain": {
+    "src": "narration/hn-kiwis/contain.wav",
+    "durationInSeconds": 6.948583
+  },
+  "together": {
+    "src": "narration/hn-kiwis/together.wav",
+    "durationInSeconds": 3.186958
+  },
+  "best": {
+    "src": "narration/hn-kiwis/best.wav",
+    "durationInSeconds": 1.33225
+  },
+  "noneed": {
+    "src": "narration/hn-kiwis/noneed.wav",
+    "durationInSeconds": 3.474292
+  },
+  "try": {
+    "src": "narration/hn-kiwis/try.wav",
+    "durationInSeconds": 3.291438
+  },
+  "small": {
+    "src": "narration/hn-kiwis/small.wav",
+    "durationInSeconds": 2.638375
+  },
+  "follow": {
+    "src": "narration/hn-kiwis/follow.wav",
+    "durationInSeconds": 3.9445
+  }
+}
