@@ -212,10 +212,26 @@
   ],
   "host": {
     "enabled": true,
+    "layout": "split",
+    "split": 960,
     "clips": {
-      "hook": "avatar/ai-memory/hook.webm",
-      "want": "avatar/ai-memory/want.webm"
+      "hook": "avatar/ai-memory/hook-studio.mp4",
+      "want": "avatar/ai-memory/want-studio.mp4"
     },
-    "note": "HeyGen photo avatar de Enrico con la voz de Alex; solo hook y cierre (docs/06)"
+    "heygen": {
+      "group_id": "f9cf7896951d4c5ca24ca40572828a23",
+      "look_id": "4da97a64ac28f83e7174eb3e4502b64a",
+      "look_name": "Enrico · home studio",
+      "engine": "avatar_v",
+      "resolution": "1080p",
+      "aspect_ratio": "9:16",
+      "look_prompt": "The same man from the reference photo, exact same face, short dark hair and light stubble, wearing a dark navy fleece quarter-zip. He is sitting casually in a cozy home studio talking to camera like a YouTuber: medium shot from the chest up, centered, natural relaxed posture, slight friendly smile. Background softly out of focus: a warm wooden shelf with a few books and a small plant, a warm desk lamp glow on the left, neutral beige wall. Soft natural window light from the right, realistic skin, no heavy retouching, shot on a mirrorless camera 35mm, vertical 9:16 framing, photorealistic.",
+      "other_looks": {
+        "desk": "6c9bbada4ab0e43f1633039beddb4350",
+        "sofa": "2ab886bcf03b5653540acd993a375cc9",
+        "dark": "8a0e14a2a96ea45d2a25b1ca3e31316f"
+      }
+    },
+    "note": "Enrico eligió la prueba B (8 nov). Formato mitad y mitad como el reel de referencia; solo hook y cierre (docs/06)."
   }
 }

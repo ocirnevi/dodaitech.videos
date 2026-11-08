@@ -5,6 +5,7 @@ import narration from '../data/ai-memory/narration.json';
 import wordsJson from '../data/ai-memory/words.json';
 import beatsJson from '../data/ai-memory/beats.json';
 import {AvatarHost} from '../components/AvatarHost';
+import {HostSplit} from '../components/HostSplit';
 import {Background} from '../components/Background';
 import {ByScene} from '../components/ByScene';
 import {MusicBed} from '../components/MusicBed';
@@ -31,8 +32,12 @@ export const AI_MEMORY = {fps: scriptJson.fps, width: scriptJson.width, height: 
 
 const LAYOUT = {headlineTop: 300, heroCY: 860, captionsBottom: 620};
 // Host HeyGen (WebM alfa 1080×1920): escala y posición del recorte; se ajustan tras ver el clip.
-const HOST = (scriptJson as {host?: {enabled: boolean; clips: {hook?: string; want?: string}}}).host ?? {enabled: false, clips: {}};
+const HOST = (scriptJson as {host?: {enabled: boolean; layout?: 'card' | 'split'; split?: number; clips: {hook?: string; want?: string}}}).host ?? {enabled: false, clips: {}};
+const HOST_SPLIT = HOST.enabled && HOST.layout === 'split';
+const SPLIT_Y = HOST.split ?? 960;
 const HOST_LAYOUT = {scale: 0.48, top: 600, pillsTop: 1130};
+/** Subtítulos: en las escenas con host mitad y mitad van sobre la línea del corte; en el resto, como siempre. */
+const captionsBottomFor = (sceneId: string) => (HOST_SPLIT && ((sceneId === 'hook' && HOST.clips.hook) || (sceneId === 'want' && HOST.clips.want)) ? 1920 - SPLIT_Y - 60 : LAYOUT.captionsBottom);
 const W = 1080;
 const SN = theme.spring.snappy;
 const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
@@ -99,6 +104,29 @@ const Hook: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) => 
   ];
   void scene;
   const host = HOST.clips.hook;
+  if (HOST_SPLIT && host) {
+    // mitad superior: titular + pocas burbujas, compactos; mitad inferior: Enrico (HeyGen)
+    return (
+      <AbsoluteFill>
+        <Headline lines={['What if you remembered', 'every conversation?']} mode="light" frame={frame + 14} fps={fps} size={76} top={220} />
+        <div style={{position: 'absolute', left: 96, right: 96, top: 470, height: SPLIT_Y - 470 - 80, overflow: 'hidden', maskImage: 'linear-gradient(180deg, transparent, black 14%, black 100%)', WebkitMaskImage: 'linear-gradient(180deg, transparent, black 14%, black 100%)'}}>
+          {bubbles.slice(0, 5).map((b, i) => {
+            const s = useSp(frame, fps, 2 + i * 7, 16);
+            const y = SPLIT_Y - 470 - 80 - 62 - i * 60 + interpolate(s, [0, 1], [60, 0]);
+            return (
+              <div key={i} style={{position: 'absolute', top: y, [b.side ? 'right' : 'left']: 0, width: b.w * 0.9, padding: '12px 22px', borderRadius: 20, borderBottomLeftRadius: b.side ? 20 : 6, borderBottomRightRadius: b.side ? 6 : 20, background: b.side ? brand.accent : p.surface, color: b.side ? brand.onSoot : p.text, border: `1px solid ${p.line}`, fontSize: 28, fontWeight: 500, opacity: s * interpolate(i, [0, 4], [0.6, 1]), transform: `scale(${interpolate(s, [0, 1], [0.9, 1])})`, transformOrigin: b.side ? 'right bottom' : 'left bottom'}}>
+                {b.t}
+              </div>
+            );
+          })}
+        </div>
+        <HostSplit src={host} mode="light" split={SPLIT_Y} durationInFrames={scene.durationInFrames} enterLead={10} />
+        {bubbles.slice(0, 5).map((_, i) => (
+          <Sfx key={i} name="lib/pop" at={2 + i * 7} volume={0.18} />
+        ))}
+      </AbsoluteFill>
+    );
+  }
   if (HOST.enabled && host) {
     return (
       <AbsoluteFill>
@@ -522,6 +550,18 @@ const Close: React.FC<{scene: TimedShortScene; fps: number}> = ({scene, fps}) =>
   const frame = useCurrentFrame();
   const atWant = trig(scene, 'want', fps);
   const k = useSp(frame, fps, atWant - 1, 14);
+  if (HOST_SPLIT && HOST.clips.want) {
+    return (
+      <AbsoluteFill>
+        <Headline lines={['Would you actually', 'want it to?']} mode="light" frame={frame + 12} fps={fps} size={92} top={230} />
+        <svg width={W} height={1920} viewBox={`0 0 ${W} 1920`} style={{position: 'absolute', inset: 0}}>
+          <Pendant cx={540} cy={690} r={72} mode="light" listen={1 - k * 0.8} frame={frame} />
+        </svg>
+        <HostSplit src={HOST.clips.want} mode="light" split={SPLIT_Y} durationInFrames={scene.durationInFrames} enterLead={6} />
+        <Sfx name="lib/ping-down" at={atWant} volume={0.45} />
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill>
       <Headline lines={['Would you actually', 'want it to?']} mode="light" frame={frame + 12} fps={fps} size={110} />
@@ -602,7 +642,7 @@ export const AiMemory: React.FC = () => {
       <Track name="captions">
         {scenes.map((s) => (
           <Sequence key={`cap-${s.id}`} name={`captions:${s.id}`} from={s.from} durationInFrames={s.durationInFrames} layout="none">
-            <Captions words={s.words} mode={s.mode} bottom={LAYOUT.captionsBottom} fontSize={64} combineMs={700} maxWidth={880} />
+            <Captions words={s.words} mode={s.mode} bottom={captionsBottomFor(s.id)} fontSize={64} combineMs={700} maxWidth={880} />
           </Sequence>
         ))}
       </Track>
