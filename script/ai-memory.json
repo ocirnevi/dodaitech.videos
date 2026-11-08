@@ -242,6 +242,53 @@
         "look_prompt_desk": "The same man from the reference photo, exact same face and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip over a black t-shirt. Tech YouTuber studio, vertical 9:16, photorealistic: he sits at a dark wooden desk facing the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. On the desk, off to one side, a podcast microphone on a boom arm and the edge of a monitor with a soft glow. Behind him, out of focus: a dark charcoal wall with a warm orange LED strip under a floating shelf holding a few books, a camera and a small plant, plus a warm practical lamp. Lighting: soft key light from the front, warm orange rim light from the back-left matching the reference photo. Relaxed confident posture, hands on the desk, friendly natural smile, looking at the camera. Realistic skin, no retouching, natural color grading.",
         "look_prompt_wall": "The same man from the reference photo, exact same face and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip over a black t-shirt. Creator studio, vertical 9:16, photorealistic: he stands casually facing the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Behind him, out of focus: a dark wall with vertical wooden acoustic slats lit by a warm orange backlight, a tall green plant on one side, a low shelf with a vintage camera and a couple of books, a small warm lamp. Lighting: soft key light from the front, warm orange rim light from behind matching the reference photo, moody but natural. Relaxed posture with hands loosely together, friendly natural expression, looking at the camera. Realistic skin, no retouching, natural color grading.",
         "note": "8 nov: Enrico pidió otro avatar con su segunda foto (fondo oscuro, luz naranja) y un set de YouTuber. Pruebas C (escritorio) y D (pared) en out/ai-memory/heygen-tests; pendiente su elección."
+      },
+      "tests_8nov": {
+        "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+        "audio": "hook (Alex, asset 26e75c425edb45489f04fa36738d2d5b)",
+        "common": "expresión neutra, boca cerrada, sin sonrisa; medio cuerpo; cámara a ~2 m; 9:16; 1080p",
+        "tests": {
+          "P1": {
+            "look_id": "636d938bc5f44770ae16d62b02884592",
+            "set": "pared de listones, luz naranja, de pie",
+            "engine": "avatar_iv",
+            "expressiveness": "medium",
+            "motion": "subtle natural head movement while talking, small occasional hand gesture, relaxed shoulders",
+            "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip over a black t-shirt. Expression: calm, neutral resting face with lips closed, no smile, relaxed eyebrows, attentive eyes looking straight into the lens, like a pause before speaking. Creator studio, vertical 9:16, photorealistic: he stands facing the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Background out of focus: dark wall with vertical wooden acoustic slats lit by a warm orange backlight, a tall green plant on one side, a low shelf with a vintage camera. Soft key light from the front, warm rim light from behind matching the reference photo. Realistic skin texture, no retouching, natural color grading, documentary feel."
+          },
+          "P2": {
+            "look_id": "329327dec229991ace01dff9237155b2",
+            "set": "escritorio con micrófono, suéter gris, sentado",
+            "engine": "avatar_iv",
+            "expressiveness": "high",
+            "motion": "talks with natural hand gestures like explaining to a friend, leans slightly toward the camera, nods",
+            "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing a plain charcoal gray crew-neck sweater. Expression: calm, neutral resting face with lips closed, no smile, relaxed, direct eye contact with the lens. Tech YouTuber desk, vertical 9:16, photorealistic: he sits at a dark wooden desk slightly turned toward the camera, framed from the chest up to the top of the desk with generous headroom, camera about 1.8 meters away at eye level, 35mm lens. A podcast microphone on a boom arm enters from the right edge, the edge of a monitor glows softly on the left. Background out of focus: charcoal wall, floating shelf with a few books and a small plant, a warm orange LED strip under the shelf, a warm desk lamp. Soft key light from the front-left, warm rim light from behind. Realistic skin texture, no retouching, natural color grading."
+          },
+          "P3": {
+            "look_id": "14add52e815fbbb527a65d6c2f2f5cc3",
+            "set": "sala con luz de día, hoodie gris, sofá",
+            "engine": "avatar_iv",
+            "expressiveness": "low",
+            "motion": "very calm, minimal movement, slow natural blinks, slight head tilt when asking the question",
+            "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing a light heather gray hoodie over a black t-shirt. Expression: calm, neutral resting face with lips closed, no smile, relaxed, eyes on the lens. Casual vlog look, vertical 9:16, photorealistic: he sits on a sofa in a bright living room, leaning slightly forward with forearms on his knees, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Background out of focus: large window with soft daylight, a tall monstera plant, a warm beige wall with a framed black-and-white photo, a wooden side table with a lamp. Natural window light from the side, realistic skin texture, no retouching, natural color grading."
+          },
+          "P4": {
+            "look_id": "e068a3ae23396342453163e3af334b61",
+            "set": "cocina con sol de mañana, camiseta blanca y sobrecamisa",
+            "engine": "avatar_v",
+            "expressiveness": null,
+            "motion": null,
+            "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing a plain white t-shirt under an open dark overshirt. Expression: calm, neutral resting face with lips closed, no smile, relaxed, direct eye contact. Morning talking-to-phone look, vertical 9:16, photorealistic: he stands in a bright modern kitchen leaning lightly against the counter, framed from the waist up with generous headroom, camera about two meters away at eye level, 35mm lens. Background out of focus: light wood cabinets, a window with morning sun, a coffee cup and a small plant on the counter, pale green tiles. Soft natural daylight, realistic skin texture, no retouching, natural color grading, slightly candid feel."
+          },
+          "P5": {
+            "look_id": "cb7b5f13b64bb712bc94ab651c91e554",
+            "set": "loft de ladrillo, cuerpo en tres cuartos sobre un banco",
+            "engine": "avatar_iv",
+            "expressiveness": "medium",
+            "motion": "turns his head naturally toward the camera as he speaks, subtle shoulder movement, one small gesture with the hand",
+            "prompt": "The same man from the reference photo, exact same face, nose, eyes and hairstyle, short dark hair, light stubble, wearing the same plain black fleece quarter-zip. Expression: calm, neutral resting face with lips closed, no smile, relaxed, looking into the lens. Loft studio, vertical 9:16, photorealistic: he sits on a tall wooden stool with his body turned about thirty degrees to the side and his head turned toward the camera, framed from the waist up with generous headroom and space on both sides, camera about two meters away at eye level, 35mm lens. Background out of focus: exposed brick wall, a big industrial window with soft daylight, a bookshelf, a floor lamp with warm light, a bicycle leaning on the wall far behind. Mixed daylight and warm lamp light, realistic skin texture, no retouching, natural color grading."
+          }
+        }
       }
     },
     "note": "Enrico eligió la prueba B (8 nov). Formato mitad y mitad como el reel de referencia; solo hook y cierre (docs/06)."

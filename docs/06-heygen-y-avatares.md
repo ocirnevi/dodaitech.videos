@@ -59,3 +59,8 @@ No verificado: README del repo en GitHub (404), páginas de fal para Hedra/Infin
 - **Clip**: `create_video_from_avatar` con ese look, `audio_asset_id` del clip de Alex, `engine avatar_v`, `9:16`, `1080p`, `mp4` (el fondo del look se queda). ≈ 3 créditos por clip de 3 s. `motion_prompt`/`more_blinking` no aplican sin Digital Twin.
 - **Composición**: `src/components/HostSplit.tsx`, formato reel: gráficos arriba (0–960), avatar abajo (960–1920, `focusY 0.32`), línea naranja en el corte, subtítulos sobre la línea, etiqueta "AI avatar". Solo hook y cierre.
 - Descartados: tarjeta con WebM alfa (se veía recortado, "no natural"), foto original con Avatar IV/V (muy cerca, fondo liso). Otros looks generados y guardados por si acaso: escritorio con micrófono, sofá y ventana, estudio oscuro (ids en el script).
+
+### Aprendido en las pruebas P1–P5 (8 nov)
+- La "sonrisa falsa" viene del **look** (la imagen base), no del motor: pedir en el prompt "calm neutral resting face, lips closed, no smile" produce un punto de partida natural.
+- Con photo avatars, `motion_prompt` y `expressiveness` **sí** funcionan en `avatar_iv`; en `avatar_v` se rechazan si el grupo no tiene Digital Twin (también `more_blinking`).
+- Variar encuadre/fondo cuesta ~1 crédito por look (imagen) y ~3 por clip de 3 s. Prompts completos y ajustes de cada prueba en `script/ai-memory.json → host.heygen.tests_8nov`.
