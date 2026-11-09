@@ -42,6 +42,9 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   cierre en loop; sin "dale like"; ≤120 palabras a 150–175 wpm; but/therefore, nunca "and then". Ver `docs/00-PLAYBOOK.md`.
 - **Ritmo.** Cambio visual cada 1.5–3 s; ningún tramo de 5 s sin corte, zoom, texto o SFX; nada estático >5 s.
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
+- **Sin palabras repetidas en pantalla (Enrico, 9 nov, kiwis).** El titular, la pill o el contador no deben mostrar la misma palabra que el subtítulo karaoke
+  enseña en ese instante ("kiwis" arriba y "dos kiwis" abajo). O el texto fijo dice otra cosa (sinónimo, cifra, icono), o entra antes/después de que el karaoke
+  pase por esa palabra. Revisarlo en la hoja de frames antes de entregar.
 - **"Se siente largo" no es la duración (Enrico, 8 nov, ai-agents 59 s).** Videos de 1:30 pueden sentirse bien; lo que cansa es la lista plana
   de escenas del mismo peso con cortes uniformes y giro tardío. Estructura en 3 bloques con energía creciente, variar duración de planos,
   giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 3 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/<canal>/FEEDBACK.md`.

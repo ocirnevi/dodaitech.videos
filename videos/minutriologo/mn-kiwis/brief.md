@@ -40,3 +40,6 @@ guion traducido y adaptado, voz Matilda en español (≈ $0.17 en total con la p
 - Traducción: "ir al baño con más regularidad" en vez de un "hacer popó" más coloquial. Si quieres el tono más directo, cambia solo el hook (reabre voz de 1 escena, ≈ $0.01).
 - Duración ≈ 49.4 s con Matilda (Laura daba 46.4 s). Para bajar de 45 s, candidatos: fundir "Sí. ¡Dos kiwis!" en el hook o recortar "Los pequeños cambios…".
 - Outro sin dominio: solo logo + "Mi Nutriólogo" (Enrico, 9 nov).
+
+## Feedback de Enrico (v3)
+- "Está excelente." Detalle para el siguiente: a veces la misma palabra sale arriba (titular/pill) y abajo (karaoke) a la vez. Ver `videos/minutriologo/FEEDBACK.md`.
