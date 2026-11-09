@@ -409,7 +409,7 @@ const Inner: React.FC<{build: ReturnType<typeof makeShortTimeline>['build']; mus
 
 /** Construye la composición de kiwis para un canal: devuelve el componente, la timeline y el formato. */
 export const makeKiwis = (cfg: KiwisConfig) => {
-  const TL = makeShortTimeline(cfg.script, cfg.narration, cfg.words, cfg.beats, {gap: 3, outroFrames: 45, snapTolerance: 4});
+  const TL = makeShortTimeline(cfg.script, cfg.narration, cfg.words, cfg.beats, {gap: 2, outroFrames: 45, snapTolerance: 4});
   const Comp: React.FC = () => (
     <BrandProvider value={cfg.brand}>
       <CopyCtx.Provider value={cfg.copy}>

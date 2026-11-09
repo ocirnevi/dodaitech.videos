@@ -1,38 +1,38 @@
 {
   "hook": {
     "src": "narration/hn-lemon/hook.wav",
-    "durationInSeconds": 4.675938
+    "durationInSeconds": 3.85075
   },
   "why": {
     "src": "narration/hn-lemon/why.wav",
-    "durationInSeconds": 1.3845
+    "durationInSeconds": 0.701063
   },
   "foods": {
     "src": "narration/hn-lemon/foods.wav",
-    "durationInSeconds": 3.9445
+    "durationInSeconds": 3.192938
   },
   "but": {
     "src": "narration/hn-lemon/but.wav",
-    "durationInSeconds": 3.604917
+    "durationInSeconds": 2.859063
   },
   "vitc": {
     "src": "narration/hn-lemon/vitc.wav",
-    "durationInSeconds": 2.115938
+    "durationInSeconds": 1.52775
   },
   "absorb": {
     "src": "narration/hn-lemon/absorb.wav",
-    "durationInSeconds": 2.690625
+    "durationInSeconds": 2.471208
   },
   "beans": {
     "src": "narration/hn-lemon/beans.wav",
-    "durationInSeconds": 2.821229
+    "durationInSeconds": 2.195646
   },
   "pair": {
     "src": "narration/hn-lemon/pair.wav",
-    "durationInSeconds": 3.239188
+    "durationInSeconds": 2.568771
   },
   "follow": {
     "src": "narration/hn-lemon/follow.wav",
-    "durationInSeconds": 3.291438
+    "durationInSeconds": 2.904271
   }
 }

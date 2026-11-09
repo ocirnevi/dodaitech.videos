@@ -1,46 +1,46 @@
 {
   "hook": {
     "src": "narration/mn-kiwis/hook.wav",
-    "durationInSeconds": 4.963271
+    "durationInSeconds": 4.594271
   },
   "yep": {
     "src": "narration/mn-kiwis/yep.wav",
-    "durationInSeconds": 2.455521
+    "durationInSeconds": 1.880688
   },
   "research": {
     "src": "narration/mn-kiwis/research.wav",
-    "durationInSeconds": 8.437563
+    "durationInSeconds": 7.322
   },
   "why": {
     "src": "narration/mn-kiwis/why.wav",
-    "durationInSeconds": 1.515104
+    "durationInSeconds": 0.980104
   },
   "contain": {
     "src": "narration/mn-kiwis/contain.wav",
-    "durationInSeconds": 8.542042
+    "durationInSeconds": 7.289854
   },
   "together": {
     "src": "narration/mn-kiwis/together.wav",
-    "durationInSeconds": 3.474292
+    "durationInSeconds": 2.842208
   },
   "best": {
     "src": "narration/mn-kiwis/best.wav",
-    "durationInSeconds": 1.567354
+    "durationInSeconds": 1.268479
   },
   "noneed": {
     "src": "narration/mn-kiwis/noneed.wav",
-    "durationInSeconds": 3.604917
+    "durationInSeconds": 3.313896
   },
   "try": {
     "src": "narration/mn-kiwis/try.wav",
-    "durationInSeconds": 3.657146
+    "durationInSeconds": 2.982396
   },
   "small": {
     "src": "narration/mn-kiwis/small.wav",
-    "durationInSeconds": 3.343688
+    "durationInSeconds": 2.750708
   },
   "follow": {
     "src": "narration/mn-kiwis/follow.wav",
-    "durationInSeconds": 4.780417
+    "durationInSeconds": 4.082021
   }
 }

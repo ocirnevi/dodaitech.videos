@@ -14,7 +14,7 @@ Not medical advice. AI voice. More at hellonutrition.ai
 ## Ajustes al subir
 - Audiencia: not made for kids.
 - Altered or synthetic content: voz sintética; sin persona real recreada.
-- Portada: frame del hook con limón y ficha Fe (`final-v1-frame-0.png` o el de ~t3 con el limón ya dentro).
+- Portada: frame del hook con limón y ficha Fe (`final-v2-frame-0.png` o el de ~t3 con el limón ya dentro).
 - Primeros 3 hashtags: #shorts #nutrition #iron.
 
 ## Hipótesis de hook

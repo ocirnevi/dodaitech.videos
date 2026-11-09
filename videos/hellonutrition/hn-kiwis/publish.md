@@ -14,7 +14,7 @@ Not medical advice. AI voice. More at hellonutrition.ai
 ## Ajustes al subir
 - Audiencia: not made for kids.
 - Altered or synthetic content: voz sintética; sin persona real recreada, así que el aviso es opcional, pero la descripción ya lo declara.
-- Portada: frame del hook con las dos rodajas (`final-v1-frame-0.png`).
+- Portada: frame del hook con las dos rodajas (`final-v2-frame-0.png`).
 - Primeros 3 hashtags: #shorts #nutrition #guthealth.
 
 ## Hipótesis de hook

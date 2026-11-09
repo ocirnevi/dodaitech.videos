@@ -15,7 +15,7 @@ No es consejo médico. Voz generada con IA.
 - Idioma del video: español (México).
 - Audiencia: no es para niños.
 - Contenido alterado o sintético: voz sintética; no se recrea a una persona real, así que el aviso es opcional, pero la descripción ya lo declara.
-- Portada: frame del hook con las dos rodajas (`final-v1-frame-0.png`).
+- Portada: frame del hook con las dos rodajas (`final-v4-frame-0.png`).
 - Primeros 3 hashtags: #shorts #nutricion #saluddigestiva.
 
 ## Hipótesis de hook

@@ -2,503 +2,503 @@
  "hook": [
   {
    "word": "Did",
-   "start": 0.058,
-   "end": 0.186
+   "start": 0.007,
+   "end": 0.125
   },
   {
    "word": "you",
-   "start": 0.232,
-   "end": 0.302
+   "start": 0.168,
+   "end": 0.232
   },
   {
    "word": "know",
-   "start": 0.348,
-   "end": 0.488
+   "start": 0.275,
+   "end": 0.405
   },
   {
    "word": "that",
-   "start": 0.534,
-   "end": 0.662
+   "start": 0.447,
+   "end": 0.566
   },
   {
    "word": "eating",
-   "start": 0.72,
-   "end": 0.964
+   "start": 0.62,
+   "end": 0.845
   },
   {
    "word": "just",
-   "start": 1.01,
-   "end": 1.207
+   "start": 0.888,
+   "end": 1.07
   },
   {
    "word": "two",
-   "start": 1.242,
-   "end": 1.428
+   "start": 1.103,
+   "end": 1.275
   },
   {
    "word": "kiwis",
-   "start": 1.509,
-   "end": 1.846
+   "start": 1.35,
+   "end": 1.662
   },
   {
    "word": "a",
-   "start": 1.892,
-   "end": 1.916
+   "start": 1.705,
+   "end": 1.755
   },
   {
    "word": "day",
-   "start": 1.974,
-   "end": 2.206
+   "start": 1.781,
+   "end": 1.995
   },
   {
    "word": "could",
-   "start": 2.276,
-   "end": 2.426
+   "start": 2.06,
+   "end": 2.199
   },
   {
    "word": "help",
-   "start": 2.473,
-   "end": 2.624
+   "start": 2.243,
+   "end": 2.382
   },
   {
    "word": "you",
-   "start": 2.67,
-   "end": 2.74
+   "start": 2.425,
+   "end": 2.49
   },
   {
    "word": "poop",
-   "start": 2.81,
-   "end": 3.03
+   "start": 2.555,
+   "end": 2.758
   },
   {
    "word": "more",
-   "start": 3.1,
-   "end": 3.274
+   "start": 2.823,
+   "end": 2.984
   },
   {
    "word": "regularly?",
-   "start": 3.32,
-   "end": 3.971
+   "start": 3.027,
+   "end": 3.63
   }
  ],
  "yep": [
   {
    "word": "Yep.",
-   "start": 0.035,
-   "end": 0.441
+   "start": 0.001,
+   "end": 0.377
   },
   {
    "word": "Two",
-   "start": 0.755,
-   "end": 0.998
+   "start": 0.668,
+   "end": 0.893
   },
   {
    "word": "kiwis!",
-   "start": 1.115,
-   "end": 1.811
+   "start": 1.001,
+   "end": 1.646
   }
  ],
  "research": [
   {
    "word": "Research",
-   "start": 0.023,
-   "end": 0.476
+   "start": 0.021,
+   "end": 0.441
   },
   {
    "word": "suggests",
-   "start": 0.522,
-   "end": 0.998
+   "start": 0.483,
+   "end": 0.924
   },
   {
    "word": "that",
-   "start": 1.057,
-   "end": 1.219
+   "start": 0.979,
+   "end": 1.129
   },
   {
    "word": "eating",
-   "start": 1.277,
-   "end": 1.509
+   "start": 1.182,
+   "end": 1.397
   },
   {
    "word": "two",
-   "start": 1.579,
-   "end": 1.788
+   "start": 1.462,
+   "end": 1.656
   },
   {
    "word": "green",
-   "start": 1.869,
-   "end": 2.113
+   "start": 1.731,
+   "end": 1.956
   },
   {
    "word": "kiwis",
-   "start": 2.183,
-   "end": 2.566
+   "start": 2.021,
+   "end": 2.376
   },
   {
    "word": "daily",
-   "start": 2.624,
-   "end": 2.995
+   "start": 2.43,
+   "end": 2.773
   },
   {
    "word": "can",
-   "start": 3.111,
-   "end": 3.251
+   "start": 2.881,
+   "end": 3.01
   },
   {
    "word": "help",
-   "start": 3.309,
-   "end": 3.483
+   "start": 3.064,
+   "end": 3.225
   },
   {
    "word": "improve",
-   "start": 3.541,
-   "end": 3.889
+   "start": 3.279,
+   "end": 3.601
   },
   {
    "word": "constipation",
-   "start": 3.924,
-   "end": 4.69
+   "start": 3.633,
+   "end": 4.343
   },
   {
    "word": "and",
-   "start": 4.923,
-   "end": 5.143
+   "start": 4.558,
+   "end": 4.762
   },
   {
    "word": "reduce",
-   "start": 5.201,
-   "end": 5.515
+   "start": 4.816,
+   "end": 5.106
   },
   {
    "word": "digestive",
-   "start": 5.561,
-   "end": 6.072
+   "start": 5.149,
+   "end": 5.622
   },
   {
    "word": "discomfort.",
-   "start": 6.095,
-   "end": 6.861
+   "start": 5.644,
+   "end": 6.348
   }
  ],
  "why": [
   {
    "word": "Here's",
-   "start": 0.023,
-   "end": 0.29
+   "start": 0.0,
+   "end": 0.24
   },
   {
    "word": "why.",
-   "start": 0.325,
-   "end": 0.743
+   "start": 0.273,
+   "end": 0.66
   }
  ],
  "contain": [
   {
    "word": "Kiwis",
-   "start": 0.046,
-   "end": 0.511
+   "start": 0.0,
+   "end": 0.417
   },
   {
    "word": "contain",
-   "start": 0.58,
-   "end": 0.917
+   "start": 0.481,
+   "end": 0.793
   },
   {
    "word": "fiber,",
-   "start": 0.998,
-   "end": 1.451
+   "start": 0.868,
+   "end": 1.287
   },
   {
    "word": "water,",
-   "start": 1.567,
-   "end": 2.02
+   "start": 1.395,
+   "end": 1.814
   },
   {
    "word": "and",
-   "start": 2.078,
-   "end": 2.229
+   "start": 1.868,
+   "end": 2.008
   },
   {
    "word": "a",
-   "start": 2.276,
-   "end": 2.299
+   "start": 2.051,
+   "end": 2.101
   },
   {
    "word": "natural",
-   "start": 2.357,
-   "end": 2.694
+   "start": 2.126,
+   "end": 2.438
   },
   {
    "word": "enzyme",
-   "start": 2.763,
-   "end": 3.251
+   "start": 2.502,
+   "end": 2.954
   },
   {
    "word": "called",
-   "start": 3.286,
-   "end": 3.541
+   "start": 2.987,
+   "end": 3.223
   },
   {
    "word": "actinidin",
-   "start": 3.576,
-   "end": 4.145
+   "start": 3.255,
+   "end": 3.782
   },
   {
    "word": "that",
-   "start": 4.458,
-   "end": 4.621
+   "start": 4.072,
+   "end": 4.223
   },
   {
    "word": "helps",
-   "start": 4.667,
-   "end": 4.911
+   "start": 4.265,
+   "end": 4.491
   },
   {
    "word": "break",
-   "start": 4.969,
-   "end": 5.19
+   "start": 4.545,
+   "end": 4.749
   },
   {
    "word": "down",
-   "start": 5.248,
-   "end": 5.457
+   "start": 4.803,
+   "end": 4.997
   },
   {
    "word": "proteins.",
-   "start": 5.515,
-   "end": 6.246
+   "start": 5.05,
+   "end": 5.726
   }
  ],
  "together": [
   {
    "word": "Together,",
-   "start": 0.023,
-   "end": 0.615
+   "start": 0.0,
+   "end": 0.545
   },
   {
    "word": "these",
-   "start": 0.731,
-   "end": 0.975
+   "start": 0.652,
+   "end": 0.878
   },
   {
    "word": "may",
-   "start": 1.022,
-   "end": 1.161
+   "start": 0.922,
+   "end": 1.05
   },
   {
    "word": "support",
-   "start": 1.219,
-   "end": 1.579
+   "start": 1.104,
+   "end": 1.437
   },
   {
    "word": "healthy",
-   "start": 1.637,
-   "end": 1.916
+   "start": 1.491,
+   "end": 1.749
   },
   {
    "word": "digestion.",
-   "start": 1.974,
-   "end": 2.67
+   "start": 1.803,
+   "end": 2.448
   }
  ],
  "best": [
   {
    "word": "And",
-   "start": 0.023,
-   "end": 0.163
+   "start": 0.0,
+   "end": 0.109
   },
   {
    "word": "the",
-   "start": 0.197,
-   "end": 0.267
+   "start": 0.14,
+   "end": 0.205
   },
   {
    "word": "best",
-   "start": 0.302,
-   "end": 0.488
+   "start": 0.238,
+   "end": 0.41
   },
   {
    "word": "part?",
-   "start": 0.546,
-   "end": 0.964
+   "start": 0.464,
+   "end": 0.851
   }
  ],
  "noneed": [
   {
    "word": "You",
-   "start": 0.035,
-   "end": 0.139
+   "start": 0.0,
+   "end": 0.094
   },
   {
    "word": "don't",
-   "start": 0.186,
-   "end": 0.348
+   "start": 0.137,
+   "end": 0.287
   },
   {
    "word": "need",
-   "start": 0.395,
-   "end": 0.557
+   "start": 0.331,
+   "end": 0.481
   },
   {
    "word": "expensive",
-   "start": 0.592,
-   "end": 1.068
+   "start": 0.513,
+   "end": 0.954
   },
   {
    "word": "supplements",
-   "start": 1.091,
-   "end": 1.579
+   "start": 0.975,
+   "end": 1.427
   },
   {
    "word": "or",
-   "start": 1.625,
-   "end": 1.718
+   "start": 1.47,
+   "end": 1.556
   },
   {
    "word": "complicated",
-   "start": 1.788,
-   "end": 2.334
+   "start": 1.621,
+   "end": 2.126
   },
   {
    "word": "routines.",
-   "start": 2.392,
-   "end": 3.019
+   "start": 2.18,
+   "end": 2.76
   }
  ],
  "try": [
   {
    "word": "Just",
-   "start": 0.023,
-   "end": 0.232
+   "start": 0.017,
+   "end": 0.211
   },
   {
    "word": "try",
-   "start": 0.267,
-   "end": 0.441
+   "start": 0.243,
+   "end": 0.404
   },
   {
    "word": "adding",
-   "start": 0.511,
-   "end": 0.755
+   "start": 0.469,
+   "end": 0.695
   },
   {
    "word": "two",
-   "start": 0.813,
-   "end": 0.998
+   "start": 0.749,
+   "end": 0.92
   },
   {
    "word": "green",
-   "start": 1.08,
-   "end": 1.3
+   "start": 0.996,
+   "end": 1.2
   },
   {
    "word": "kiwis",
-   "start": 1.37,
-   "end": 1.753
+   "start": 1.264,
+   "end": 1.619
   },
   {
    "word": "to",
-   "start": 1.8,
-   "end": 1.858
+   "start": 1.663,
+   "end": 1.716
   },
   {
    "word": "your",
-   "start": 1.927,
-   "end": 2.032
+   "start": 1.78,
+   "end": 1.877
   },
   {
    "word": "daily",
-   "start": 2.078,
-   "end": 2.322
+   "start": 1.92,
+   "end": 2.146
   },
   {
    "word": "diet.",
-   "start": 2.368,
-   "end": 2.856
+   "start": 2.189,
+   "end": 2.64
   }
  ],
  "small": [
   {
    "word": "Small",
-   "start": 0.023,
-   "end": 0.325
+   "start": 0.021,
+   "end": 0.301
   },
   {
    "word": "changes",
-   "start": 0.383,
-   "end": 0.789
+   "start": 0.355,
+   "end": 0.731
   },
   {
    "word": "can",
-   "start": 0.848,
-   "end": 0.964
+   "start": 0.785,
+   "end": 0.893
   },
   {
    "word": "make",
-   "start": 1.01,
-   "end": 1.161
+   "start": 0.935,
+   "end": 1.075
   },
   {
    "word": "a",
-   "start": 1.184,
-   "end": 1.219
+   "start": 1.096,
+   "end": 1.146
   },
   {
    "word": "big",
-   "start": 1.289,
-   "end": 1.474
+   "start": 1.194,
+   "end": 1.365
   },
   {
    "word": "difference.",
-   "start": 1.544,
-   "end": 2.171
+   "start": 1.43,
+   "end": 2.01
   }
  ],
  "follow": [
   {
    "word": "Follow",
-   "start": 0.023,
-   "end": 0.372
+   "start": 0.021,
+   "end": 0.344
   },
   {
    "word": "Hello",
-   "start": 0.441,
-   "end": 0.697
+   "start": 0.408,
+   "end": 0.645
   },
   {
    "word": "Nutrition",
-   "start": 0.755,
-   "end": 1.184
+   "start": 0.699,
+   "end": 1.096
   },
   {
    "word": "AI",
-   "start": 1.254,
-   "end": 1.625
+   "start": 1.161,
+   "end": 1.505
   },
   {
    "word": "for",
-   "start": 1.695,
-   "end": 1.834
+   "start": 1.569,
+   "end": 1.698
   },
   {
    "word": "more",
-   "start": 1.892,
-   "end": 2.067
+   "start": 1.752,
+   "end": 1.914
   },
   {
    "word": "science-backed",
-   "start": 2.101,
-   "end": 2.717
+   "start": 1.945,
+   "end": 2.516
   },
   {
    "word": "nutrition",
-   "start": 2.763,
-   "end": 3.181
+   "start": 2.558,
+   "end": 2.945
   },
   {
    "word": "tips!",
-   "start": 3.228,
-   "end": 3.646
+   "start": 2.989,
+   "end": 3.376
   }
  ]
 }

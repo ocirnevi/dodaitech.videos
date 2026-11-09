@@ -498,7 +498,7 @@ const Inner: React.FC<{build: ReturnType<typeof makeShortTimeline>['build']; mus
 };
 
 export const makeLemon = (cfg: LemonConfig) => {
-  const TL = makeShortTimeline(cfg.script, cfg.narration, cfg.words, cfg.beats, {gap: 3, outroFrames: 45, snapTolerance: 4});
+  const TL = makeShortTimeline(cfg.script, cfg.narration, cfg.words, cfg.beats, {gap: 2, outroFrames: 45, snapTolerance: 4});
   const Comp: React.FC = () => (
     <BrandProvider value={cfg.brand}>
       <CopyCtx.Provider value={cfg.copy}>

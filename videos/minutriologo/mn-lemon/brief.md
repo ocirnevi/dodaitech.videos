@@ -1,6 +1,6 @@
 # Short · "El limón libera el hierro vegetal" — Mi Nutriólogo — compuertas 0 y 1
 
-**Estado:** v1 final (`out/mn-lemon/final-v1.mp4`, 1080×1920, −14 LUFS), 9 nov 2026.
+**Estado:** v2 final (`out/mn-lemon/final-v2.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. v1 → v2: silencios recortados y voz a tempo 1.08 (`scripts/tighten-narration.py`), GAP 2 frames; sin voz nueva.
 Guion de Enrico palabra por palabra, traducido y adaptado al español (9 escenas, 88 palabras, 33.4 s de voz). Voz Matilda (ElevenLabs multilingual-v2 vía fal MCP).
 Sin host. Puesta en escena compartida entre los dos canales: `src/shorts/Lemon.tsx` (`makeLemon`), textos en `copy` de `src/shorts/MnLemon.tsx`.
 **Regla nueva aplicada (feedback kiwis):** ningún texto fijo repite la palabra que el karaoke muestra en ese instante: titulares parafraseados, alimentos como iconos sin etiqueta, el nombre del canal entra cuando la voz ya lo dijo.

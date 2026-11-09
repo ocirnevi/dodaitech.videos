@@ -19,12 +19,12 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 
 | slug | video | estado |
 |---|---|---|
-| `hn-kiwis` | Two kiwis a day | v1 final, voz Matilda, sin cara |
-| `hn-lemon` | Lemon unlocks plant iron | v1 final, voz Matilda, sin cara |
+| `hn-kiwis` | Two kiwis a day | v2 final (silencios recortados, tempo 1.08), voz Matilda |
+| `hn-lemon` | Lemon unlocks plant iron | v2 final (silencios recortados, tempo 1.08), voz Matilda |
 
 ## minutriologo (`videos/minutriologo/`) — Mi Nutriólogo, marca propia en español (misma identidad visual que Hello Nutrition AI), sin cara
 
 | slug | video | estado |
 |---|---|---|
-| `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v3 final, voz Matilda (Enrico probó Laura y volvió) |
-| `mn-lemon` | El limón libera el hierro vegetal (traducción de `hn-lemon`) | v1 final, voz Matilda |
+| `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v4 final (silencios recortados, tempo 1.08), voz Matilda |
+| `mn-lemon` | El limón libera el hierro vegetal (traducción de `hn-lemon`) | v2 final (silencios recortados, tempo 1.08), voz Matilda |

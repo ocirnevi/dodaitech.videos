@@ -42,12 +42,14 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   cierre en loop; sin "dale like"; ≤120 palabras a 150–175 wpm; but/therefore, nunca "and then". Ver `docs/00-PLAYBOOK.md`.
 - **Ritmo.** Cambio visual cada 1.5–3 s; ningún tramo de 5 s sin corte, zoom, texto o SFX; nada estático >5 s.
   Cada dato hablado cae en el frame exacto de su palabra (`beats[]` + `triggerFrame`). Un solo protagonista por frame.
+- **Sin aire muerto (Enrico, 9 nov, limón).** Los clips de ElevenLabs traen ≈ 0.5–0.7 s de silencio al final: siempre pasar `scripts/tighten-narration.py <slug>`
+  después de la voz (recorta silencios a 0.05/0.12 s, atempo 1.08 sin cambiar tono, reescribe narration/words). GAP entre escenas 2 frames. "Rápido pero que se entienda": tempo ≤ 1.10.
 - **Sin palabras repetidas en pantalla (Enrico, 9 nov, kiwis).** El titular, la pill o el contador no deben mostrar la misma palabra que el subtítulo karaoke
   enseña en ese instante ("kiwis" arriba y "dos kiwis" abajo). O el texto fijo dice otra cosa (sinónimo, cifra, icono), o entra antes/después de que el karaoke
   pase por esa palabra. Revisarlo en la hoja de frames antes de entregar.
 - **"Se siente largo" no es la duración (Enrico, 8 nov, ai-agents 59 s).** Videos de 1:30 pueden sentirse bien; lo que cansa es la lista plana
   de escenas del mismo peso con cortes uniformes y giro tardío. Estructura en 3 bloques con energía creciente, variar duración de planos,
-  giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 3 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/<canal>/FEEDBACK.md`.
+  giro ≤ 15 s, fusionar escenas gemelas. Por defecto GAP 2 frames y ajuste a beat ≤4 frames (`timeline.ts`). Registro de feedback por video en `videos/<canal>/FEEDBACK.md`.
 - **Simple y refinado antes que complejo (Enrico, 7 nov).** 2D vectorial plano, bien resuelto, por encima de 3D ambicioso que luego
   se ve de juguete. El 3D solo si una forma simple (una pieza, una cámara) lo justifica; nunca props 3D pequeños "de adorno".
   Un solo protagonista visual por escena; iconos de línea mínimos (dos colores) en vez de modelos.
@@ -67,7 +69,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 ## Mapa del repo
 
 - `script/<slug>.json` guion: escenas, narración, `beats` (dato + palabra gatillo), `mode` (light/dark), voz, formato.
-- `scripts/` `tts.sh` (say) · `tts-espeak.py` (voz scratch en Linux con tiempos por palabra) · `beats-numpy.py` (BPM sin librosa) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `align.py` (whisper → words.json) ·
+- `scripts/` `tts.sh` (say) · `tts-espeak.py` (voz scratch en Linux con tiempos por palabra) · `beats-numpy.py` (BPM sin librosa) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `tighten-narration.py` (quita silencios, atempo) · `align.py` (whisper → words.json) ·
   `music-fal.mjs` (ElevenLabs Music) · `analyze-music.py` · `sfx-index.mjs` (Sonniss) · `gen-sfx.mjs` (kit sintético) · `storyboard.mjs` (hoja de aprobación).
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
@@ -95,6 +97,7 @@ HF_HUB_OFFLINE=1 ~/.pyenv/versions/3.12.13/bin/python scripts/align.py script/<s
 node scripts/storyboard.mjs --script script/<slug>.json --comp <Comp> --cols 6 --out out/<slug>/storyboard-vN.png
 npx remotion render <Comp> out/<slug>/animatic-vN.mp4 --scale 0.5 --crf 24               # animatic 540p
 node --env-file=<.env de Mia> scripts/tts-fal.mjs --script script/<slug>.json --yes     # voz final Alex (decir costo antes)
+python3 scripts/tighten-narration.py <slug> [--tempo 1.08]                                 # recorta silencios y acelera la voz sin regenerar (siempre tras la voz)
 node --env-file=<.env de Mia> scripts/music-fal.mjs --yes                                # cama musical (≈$0.60 por intento)
 /usr/bin/python3 scripts/analyze-music.py <wav> --bpm 120 --sections 6,14,4,14,5,3        # BPM, downbeat, energía por sección
 node scripts/sfx-index.mjs index <dir> · pick <palabras> · kit                            # librería Sonniss (../dodaitech.assets)

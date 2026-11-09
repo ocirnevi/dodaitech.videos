@@ -1,6 +1,7 @@
 # Short · "Two kiwis a day" — Hello Nutrition AI — compuertas 0 y 1
 
-**Estado:** v1 final (`out/hn-kiwis/final-v1.mp4`, 43.7 s, 1080×1920, −14 LUFS), 8 nov 2026. Primer video del canal.
+**Estado:** v2 final (`out/hn-kiwis/final-v2.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+v1 (43.7 s) → v2: silencios recortados y voz a tempo 1.08 (`scripts/tighten-narration.py`), GAP 2 frames; sin voz nueva (feedback "que se sientan rápidos").
 Guion de Enrico palabra por palabra (11 escenas, ≈ 95 palabras, 40.5 s de voz). Voz Matilda (ElevenLabs multilingual-v2 vía fal MCP, ≈ $0.06).
 Sin host. Identidad del canal desde dev.hellonutrition.ai (`src/brands/hellonutrition.ts`, `videos/hellonutrition/channel.md`).
 Ritmo según el feedback de ai-agents: GAP 3 frames, ajuste a beat ≤ 4, tres bloques (gancho y dato → por qué → qué hacer), "contain"→"together" sin corte.

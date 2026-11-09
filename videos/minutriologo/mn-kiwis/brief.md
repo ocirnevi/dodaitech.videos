@@ -1,6 +1,7 @@
 # Short · "Dos kiwis al día" — Mi Nutriólogo — compuertas 0 y 1
 
-**Estado:** v3 final (`out/mn-kiwis/final-v3.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+**Estado:** v4 final (`out/mn-kiwis/final-v4.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+v3 (49.4 s) → v4: silencios recortados y voz a tempo 1.08 (`scripts/tighten-narration.py`), GAP 2 frames; sin voz nueva.
 v1 (Matilda, outro con minutriologo.ai) → v2 (Laura, outro solo con logo y nombre) → v3: **Matilda** otra vez, outro sin dominio. Enrico escuchó Sarah/Laura/Jessica/Matilda, probó Laura y se quedó con Matilda.
 Es el mismo video que `hn-kiwis` (Hello Nutrition AI) en español: misma puesta en escena (`src/shorts/Kiwis.tsx`), misma marca visual,
 guion traducido y adaptado, voz Matilda en español (≈ $0.17 en total con la prueba de voces y la v2 con Laura). Sin host.

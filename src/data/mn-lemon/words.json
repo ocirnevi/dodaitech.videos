@@ -2,459 +2,459 @@
  "hook": [
   {
    "word": "¿Sabías",
-   "start": 0.035,
-   "end": 0.488
+   "start": 0.032,
+   "end": 0.452
   },
   {
    "word": "que",
-   "start": 0.557,
-   "end": 0.627
+   "start": 0.516,
+   "end": 0.581
   },
   {
    "word": "exprimir",
-   "start": 0.65,
-   "end": 1.103
+   "start": 0.602,
+   "end": 1.021
   },
   {
    "word": "limón",
-   "start": 1.149,
-   "end": 1.463
+   "start": 1.064,
+   "end": 1.355
   },
   {
    "word": "sobre",
-   "start": 1.521,
-   "end": 1.741
+   "start": 1.408,
+   "end": 1.612
   },
   {
    "word": "tu",
-   "start": 1.788,
-   "end": 1.858
+   "start": 1.656,
+   "end": 1.72
   },
   {
    "word": "comida",
-   "start": 1.904,
-   "end": 2.31
+   "start": 1.763,
+   "end": 2.139
   },
   {
    "word": "puede",
-   "start": 2.45,
-   "end": 2.717
+   "start": 2.269,
+   "end": 2.516
   },
   {
    "word": "ayudar",
-   "start": 2.74,
-   "end": 3.065
+   "start": 2.537,
+   "end": 2.838
   },
   {
    "word": "a",
-   "start": 3.111,
-   "end": 3.135
+   "start": 2.881,
+   "end": 2.931
   },
   {
    "word": "tu",
-   "start": 3.193,
-   "end": 3.274
+   "start": 2.956,
+   "end": 3.031
   },
   {
    "word": "cuerpo",
-   "start": 3.32,
-   "end": 3.68
+   "start": 3.074,
+   "end": 3.407
   },
   {
    "word": "a",
-   "start": 3.75,
-   "end": 3.785
+   "start": 3.472,
+   "end": 3.522
   },
   {
    "word": "absorber",
-   "start": 3.808,
-   "end": 4.249
+   "start": 3.526,
+   "end": 3.934
   },
   {
    "word": "más",
-   "start": 4.307,
-   "end": 4.447
+   "start": 3.988,
+   "end": 4.118
   },
   {
    "word": "hierro?",
-   "start": 4.493,
-   "end": 4.957
+   "start": 4.16,
+   "end": 4.59
   }
  ],
  "why": [
   {
    "word": "Te",
-   "start": 0.023,
-   "end": 0.163
+   "start": 0.0,
+   "end": 0.09
   },
   {
    "word": "explico",
-   "start": 0.186,
-   "end": 0.615
+   "start": 0.111,
+   "end": 0.508
   },
   {
    "word": "por",
-   "start": 0.662,
-   "end": 0.778
+   "start": 0.552,
+   "end": 0.659
   },
   {
    "word": "qué.",
-   "start": 0.836,
-   "end": 1.149
+   "start": 0.713,
+   "end": 1.003
   }
  ],
  "foods": [
   {
    "word": "Alimentos",
-   "start": 0.035,
-   "end": 0.673
+   "start": 0.0,
+   "end": 0.579
   },
   {
    "word": "como",
-   "start": 0.731,
-   "end": 0.929
+   "start": 0.633,
+   "end": 0.816
   },
   {
    "word": "los",
-   "start": 0.964,
-   "end": 1.068
+   "start": 0.848,
+   "end": 0.945
   },
   {
    "word": "frijoles,",
-   "start": 1.115,
-   "end": 1.846
+   "start": 0.988,
+   "end": 1.665
   },
   {
    "word": "las",
-   "start": 2.043,
-   "end": 2.194
+   "start": 1.847,
+   "end": 1.987
   },
   {
    "word": "lentejas",
-   "start": 2.276,
-   "end": 2.821
+   "start": 2.063,
+   "end": 2.568
   },
   {
    "word": "y",
-   "start": 2.937,
-   "end": 2.995
+   "start": 2.675,
+   "end": 2.729
   },
   {
    "word": "las",
-   "start": 3.077,
-   "end": 3.193
+   "start": 2.805,
+   "end": 2.912
   },
   {
    "word": "espinacas",
-   "start": 3.262,
-   "end": 3.843
+   "start": 2.976,
+   "end": 3.514
   },
   {
    "word": "contienen",
-   "start": 3.924,
-   "end": 4.319
+   "start": 3.589,
+   "end": 3.955
   },
   {
    "word": "hierro.",
-   "start": 4.354,
-   "end": 4.807
+   "start": 3.987,
+   "end": 4.388
   }
  ],
  "but": [
   {
    "word": "Pero",
-   "start": 0.023,
-   "end": 0.232
+   "start": 0.0,
+   "end": 0.161
   },
   {
    "word": "a",
-   "start": 0.267,
-   "end": 0.29
+   "start": 0.194,
+   "end": 0.244
   },
   {
    "word": "tu",
-   "start": 0.337,
-   "end": 0.43
+   "start": 0.259,
+   "end": 0.345
   },
   {
    "word": "cuerpo",
-   "start": 0.488,
-   "end": 0.824
+   "start": 0.398,
+   "end": 0.709
   },
   {
    "word": "le",
-   "start": 0.871,
-   "end": 0.94
+   "start": 0.753,
+   "end": 0.817
   },
   {
    "word": "cuesta",
-   "start": 0.987,
-   "end": 1.312
+   "start": 0.86,
+   "end": 1.161
   },
   {
    "word": "más",
-   "start": 1.382,
-   "end": 1.602
+   "start": 1.226,
+   "end": 1.43
   },
   {
    "word": "absorber",
-   "start": 1.66,
-   "end": 2.078
+   "start": 1.484,
+   "end": 1.871
   },
   {
    "word": "el",
-   "start": 2.125,
-   "end": 2.183
+   "start": 1.914,
+   "end": 1.968
   },
   {
    "word": "hierro",
-   "start": 2.229,
-   "end": 2.496
+   "start": 2.01,
+   "end": 2.258
   },
   {
    "word": "de",
-   "start": 2.543,
-   "end": 2.589
+   "start": 2.301,
+   "end": 2.351
   },
   {
    "word": "las",
-   "start": 2.635,
-   "end": 2.763
+   "start": 2.386,
+   "end": 2.505
   },
   {
    "word": "plantas.",
-   "start": 2.81,
-   "end": 3.471
+   "start": 2.548,
+   "end": 3.16
   }
  ],
  "vitc": [
   {
    "word": "¡Ahí",
-   "start": 0.046,
-   "end": 0.395
+   "start": 0.0,
+   "end": 0.203
   },
   {
    "word": "es",
-   "start": 0.464,
-   "end": 0.522
+   "start": 0.267,
+   "end": 0.321
   },
   {
    "word": "donde",
-   "start": 0.569,
-   "end": 0.789
+   "start": 0.364,
+   "end": 0.568
   },
   {
    "word": "entra",
-   "start": 0.836,
-   "end": 1.045
+   "start": 0.611,
+   "end": 0.805
   },
   {
    "word": "la",
-   "start": 1.091,
-   "end": 1.138
+   "start": 0.847,
+   "end": 0.897
   },
   {
    "word": "vitamina",
-   "start": 1.184,
-   "end": 1.637
+   "start": 0.933,
+   "end": 1.353
   },
   {
    "word": "C!",
-   "start": 1.695,
-   "end": 2.078
+   "start": 1.407,
+   "end": 1.761
   }
  ],
  "absorb": [
   {
    "word": "Ayuda",
-   "start": 0.046,
-   "end": 0.488
+   "start": 0.0,
+   "end": 0.407
   },
   {
    "word": "a",
-   "start": 0.522,
-   "end": 0.546
+   "start": 0.439,
+   "end": 0.489
   },
   {
    "word": "tu",
-   "start": 0.592,
-   "end": 0.685
+   "start": 0.504,
+   "end": 0.59
   },
   {
    "word": "cuerpo",
-   "start": 0.731,
-   "end": 1.138
+   "start": 0.632,
+   "end": 1.009
   },
   {
    "word": "a",
-   "start": 1.207,
-   "end": 1.242
+   "start": 1.073,
+   "end": 1.123
   },
   {
    "word": "absorber",
-   "start": 1.265,
-   "end": 1.73
+   "start": 1.127,
+   "end": 1.557
   },
   {
    "word": "más",
-   "start": 1.823,
-   "end": 2.067
+   "start": 1.643,
+   "end": 1.869
   },
   {
    "word": "de",
-   "start": 2.101,
-   "end": 2.183
+   "start": 1.901,
+   "end": 1.977
   },
   {
    "word": "ese",
-   "start": 2.241,
-   "end": 2.426
+   "start": 2.031,
+   "end": 2.202
   },
   {
    "word": "hierro.",
-   "start": 2.461,
-   "end": 2.891
+   "start": 2.234,
+   "end": 2.632
   }
  ],
  "beans": [
   {
    "word": "Así",
-   "start": 0.046,
-   "end": 0.29
+   "start": 0.0,
+   "end": 0.211
   },
   {
    "word": "que",
-   "start": 0.348,
-   "end": 0.418
+   "start": 0.264,
+   "end": 0.329
   },
   {
    "word": "la",
-   "start": 0.464,
-   "end": 0.534
+   "start": 0.372,
+   "end": 0.436
   },
   {
    "word": "próxima",
-   "start": 0.592,
-   "end": 0.987
+   "start": 0.49,
+   "end": 0.856
   },
   {
    "word": "vez",
-   "start": 1.033,
-   "end": 1.173
+   "start": 0.898,
+   "end": 1.028
   },
   {
    "word": "que",
-   "start": 1.231,
-   "end": 1.3
+   "start": 1.082,
+   "end": 1.146
   },
   {
    "word": "comas",
-   "start": 1.358,
-   "end": 1.602
+   "start": 1.199,
+   "end": 1.425
   },
   {
    "word": "frijoles,",
-   "start": 1.649,
-   "end": 2.31
+   "start": 1.469,
+   "end": 2.081
   },
   {
    "word": "agrégales",
-   "start": 2.473,
-   "end": 3.007
+   "start": 2.232,
+   "end": 2.726
   },
   {
    "word": "limón.",
-   "start": 3.065,
-   "end": 3.529
+   "start": 2.78,
+   "end": 3.21
   }
  ],
  "pair": [
   {
    "word": "O",
-   "start": 0.023,
-   "end": 0.104
+   "start": 0.0,
+   "end": 0.067
   },
   {
    "word": "acompaña",
-   "start": 0.197,
-   "end": 0.685
+   "start": 0.153,
+   "end": 0.605
   },
   {
    "word": "tus",
-   "start": 0.72,
-   "end": 0.871
+   "start": 0.637,
+   "end": 0.777
   },
   {
    "word": "lentejas",
-   "start": 0.929,
-   "end": 1.382
+   "start": 0.831,
+   "end": 1.25
   },
   {
    "word": "con",
-   "start": 1.451,
-   "end": 1.556
+   "start": 1.314,
+   "end": 1.411
   },
   {
    "word": "pimientos",
-   "start": 1.602,
-   "end": 2.183
+   "start": 1.454,
+   "end": 1.992
   },
   {
    "word": "o",
-   "start": 2.276,
-   "end": 2.345
+   "start": 2.078,
+   "end": 2.142
   },
   {
    "word": "jitomate.",
-   "start": 2.392,
-   "end": 3.146
+   "start": 2.185,
+   "end": 2.881
   }
  ],
  "follow": [
   {
    "word": "¡Sigue",
-   "start": 0.035,
-   "end": 0.546
+   "start": 0.0,
+   "end": 0.334
   },
   {
    "word": "a",
-   "start": 0.569,
-   "end": 0.592
+   "start": 0.355,
+   "end": 0.405
   },
   {
    "word": "Mi",
-   "start": 0.639,
-   "end": 0.708
+   "start": 0.42,
+   "end": 0.484
   },
   {
    "word": "Nutriólogo",
-   "start": 0.755,
-   "end": 1.324
+   "start": 0.527,
+   "end": 1.054
   },
   {
    "word": "para",
-   "start": 1.382,
-   "end": 1.567
+   "start": 1.108,
+   "end": 1.279
   },
   {
    "word": "más",
-   "start": 1.625,
-   "end": 1.788
+   "start": 1.333,
+   "end": 1.484
   },
   {
    "word": "consejos",
-   "start": 1.846,
-   "end": 2.334
+   "start": 1.537,
+   "end": 1.989
   },
   {
    "word": "de",
-   "start": 2.368,
-   "end": 2.415
+   "start": 2.021,
+   "end": 2.071
   },
   {
    "word": "nutrición!",
-   "start": 2.461,
-   "end": 3.135
+   "start": 2.107,
+   "end": 2.731
   }
  ]
 }
