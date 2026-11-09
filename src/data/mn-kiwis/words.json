@@ -3,104 +3,104 @@
   {
    "word": "¿Sabías",
    "start": 0.035,
-   "end": 0.395
+   "end": 0.372
   },
   {
    "word": "que",
-   "start": 0.453,
-   "end": 0.522
+   "start": 0.43,
+   "end": 0.499
   },
   {
    "word": "comer",
-   "start": 0.58,
+   "start": 0.557,
    "end": 0.848
   },
   {
    "word": "solo",
-   "start": 0.906,
-   "end": 1.149
+   "start": 0.929,
+   "end": 1.219
   },
   {
    "word": "dos",
-   "start": 1.196,
-   "end": 1.347
+   "start": 1.277,
+   "end": 1.474
   },
   {
    "word": "kiwis",
-   "start": 1.405,
-   "end": 1.672
+   "start": 1.533,
+   "end": 1.916
   },
   {
    "word": "al",
-   "start": 1.73,
-   "end": 1.8
+   "start": 1.985,
+   "end": 2.078
   },
   {
    "word": "día",
-   "start": 1.846,
-   "end": 2.032
+   "start": 2.101,
+   "end": 2.345
   },
   {
    "word": "podría",
-   "start": 2.09,
-   "end": 2.392
+   "start": 2.415,
+   "end": 2.775
   },
   {
    "word": "ayudarte",
-   "start": 2.415,
-   "end": 2.868
+   "start": 2.798,
+   "end": 3.286
   },
   {
    "word": "a",
-   "start": 2.902,
-   "end": 2.926
+   "start": 3.332,
+   "end": 3.355
   },
   {
    "word": "ir",
-   "start": 2.961,
-   "end": 3.053
+   "start": 3.402,
+   "end": 3.495
   },
   {
    "word": "al",
-   "start": 3.088,
-   "end": 3.146
+   "start": 3.541,
+   "end": 3.599
   },
   {
    "word": "baño",
-   "start": 3.193,
-   "end": 3.425
+   "start": 3.646,
+   "end": 3.924
   },
   {
    "word": "con",
-   "start": 3.471,
-   "end": 3.587
+   "start": 3.959,
+   "end": 4.098
   },
   {
    "word": "más",
-   "start": 3.634,
-   "end": 3.762
+   "start": 4.168,
+   "end": 4.296
   },
   {
    "word": "regularidad?",
-   "start": 3.82,
-   "end": 4.563
+   "start": 4.342,
+   "end": 5.062
   }
  ],
  "yep": [
   {
    "word": "Sí.",
-   "start": 0.023,
-   "end": 0.453
+   "start": 0.035,
+   "end": 0.406
   },
   {
    "word": "¡Dos",
-   "start": 0.813,
-   "end": 1.231
+   "start": 0.824,
+   "end": 1.184
   },
   {
    "word": "kiwis!",
-   "start": 1.347,
-   "end": 1.997
+   "start": 1.242,
+   "end": 1.846
   }
  ],
  "research": [
@@ -112,427 +112,427 @@
   {
    "word": "investigaciones",
    "start": 0.267,
-   "end": 0.998
+   "end": 1.045
   },
   {
    "word": "sugieren",
-   "start": 1.022,
-   "end": 1.428
+   "start": 1.068,
+   "end": 1.474
   },
   {
    "word": "que",
-   "start": 1.486,
-   "end": 1.556
+   "start": 1.521,
+   "end": 1.602
   },
   {
    "word": "comer",
-   "start": 1.614,
-   "end": 1.904
+   "start": 1.649,
+   "end": 1.927
   },
   {
    "word": "dos",
-   "start": 1.974,
-   "end": 2.125
+   "start": 1.985,
+   "end": 2.113
   },
   {
    "word": "kiwis",
-   "start": 2.206,
-   "end": 2.554
+   "start": 2.171,
+   "end": 2.508
   },
   {
    "word": "verdes",
-   "start": 2.612,
-   "end": 2.914
+   "start": 2.566,
+   "end": 2.844
   },
   {
    "word": "al",
-   "start": 2.984,
-   "end": 3.053
+   "start": 2.914,
+   "end": 2.995
   },
   {
    "word": "día",
-   "start": 3.1,
-   "end": 3.355
+   "start": 3.042,
+   "end": 3.274
   },
   {
    "word": "puede",
-   "start": 3.669,
-   "end": 3.913
+   "start": 3.367,
+   "end": 3.657
   },
   {
    "word": "ayudar",
-   "start": 3.936,
-   "end": 4.261
+   "start": 3.68,
+   "end": 4.017
   },
   {
    "word": "a",
-   "start": 4.307,
-   "end": 4.331
+   "start": 4.063,
+   "end": 4.087
   },
   {
    "word": "mejorar",
-   "start": 4.377,
-   "end": 4.783
+   "start": 4.133,
+   "end": 4.54
   },
   {
    "word": "el",
-   "start": 4.818,
-   "end": 4.876
+   "start": 4.586,
+   "end": 4.656
   },
   {
    "word": "estreñimiento",
-   "start": 4.934,
-   "end": 5.677
+   "start": 4.725,
+   "end": 5.515
   },
   {
    "word": "y",
-   "start": 5.909,
-   "end": 5.991
+   "start": 5.596,
+   "end": 5.654
   },
   {
    "word": "reducir",
-   "start": 6.084,
-   "end": 6.478
+   "start": 5.77,
+   "end": 6.165
   },
   {
    "word": "las",
-   "start": 6.513,
-   "end": 6.629
+   "start": 6.2,
+   "end": 6.327
   },
   {
    "word": "molestias",
-   "start": 6.687,
-   "end": 7.117
+   "start": 6.397,
+   "end": 6.873
   },
   {
    "word": "digestivas.",
-   "start": 7.152,
-   "end": 7.964
+   "start": 6.908,
+   "end": 7.802
   }
  ],
  "why": [
   {
    "word": "Te",
    "start": 0.035,
-   "end": 0.139
+   "end": 0.151
   },
   {
    "word": "explico",
-   "start": 0.163,
-   "end": 0.557
+   "start": 0.174,
+   "end": 0.604
   },
   {
    "word": "por",
-   "start": 0.604,
-   "end": 0.72
+   "start": 0.639,
+   "end": 0.766
   },
   {
    "word": "qué.",
-   "start": 0.789,
-   "end": 1.103
+   "start": 0.824,
+   "end": 1.115
   }
  ],
  "contain": [
   {
    "word": "Los",
-   "start": 0.023,
-   "end": 0.209
+   "start": 0.046,
+   "end": 0.221
   },
   {
    "word": "kiwis",
-   "start": 0.279,
-   "end": 0.685
+   "start": 0.29,
+   "end": 0.662
   },
   {
    "word": "contienen",
-   "start": 0.755,
-   "end": 1.161
+   "start": 0.72,
+   "end": 1.115
   },
   {
    "word": "fibra,",
-   "start": 1.219,
-   "end": 1.718
+   "start": 1.173,
+   "end": 1.683
   },
   {
    "word": "agua",
-   "start": 1.858,
-   "end": 2.229
+   "start": 1.846,
+   "end": 2.183
   },
   {
    "word": "y",
-   "start": 2.589,
-   "end": 2.67
+   "start": 2.252,
+   "end": 2.287
   },
   {
    "word": "una",
-   "start": 2.763,
-   "end": 2.891
+   "start": 2.345,
+   "end": 2.461
   },
   {
    "word": "enzima",
-   "start": 2.914,
-   "end": 3.274
+   "start": 2.485,
+   "end": 2.844
   },
   {
    "word": "natural",
-   "start": 3.32,
-   "end": 3.796
+   "start": 2.879,
+   "end": 3.274
   },
   {
    "word": "llamada",
-   "start": 3.866,
-   "end": 4.319
+   "start": 3.32,
+   "end": 3.738
   },
   {
    "word": "actinidina,",
-   "start": 4.4,
-   "end": 5.283
+   "start": 3.82,
+   "end": 4.737
   },
   {
    "word": "que",
-   "start": 5.7,
-   "end": 5.805
+   "start": 4.899,
+   "end": 4.981
   },
   {
    "word": "ayuda",
-   "start": 5.828,
-   "end": 6.13
+   "start": 5.004,
+   "end": 5.306
   },
   {
    "word": "a",
-   "start": 6.153,
-   "end": 6.177
+   "start": 5.341,
+   "end": 5.364
   },
   {
    "word": "descomponer",
-   "start": 6.235,
-   "end": 6.803
+   "start": 5.41,
+   "end": 6.026
   },
   {
    "word": "las",
-   "start": 6.861,
-   "end": 6.966
+   "start": 6.072,
+   "end": 6.188
   },
   {
    "word": "proteínas.",
-   "start": 7.012,
-   "end": 7.837
+   "start": 6.235,
+   "end": 7.036
   }
  ],
  "together": [
   {
    "word": "Juntas,",
-   "start": 0.023,
-   "end": 0.697
+   "start": 0.012,
+   "end": 0.569
   },
   {
    "word": "pueden",
-   "start": 0.836,
-   "end": 1.103
+   "start": 0.65,
+   "end": 0.917
   },
   {
    "word": "favorecer",
-   "start": 1.149,
-   "end": 1.649
+   "start": 0.964,
+   "end": 1.463
   },
   {
    "word": "una",
-   "start": 1.707,
-   "end": 1.834
+   "start": 1.509,
+   "end": 1.625
   },
   {
    "word": "digestión",
-   "start": 1.881,
-   "end": 2.345
+   "start": 1.672,
+   "end": 2.148
   },
   {
    "word": "saludable.",
-   "start": 2.38,
-   "end": 3.1
+   "start": 2.194,
+   "end": 2.891
   }
  ],
  "best": [
   {
    "word": "¿Y",
    "start": 0.023,
-   "end": 0.221
+   "end": 0.197
   },
   {
    "word": "lo",
-   "start": 0.29,
-   "end": 0.36
+   "start": 0.279,
+   "end": 0.348
   },
   {
    "word": "mejor?",
-   "start": 0.418,
-   "end": 0.929
+   "start": 0.395,
+   "end": 0.871
   }
  ],
  "noneed": [
   {
    "word": "No",
-   "start": 0.046,
-   "end": 0.186
+   "start": 0.023,
+   "end": 0.163
   },
   {
    "word": "necesitas",
-   "start": 0.232,
-   "end": 0.72
+   "start": 0.209,
+   "end": 0.673
   },
   {
    "word": "suplementos",
-   "start": 0.743,
-   "end": 1.265
+   "start": 0.697,
+   "end": 1.242
   },
   {
    "word": "caros",
-   "start": 1.335,
-   "end": 1.672
+   "start": 1.3,
+   "end": 1.602
   },
   {
    "word": "ni",
-   "start": 1.753,
-   "end": 1.846
+   "start": 1.66,
+   "end": 1.73
   },
   {
    "word": "rutinas",
-   "start": 1.892,
-   "end": 2.276
+   "start": 1.8,
+   "end": 2.171
   },
   {
    "word": "complicadas.",
-   "start": 2.322,
-   "end": 3.123
+   "start": 2.218,
+   "end": 3.019
   }
  ],
  "try": [
   {
    "word": "Solo",
-   "start": 0.023,
-   "end": 0.337
+   "start": 0.035,
+   "end": 0.325
   },
   {
    "word": "prueba",
-   "start": 0.383,
-   "end": 0.662
+   "start": 0.372,
+   "end": 0.627
   },
   {
    "word": "agregar",
-   "start": 0.685,
-   "end": 1.091
+   "start": 0.65,
+   "end": 1.033
   },
   {
    "word": "dos",
-   "start": 1.161,
-   "end": 1.324
+   "start": 1.08,
+   "end": 1.207
   },
   {
    "word": "kiwis",
-   "start": 1.405,
-   "end": 1.718
+   "start": 1.265,
+   "end": 1.591
   },
   {
    "word": "verdes",
-   "start": 1.765,
-   "end": 2.113
+   "start": 1.649,
+   "end": 1.962
   },
   {
    "word": "a",
-   "start": 2.194,
-   "end": 2.229
+   "start": 2.032,
+   "end": 2.055
   },
   {
    "word": "tu",
-   "start": 2.287,
-   "end": 2.368
+   "start": 2.101,
+   "end": 2.194
   },
   {
    "word": "dieta",
-   "start": 2.415,
-   "end": 2.659
+   "start": 2.252,
+   "end": 2.531
   },
   {
    "word": "diaria.",
-   "start": 2.694,
-   "end": 3.17
+   "start": 2.577,
+   "end": 3.03
   }
  ],
  "small": [
   {
    "word": "Los",
-   "start": 0.046,
-   "end": 0.209
+   "start": 0.035,
+   "end": 0.197
   },
   {
    "word": "pequeños",
-   "start": 0.267,
-   "end": 0.72
+   "start": 0.255,
+   "end": 0.65
   },
   {
    "word": "cambios",
-   "start": 0.778,
-   "end": 1.173
+   "start": 0.708,
+   "end": 1.091
   },
   {
    "word": "pueden",
-   "start": 1.265,
-   "end": 1.544
+   "start": 1.161,
+   "end": 1.405
   },
   {
    "word": "hacer",
-   "start": 1.591,
-   "end": 1.811
+   "start": 1.463,
+   "end": 1.718
   },
   {
    "word": "una",
-   "start": 1.869,
-   "end": 1.997
+   "start": 1.776,
+   "end": 1.904
   },
   {
    "word": "gran",
-   "start": 2.043,
-   "end": 2.218
+   "start": 1.95,
+   "end": 2.125
   },
   {
    "word": "diferencia.",
-   "start": 2.252,
-   "end": 2.972
+   "start": 2.171,
+   "end": 2.914
   }
  ],
  "follow": [
   {
    "word": "¡Sigue",
    "start": 0.035,
-   "end": 0.546
+   "end": 0.499
   },
   {
    "word": "a",
-   "start": 0.604,
-   "end": 0.627
+   "start": 0.522,
+   "end": 0.546
   },
   {
    "word": "Mi",
-   "start": 0.685,
-   "end": 0.766
+   "start": 0.604,
+   "end": 0.685
   },
   {
    "word": "Nutriólogo",
-   "start": 0.801,
-   "end": 1.405
+   "start": 0.731,
+   "end": 1.393
   },
   {
    "word": "para",
-   "start": 1.463,
-   "end": 1.66
+   "start": 1.44,
+   "end": 1.614
   },
   {
    "word": "más",
-   "start": 1.718,
-   "end": 1.892
+   "start": 1.672,
+   "end": 1.846
   },
   {
    "word": "consejos",
-   "start": 1.95,
+   "start": 1.904,
    "end": 2.426
   },
   {
@@ -543,22 +543,22 @@
   {
    "word": "nutrición",
    "start": 2.543,
-   "end": 3.053
+   "end": 3.111
   },
   {
    "word": "con",
-   "start": 3.111,
-   "end": 3.228
+   "start": 3.17,
+   "end": 3.286
   },
   {
    "word": "respaldo",
-   "start": 3.286,
-   "end": 3.727
+   "start": 3.355,
+   "end": 3.796
   },
   {
    "word": "científico!",
-   "start": 3.773,
-   "end": 4.505
+   "start": 3.843,
+   "end": 4.656
   }
  ]
 }

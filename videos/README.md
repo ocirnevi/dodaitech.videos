@@ -21,8 +21,8 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 |---|---|---|
 | `hn-kiwis` | Two kiwis a day | v1 final, voz Matilda, sin cara |
 
-## minutriologo (`videos/minutriologo/`) — Mi Nutriólogo, el mismo canal en español, misma identidad, sin cara
+## minutriologo (`videos/minutriologo/`) — Mi Nutriólogo, marca propia en español (misma identidad visual que Hello Nutrition AI, voz distinta), sin cara
 
 | slug | video | estado |
 |---|---|---|
-| `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v1 final, voz Matilda en español |
+| `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v2 final, voz Laura (elegida por Enrico) |

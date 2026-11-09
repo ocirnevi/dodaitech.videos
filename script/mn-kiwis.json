@@ -3,8 +3,8 @@
   "channel": "minutriologo",
   "title": "Dos kiwis al día",
   "language": "es-MX",
-  "voice": "Matilda",
-  "voiceName": "Matilda - warm, friendly (ElevenLabs premade, multilingual)",
+  "voice": "Laura",
+  "voiceName": "Laura - young, upbeat (ElevenLabs premade, multilingual); elegida por Enrico sobre Sarah/Jessica/Matilda (9 nov)",
   "scratchVoice": "Paulina",
   "scratchVoiceLinux": "es-mx",
   "fps": 30,
@@ -14,19 +14,143 @@
   "beatsFile": "music/muted-pulse.beats.json",
   "frame1Text": "Dos kiwis al día",
   "armature": "Dos kiwis verdes al día son un remedio barato y con evidencia para el estreñimiento: fibra, agua y actinidina hacen el trabajo; no hacen falta suplementos.",
-  "host": {"enabled": false, "clips": {}},
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
   "scenes": [
-    {"id": "hook", "kind": "hook", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Dos kiwis al día", "narration": "¿Sabías que comer solo dos kiwis al día podría ayudarte a ir al baño con más regularidad?", "beats": []},
-    {"id": "yep", "kind": "yep", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Sí. ¡Dos kiwis!", "narration": "Sí. ¡Dos kiwis!", "beats": [{"trigger": "Dos", "kind": "counter", "value": 2, "label": "kiwis verdes al día"}]},
-    {"id": "research", "kind": "research", "targetStart": 0, "mode": "light", "depth": 0, "label": "la evidencia", "title": "Menos estreñimiento, menos molestias", "narration": "Las investigaciones sugieren que comer dos kiwis verdes al día puede ayudar a mejorar el estreñimiento y reducir las molestias digestivas.", "beats": [], "sources": ["Gearry R. et al., Am J Gastroenterol 2023: 2 kiwis verdes al día durante 4 semanas aumentaron las evacuaciones espontáneas completas en estreñimiento (ensayo multicéntrico aleatorizado)", "Chey S.W. et al., Am J Gastroenterol 2021: kiwi vs ciruela pasa vs psyllium en estreñimiento crónico"]},
-    {"id": "why", "kind": "why", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Te explico por qué.", "narration": "Te explico por qué.", "beats": []},
-    {"id": "contain", "kind": "contain", "targetStart": 0, "mode": "dark", "depth": 0, "label": "dentro de un kiwi", "title": "Fibra. Agua. Actinidina.", "narration": "Los kiwis contienen fibra, agua y una enzima natural llamada actinidina, que ayuda a descomponer las proteínas.", "beats": []},
-    {"id": "together", "kind": "together", "targetStart": 0, "mode": "dark", "depth": 0, "label": "", "title": "Juntas: digestión saludable", "narration": "Juntas, pueden favorecer una digestión saludable.", "beats": []},
-    {"id": "best", "kind": "turn", "targetStart": 0, "mode": "light", "depth": 0, "label": "— y lo mejor", "title": "¿Y lo mejor?", "narration": "¿Y lo mejor?", "beats": []},
-    {"id": "noneed", "kind": "noneed", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Sin suplementos. Sin rutinas.", "narration": "No necesitas suplementos caros ni rutinas complicadas.", "beats": []},
-    {"id": "try", "kind": "try", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Dos kiwis verdes. Cada día.", "narration": "Solo prueba agregar dos kiwis verdes a tu dieta diaria.", "beats": []},
-    {"id": "small", "kind": "big", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Pequeños cambios. Gran diferencia.", "narration": "Los pequeños cambios pueden hacer una gran diferencia.", "beats": []},
-    {"id": "follow", "kind": "close", "targetStart": 0, "mode": "light", "depth": 0, "label": "", "title": "Sigue a Mi Nutriólogo", "narration": "¡Sigue a Mi Nutriólogo para más consejos de nutrición con respaldo científico!", "beats": []}
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Dos kiwis al día",
+      "narration": "¿Sabías que comer solo dos kiwis al día podría ayudarte a ir al baño con más regularidad?",
+      "beats": []
+    },
+    {
+      "id": "yep",
+      "kind": "yep",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Sí. ¡Dos kiwis!",
+      "narration": "Sí. ¡Dos kiwis!",
+      "beats": [
+        {
+          "trigger": "Dos",
+          "kind": "counter",
+          "value": 2,
+          "label": "kiwis verdes al día"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "kind": "research",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "la evidencia",
+      "title": "Menos estreñimiento, menos molestias",
+      "narration": "Las investigaciones sugieren que comer dos kiwis verdes al día puede ayudar a mejorar el estreñimiento y reducir las molestias digestivas.",
+      "beats": [],
+      "sources": [
+        "Gearry R. et al., Am J Gastroenterol 2023: 2 kiwis verdes al día durante 4 semanas aumentaron las evacuaciones espontáneas completas en estreñimiento (ensayo multicéntrico aleatorizado)",
+        "Chey S.W. et al., Am J Gastroenterol 2021: kiwi vs ciruela pasa vs psyllium en estreñimiento crónico"
+      ]
+    },
+    {
+      "id": "why",
+      "kind": "why",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Te explico por qué.",
+      "narration": "Te explico por qué.",
+      "beats": []
+    },
+    {
+      "id": "contain",
+      "kind": "contain",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "dentro de un kiwi",
+      "title": "Fibra. Agua. Actinidina.",
+      "narration": "Los kiwis contienen fibra, agua y una enzima natural llamada actinidina, que ayuda a descomponer las proteínas.",
+      "beats": []
+    },
+    {
+      "id": "together",
+      "kind": "together",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Juntas: digestión saludable",
+      "narration": "Juntas, pueden favorecer una digestión saludable.",
+      "beats": []
+    },
+    {
+      "id": "best",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— y lo mejor",
+      "title": "¿Y lo mejor?",
+      "narration": "¿Y lo mejor?",
+      "beats": []
+    },
+    {
+      "id": "noneed",
+      "kind": "noneed",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Sin suplementos. Sin rutinas.",
+      "narration": "No necesitas suplementos caros ni rutinas complicadas.",
+      "beats": []
+    },
+    {
+      "id": "try",
+      "kind": "try",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Dos kiwis verdes. Cada día.",
+      "narration": "Solo prueba agregar dos kiwis verdes a tu dieta diaria.",
+      "beats": []
+    },
+    {
+      "id": "small",
+      "kind": "big",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Pequeños cambios. Gran diferencia.",
+      "narration": "Los pequeños cambios pueden hacer una gran diferencia.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Sigue a Mi Nutriólogo",
+      "narration": "¡Sigue a Mi Nutriólogo para más consejos de nutrición con respaldo científico!",
+      "beats": []
+    }
   ],
   "sources": [
     "Gearry R., Fukudo S., Barbara G. et al. Consumption of 2 Green Kiwifruits Daily Improves Constipation and Abdominal Comfort — Results of an International Multicenter Randomized Controlled Trial. Am J Gastroenterol. 2023;118(6):1058-1068.",

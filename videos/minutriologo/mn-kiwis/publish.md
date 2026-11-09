@@ -7,7 +7,7 @@
 Dos kiwis verdes al día pueden ayudar con el estreñimiento: fibra, agua y una enzima llamada actinidina hacen el trabajo. Sin suplementos.
 
 Estudio: Gearry et al., Am J Gastroenterol 2023 (ensayo aleatorizado, 2 kiwis verdes al día durante 4 semanas).
-No es consejo médico. Voz generada con IA. Más en minutriologo.ai
+No es consejo médico. Voz generada con IA.
 
 #shorts #nutricion #saluddigestiva #estreñimiento #kiwi #fibra #saludintestinal #digestion #nutriologo #minutriologo
 

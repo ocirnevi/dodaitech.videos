@@ -1,8 +1,9 @@
 # Short · "Dos kiwis al día" — Mi Nutriólogo — compuertas 0 y 1
 
-**Estado:** v1 final (`out/mn-kiwis/final-v1.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+**Estado:** v2 final (`out/mn-kiwis/final-v2.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+v1 (Matilda, outro con minutriologo.ai) → v2: voz **Laura** elegida por Enrico tras escuchar Sarah/Laura/Jessica/Matilda; outro solo con logo y nombre.
 Es el mismo video que `hn-kiwis` (Hello Nutrition AI) en español: misma puesta en escena (`src/shorts/Kiwis.tsx`), misma marca visual,
-guion traducido y adaptado, voz Matilda en español (≈ $0.07). Sin host.
+guion traducido y adaptado, voz Laura en español (≈ $0.17 con la v1 y la prueba de voces). Sin host.
 
 ## Compuerta 0 · Packaging
 
@@ -31,11 +32,11 @@ guion traducido y adaptado, voz Matilda en español (≈ $0.07). Sin host.
 | noneed | No necesitas suplementos caros ni rutinas complicadas. | Pills tachadas en su palabra. |
 | try | Solo prueba agregar dos kiwis verdes a tu dieta diaria. | Dos rodajas + pill "cada día". |
 | small | Los pequeños cambios pueden hacer una gran diferencia. | "Pequeños cambios." / "Gran diferencia." en verde. |
-| follow | ¡Sigue a Mi Nutriólogo para más consejos de nutrición con respaldo científico! | Logo + "Mi Nutriólogo" + "nutrición con respaldo científico". Outro con minutriologo.ai. |
+| follow | ¡Sigue a Mi Nutriólogo para más consejos de nutrición con respaldo científico! | Logo + "Mi Nutriólogo" + "nutrición con respaldo científico". Outro solo con logo y nombre. |
 
 **Fuentes:** las mismas de `hn-kiwis` (Gearry 2023, Chey 2021, Kaur 2010). **Puestas de memoria; verificar antes de publicar.**
 
 ## Qué revisar
 - Traducción: "ir al baño con más regularidad" en vez de un "hacer popó" más coloquial. Si quieres el tono más directo, cambia solo el hook (reabre voz de 1 escena, ≈ $0.01).
-- Duración ≈ 49 s: el español es más largo que el inglés con el mismo guion. Para bajar a 45 s, candidatos: fundir "Sí. ¡Dos kiwis!" en el hook o recortar "Los pequeños cambios…".
-- Dominio del outro: minutriologo.ai (confirmado por Enrico).
+- Duración: v1 con Matilda 49.4 s; v2 con Laura ≈ 46 s (habla más rápido). Para bajar de 45 s, candidatos: fundir "Sí. ¡Dos kiwis!" en el hook o recortar "Los pequeños cambios…".
+- Outro sin dominio: solo logo + "Mi Nutriólogo" (Enrico, 9 nov).

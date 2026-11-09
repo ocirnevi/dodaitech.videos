@@ -8,6 +8,6 @@ import {hellonutrition} from './hellonutrition';
 export const minutriologo: Brand = {
   ...hellonutrition,
   name: 'Mi Nutriólogo',
-  site: 'minutriologo.ai',
+  site: '', // Enrico (9 nov): solo "Mi Nutriólogo", sin dominio en el outro
   logo: 'brand/minutriologo/logo.svg',
 };
