@@ -1,0 +1,134 @@
+{
+  "id": "mn-lemon",
+  "channel": "minutriologo",
+  "title": "El limón libera el hierro vegetal",
+  "language": "es-MX",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade, multilingual)",
+  "scratchVoice": "Paulina",
+  "scratchVoiceLinux": "es-mx",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
+  "frame1Text": "Agrega cítrico. Aprovecha mejor tus frijoles.",
+  "armature": "El hierro vegetal se absorbe mal, pero la vitamina C lo libera: un chorrito de limón (o pimientos y jitomate) con frijoles y lentejas significa más hierro para tu cuerpo.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Agrega cítrico. Aprovecha mejor tus frijoles.",
+      "narration": "¿Sabías que exprimir limón sobre tu comida puede ayudar a tu cuerpo a absorber más hierro?",
+      "beats": []
+    },
+    {
+      "id": "why",
+      "kind": "why",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Fe · 26",
+      "narration": "Te explico por qué.",
+      "beats": []
+    },
+    {
+      "id": "foods",
+      "kind": "foods",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "dónde está el hierro",
+      "title": "Fuentes vegetales",
+      "narration": "Alimentos como los frijoles, las lentejas y las espinacas contienen hierro.",
+      "beats": []
+    },
+    {
+      "id": "but",
+      "kind": "but",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Bloqueado.",
+      "narration": "Pero a tu cuerpo le cuesta más absorber el hierro de las plantas.",
+      "beats": [],
+      "sources": [
+        "Hurrell & Egli, Am J Clin Nutr 2010: el hierro no hemo (vegetal) se absorbe peor que el hemo"
+      ]
+    },
+    {
+      "id": "vitc",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— la solución",
+      "title": "La llave: un limón.",
+      "narration": "¡Ahí es donde entra la vitamina C!",
+      "beats": []
+    },
+    {
+      "id": "absorb",
+      "kind": "absorb",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Desbloqueado.",
+      "narration": "Ayuda a tu cuerpo a absorber más de ese hierro.",
+      "beats": [],
+      "sources": [
+        "Hallberg et al. 1989; Teucher et al. 2004: el ácido ascórbico aumenta la absorción de hierro no hemo"
+      ]
+    },
+    {
+      "id": "beans",
+      "kind": "beans",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Pruébalo hoy:",
+      "narration": "Así que la próxima vez que comas frijoles, agrégales limón.",
+      "beats": []
+    },
+    {
+      "id": "pair",
+      "kind": "pair",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "¿Sin limón? Prueba:",
+      "narration": "O acompaña tus lentejas con pimientos o jitomate.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Sigue a Mi Nutriólogo",
+      "narration": "¡Sigue a Mi Nutriólogo para más consejos de nutrición!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Hallberg L., Brune M., Rossander L. The role of vitamin C in iron absorption. Int J Vitam Nutr Res Suppl. 1989;30:103-108 (ascorbic acid increases non-heme iron absorption dose-dependently).",
+    "Teucher B., Olivares M., Cori H. Enhancers of iron absorption: ascorbic acid and other organic acids. Int J Vitam Nutr Res. 2004;74(6):403-419.",
+    "Hurrell R., Egli I. Iron bioavailability and dietary reference values. Am J Clin Nutr. 2010;91(5):1461S-1467S (non-heme iron from plants is absorbed less efficiently than heme iron).",
+    "Nota: traducción al español del guion hn-lemon de Enrico; las referencias las añadió Claude de memoria y conviene verificarlas antes de publicar."
+  ]
+}

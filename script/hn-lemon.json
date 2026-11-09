@@ -1,0 +1,134 @@
+{
+  "id": "hn-lemon",
+  "channel": "hellonutrition",
+  "title": "Lemon unlocks plant iron",
+  "language": "en-US",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade)",
+  "scratchVoice": "Samantha",
+  "scratchVoiceLinux": "us-mbrola-1",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
+  "frame1Text": "Add citrus. Get the most from beans.",
+  "armature": "Plant iron is hard to absorb, but vitamin C unlocks it: a squeeze of lemon (or peppers and tomatoes) with beans and lentils means more iron for your body.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Add citrus. Get the most from beans.",
+      "narration": "Did you know that squeezing lemon on your food can help your body absorb more iron?",
+      "beats": []
+    },
+    {
+      "id": "why",
+      "kind": "why",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Fe · 26",
+      "narration": "Here's why.",
+      "beats": []
+    },
+    {
+      "id": "foods",
+      "kind": "foods",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "where the iron is",
+      "title": "Plant sources",
+      "narration": "Foods like beans, lentils, and spinach contain iron.",
+      "beats": []
+    },
+    {
+      "id": "but",
+      "kind": "but",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Locked.",
+      "narration": "But your body has a harder time absorbing iron from plants.",
+      "beats": [],
+      "sources": [
+        "Hurrell & Egli, Am J Clin Nutr 2010: non-heme (plant) iron is absorbed less efficiently than heme iron"
+      ]
+    },
+    {
+      "id": "vitc",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— the fix",
+      "title": "The key: a lemon.",
+      "narration": "That's where vitamin C comes in!",
+      "beats": []
+    },
+    {
+      "id": "absorb",
+      "kind": "absorb",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Unlocked.",
+      "narration": "It helps your body absorb more of that iron.",
+      "beats": [],
+      "sources": [
+        "Hallberg et al. 1989; Teucher et al. 2004: ascorbic acid enhances non-heme iron absorption"
+      ]
+    },
+    {
+      "id": "beans",
+      "kind": "beans",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Try it tonight:",
+      "narration": "So next time you eat beans, add some lemon.",
+      "beats": []
+    },
+    {
+      "id": "pair",
+      "kind": "pair",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "No lemon? Try:",
+      "narration": "Or pair your lentils with bell peppers or tomatoes.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Follow Hello Nutrition AI",
+      "narration": "Follow Hello Nutrition AI for more nutrition tips!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Hallberg L., Brune M., Rossander L. The role of vitamin C in iron absorption. Int J Vitam Nutr Res Suppl. 1989;30:103-108 (ascorbic acid increases non-heme iron absorption dose-dependently).",
+    "Teucher B., Olivares M., Cori H. Enhancers of iron absorption: ascorbic acid and other organic acids. Int J Vitam Nutr Res. 2004;74(6):403-419.",
+    "Hurrell R., Egli I. Iron bioavailability and dietary reference values. Am J Clin Nutr. 2010;91(5):1461S-1467S (non-heme iron from plants is absorbed less efficiently than heme iron).",
+    "Nota: guion de Enrico; las referencias las añadió Claude de memoria y conviene verificarlas antes de publicar."
+  ]
+}

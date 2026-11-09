@@ -1,0 +1,460 @@
+{
+ "hook": [
+  {
+   "word": "¿Sabías",
+   "start": 0.035,
+   "end": 0.488
+  },
+  {
+   "word": "que",
+   "start": 0.557,
+   "end": 0.627
+  },
+  {
+   "word": "exprimir",
+   "start": 0.65,
+   "end": 1.103
+  },
+  {
+   "word": "limón",
+   "start": 1.149,
+   "end": 1.463
+  },
+  {
+   "word": "sobre",
+   "start": 1.521,
+   "end": 1.741
+  },
+  {
+   "word": "tu",
+   "start": 1.788,
+   "end": 1.858
+  },
+  {
+   "word": "comida",
+   "start": 1.904,
+   "end": 2.31
+  },
+  {
+   "word": "puede",
+   "start": 2.45,
+   "end": 2.717
+  },
+  {
+   "word": "ayudar",
+   "start": 2.74,
+   "end": 3.065
+  },
+  {
+   "word": "a",
+   "start": 3.111,
+   "end": 3.135
+  },
+  {
+   "word": "tu",
+   "start": 3.193,
+   "end": 3.274
+  },
+  {
+   "word": "cuerpo",
+   "start": 3.32,
+   "end": 3.68
+  },
+  {
+   "word": "a",
+   "start": 3.75,
+   "end": 3.785
+  },
+  {
+   "word": "absorber",
+   "start": 3.808,
+   "end": 4.249
+  },
+  {
+   "word": "más",
+   "start": 4.307,
+   "end": 4.447
+  },
+  {
+   "word": "hierro?",
+   "start": 4.493,
+   "end": 4.957
+  }
+ ],
+ "why": [
+  {
+   "word": "Te",
+   "start": 0.023,
+   "end": 0.163
+  },
+  {
+   "word": "explico",
+   "start": 0.186,
+   "end": 0.615
+  },
+  {
+   "word": "por",
+   "start": 0.662,
+   "end": 0.778
+  },
+  {
+   "word": "qué.",
+   "start": 0.836,
+   "end": 1.149
+  }
+ ],
+ "foods": [
+  {
+   "word": "Alimentos",
+   "start": 0.035,
+   "end": 0.673
+  },
+  {
+   "word": "como",
+   "start": 0.731,
+   "end": 0.929
+  },
+  {
+   "word": "los",
+   "start": 0.964,
+   "end": 1.068
+  },
+  {
+   "word": "frijoles,",
+   "start": 1.115,
+   "end": 1.846
+  },
+  {
+   "word": "las",
+   "start": 2.043,
+   "end": 2.194
+  },
+  {
+   "word": "lentejas",
+   "start": 2.276,
+   "end": 2.821
+  },
+  {
+   "word": "y",
+   "start": 2.937,
+   "end": 2.995
+  },
+  {
+   "word": "las",
+   "start": 3.077,
+   "end": 3.193
+  },
+  {
+   "word": "espinacas",
+   "start": 3.262,
+   "end": 3.843
+  },
+  {
+   "word": "contienen",
+   "start": 3.924,
+   "end": 4.319
+  },
+  {
+   "word": "hierro.",
+   "start": 4.354,
+   "end": 4.807
+  }
+ ],
+ "but": [
+  {
+   "word": "Pero",
+   "start": 0.023,
+   "end": 0.232
+  },
+  {
+   "word": "a",
+   "start": 0.267,
+   "end": 0.29
+  },
+  {
+   "word": "tu",
+   "start": 0.337,
+   "end": 0.43
+  },
+  {
+   "word": "cuerpo",
+   "start": 0.488,
+   "end": 0.824
+  },
+  {
+   "word": "le",
+   "start": 0.871,
+   "end": 0.94
+  },
+  {
+   "word": "cuesta",
+   "start": 0.987,
+   "end": 1.312
+  },
+  {
+   "word": "más",
+   "start": 1.382,
+   "end": 1.602
+  },
+  {
+   "word": "absorber",
+   "start": 1.66,
+   "end": 2.078
+  },
+  {
+   "word": "el",
+   "start": 2.125,
+   "end": 2.183
+  },
+  {
+   "word": "hierro",
+   "start": 2.229,
+   "end": 2.496
+  },
+  {
+   "word": "de",
+   "start": 2.543,
+   "end": 2.589
+  },
+  {
+   "word": "las",
+   "start": 2.635,
+   "end": 2.763
+  },
+  {
+   "word": "plantas.",
+   "start": 2.81,
+   "end": 3.471
+  }
+ ],
+ "vitc": [
+  {
+   "word": "¡Ahí",
+   "start": 0.046,
+   "end": 0.395
+  },
+  {
+   "word": "es",
+   "start": 0.464,
+   "end": 0.522
+  },
+  {
+   "word": "donde",
+   "start": 0.569,
+   "end": 0.789
+  },
+  {
+   "word": "entra",
+   "start": 0.836,
+   "end": 1.045
+  },
+  {
+   "word": "la",
+   "start": 1.091,
+   "end": 1.138
+  },
+  {
+   "word": "vitamina",
+   "start": 1.184,
+   "end": 1.637
+  },
+  {
+   "word": "C!",
+   "start": 1.695,
+   "end": 2.078
+  }
+ ],
+ "absorb": [
+  {
+   "word": "Ayuda",
+   "start": 0.046,
+   "end": 0.488
+  },
+  {
+   "word": "a",
+   "start": 0.522,
+   "end": 0.546
+  },
+  {
+   "word": "tu",
+   "start": 0.592,
+   "end": 0.685
+  },
+  {
+   "word": "cuerpo",
+   "start": 0.731,
+   "end": 1.138
+  },
+  {
+   "word": "a",
+   "start": 1.207,
+   "end": 1.242
+  },
+  {
+   "word": "absorber",
+   "start": 1.265,
+   "end": 1.73
+  },
+  {
+   "word": "más",
+   "start": 1.823,
+   "end": 2.067
+  },
+  {
+   "word": "de",
+   "start": 2.101,
+   "end": 2.183
+  },
+  {
+   "word": "ese",
+   "start": 2.241,
+   "end": 2.426
+  },
+  {
+   "word": "hierro.",
+   "start": 2.461,
+   "end": 2.891
+  }
+ ],
+ "beans": [
+  {
+   "word": "Así",
+   "start": 0.046,
+   "end": 0.29
+  },
+  {
+   "word": "que",
+   "start": 0.348,
+   "end": 0.418
+  },
+  {
+   "word": "la",
+   "start": 0.464,
+   "end": 0.534
+  },
+  {
+   "word": "próxima",
+   "start": 0.592,
+   "end": 0.987
+  },
+  {
+   "word": "vez",
+   "start": 1.033,
+   "end": 1.173
+  },
+  {
+   "word": "que",
+   "start": 1.231,
+   "end": 1.3
+  },
+  {
+   "word": "comas",
+   "start": 1.358,
+   "end": 1.602
+  },
+  {
+   "word": "frijoles,",
+   "start": 1.649,
+   "end": 2.31
+  },
+  {
+   "word": "agrégales",
+   "start": 2.473,
+   "end": 3.007
+  },
+  {
+   "word": "limón.",
+   "start": 3.065,
+   "end": 3.529
+  }
+ ],
+ "pair": [
+  {
+   "word": "O",
+   "start": 0.023,
+   "end": 0.104
+  },
+  {
+   "word": "acompaña",
+   "start": 0.197,
+   "end": 0.685
+  },
+  {
+   "word": "tus",
+   "start": 0.72,
+   "end": 0.871
+  },
+  {
+   "word": "lentejas",
+   "start": 0.929,
+   "end": 1.382
+  },
+  {
+   "word": "con",
+   "start": 1.451,
+   "end": 1.556
+  },
+  {
+   "word": "pimientos",
+   "start": 1.602,
+   "end": 2.183
+  },
+  {
+   "word": "o",
+   "start": 2.276,
+   "end": 2.345
+  },
+  {
+   "word": "jitomate.",
+   "start": 2.392,
+   "end": 3.146
+  }
+ ],
+ "follow": [
+  {
+   "word": "¡Sigue",
+   "start": 0.035,
+   "end": 0.546
+  },
+  {
+   "word": "a",
+   "start": 0.569,
+   "end": 0.592
+  },
+  {
+   "word": "Mi",
+   "start": 0.639,
+   "end": 0.708
+  },
+  {
+   "word": "Nutriólogo",
+   "start": 0.755,
+   "end": 1.324
+  },
+  {
+   "word": "para",
+   "start": 1.382,
+   "end": 1.567
+  },
+  {
+   "word": "más",
+   "start": 1.625,
+   "end": 1.788
+  },
+  {
+   "word": "consejos",
+   "start": 1.846,
+   "end": 2.334
+  },
+  {
+   "word": "de",
+   "start": 2.368,
+   "end": 2.415
+  },
+  {
+   "word": "nutrición!",
+   "start": 2.461,
+   "end": 3.135
+  }
+ ]
+}

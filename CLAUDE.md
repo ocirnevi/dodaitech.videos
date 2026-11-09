@@ -78,7 +78,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   `<BrandProvider value={marca}>` y los componentes compartidos leen `useBrand()` / `usePalette(mode)`: color, fuente, logo, nombre y sitio del outro salen de ahí.
   Hello Nutrition AI: acento verde `#2ECC70`, fuente Onest, voz Matilda, sin cara (ver `videos/hellonutrition/channel.md`).
   Mi Nutriólogo y Hello Nutrition AI son dos marcas distintas de Enrico con la misma identidad visual (`minutriologo.ts` extiende `hellonutrition`); carpetas y outro propios (el de Mi Nutriólogo no lleva dominio). Un video que existe en los dos canales se hace
-  con una fábrica (`src/shorts/Kiwis.tsx` → `makeKiwis({script, narration, words, beats, brand, copy})`): los textos en pantalla y palabras gatillo van en `copy`, nunca en las escenas.
+  con una fábrica (`src/shorts/Kiwis.tsx` → `makeKiwis(...)`, `src/shorts/Lemon.tsx` → `makeLemon({script, narration, words, beats, brand, copy})`): los textos en pantalla y palabras gatillo van en `copy`, nunca en las escenas.
 - `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md`.
 - Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
 - `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar

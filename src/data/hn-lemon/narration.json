@@ -1,0 +1,38 @@
+{
+  "hook": {
+    "src": "narration/hn-lemon/hook.wav",
+    "durationInSeconds": 4.675938
+  },
+  "why": {
+    "src": "narration/hn-lemon/why.wav",
+    "durationInSeconds": 1.3845
+  },
+  "foods": {
+    "src": "narration/hn-lemon/foods.wav",
+    "durationInSeconds": 3.9445
+  },
+  "but": {
+    "src": "narration/hn-lemon/but.wav",
+    "durationInSeconds": 3.604917
+  },
+  "vitc": {
+    "src": "narration/hn-lemon/vitc.wav",
+    "durationInSeconds": 2.115938
+  },
+  "absorb": {
+    "src": "narration/hn-lemon/absorb.wav",
+    "durationInSeconds": 2.690625
+  },
+  "beans": {
+    "src": "narration/hn-lemon/beans.wav",
+    "durationInSeconds": 2.821229
+  },
+  "pair": {
+    "src": "narration/hn-lemon/pair.wav",
+    "durationInSeconds": 3.239188
+  },
+  "follow": {
+    "src": "narration/hn-lemon/follow.wav",
+    "durationInSeconds": 3.291438
+  }
+}
