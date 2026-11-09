@@ -1,9 +1,9 @@
 # Short · "Dos kiwis al día" — Mi Nutriólogo — compuertas 0 y 1
 
-**Estado:** v2 final (`out/mn-kiwis/final-v2.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
-v1 (Matilda, outro con minutriologo.ai) → v2: voz **Laura** elegida por Enrico tras escuchar Sarah/Laura/Jessica/Matilda; outro solo con logo y nombre.
+**Estado:** v3 final (`out/mn-kiwis/final-v3.mp4`, 1080×1920, −14 LUFS), 9 nov 2026. Primer video del canal.
+v1 (Matilda, outro con minutriologo.ai) → v2 (Laura, outro solo con logo y nombre) → v3: **Matilda** otra vez, outro sin dominio. Enrico escuchó Sarah/Laura/Jessica/Matilda, probó Laura y se quedó con Matilda.
 Es el mismo video que `hn-kiwis` (Hello Nutrition AI) en español: misma puesta en escena (`src/shorts/Kiwis.tsx`), misma marca visual,
-guion traducido y adaptado, voz Laura en español (≈ $0.17 con la v1 y la prueba de voces). Sin host.
+guion traducido y adaptado, voz Matilda en español (≈ $0.17 en total con la prueba de voces y la v2 con Laura). Sin host.
 
 ## Compuerta 0 · Packaging
 
@@ -38,5 +38,5 @@ guion traducido y adaptado, voz Laura en español (≈ $0.17 con la v1 y la prue
 
 ## Qué revisar
 - Traducción: "ir al baño con más regularidad" en vez de un "hacer popó" más coloquial. Si quieres el tono más directo, cambia solo el hook (reabre voz de 1 escena, ≈ $0.01).
-- Duración: v1 con Matilda 49.4 s; v2 con Laura ≈ 46 s (habla más rápido). Para bajar de 45 s, candidatos: fundir "Sí. ¡Dos kiwis!" en el hook o recortar "Los pequeños cambios…".
+- Duración ≈ 49.4 s con Matilda (Laura daba 46.4 s). Para bajar de 45 s, candidatos: fundir "Sí. ¡Dos kiwis!" en el hook o recortar "Los pequeños cambios…".
 - Outro sin dominio: solo logo + "Mi Nutriólogo" (Enrico, 9 nov).
