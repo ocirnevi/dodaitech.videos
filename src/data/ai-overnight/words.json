@@ -1,0 +1,611 @@
+{
+ "hook": [
+  {
+   "word": "What",
+   "start": 0.045,
+   "end": 0.206
+  },
+  {
+   "word": "if",
+   "start": 0.249,
+   "end": 0.313
+  },
+  {
+   "word": "AI",
+   "start": 0.399,
+   "end": 0.721
+  },
+  {
+   "word": "could",
+   "start": 0.776,
+   "end": 0.926
+  },
+  {
+   "word": "work",
+   "start": 0.958,
+   "end": 1.12
+  },
+  {
+   "word": "for",
+   "start": 1.173,
+   "end": 1.27
+  },
+  {
+   "word": "you",
+   "start": 1.334,
+   "end": 1.442
+  },
+  {
+   "word": "while",
+   "start": 1.507,
+   "end": 1.668
+  },
+  {
+   "word": "you're",
+   "start": 1.689,
+   "end": 1.851
+  },
+  {
+   "word": "sleeping?",
+   "start": 1.872,
+   "end": 2.334
+  }
+ ],
+ "now": [
+  {
+   "word": "Well,",
+   "start": 0.013,
+   "end": 0.336
+  },
+  {
+   "word": "now",
+   "start": 0.444,
+   "end": 0.594
+  },
+  {
+   "word": "it",
+   "start": 0.659,
+   "end": 0.724
+  },
+  {
+   "word": "can.",
+   "start": 0.766,
+   "end": 1.132
+  }
+ ],
+ "browse": [
+  {
+   "word": "AI",
+   "start": 0.01,
+   "end": 0.301
+  },
+  {
+   "word": "agents",
+   "start": 0.376,
+   "end": 0.688
+  },
+  {
+   "word": "can",
+   "start": 0.731,
+   "end": 0.86
+  },
+  {
+   "word": "open",
+   "start": 0.924,
+   "end": 1.183
+  },
+  {
+   "word": "websites,",
+   "start": 1.236,
+   "end": 1.838
+  },
+  {
+   "word": "click",
+   "start": 1.903,
+   "end": 2.129
+  },
+  {
+   "word": "buttons,",
+   "start": 2.193,
+   "end": 2.677
+  },
+  {
+   "word": "fill",
+   "start": 2.72,
+   "end": 2.903
+  },
+  {
+   "word": "out",
+   "start": 2.957,
+   "end": 3.074
+  },
+  {
+   "word": "forms,",
+   "start": 3.128,
+   "end": 3.601
+  },
+  {
+   "word": "and",
+   "start": 3.622,
+   "end": 3.752
+  },
+  {
+   "word": "complete",
+   "start": 3.806,
+   "end": 4.225
+  },
+  {
+   "word": "tasks",
+   "start": 4.257,
+   "end": 4.687
+  },
+  {
+   "word": "for",
+   "start": 4.73,
+   "end": 4.837
+  },
+  {
+   "word": "you.",
+   "start": 4.913,
+   "end": 5.063
+  }
+ ],
+ "inbox": [
+  {
+   "word": "Connect",
+   "start": 0.009,
+   "end": 0.311
+  },
+  {
+   "word": "your",
+   "start": 0.354,
+   "end": 0.461
+  },
+  {
+   "word": "email",
+   "start": 0.526,
+   "end": 0.859
+  },
+  {
+   "word": "and",
+   "start": 0.913,
+   "end": 0.988
+  },
+  {
+   "word": "calendar,",
+   "start": 1.031,
+   "end": 1.547
+  },
+  {
+   "word": "and",
+   "start": 1.569,
+   "end": 1.665
+  },
+  {
+   "word": "they",
+   "start": 1.708,
+   "end": 1.805
+  },
+  {
+   "word": "can",
+   "start": 1.837,
+   "end": 1.934
+  },
+  {
+   "word": "find",
+   "start": 1.988,
+   "end": 2.192
+  },
+  {
+   "word": "important",
+   "start": 2.235,
+   "end": 2.59
+  },
+  {
+   "word": "messages,",
+   "start": 2.622,
+   "end": 3.192
+  },
+  {
+   "word": "prepare",
+   "start": 3.257,
+   "end": 3.611
+  },
+  {
+   "word": "replies,",
+   "start": 3.665,
+   "end": 4.278
+  },
+  {
+   "word": "and",
+   "start": 4.299,
+   "end": 4.407
+  },
+  {
+   "word": "organize",
+   "start": 4.482,
+   "end": 4.901
+  },
+  {
+   "word": "your",
+   "start": 4.933,
+   "end": 5.052
+  },
+  {
+   "word": "schedule.",
+   "start": 5.083,
+   "end": 5.568
+  }
+ ],
+ "research": [
+  {
+   "word": "Need",
+   "start": 0.025,
+   "end": 0.229
+  },
+  {
+   "word": "competitor",
+   "start": 0.294,
+   "end": 0.863
+  },
+  {
+   "word": "research?",
+   "start": 0.928,
+   "end": 1.487
+  },
+  {
+   "word": "They'll",
+   "start": 1.53,
+   "end": 1.734
+  },
+  {
+   "word": "compare",
+   "start": 1.766,
+   "end": 2.057
+  },
+  {
+   "word": "websites",
+   "start": 2.1,
+   "end": 2.54
+  },
+  {
+   "word": "and",
+   "start": 2.573,
+   "end": 2.648
+  },
+  {
+   "word": "build",
+   "start": 2.701,
+   "end": 2.906
+  },
+  {
+   "word": "a",
+   "start": 2.949,
+   "end": 2.999
+  },
+  {
+   "word": "spreadsheet.",
+   "start": 3.002,
+   "end": 3.54
+  }
+ ],
+ "deck": [
+  {
+   "word": "Need",
+   "start": 0.002,
+   "end": 0.174
+  },
+  {
+   "word": "a",
+   "start": 0.206,
+   "end": 0.256
+  },
+  {
+   "word": "presentation?",
+   "start": 0.271,
+   "end": 1.012
+  },
+  {
+   "word": "They'll",
+   "start": 1.055,
+   "end": 1.26
+  },
+  {
+   "word": "create",
+   "start": 1.302,
+   "end": 1.636
+  },
+  {
+   "word": "one.",
+   "start": 1.689,
+   "end": 1.915
+  }
+ ],
+ "best": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.093
+  },
+  {
+   "word": "here's",
+   "start": 0.147,
+   "end": 0.352
+  },
+  {
+   "word": "the",
+   "start": 0.384,
+   "end": 0.448
+  },
+  {
+   "word": "best",
+   "start": 0.502,
+   "end": 0.706
+  },
+  {
+   "word": "part.",
+   "start": 0.771,
+   "end": 1.082
+  }
+ ],
+ "schedule": [
+  {
+   "word": "You",
+   "start": 0.009,
+   "end": 0.095
+  },
+  {
+   "word": "can",
+   "start": 0.149,
+   "end": 0.246
+  },
+  {
+   "word": "schedule",
+   "start": 0.288,
+   "end": 0.622
+  },
+  {
+   "word": "tasks",
+   "start": 0.654,
+   "end": 1.062
+  },
+  {
+   "word": "to",
+   "start": 1.106,
+   "end": 1.213
+  },
+  {
+   "word": "run",
+   "start": 1.299,
+   "end": 1.503
+  },
+  {
+   "word": "automatically.",
+   "start": 1.568,
+   "end": 2.331
+  }
+ ],
+ "wake": [
+  {
+   "word": "Imagine",
+   "start": 0.032,
+   "end": 0.43
+  },
+  {
+   "word": "waking",
+   "start": 0.462,
+   "end": 0.709
+  },
+  {
+   "word": "up",
+   "start": 0.752,
+   "end": 0.828
+  },
+  {
+   "word": "to",
+   "start": 0.859,
+   "end": 0.909
+  },
+  {
+   "word": "your",
+   "start": 0.957,
+   "end": 1.053
+  },
+  {
+   "word": "emails",
+   "start": 1.118,
+   "end": 1.451
+  },
+  {
+   "word": "summarized,",
+   "start": 1.483,
+   "end": 2.16
+  },
+  {
+   "word": "your",
+   "start": 2.204,
+   "end": 2.344
+  },
+  {
+   "word": "business",
+   "start": 2.397,
+   "end": 2.708
+  },
+  {
+   "word": "metrics",
+   "start": 2.752,
+   "end": 3.095
+  },
+  {
+   "word": "analyzed,",
+   "start": 3.149,
+   "end": 3.881
+  },
+  {
+   "word": "and",
+   "start": 3.902,
+   "end": 4.02
+  },
+  {
+   "word": "your",
+   "start": 4.074,
+   "end": 4.203
+  },
+  {
+   "word": "reports",
+   "start": 4.257,
+   "end": 4.665
+  },
+  {
+   "word": "ready.",
+   "start": 4.751,
+   "end": 5.128
+  }
+ ],
+ "tools": [
+  {
+   "word": "Tools",
+   "start": 0.0,
+   "end": 0.231
+  },
+  {
+   "word": "like",
+   "start": 0.264,
+   "end": 0.381
+  },
+  {
+   "word": "ChatGPT",
+   "start": 0.414,
+   "end": 0.941
+  },
+  {
+   "word": "Work",
+   "start": 1.048,
+   "end": 1.274
+  },
+  {
+   "word": "and",
+   "start": 1.316,
+   "end": 1.392
+  },
+  {
+   "word": "Claude",
+   "start": 1.446,
+   "end": 1.736
+  },
+  {
+   "word": "Cowork",
+   "start": 1.779,
+   "end": 2.23
+  },
+  {
+   "word": "are",
+   "start": 2.274,
+   "end": 2.403
+  },
+  {
+   "word": "making",
+   "start": 2.456,
+   "end": 2.736
+  },
+  {
+   "word": "this",
+   "start": 2.778,
+   "end": 2.908
+  },
+  {
+   "word": "possible.",
+   "start": 2.962,
+   "end": 3.531
+  }
+ ],
+ "done": [
+  {
+   "word": "AI",
+   "start": 0.021,
+   "end": 0.419
+  },
+  {
+   "word": "isn't",
+   "start": 0.483,
+   "end": 0.688
+  },
+  {
+   "word": "just",
+   "start": 0.731,
+   "end": 0.87
+  },
+  {
+   "word": "answering",
+   "start": 0.924,
+   "end": 1.215
+  },
+  {
+   "word": "questions",
+   "start": 1.257,
+   "end": 1.644
+  },
+  {
+   "word": "anymore.",
+   "start": 1.688,
+   "end": 2.193
+  },
+  {
+   "word": "It's",
+   "start": 2.225,
+   "end": 2.408
+  },
+  {
+   "word": "getting",
+   "start": 2.462,
+   "end": 2.752
+  },
+  {
+   "word": "things",
+   "start": 2.817,
+   "end": 3.074
+  },
+  {
+   "word": "done.",
+   "start": 3.139,
+   "end": 3.451
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.043,
+   "end": 0.322
+  },
+  {
+   "word": "Dodai",
+   "start": 0.387,
+   "end": 0.688
+  },
+  {
+   "word": "Tech",
+   "start": 0.763,
+   "end": 1.0
+  },
+  {
+   "word": "for",
+   "start": 1.054,
+   "end": 1.171
+  },
+  {
+   "word": "more",
+   "start": 1.226,
+   "end": 1.408
+  },
+  {
+   "word": "tech",
+   "start": 1.451,
+   "end": 1.667
+  },
+  {
+   "word": "news!",
+   "start": 1.742,
+   "end": 2.29
+  }
+ ]
+}

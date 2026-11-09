@@ -14,6 +14,7 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | `three-nm` | Nothing in a 3 nm chip is 3 nm | prueba de 10 s, voz scratch |
 | `ai-memory` | Would you want AI to remember your entire life? | v5 final con voz Alex y host P2 |
 | `ai-agents` | Don't let AI replace you. Make it work for you. | v2 final (feedback de ritmo aplicado) |
+| `ai-overnight` | AI that works while you sleep | v1 final, voz Alex, host P2 en hook y cierre |
 
 ## hellonutrition (`videos/hellonutrition/`) — Hello Nutrition AI, nutrición con base científica, inglés, sin cara
 

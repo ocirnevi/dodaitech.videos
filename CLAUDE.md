@@ -69,7 +69,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 ## Mapa del repo
 
 - `script/<slug>.json` guion: escenas, narración, `beats` (dato + palabra gatillo), `mode` (light/dark), voz, formato.
-- `scripts/` `tts.sh` (say) · `tts-espeak.py` (voz scratch en Linux con tiempos por palabra) · `beats-numpy.py` (BPM sin librosa) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `tighten-narration.py` (quita silencios, atempo) · `align.py` (whisper → words.json) ·
+- `scripts/` `tts.sh` (say) · `tts-espeak.py` (voz scratch en Linux con tiempos por palabra) · `beats-numpy.py` (BPM sin librosa) · `tts-fal.mjs` (ElevenLabs vía fal, dry-run por defecto) · `tighten-narration.py` (quita silencios, atempo) · `fal-results-to-narration.py` (resultado de wait_for_jobs del MCP de fal → clips + narration/words) · `align.py` (whisper → words.json) ·
   `music-fal.mjs` (ElevenLabs Music) · `analyze-music.py` · `sfx-index.mjs` (Sonniss) · `gen-sfx.mjs` (kit sintético) · `storyboard.mjs` (hoja de aprobación).
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.

@@ -1,0 +1,50 @@
+{
+  "hook": {
+    "src": "narration/ai-overnight/hook.wav",
+    "durationInSeconds": 2.443146
+  },
+  "now": {
+    "src": "narration/ai-overnight/now.wav",
+    "durationInSeconds": 1.203292
+  },
+  "browse": {
+    "src": "narration/ai-overnight/browse.wav",
+    "durationInSeconds": 5.120042
+  },
+  "inbox": {
+    "src": "narration/ai-overnight/inbox.wav",
+    "durationInSeconds": 5.622083
+  },
+  "research": {
+    "src": "narration/ai-overnight/research.wav",
+    "durationInSeconds": 3.645438
+  },
+  "deck": {
+    "src": "narration/ai-overnight/deck.wav",
+    "durationInSeconds": 2.012563
+  },
+  "best": {
+    "src": "narration/ai-overnight/best.wav",
+    "durationInSeconds": 1.175688
+  },
+  "schedule": {
+    "src": "narration/ai-overnight/schedule.wav",
+    "durationInSeconds": 2.406646
+  },
+  "wake": {
+    "src": "narration/ai-overnight/wake.wav",
+    "durationInSeconds": 5.180854
+  },
+  "tools": {
+    "src": "narration/ai-overnight/tools.wav",
+    "durationInSeconds": 3.611208
+  },
+  "done": {
+    "src": "narration/ai-overnight/done.wav",
+    "durationInSeconds": 3.566
+  },
+  "follow": {
+    "src": "narration/ai-overnight/follow.wav",
+    "durationInSeconds": 2.386729
+  }
+}

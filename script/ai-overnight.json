@@ -1,0 +1,181 @@
+{
+  "id": "ai-overnight",
+  "channel": "dodaitech",
+  "title": "AI that works while you sleep",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "scratchVoice": "Samantha",
+  "scratchVoiceLinux": "us-mbrola-2",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "frame1Text": "Your to-do list, done by morning.",
+  "armature": "AI agents now act, not just answer: they browse, handle email and calendar, research and build files, and run on a schedule, so you can wake up to finished work.",
+  "host": {
+    "enabled": true,
+    "layout": "split",
+    "split": 960,
+    "focusY": 0.18,
+    "clips": {
+      "hook": "avatar/ai-overnight/hook-p2.mp4",
+      "follow": "avatar/ai-overnight/follow-p2.mp4"
+    },
+    "heygen": {
+      "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+      "look_id": "329327dec229991ace01dff9237155b2",
+      "look_name": "P2 · escritorio neutro",
+      "engine": "avatar_iv",
+      "expressiveness": "high",
+      "videos": {
+        "hook": "2c843149fc969b33cee3e463ead295f3",
+        "follow": "7ef5011685b1ec2e102c22e07872c571"
+      },
+      "motion_prompt_hook": "Asks the question to the viewer with natural hand gestures like talking to a friend, leans slightly toward the camera, small curious eyebrow raise, natural blinking.",
+      "motion_prompt_close": "Talks with natural hand gestures like explaining something to a friend, leans slightly toward the camera, nods once at the end, natural blinking."
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Your to-do list, done by morning.",
+      "narration": "What if AI could work for you while you're sleeping?",
+      "beats": []
+    },
+    {
+      "id": "now",
+      "kind": "now",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "ON",
+      "narration": "Well, now it can.",
+      "beats": []
+    },
+    {
+      "id": "browse",
+      "kind": "browse",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "the agent drives",
+      "title": "Hands off the mouse.",
+      "narration": "AI agents can open websites, click buttons, fill out forms, and complete tasks for you.",
+      "beats": []
+    },
+    {
+      "id": "inbox",
+      "kind": "inbox",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "plug in your apps",
+      "title": "",
+      "narration": "Connect your email and calendar, and they can find important messages, prepare replies, and organize your schedule.",
+      "beats": []
+    },
+    {
+      "id": "research",
+      "kind": "research",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "A vs B, in rows.",
+      "narration": "Need competitor research? They'll compare websites and build a spreadsheet.",
+      "beats": []
+    },
+    {
+      "id": "deck",
+      "kind": "deck",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "Slides: handled.",
+      "narration": "Need a presentation? They'll create one.",
+      "beats": []
+    },
+    {
+      "id": "best",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— wait for it",
+      "title": "Plot twist.",
+      "narration": "And here's the best part.",
+      "beats": []
+    },
+    {
+      "id": "schedule",
+      "kind": "schedule",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Set it once.",
+      "narration": "You can schedule tasks to run automatically.",
+      "beats": []
+    },
+    {
+      "id": "wake",
+      "kind": "wake",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "7:00 AM",
+      "narration": "Imagine waking up to your emails summarized, your business metrics analyzed, and your reports ready.",
+      "beats": []
+    },
+    {
+      "id": "tools",
+      "kind": "tools",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Already here.",
+      "narration": "Tools like ChatGPT Work and Claude Cowork are making this possible.",
+      "beats": [],
+      "sources": [
+        "Nombres tal como los escribió Enrico. Claude Cowork es el modo de agente de escritorio de Anthropic; 'ChatGPT Work' no verificado por Claude. Marcas tipografiadas en pills, sin logos."
+      ]
+    },
+    {
+      "id": "done",
+      "kind": "done",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Less talk. More action.",
+      "narration": "AI isn't just answering questions anymore. It's getting things done.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Follow Dodai Tech",
+      "narration": "Follow Dodai Tech for more tech news!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Guion de Enrico (9 nov 2026). Sin cifras en pantalla.",
+    "Productos nombrados (ChatGPT Work, Claude Cowork) tal como los escribió Enrico; verificar nombres antes de publicar. Marcas como texto en pills, sin logos (docs/04)."
+  ]
+}
