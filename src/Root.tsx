@@ -5,6 +5,7 @@ import {THREE_NM, ThreeNm, threeNmTimeline} from './shorts/ThreeNm';
 import {AI_MEMORY, AiMemory, aiMemoryTimeline} from './shorts/AiMemory';
 import {AI_AGENTS, AiAgents, aiAgentsTimeline} from './shorts/AiAgents';
 import {HN_KIWIS, HnKiwis, hnKiwisTimeline} from './shorts/HnKiwis';
+import {MN_KIWIS, MnKiwis, mnKiwisTimeline} from './shorts/MnKiwis';
 import {SHORT, buildShortTimeline} from './shorts/script';
 import {ChipSupplyChain} from './Video';
 import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
@@ -16,8 +17,10 @@ export const RemotionRoot: React.FC = () => {
   const aiMemory = aiMemoryTimeline();
   const aiAgents = aiAgentsTimeline();
   const hnKiwis = hnKiwisTimeline();
+  const mnKiwis = mnKiwisTimeline();
   return (
     <>
+    <Composition id="MnKiwis" component={MnKiwis} durationInFrames={mnKiwis.totalFrames} fps={MN_KIWIS.fps} width={MN_KIWIS.width} height={MN_KIWIS.height} />
     <Composition id="HnKiwis" component={HnKiwis} durationInFrames={hnKiwis.totalFrames} fps={HN_KIWIS.fps} width={HN_KIWIS.width} height={HN_KIWIS.height} />
     <Composition id="AiAgents" component={AiAgents} durationInFrames={aiAgents.totalFrames} fps={AI_AGENTS.fps} width={AI_AGENTS.width} height={AI_AGENTS.height} />
     <Composition id="AiMemory" component={AiMemory} durationInFrames={aiMemory.totalFrames} fps={AI_MEMORY.fps} width={AI_MEMORY.width} height={AI_MEMORY.height} />

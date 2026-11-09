@@ -4,7 +4,7 @@ Aquí vive lo que Enrico lee y aprueba: `brief.md` (compuertas 0–1 y estado), 
 y, por canal, `FEEDBACK.md` (lo que Enrico sintió al ver cada video) y `channel.md` (identidad, voz, outro, tono).
 El código y los datos siguen en su tubería por slug: guion en `script/<slug>.json`, composición en `src/shorts/`, datos en `src/data/<slug>/`,
 audio en `public/narration/<slug>/`, clips de avatar en `public/avatar/<slug>/`, renders en `out/<slug>/` (no se versionan).
-Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition para Hello Nutrition AI).
+Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition para Hello Nutrition AI; minutriologo, idéntico salvo nombre y sitio, para Mi Nutriólogo).
 
 ## dodaitech (`videos/dodaitech/`) — tecnología, inglés, voz Alex, host Enrico (HeyGen P2) opcional
 
@@ -20,3 +20,9 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | slug | video | estado |
 |---|---|---|
 | `hn-kiwis` | Two kiwis a day | v1 final, voz Matilda, sin cara |
+
+## minutriologo (`videos/minutriologo/`) — Mi Nutriólogo, el mismo canal en español, misma identidad, sin cara
+
+| slug | video | estado |
+|---|---|---|
+| `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v1 final, voz Matilda en español |

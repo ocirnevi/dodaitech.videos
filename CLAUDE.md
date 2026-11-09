@@ -56,7 +56,7 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
   corte; música a 120 BPM (15 frames por beat a 30 fps), cortes en frases de 2/4 beats, 18–25 dB bajo la voz con
   ducking; master −14 LUFS / −1 dBTP (loudnorm dos pasadas, ver `docs/03-sonido.md`). SFX: Sonniss GDC y Freesound CC0.
 - **Verificar antes de entregar.** Renderizar, extraer frames del MP4, mirarlos, corregir, re-renderizar.
-- **Voz.** dodaitech: Alex (ElevenLabs id `yl2ZDV1MzN4HbQJbMihG`, `multilingual-v2`, `language_code` según el guion). Hello Nutrition AI: Matilda (premade). La voz va en `voice` del guion.
+- **Voz.** dodaitech: Alex (ElevenLabs id `yl2ZDV1MzN4HbQJbMihG`, `multilingual-v2`, `language_code` según el guion). Hello Nutrition AI y Mi Nutriólogo: Matilda (premade, multilingual; `language_code` en/es). La voz va en `voice` del guion.
   Para borradores y storyboards, macOS `say` (gratis). Timestamps por palabra: faster-whisper local alineado al guion.
 - **Datos.** Toda cifra en pantalla lleva fuente en el guion (`sources[]`). Si dos fuentes no coinciden, se usa un rango o se omite.
 - **Git.** No commitear sin que lo pida. No tocar `.env`.
@@ -69,11 +69,13 @@ texto, color o timing de un panel no requieren voz nueva; cambios de narración 
 - `src/` `script.ts` (timeline, `triggerFrame`) · `theme.ts` (marca) · `Video.tsx` (secuencias, cortes, música) ·
   `scenes/` · `components/` (Captions, Beats, PunchIn, Post, Sfx, MusicBed, ByScene, LayerStack, Wordmark) · `three/` · `StoryboardSheet.tsx`.
 - `public/` `narration/` · `sfx/` · `music/` · `brand/` · `fonts/` · `storyboard/` (paneles temporales).
-- `videos/<canal>/<slug>/` una carpeta por canal de YouTube (`dodaitech`, `hellonutrition`) y dentro una por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6).
+- `videos/<canal>/<slug>/` una carpeta por canal de YouTube (`dodaitech`, `hellonutrition`, `minutriologo`) y dentro una por video con lo que lee Enrico: `brief.md` (compuertas 0–1 y estado), `costs.md`, `publish.md` (compuerta 6).
   Por canal: `channel.md` (identidad, voz, outro) y `FEEDBACK.md` (lo que sintió Enrico). Índice en `videos/README.md`.
 - `src/brands/` un tema por canal (`hellonutrition.ts`; dodaitech es el default de `src/theme.ts`). La composición del video envuelve sus escenas en
   `<BrandProvider value={marca}>` y los componentes compartidos leen `useBrand()` / `usePalette(mode)`: color, fuente, logo, nombre y sitio del outro salen de ahí.
   Hello Nutrition AI: acento verde `#2ECC70`, fuente Onest, voz Matilda, sin cara (ver `videos/hellonutrition/channel.md`).
+  Mi Nutriólogo = Hello Nutrition AI en español (misma identidad, `minutriologo.ts` extiende `hellonutrition`). Un video que existe en los dos canales se hace
+  con una fábrica (`src/shorts/Kiwis.tsx` → `makeKiwis({script, narration, words, beats, brand, copy})`): los textos en pantalla y palabras gatillo van en `copy`, nunca en las escenas.
 - `docs/` `00-PLAYBOOK.md` (las 25 reglas) + 01…06 (investigación de 2026-11-07) + `WORKFLOW.md`.
 - Chrome: `remotion.config.ts` usa el Chrome del sistema en macOS (el headless de Remotion falla en esta Mac); en Linux Remotion encuentra `google-chrome` solo.
 - `.claude/skills/remotion-*`: skills oficiales de Remotion (remotion-dev/skills, misma versión que `remotion`). Se cargan solos al tocar

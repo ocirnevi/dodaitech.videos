@@ -1,0 +1,564 @@
+{
+ "hook": [
+  {
+   "word": "¿Sabías",
+   "start": 0.035,
+   "end": 0.395
+  },
+  {
+   "word": "que",
+   "start": 0.453,
+   "end": 0.522
+  },
+  {
+   "word": "comer",
+   "start": 0.58,
+   "end": 0.848
+  },
+  {
+   "word": "solo",
+   "start": 0.906,
+   "end": 1.149
+  },
+  {
+   "word": "dos",
+   "start": 1.196,
+   "end": 1.347
+  },
+  {
+   "word": "kiwis",
+   "start": 1.405,
+   "end": 1.672
+  },
+  {
+   "word": "al",
+   "start": 1.73,
+   "end": 1.8
+  },
+  {
+   "word": "día",
+   "start": 1.846,
+   "end": 2.032
+  },
+  {
+   "word": "podría",
+   "start": 2.09,
+   "end": 2.392
+  },
+  {
+   "word": "ayudarte",
+   "start": 2.415,
+   "end": 2.868
+  },
+  {
+   "word": "a",
+   "start": 2.902,
+   "end": 2.926
+  },
+  {
+   "word": "ir",
+   "start": 2.961,
+   "end": 3.053
+  },
+  {
+   "word": "al",
+   "start": 3.088,
+   "end": 3.146
+  },
+  {
+   "word": "baño",
+   "start": 3.193,
+   "end": 3.425
+  },
+  {
+   "word": "con",
+   "start": 3.471,
+   "end": 3.587
+  },
+  {
+   "word": "más",
+   "start": 3.634,
+   "end": 3.762
+  },
+  {
+   "word": "regularidad?",
+   "start": 3.82,
+   "end": 4.563
+  }
+ ],
+ "yep": [
+  {
+   "word": "Sí.",
+   "start": 0.023,
+   "end": 0.453
+  },
+  {
+   "word": "¡Dos",
+   "start": 0.813,
+   "end": 1.231
+  },
+  {
+   "word": "kiwis!",
+   "start": 1.347,
+   "end": 1.997
+  }
+ ],
+ "research": [
+  {
+   "word": "Las",
+   "start": 0.046,
+   "end": 0.197
+  },
+  {
+   "word": "investigaciones",
+   "start": 0.267,
+   "end": 0.998
+  },
+  {
+   "word": "sugieren",
+   "start": 1.022,
+   "end": 1.428
+  },
+  {
+   "word": "que",
+   "start": 1.486,
+   "end": 1.556
+  },
+  {
+   "word": "comer",
+   "start": 1.614,
+   "end": 1.904
+  },
+  {
+   "word": "dos",
+   "start": 1.974,
+   "end": 2.125
+  },
+  {
+   "word": "kiwis",
+   "start": 2.206,
+   "end": 2.554
+  },
+  {
+   "word": "verdes",
+   "start": 2.612,
+   "end": 2.914
+  },
+  {
+   "word": "al",
+   "start": 2.984,
+   "end": 3.053
+  },
+  {
+   "word": "día",
+   "start": 3.1,
+   "end": 3.355
+  },
+  {
+   "word": "puede",
+   "start": 3.669,
+   "end": 3.913
+  },
+  {
+   "word": "ayudar",
+   "start": 3.936,
+   "end": 4.261
+  },
+  {
+   "word": "a",
+   "start": 4.307,
+   "end": 4.331
+  },
+  {
+   "word": "mejorar",
+   "start": 4.377,
+   "end": 4.783
+  },
+  {
+   "word": "el",
+   "start": 4.818,
+   "end": 4.876
+  },
+  {
+   "word": "estreñimiento",
+   "start": 4.934,
+   "end": 5.677
+  },
+  {
+   "word": "y",
+   "start": 5.909,
+   "end": 5.991
+  },
+  {
+   "word": "reducir",
+   "start": 6.084,
+   "end": 6.478
+  },
+  {
+   "word": "las",
+   "start": 6.513,
+   "end": 6.629
+  },
+  {
+   "word": "molestias",
+   "start": 6.687,
+   "end": 7.117
+  },
+  {
+   "word": "digestivas.",
+   "start": 7.152,
+   "end": 7.964
+  }
+ ],
+ "why": [
+  {
+   "word": "Te",
+   "start": 0.035,
+   "end": 0.139
+  },
+  {
+   "word": "explico",
+   "start": 0.163,
+   "end": 0.557
+  },
+  {
+   "word": "por",
+   "start": 0.604,
+   "end": 0.72
+  },
+  {
+   "word": "qué.",
+   "start": 0.789,
+   "end": 1.103
+  }
+ ],
+ "contain": [
+  {
+   "word": "Los",
+   "start": 0.023,
+   "end": 0.209
+  },
+  {
+   "word": "kiwis",
+   "start": 0.279,
+   "end": 0.685
+  },
+  {
+   "word": "contienen",
+   "start": 0.755,
+   "end": 1.161
+  },
+  {
+   "word": "fibra,",
+   "start": 1.219,
+   "end": 1.718
+  },
+  {
+   "word": "agua",
+   "start": 1.858,
+   "end": 2.229
+  },
+  {
+   "word": "y",
+   "start": 2.589,
+   "end": 2.67
+  },
+  {
+   "word": "una",
+   "start": 2.763,
+   "end": 2.891
+  },
+  {
+   "word": "enzima",
+   "start": 2.914,
+   "end": 3.274
+  },
+  {
+   "word": "natural",
+   "start": 3.32,
+   "end": 3.796
+  },
+  {
+   "word": "llamada",
+   "start": 3.866,
+   "end": 4.319
+  },
+  {
+   "word": "actinidina,",
+   "start": 4.4,
+   "end": 5.283
+  },
+  {
+   "word": "que",
+   "start": 5.7,
+   "end": 5.805
+  },
+  {
+   "word": "ayuda",
+   "start": 5.828,
+   "end": 6.13
+  },
+  {
+   "word": "a",
+   "start": 6.153,
+   "end": 6.177
+  },
+  {
+   "word": "descomponer",
+   "start": 6.235,
+   "end": 6.803
+  },
+  {
+   "word": "las",
+   "start": 6.861,
+   "end": 6.966
+  },
+  {
+   "word": "proteínas.",
+   "start": 7.012,
+   "end": 7.837
+  }
+ ],
+ "together": [
+  {
+   "word": "Juntas,",
+   "start": 0.023,
+   "end": 0.697
+  },
+  {
+   "word": "pueden",
+   "start": 0.836,
+   "end": 1.103
+  },
+  {
+   "word": "favorecer",
+   "start": 1.149,
+   "end": 1.649
+  },
+  {
+   "word": "una",
+   "start": 1.707,
+   "end": 1.834
+  },
+  {
+   "word": "digestión",
+   "start": 1.881,
+   "end": 2.345
+  },
+  {
+   "word": "saludable.",
+   "start": 2.38,
+   "end": 3.1
+  }
+ ],
+ "best": [
+  {
+   "word": "¿Y",
+   "start": 0.023,
+   "end": 0.221
+  },
+  {
+   "word": "lo",
+   "start": 0.29,
+   "end": 0.36
+  },
+  {
+   "word": "mejor?",
+   "start": 0.418,
+   "end": 0.929
+  }
+ ],
+ "noneed": [
+  {
+   "word": "No",
+   "start": 0.046,
+   "end": 0.186
+  },
+  {
+   "word": "necesitas",
+   "start": 0.232,
+   "end": 0.72
+  },
+  {
+   "word": "suplementos",
+   "start": 0.743,
+   "end": 1.265
+  },
+  {
+   "word": "caros",
+   "start": 1.335,
+   "end": 1.672
+  },
+  {
+   "word": "ni",
+   "start": 1.753,
+   "end": 1.846
+  },
+  {
+   "word": "rutinas",
+   "start": 1.892,
+   "end": 2.276
+  },
+  {
+   "word": "complicadas.",
+   "start": 2.322,
+   "end": 3.123
+  }
+ ],
+ "try": [
+  {
+   "word": "Solo",
+   "start": 0.023,
+   "end": 0.337
+  },
+  {
+   "word": "prueba",
+   "start": 0.383,
+   "end": 0.662
+  },
+  {
+   "word": "agregar",
+   "start": 0.685,
+   "end": 1.091
+  },
+  {
+   "word": "dos",
+   "start": 1.161,
+   "end": 1.324
+  },
+  {
+   "word": "kiwis",
+   "start": 1.405,
+   "end": 1.718
+  },
+  {
+   "word": "verdes",
+   "start": 1.765,
+   "end": 2.113
+  },
+  {
+   "word": "a",
+   "start": 2.194,
+   "end": 2.229
+  },
+  {
+   "word": "tu",
+   "start": 2.287,
+   "end": 2.368
+  },
+  {
+   "word": "dieta",
+   "start": 2.415,
+   "end": 2.659
+  },
+  {
+   "word": "diaria.",
+   "start": 2.694,
+   "end": 3.17
+  }
+ ],
+ "small": [
+  {
+   "word": "Los",
+   "start": 0.046,
+   "end": 0.209
+  },
+  {
+   "word": "pequeños",
+   "start": 0.267,
+   "end": 0.72
+  },
+  {
+   "word": "cambios",
+   "start": 0.778,
+   "end": 1.173
+  },
+  {
+   "word": "pueden",
+   "start": 1.265,
+   "end": 1.544
+  },
+  {
+   "word": "hacer",
+   "start": 1.591,
+   "end": 1.811
+  },
+  {
+   "word": "una",
+   "start": 1.869,
+   "end": 1.997
+  },
+  {
+   "word": "gran",
+   "start": 2.043,
+   "end": 2.218
+  },
+  {
+   "word": "diferencia.",
+   "start": 2.252,
+   "end": 2.972
+  }
+ ],
+ "follow": [
+  {
+   "word": "¡Sigue",
+   "start": 0.035,
+   "end": 0.546
+  },
+  {
+   "word": "a",
+   "start": 0.604,
+   "end": 0.627
+  },
+  {
+   "word": "Mi",
+   "start": 0.685,
+   "end": 0.766
+  },
+  {
+   "word": "Nutriólogo",
+   "start": 0.801,
+   "end": 1.405
+  },
+  {
+   "word": "para",
+   "start": 1.463,
+   "end": 1.66
+  },
+  {
+   "word": "más",
+   "start": 1.718,
+   "end": 1.892
+  },
+  {
+   "word": "consejos",
+   "start": 1.95,
+   "end": 2.426
+  },
+  {
+   "word": "de",
+   "start": 2.45,
+   "end": 2.496
+  },
+  {
+   "word": "nutrición",
+   "start": 2.543,
+   "end": 3.053
+  },
+  {
+   "word": "con",
+   "start": 3.111,
+   "end": 3.228
+  },
+  {
+   "word": "respaldo",
+   "start": 3.286,
+   "end": 3.727
+  },
+  {
+   "word": "científico!",
+   "start": 3.773,
+   "end": 4.505
+  }
+ ]
+}
