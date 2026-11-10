@@ -152,7 +152,7 @@ const Why: React.FC<SceneProps> = ({fps}) => {
 
 const Bits: React.FC<SceneProps> = ({scene, fps}) => {
   const frame = useCurrentFrame();
-  const aBits = Math.min(trig(scene, 'bits', fps), 30);
+  const aBits = Math.min(trig(scene, 'bits', fps), 8);
   const aOne = trig(scene, 'one', fps);
   const s1 = useSp(frame, fps, aBits - 2, 14);
   const on = useSp(frame, fps, aOne - 1, 10);
@@ -171,7 +171,7 @@ const Bits: React.FC<SceneProps> = ({scene, fps}) => {
 const Qubits: React.FC<SceneProps> = ({scene, fps}) => {
   const frame = useCurrentFrame();
   const at = trig(scene, 'qubits', fps);
-  const s = useSp(frame, fps, Math.min(at, 30) - 6, 18, SOFT);
+  const s = useSp(frame, fps, Math.min(at, 12) - 6, 18, SOFT);
   return (
     <AbsoluteFill>
       <SceneLabel text={scene.label} />
