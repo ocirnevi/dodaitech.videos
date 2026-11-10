@@ -20,11 +20,12 @@ export const GlowWord: React.FC<{text: string; spoken: string}> = ({text, spoken
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (clashes(text, spoken)) return null;
-  const s = spring({frame, fps, config: {damping: 12, stiffness: 180, mass: 0.7}, durationInFrames: 12});
-  const size = text.length <= 3 ? 220 : text.length > 12 ? 92 : text.length > 8 ? 118 : 142;
+  const s = spring({frame, fps, config: {damping: 9, stiffness: 220, mass: 0.55}, durationInFrames: 12});
+  const size = text.length <= 3 ? 280 : text.length > 12 ? 128 : text.length > 8 ? 168 : 210;
+  const shake = Math.sin(frame * 1.7) * interpolate(s, [0, 1], [10, 2]);
   return (
-    <div style={{position: 'absolute', left: 60, right: 60, top: 300, textAlign: 'center', opacity: s, transform: `scale(${interpolate(s, [0, 1], [1.18, 1])})`}}>
-      <div style={{fontFamily: theme.font, fontWeight: 800, fontSize: size, letterSpacing: '-0.045em', lineHeight: 0.92, color: '#fff', textShadow: `0 0 18px ${PINK}, 0 0 48px ${PINK}, 0 0 6px #fff`}}>{text}</div>
+    <div style={{position: 'absolute', left: 36, right: 36, top: 150, textAlign: 'center', opacity: s, transform: `translateX(${shake}px) scale(${interpolate(s, [0, 1], [1.42, 1])})`}}>
+      <div style={{fontFamily: theme.font, fontWeight: 800, fontSize: size, letterSpacing: '-0.05em', lineHeight: 0.9, color: '#fff', textShadow: `0 0 22px ${PINK}, 0 0 64px ${PINK}, 0 0 8px #fff`}}>{text}</div>
     </div>
   );
 };
@@ -36,48 +37,52 @@ export const PinkPill: React.FC<{text: string; spoken: string; top?: number}> = 
   const s = spring({frame: frame - 2, fps, config: theme.spring.snappy, durationInFrames: 12});
   return (
     <div style={{position: 'absolute', left: 0, right: 0, top, display: 'flex', justifyContent: 'center', opacity: s, transform: `translateY(${interpolate(s, [0, 1], [-16, 0])}px) scale(${interpolate(s, [0, 1], [0.86, 1])})`}}>
-      <div style={{display: 'inline-flex', alignItems: 'center', gap: 14, background: '#0c0b0e', color: '#fff', borderRadius: 999, padding: '16px 28px 16px 22px', fontFamily: theme.font, fontWeight: 800, fontSize: 36, letterSpacing: '0.06em', border: '1px solid rgba(255,255,255,0.08)'}}>
-        <span style={{width: 14, height: 14, borderRadius: 99, background: PINK, boxShadow: `0 0 12px ${PINK}`}} />
+      <div style={{display: 'inline-flex', alignItems: 'center', gap: 18, background: '#0c0b0e', color: '#fff', borderRadius: 999, padding: '22px 40px 22px 28px', fontFamily: theme.font, fontWeight: 800, fontSize: 56, letterSpacing: '0.06em', border: '1px solid rgba(255,255,255,0.1)'}}>
+        <span style={{width: 22, height: 22, borderRadius: 99, background: PINK, boxShadow: `0 0 16px ${PINK}`}} />
         {text}
       </div>
     </div>
   );
 };
 
+/** Glitch corto: 4 frames, cortes finos con fringe RGB. No deja bandas encima del plano. */
 export const FlashHit: React.FC<{glitch?: boolean}> = ({glitch}) => {
   const frame = useCurrentFrame();
-  const o = interpolate(frame, [0, 2, 7], [0.75, 0.35, 0], {extrapolateRight: 'clamp'});
+  const flash = interpolate(frame, [0, 2, 5], [0.55, 0.15, 0], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <AbsoluteFill style={{background: '#fff', opacity: o * 0.55}} />
-      {glitch && frame < 6
-        ? [0, 1, 2, 3, 4].map((i) => (
-            <div key={i} style={{position: 'absolute', left: 0, right: 0, top: `${8 + i * 18}%`, height: '7%', background: i % 2 ? 'rgba(255,40,190,0.45)' : 'rgba(80,255,255,0.28)', transform: `translateX(${(i % 2 ? 1 : -1) * (22 - frame * 4)}px)`}} />
-          ))
-        : null}
+      <AbsoluteFill style={{background: '#fff', opacity: flash * (glitch ? 0.2 : 0.4)}} />
     </AbsoluteFill>
   );
 };
 
+export const DimPlate: React.FC<{src?: string; at?: number}> = ({src = 'footage/gta-director/trailer2.mp4', at = 30}) => (
+  <AbsoluteFill style={{overflow: 'hidden'}}>
+    <OffthreadVideo muted src={staticFile(src)} startFrom={Math.round(at * 30)} style={{width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.2)'}} />
+    <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(10,6,18,0.72) 0%, rgba(10,6,18,0.55) 42%, rgba(10,6,18,0.78) 100%)'}} />
+  </AbsoluteFill>
+);
+
 const enter = (frame: number, fps: number, delay = 0) => spring({frame: frame - delay, fps, config: {damping: 11, stiffness: 170, mass: 0.7}, durationInFrames: 14});
 
-export const PaperDoc: React.FC<{spoken: string}> = ({spoken}) => {
+export const PaperDoc: React.FC<{spoken?: string}> = ({spoken: _spoken}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const card = enter(frame, fps, 0);
-  const stamp = enter(frame, fps, 14);
-  const shake = frame > 14 && frame < 26 ? Math.sin(frame * 2.4) * (26 - frame) * 1.3 : 0;
-  const hide = clashes('APPROVED', spoken);
+  const stamp = enter(frame, fps, 3);
+  const hit = frame >= 3 && frame < 16 ? Math.sin(frame * 2.8) * (16 - frame) * 2.1 : 0;
+  void _spoken;
   return (
-    <AbsoluteFill style={{background: '#07070a', transform: `translateX(${shake}px)`}}>
-      <div style={{position: 'absolute', left: 150, top: 340, width: 780, height: 760, background: '#f7f4ee', borderRadius: 8, opacity: card, transform: `rotate(${interpolate(card, [0, 1], [8, -2])}deg) scale(${interpolate(card, [0, 1], [0.8, 1])})`, boxShadow: '0 30px 80px rgba(0,0,0,0.45)', padding: '56px 52px'}}>
-        <div style={{fontFamily: theme.font, fontWeight: 800, fontSize: 42, letterSpacing: '0.08em', color: '#1b1917'}}>MECHANIC</div>
-        {[1, 0.92, 0.8, 0.88, 0.6, 0.84, 0.5].map((w, i) => (
-          <div key={i} style={{marginTop: 28, height: 18, width: `${w * 100}%`, background: '#c8c4bc', borderRadius: 4}} />
+    <AbsoluteFill style={{transform: `translate(${hit}px, ${hit * 0.35}px)`}}>
+      <DimPlate src="footage/gta-director/trailer1.mp4" at={48} />
+      <div style={{position: 'absolute', left: 48, right: 48, top: 90, bottom: 430, background: '#f7f4ee', borderRadius: 10, opacity: card, transform: `rotate(${interpolate(card, [0, 1], [7, -1.5])}deg) scale(${interpolate(card, [0, 1], [0.86, 1])})`, boxShadow: '0 40px 90px rgba(0,0,0,0.5)', padding: '64px 56px'}}>
+        <div style={{fontFamily: theme.font, fontWeight: 800, fontSize: 64, letterSpacing: '0.12em', color: '#1b1917'}}>MECHANIC</div>
+        {[1, 0.94, 0.78, 0.9, 0.66, 0.86, 0.52, 0.8].map((w, i) => (
+          <div key={i} style={{marginTop: 36, height: 26, width: `${w * 100}%`, background: '#c8c4bc', borderRadius: 6}} />
         ))}
-        <div style={{position: 'absolute', left: 48, bottom: 48, width: 84, height: 84, borderRadius: 18, background: YELLOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: theme.font, fontWeight: 800, fontSize: 48, color: '#1b1917'}}>R</div>
-        <div style={{position: 'absolute', right: 54, top: 250, opacity: stamp, transform: `rotate(-14deg) scale(${interpolate(stamp, [0, 1], [1.65, 1])})`}}>
-          <div style={{border: '8px solid #1f9d4d', color: '#1f9d4d', borderRadius: 14, padding: '8px 16px', fontFamily: theme.font, fontWeight: 800, fontSize: 48, letterSpacing: '0.12em'}}>{hide ? '✓' : 'APPROVED'}</div>
+        <div style={{position: 'absolute', left: 48, bottom: 48, width: 110, height: 110, borderRadius: 22, background: YELLOW, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: theme.font, fontWeight: 800, fontSize: 64, color: '#1b1917'}}>R</div>
+        <div style={{position: 'absolute', left: 24, right: 24, top: '34%', display: 'flex', justifyContent: 'center', opacity: stamp, transform: `rotate(-11deg) scale(${interpolate(stamp, [0, 1], [1.55, 1])})`}}>
+          <div style={{border: '14px solid #178a3e', color: '#178a3e', borderRadius: 16, padding: '14px 28px', fontFamily: theme.font, fontWeight: 800, fontSize: 84, letterSpacing: '0.06em', background: 'rgba(247,244,238,0.9)', boxShadow: '0 10px 0 rgba(23,138,62,0.28)'}}>APPROVED</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -91,7 +96,7 @@ export const Stars: React.FC = () => {
     <div style={{position: 'absolute', left: 0, right: 0, top: 430, display: 'flex', justifyContent: 'center', gap: 18}}>
       {Array.from({length: 5}).map((_, i) => {
         const s = enter(frame, fps, i * 3);
-        return <div key={i} style={{fontSize: 92, color: '#fff', opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.4, 1])})`, textShadow: '0 0 18px #fff'}}>★</div>;
+        return <div key={i} style={{fontSize: 150, color: '#fff', opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.4, 1])})`, textShadow: '0 0 22px #fff'}}>★</div>;
       })}
     </div>
   );
@@ -104,7 +109,7 @@ export const CrimeBox: React.FC<{spoken: string}> = ({spoken}) => {
   if (clashes('CRIME', spoken)) return null;
   return (
     <div style={{position: 'absolute', left: 0, right: 0, top: 560, display: 'flex', justifyContent: 'center', opacity: s, transform: `scale(${interpolate(s, [0, 1], [1.3, 1])})`}}>
-      <div style={{border: '8px solid #ff2a2a', color: '#ff2a2a', fontFamily: theme.font, fontWeight: 800, fontSize: 120, letterSpacing: '0.12em', padding: '8px 36px', boxShadow: '0 0 30px rgba(255,40,40,0.65)', background: 'rgba(0,0,0,0.35)'}}>CRIME</div>
+      <div style={{border: '12px solid #ff2a2a', color: '#ff2a2a', fontFamily: theme.font, fontWeight: 800, fontSize: 188, letterSpacing: '0.12em', padding: '12px 48px', boxShadow: '0 0 40px rgba(255,40,40,0.7)', background: 'rgba(0,0,0,0.45)'}}>CRIME</div>
     </div>
   );
 };
@@ -114,14 +119,15 @@ export const FamilyIcons: React.FC = () => {
   const {fps} = useVideoConfig();
   const people = [64, 52, 40, 36];
   return (
-    <svg width={1080} height={420} style={{position: 'absolute', left: 0, top: 430}}>
+    <svg width={1080} height={360} style={{position: 'absolute', left: 0, top: 250}}>
       {people.map((h, i) => {
-        const s = enter(frame, fps, 4 + i * 3);
-        const x = 140 + i * 120;
+        const s = enter(frame, fps, 3 + i * 2);
+        const x = 150 + i * 200;
+        const shirt = ['#ff4ad8', '#7c5cff', '#ffe14a', '#ffffff'][i];
         return (
-          <g key={i} opacity={s} transform={`translate(${x} 200) scale(${interpolate(s, [0, 1], [0.6, 1])})`}>
-            <circle cy={-h - 28} r={h * 0.34} fill="#fff" stroke="#1b1917" strokeWidth={4} />
-            <rect x={-h * 0.36} y={-h + 4} width={h * 0.72} height={h} rx={h * 0.28} fill="#fff" stroke="#1b1917" strokeWidth={4} />
+          <g key={i} opacity={s} transform={`translate(${x} 210) scale(${interpolate(s, [0, 1], [0.5, 1.15])})`}>
+            <circle cy={-h - 36} r={h * 0.42} fill="#fff" stroke="#1b1917" strokeWidth={6} />
+            <rect x={-h * 0.46} y={-h} width={h * 0.92} height={h * 1.15} rx={h * 0.34} fill={shirt} stroke="#1b1917" strokeWidth={6} />
           </g>
         );
       })}
@@ -136,7 +142,7 @@ export const Speedo: React.FC<{t: number}> = ({t}) => {
   const speed = Math.min(1, Math.max(0, (t - 27.6) / 2.4));
   const ang = -210 + speed * 240;
   return (
-    <svg width={520} height={420} style={{position: 'absolute', left: 280, top: 250, opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.8, 1])})`}}>
+    <svg width={860} height={700} viewBox="0 0 520 420" style={{position: 'absolute', left: 110, top: 160, opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.8, 1])})`}}>
       <path d="M40 300 A 220 220 0 1 1 480 300" fill="none" stroke="#2a2a2a" strokeWidth={28} strokeLinecap="round" />
       <path d="M40 300 A 220 220 0 1 1 480 300" fill="none" stroke="#ff2a2a" strokeWidth={28} strokeLinecap="round" strokeDasharray="760" strokeDashoffset={760 * (1 - speed)} />
       <g transform={`translate(260 300) rotate(${ang})`}>
@@ -154,7 +160,7 @@ export const TrafficLight: React.FC<{t: number}> = ({t}) => {
   const s = enter(frame, fps, 2);
   const green = t > 18.7;
   return (
-    <div style={{position: 'absolute', left: 86, top: 480, opacity: s, transform: `translateY(${interpolate(s, [0, 1], [-30, 0])}px)`}}>
+    <div style={{position: 'absolute', left: 48, top: 220, opacity: s, transform: `translateY(${interpolate(s, [0, 1], [-30, 0])}px) scale(1.45)`, transformOrigin: 'top left'}}>
       <div style={{width: 110, background: '#111', borderRadius: 24, padding: 16, display: 'flex', flexDirection: 'column', gap: 14}}>
         <Lamp on={!green} color="#ff3030" />
         <Lamp on={false} color="#ffe14a" />
@@ -165,19 +171,21 @@ export const TrafficLight: React.FC<{t: number}> = ({t}) => {
 };
 const Lamp: React.FC<{on: boolean; color: string}> = ({on, color}) => <div style={{width: 78, height: 78, borderRadius: 99, background: on ? color : '#2a2a2a', boxShadow: on ? `0 0 24px ${color}` : 'none'}} />;
 
-export const MissionCard: React.FC<{spoken: string}> = ({spoken}) => {
+export const MissionCard: React.FC<{spoken?: string}> = ({spoken: _spoken}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = enter(frame, fps, 0);
-  const hide = clashes('NOT SCRIPTED', spoken);
+  const drift = Math.sin(frame / 16) * 6;
+  void _spoken;
   return (
-    <AbsoluteFill style={{background: '#07060a'}}>
-      <div style={{position: 'absolute', left: 160, top: 520, width: 760, height: 460, borderRadius: 28, background: '#14121a', border: '2px solid rgba(255,255,255,0.08)', opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.86, 1])})`, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <div style={{position: 'absolute', left: 36, top: 28, color: '#9a958e', fontFamily: theme.font, fontWeight: 700, letterSpacing: '0.14em', fontSize: 28}}>MISSION</div>
-        {!hide ? <div style={{color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 72, letterSpacing: '-0.04em'}}>NOT SCRIPTED</div> : null}
-        <div style={{position: 'absolute', inset: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.95}}>
-          <div style={{width: 420, height: 18, background: '#ff2a2a', transform: 'rotate(18deg)', boxShadow: '0 0 18px #ff2a2a'}} />
-          <div style={{position: 'absolute', width: 420, height: 18, background: '#ff2a2a', transform: 'rotate(-18deg)', boxShadow: '0 0 18px #ff2a2a'}} />
+    <AbsoluteFill style={{transform: `translateX(${drift}px)`}}>
+      <DimPlate src="footage/gta-director/trailer1.mp4" at={33} />
+      <div style={{position: 'absolute', left: 50, right: 50, top: 240, height: 980, borderRadius: 36, background: 'rgba(16,14,22,0.92)', border: '2px solid rgba(255,255,255,0.1)', opacity: s, transform: `scale(${interpolate(s, [0, 1], [0.9, 1])})`, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <div style={{position: 'absolute', left: 48, top: 40, color: '#b7b1a8', fontFamily: theme.font, fontWeight: 700, letterSpacing: '0.16em', fontSize: 42}}>MISSION</div>
+        <div style={{color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 108, letterSpacing: '-0.04em', textAlign: 'center', lineHeight: 0.95, zIndex: 1}}>NOT SCRIPTED</div>
+        <div style={{position: 'absolute', inset: 80, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{width: 760, height: 28, background: '#ff2a2a', transform: 'rotate(16deg)', boxShadow: '0 0 24px #ff2a2a'}} />
+          <div style={{position: 'absolute', width: 760, height: 28, background: '#ff2a2a', transform: 'rotate(-16deg)', boxShadow: '0 0 24px #ff2a2a'}} />
         </div>
       </div>
     </AbsoluteFill>
@@ -190,9 +198,10 @@ export const EdgeCover: React.FC<{spoken: string}> = ({spoken}) => {
   const s = enter(frame, fps, 0);
   const hide = clashes('EDGE', spoken);
   return (
-    <AbsoluteFill style={{background: '#07060c'}}>
-      <div style={{position: 'absolute', left: 220, top: 250, width: 640, height: 820, borderRadius: 18, background: '#121018', boxShadow: `0 0 0 3px ${PINK}, 0 0 40px ${PINK}`, opacity: s, transform: `rotate(${interpolate(s, [0, 1], [6, -2])}deg) scale(${interpolate(s, [0, 1], [0.9, 1])})`, overflow: 'hidden'}}>
-        <div style={{height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: hide ? 0 : 92, letterSpacing: '-0.04em'}}>{hide ? '' : 'EDGE'}</div>
+    <AbsoluteFill>
+      <DimPlate src="footage/gta-director/trailer2.mp4" at={5} />
+      <div style={{position: 'absolute', left: 120, top: 140, width: 840, height: 1180, borderRadius: 22, background: '#121018', boxShadow: `0 0 0 4px ${PINK}, 0 0 48px ${PINK}`, opacity: s, transform: `rotate(${interpolate(s, [0, 1], [6, -2])}deg) scale(${interpolate(s, [0, 1], [0.92, 1])})`, overflow: 'hidden'}}>
+        <div style={{height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: hide ? 0 : 128, letterSpacing: '-0.04em'}}>{hide ? '' : 'EDGE'}</div>
         <div style={{margin: '0 28px', height: 460, overflow: 'hidden', borderRadius: 8}}>
           <OffthreadVideo muted src={staticFile('footage/gta-director/trailer1.mp4')} startFrom={12 * 30} style={{width: '160%', height: '100%', objectFit: 'cover', marginLeft: '-30%'}} />
         </div>
@@ -208,7 +217,7 @@ const FLORIDA = 'M70 250 L300 210 L390 270 L370 350 L520 400 L650 500 L720 660 L
 export const LeonidaMap: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const draw = interpolate(frame, [0, 40], [2600, 0], {extrapolateRight: 'clamp'});
+  const draw = interpolate(frame, [0, 16], [1000, 0], {extrapolateRight: 'clamp'});
   const pins = [
     {x: 430, y: 390},
     {x: 690, y: 700},
@@ -217,9 +226,11 @@ export const LeonidaMap: React.FC = () => {
   ];
   const pulse = 0.45 + 0.55 * Math.sin(frame / 4);
   return (
-    <AbsoluteFill style={{background: '#07060f'}}>
-      <svg width={1080} height={1700} viewBox="0 0 1080 1600" style={{marginTop: 40}}>
-        <path d={FLORIDA} fill="rgba(255,60,172,0.08)" stroke={PINK} strokeWidth={16} strokeLinejoin="round" strokeDasharray={2600} strokeDashoffset={draw} style={{filter: 'drop-shadow(0 0 12px #ff3cac)'}} />
+    <AbsoluteFill>
+      <DimPlate src="footage/gta-director/trailer1.mp4" at={12} />
+      <div style={{position: 'absolute', inset: 0, zIndex: 4}}>
+      <svg width={1080} height={1500} viewBox="0 0 1080 1600">
+        <path d={FLORIDA} fill="rgba(255,60,172,0.5)" stroke="#ffffff" strokeWidth={26} strokeLinejoin="round" strokeDasharray={2200} strokeDashoffset={draw * 2.2} />
         {pins.map((p, i) => {
           const s = enter(frame, fps, 16 + i * 4);
           return (
@@ -232,6 +243,7 @@ export const LeonidaMap: React.FC = () => {
         <circle cx={690} cy={860} r={16 + pulse * 22} fill="none" stroke="#fff" strokeWidth={4} />
         <circle cx={690} cy={860} r={8} fill="#fff" />
       </svg>
+      </div>
     </AbsoluteFill>
   );
 };
@@ -240,27 +252,29 @@ export const DecisionTree: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const grow = interpolate(frame, [4, 28], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const drift = Math.sin(frame / 18) * 8;
   const nodes = [
-    {x: 540, y: 340, t: 'YOU', d: 0},
-    {x: 250, y: 620, t: 'FORK', d: 6},
-    {x: 540, y: 660, t: 'AMBUSH', d: 8},
-    {x: 830, y: 620, t: 'CASH', d: 10},
-    {x: 180, y: 900, t: 'HEAT', d: 14},
-    {x: 360, y: 920, t: 'LOSS', d: 16},
+    {x: 540, y: 260, t: 'YOU', d: 0},
+    {x: 230, y: 560, t: 'FORK', d: 6},
+    {x: 540, y: 600, t: 'AMBUSH', d: 8},
+    {x: 850, y: 560, t: 'CASH', d: 10},
+    {x: 140, y: 900, t: 'HEAT', d: 14},
+    {x: 340, y: 940, t: 'LOSS', d: 16},
   ];
   return (
-    <AbsoluteFill style={{background: '#08070d'}}>
+    <AbsoluteFill style={{transform: `translateX(${drift}px)`}}>
+      <DimPlate src="footage/gta-director/trailer1.mp4" at={30} />
       <svg width={1080} height={1920}>
-        <line x1={540} y1={380} x2={250} y2={580} stroke={PINK} strokeWidth={6} strokeDasharray={400} strokeDashoffset={400 * (1 - grow)} />
-        <line x1={540} y1={380} x2={540} y2={610} stroke={PINK} strokeWidth={6} strokeDasharray={300} strokeDashoffset={300 * (1 - grow)} />
-        <line x1={540} y1={380} x2={830} y2={580} stroke={PINK} strokeWidth={6} strokeDasharray={400} strokeDashoffset={400 * (1 - grow)} />
-        <line x1={250} y1={660} x2={180} y2={860} stroke="#fff" strokeWidth={4} opacity={grow} />
-        <line x1={250} y1={660} x2={360} y2={880} stroke="#fff" strokeWidth={4} opacity={grow} />
+        <line x1={540} y1={300} x2={230} y2={500} stroke={PINK} strokeWidth={8} strokeDasharray={400} strokeDashoffset={400 * (1 - grow)} />
+        <line x1={540} y1={300} x2={540} y2={540} stroke={PINK} strokeWidth={8} strokeDasharray={300} strokeDashoffset={300 * (1 - grow)} />
+        <line x1={540} y1={300} x2={850} y2={500} stroke={PINK} strokeWidth={8} strokeDasharray={400} strokeDashoffset={400 * (1 - grow)} />
+        <line x1={230} y1={620} x2={140} y2={840} stroke="#fff" strokeWidth={6} opacity={grow} />
+        <line x1={230} y1={620} x2={340} y2={880} stroke="#fff" strokeWidth={6} opacity={grow} />
       </svg>
       {nodes.map((n) => {
         const s = enter(frame, fps, n.d);
         return (
-          <div key={n.t} style={{position: 'absolute', left: n.x, top: n.y, transform: `translate(-50%, -50%) scale(${interpolate(s, [0, 1], [0.7, 1])})`, opacity: s, background: '#111', color: '#fff', border: `2px solid ${PINK}`, borderRadius: 999, padding: '14px 26px', fontFamily: theme.font, fontWeight: 800, fontSize: 36, letterSpacing: '0.06em'}}>{n.t}</div>
+          <div key={n.t} style={{position: 'absolute', left: n.x, top: n.y, transform: `translate(-50%, -50%) scale(${interpolate(s, [0, 1], [0.7, 1])})`, opacity: s, background: '#111', color: '#fff', border: `3px solid ${PINK}`, borderRadius: 999, padding: '20px 36px', fontFamily: theme.font, fontWeight: 800, fontSize: 52, letterSpacing: '0.06em'}}>{n.t}</div>
         );
       })}
     </AbsoluteFill>
@@ -273,18 +287,19 @@ export const WalletBeat: React.FC = () => {
   const s = enter(frame, fps, 0);
   const fly = interpolate(frame, [10, 28], [0, -80], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{background: 'linear-gradient(180deg,#120818,#07060c)'}}>
-      <svg width={1080} height={1100} style={{position: 'absolute', left: 0, top: 220, opacity: s, transform: `translateY(${fly}px)`}}>
+    <AbsoluteFill>
+      <DimPlate src="footage/gta-director/trailer2.mp4" at={45} />
+      <svg width={1080} height={1100} style={{position: 'absolute', left: 0, top: 120, opacity: s, transform: `translateY(${fly}px) scale(1.35)`, transformOrigin: '50% 40%'}}>
         <g transform="translate(540 420)">
-          <rect x={-300} y={-200} width={600} height={420} rx={36} fill="#f4e6c4" />
-          <path d="M-300 10 H300" stroke="#1b1917" strokeWidth={18} />
-          <rect x={-300} y={10} width={600} height={210} rx={0} fill="#e4d2a4" />
-          <rect x={-300} y={180} width={600} height={40} rx={18} fill="#f4e6c4" />
-          <rect x={150} y={-160} width={110} height={78} rx={12} fill="#ff3cac" />
-          <circle cx={-170} cy={110} r={26} fill="#1f9d4d" />
+          <rect x={-340} y={-230} width={680} height={480} rx={40} fill="#f4e6c4" />
+          <path d="M-340 20 H340" stroke="#1b1917" strokeWidth={22} />
+          <rect x={-340} y={20} width={680} height={230} fill="#e4d2a4" />
+          <rect x={-340} y={210} width={680} height={40} rx={18} fill="#f4e6c4" />
+          <rect x={160} y={-180} width={130} height={90} rx={14} fill="#ff3cac" />
+          <circle cx={-190} cy={130} r={32} fill="#1f9d4d" />
         </g>
       </svg>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 980, textAlign: 'center', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 72, letterSpacing: '0.08em', opacity: s}}>LIFTED</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1180, textAlign: 'center', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 108, letterSpacing: '0.08em', opacity: s, textShadow: '0 8px 24px #000'}}>LIFTED</div>
     </AbsoluteFill>
   );
 };
@@ -293,18 +308,18 @@ export const HeroBeat: React.FC<{spoken: string}> = ({spoken}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = enter(frame, fps, 2);
-  const hide = clashes('HERO', spoken);
+  void spoken;
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, top: 380, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, opacity: s, transform: `scale(${interpolate(s, [0, 1], [1.12, 1])})`}}>
-      <div style={{background: 'rgba(0,0,0,0.72)', borderRadius: 28, padding: '16px 36px 8px'}}>
-      <svg width={240} height={180}>
-        <circle cx={78} cy={32} r={26} fill="#fff" />
-        <rect x={48} y={62} width={60} height={88} rx={18} fill="#ff2a2a" />
-        <rect x={100} y={88} width={90} height={16} rx={5} fill="#fff" />
-        <circle cx={196} cy={96} r={9} fill="#fff" />
-      </svg>
+    <div style={{position: 'absolute', left: 0, right: 0, top: 280, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, opacity: s, transform: `scale(${interpolate(s, [0, 1], [1.2, 1])})`}}>
+      <div style={{background: 'rgba(0,0,0,0.72)', borderRadius: 36, padding: '20px 48px 10px'}}>
+        <svg width={360} height={240}>
+          <circle cx={120} cy={46} r={40} fill="#fff" />
+          <rect x={72} y={92} width={96} height={120} rx={28} fill="#ff2a2a" />
+          <rect x={156} y={128} width={140} height={22} rx={8} fill="#fff" />
+          <circle cx={304} cy={140} r={14} fill="#fff" />
+        </svg>
       </div>
-      {hide ? null : <div style={{color: '#ff2a2a', fontFamily: theme.font, fontWeight: 800, fontSize: 120, letterSpacing: '-0.04em', textShadow: '0 0 24px #ff2a2a'}}>HERO</div>}
+      <div style={{color: '#ff2a2a', fontFamily: theme.font, fontWeight: 800, fontSize: 180, letterSpacing: '-0.04em', textShadow: '0 0 28px #ff2a2a'}}>HERO</div>
     </div>
   );
 };
@@ -315,12 +330,12 @@ export const Reticle: React.FC = () => {
   const y = Math.cos(frame / 11) * 24;
   return (
     <svg width={1080} height={1920} style={{position: 'absolute', inset: 0, transform: `translate(${x}px, ${y}px)`}}>
-      <circle cx={540} cy={820} r={120} fill="none" stroke="#ff2a2a" strokeWidth={6} />
-      <circle cx={540} cy={820} r={6} fill="#ff2a2a" />
-      <line x1={540} y1={660} x2={540} y2={740} stroke="#ff2a2a" strokeWidth={6} />
-      <line x1={540} y1={900} x2={540} y2={980} stroke="#ff2a2a" strokeWidth={6} />
-      <line x1={380} y1={820} x2={460} y2={820} stroke="#ff2a2a" strokeWidth={6} />
-      <line x1={620} y1={820} x2={700} y2={820} stroke="#ff2a2a" strokeWidth={6} />
+      <circle cx={540} cy={760} r={200} fill="none" stroke="#ff2a2a" strokeWidth={10} />
+      <circle cx={540} cy={760} r={10} fill="#ff2a2a" />
+      <line x1={540} y1={500} x2={540} y2={620} stroke="#ff2a2a" strokeWidth={10} />
+      <line x1={540} y1={900} x2={540} y2={1020} stroke="#ff2a2a" strokeWidth={10} />
+      <line x1={280} y1={760} x2={400} y2={760} stroke="#ff2a2a" strokeWidth={10} />
+      <line x1={680} y1={760} x2={800} y2={760} stroke="#ff2a2a" strokeWidth={10} />
     </svg>
   );
 };
@@ -330,11 +345,11 @@ export const Poll: React.FC = () => {
   const {fps} = useVideoConfig();
   const opts = ['Race', 'Ignore', 'Your way?'];
   return (
-    <div style={{position: 'absolute', left: 120, right: 120, top: 460}}>
+    <div style={{position: 'absolute', left: 64, right: 64, top: 280}}>
       {opts.map((o, i) => {
-        const s = enter(frame, fps, i * 4);
+        const s = enter(frame, fps, i * 2);
         return (
-          <div key={o} style={{marginBottom: 22, opacity: s, transform: `translateX(${interpolate(s, [0, 1], [40, 0])}px)`, background: 'rgba(8,8,12,0.82)', border: '2px solid rgba(255,255,255,0.14)', borderRadius: 20, padding: '26px 32px', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 64, letterSpacing: '-0.03em', display: 'flex', justifyContent: 'space-between'}}>
+          <div key={o} style={{marginBottom: 28, opacity: s, transform: `translateX(${interpolate(s, [0, 1], [48, 0])}px)`, background: 'rgba(8,8,12,0.88)', border: '3px solid rgba(255,255,255,0.16)', borderRadius: 28, padding: '36px 42px', color: '#fff', fontFamily: theme.font, fontWeight: 800, fontSize: 92, letterSpacing: '-0.03em', display: 'flex', justifyContent: 'space-between'}}>
             <span>{o}</span>
             <span style={{color: PINK}}>{i === 0 ? '●' : '○'}</span>
           </div>
@@ -344,4 +359,4 @@ export const Poll: React.FC = () => {
   );
 };
 
-export const NelsonCard: React.FC<{spoken: string}> = ({spoken}) => <PinkPill text="ROB NELSON" spoken={spoken} top={980} />;
+export const NelsonCard: React.FC<{spoken: string}> = ({spoken}) => <PinkPill text="ROB NELSON" spoken={spoken} top={220} />;

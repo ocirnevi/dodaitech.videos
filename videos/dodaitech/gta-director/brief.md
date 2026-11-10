@@ -1,6 +1,8 @@
 # Short · GTA director humiliation — private style test — dodaitech
 
-**Estado:** prueba privada de capacidad. No se publica. Composición `GtaDirector` (`src/shorts/GtaDirector.tsx`).
+**Estado:** v2 de la prueba privada. No se publica. Composición `GtaDirector` (`src/shorts/GtaDirector.tsx`).
+
+V2 (misma voz y cama): el documento del mecánico ocupa casi el frame y el sello APPROVED queda grande (esa palabra, NOT SCRIPTED y HERO no se ocultan aunque el karaoke las diga). El glitch es un salto de 4 frames con fringe RGB, sin bandas. Los subtítulos bajan a y ≈ 1540 y crecen ~1.4× para no pisar los gráficos. Los coches 2D llenan el ancho, con más ángulos, estelas, parallax y underglow. Los gráficos van sobre un plano de trailer atenuado, no sobre negro vacío.
 
 **Voz:** Alex, archivo ya generado `public/narration/gta-director/alex-vo-v1.mp3` (68.08 s). No se volvió a llamar a fal. No se corrió `tighten-narration.py`: el atempo movería el audio y desfasaría los timestamps de ElevenLabs que vinieron con el archivo (`src/data/gta-director/words.json`, 231 palabras).
 

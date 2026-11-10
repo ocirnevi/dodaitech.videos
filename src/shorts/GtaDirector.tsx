@@ -56,31 +56,36 @@ const SHOTS: Shot[] = [
   {id: 'cops', t0: 6.85, bg: {kind: 'footage', src: T1, at: 45, pos: '50% 48%'}, fx: ['stars']},
   {id: 'crime', t0: 8.15, bg: {kind: 'footage', src: T1, at: 69, pos: '52% 40%'}, fx: ['crime'], bass: true},
   {id: 'wagon', t0: 9.4, bg: {kind: 'footage', src: T2, at: 15, pos: '46% 55%'}, fx: ['family'], pill: 'BEATER'},
-  {id: 'getaway', t0: 10.4, bg: {kind: 'cars', view: 'top'}, pill: 'THE GETAWAY'},
-  {id: 'arrive', t0: 11.7, bg: {kind: 'cars', view: 'side'}, glow: 'NEON'},
-  {id: 'glow', t0: 13.05, bg: {kind: 'cars', view: 'wheels'}, bass: true},
-  {id: 'beside', t0: 14.35, bg: {kind: 'cars', view: 'side'}, pill: 'SIDE BY SIDE'},
-  {id: 'window', t0: 15.5, bg: {kind: 'cars', view: 'window'}},
-  {id: 'taunt', t0: 16.85, bg: {kind: 'cars', view: 'side'}, pill: 'THE PAIR'},
+  {id: 'getaway', t0: 10.4, bg: {kind: 'cars', view: 'top'}, pill: 'THE GETAWAY', bass: true},
+  {id: 'getaway-low', t0: 11.15, bg: {kind: 'cars', view: 'low'}},
+  {id: 'arrive', t0: 11.85, bg: {kind: 'cars', view: 'side'}, glow: 'NEON'},
+  {id: 'glow', t0: 12.85, bg: {kind: 'cars', view: 'wheels'}, bass: true},
+  {id: 'beside', t0: 13.7, bg: {kind: 'cars', view: 'side'}, pill: 'SIDE BY SIDE'},
+  {id: 'beside-low', t0: 14.5, bg: {kind: 'cars', view: 'low'}},
+  {id: 'window', t0: 15.25, bg: {kind: 'cars', view: 'window'}, bass: true},
+  {id: 'taunt', t0: 16.35, bg: {kind: 'cars', view: 'side'}, pill: 'THE PAIR'},
+  {id: 'taunt-close', t0: 17.25, bg: {kind: 'cars', view: 'lean'}},
   {id: 'light', t0: 18.15, bg: {kind: 'cars', view: 'top'}, fx: ['light'], bass: true},
   {id: 'nelson', t0: 19.5, bg: {kind: 'footage', src: T2, at: 25, pos: '70% 48%'}, fx: ['nelson']},
   {id: 'keep', t0: 21.0, bg: {kind: 'footage', src: T2, at: 20, pos: '55% 50%'}},
   {id: 'react', t0: 22.4, bg: {kind: 'footage', src: T1, at: 33, pos: '50% 45%'}, pill: 'PUSHBACK', glitch: true},
   {id: 'unseen', t0: 23.9, bg: {kind: 'footage', src: T2, at: 75, pos: '50% 45%'}, glow: 'UNSEEN'},
   {id: 'box', t0: 25.1, bg: {kind: 'cars', view: 'top'}, pill: 'PINNED', bass: true, glitch: true},
+  {id: 'box-hit', t0: 25.9, bg: {kind: 'cars', view: 'impact'}, bass: true},
   {id: 'forced', t0: 26.55, bg: {kind: 'cars', view: 'front'}, pill: 'FORCED'},
-  {id: 'floor', t0: 28.0, bg: {kind: 'cars', view: 'side'}, fx: ['speedo'], bass: true},
-  {id: 'nochance', t0: 29.55, bg: {kind: 'cars', view: 'side'}, fx: ['speedo'], pill: 'OUTMATCHED'},
-  {id: 'pass', t0: 31.15, bg: {kind: 'cars', view: 'pass'}, glow: 'OVERTAKE', bass: true},
-  {id: 'lean', t0: 32.8, bg: {kind: 'cars', view: 'lean'}},
-  {id: 'face', t0: 34.4, bg: {kind: 'cars', view: 'lean'}, glow: 'TAUNT'},
+  {id: 'floor', t0: 27.7, bg: {kind: 'cars', view: 'low'}, fx: ['speedo'], bass: true},
+  {id: 'nochance', t0: 29.15, bg: {kind: 'cars', view: 'side'}, fx: ['speedo'], pill: 'OUTMATCHED'},
+  {id: 'pass', t0: 30.55, bg: {kind: 'cars', view: 'pass'}, glow: 'OVERTAKE', bass: true},
+  {id: 'pass-rear', t0: 31.7, bg: {kind: 'cars', view: 'rear'}},
+  {id: 'lean', t0: 32.7, bg: {kind: 'cars', view: 'lean'}, bass: true},
+  {id: 'face', t0: 34.15, bg: {kind: 'cars', view: 'lean'}, glow: 'TAUNT'},
   {id: 'twist', t0: 36.1, bg: {kind: 'footage', src: T2, at: 110, pos: '58% 42%'}, glow: 'THE TWIST'},
   {id: 'mission', t0: 37.55, bg: {kind: 'mission'}, bass: true, glitch: true},
-  {id: 'edge', t0: 39.15, bg: {kind: 'edge'}, pill: 'THE ISSUE'},
+  {id: 'edge', t0: 39.15, bg: {kind: 'edge'}, pill: 'THE ISSUE', bass: true},
   {id: 'shift', t0: 40.7, bg: {kind: 'footage', src: T1, at: 54, pos: '48% 50%'}, pill: 'THE SHIFT'},
   {id: 'aerial', t0: 42.15, bg: {kind: 'footage', src: T2, at: 5, pos: '50% 48%'}, glow: 'NEW COAST'},
   {id: 'map', t0: 43.7, bg: {kind: 'map'}, bass: true},
-  {id: 'tree', t0: 45.3, bg: {kind: 'tree'}},
+  {id: 'tree', t0: 45.3, bg: {kind: 'tree'}, bass: true},
   {id: 'ruin', t0: 46.8, bg: {kind: 'footage', src: T2, at: 85, pos: '50% 48%'}, pill: 'DETOUR', glitch: true},
   {id: 'wallet', t0: 48.25, bg: {kind: 'wallet'}, bass: true},
   {id: 'chase', t0: 49.8, bg: {kind: 'footage', src: T2, at: 20, pos: '50% 52%'}, glow: 'HUNTED'},
@@ -116,8 +121,13 @@ const ShotBody: React.FC<{shot: Shot; spoken: string}> = ({shot, spoken}) => {
   const {fps} = useVideoConfig();
   const t = shot.t0 + frame / fps;
   const bg = shot.bg;
+  const punch = interpolate(frame, [0, 3, 14], [1.08, 1.045, 1], {extrapolateRight: 'clamp'});
+  const drift = Math.sin(frame / 14) * 6;
+  const slicing = !!shot.glitch && frame < 4;
+  const gx = slicing ? (frame % 2 === 0 ? 28 : -24) : 0;
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      <AbsoluteFill style={{transform: `translate(${gx + drift}px, ${drift * 0.25}px) scale(${punch})`, transformOrigin: '50% 40%', filter: slicing ? 'drop-shadow(10px 0 0 rgba(255,30,120,0.85)) drop-shadow(-10px 0 0 rgba(40,255,255,0.8))' : undefined}}>
       {bg.kind === 'footage' ? <FootageBg src={bg.src} at={bg.at} pos={bg.pos} zoom={bg.zoom} /> : null}
       {bg.kind === 'cars' ? <Race view={bg.view} t={t} /> : null}
       {bg.kind === 'paper' ? <PaperDoc spoken={spoken} /> : null}
@@ -137,6 +147,7 @@ const ShotBody: React.FC<{shot: Shot; spoken: string}> = ({shot, spoken}) => {
       {shot.fx?.includes('nelson') ? <NelsonCard spoken={spoken} /> : null}
       {shot.glow ? <GlowWord text={shot.glow} spoken={spoken} /> : null}
       {shot.pill ? <PinkPill text={shot.pill} spoken={spoken} /> : null}
+      </AbsoluteFill>
       <FlashHit glitch={shot.glitch} />
     </AbsoluteFill>
   );
@@ -167,12 +178,12 @@ const Karaoke: React.FC<{words: Word[]}> = ({words}) => {
   const local = frame - Math.round((page.startMs / 1000) * fps);
   const s = spring({frame: local, fps, config: theme.spring.snappy, durationInFrames: 8});
   return (
-    <div style={{position: 'absolute', left: 70, right: 70, top: 1180, display: 'flex', justifyContent: 'center', opacity: s, transform: `translateY(${interpolate(s, [0, 1], [10, 0])}px)`}}>
-      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16, maxWidth: 920}}>
+    <div style={{position: 'absolute', left: 40, right: 40, top: 1540, display: 'flex', justifyContent: 'center', opacity: s, transform: `translateY(${interpolate(s, [0, 1], [12, 0])}px)`}}>
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 18, maxWidth: 1000}}>
         {page.tokens.map((token, i) => {
           const active = now >= token.fromMs && now < token.toMs;
           return (
-            <span key={i} style={{fontFamily: theme.font, fontWeight: 800, fontSize: 68, letterSpacing: '-0.03em', lineHeight: 1.05, color: active ? '#ffe14a' : '#ffffff', textShadow: '0 2px 0 #000, 0 8px 18px rgba(0,0,0,0.85)', transform: `scale(${active ? 1.06 : 1})`, display: 'inline-block'}}>
+            <span key={i} style={{fontFamily: theme.font, fontWeight: 800, fontSize: 96, letterSpacing: '-0.03em', lineHeight: 1.02, color: active ? '#ffe14a' : '#ffffff', WebkitTextStroke: '8px #000', paintOrder: 'stroke fill', textShadow: '0 6px 0 #000, 0 16px 28px rgba(0,0,0,0.95)', transform: `scale(${active ? 1.06 : 1})`, display: 'inline-block'}}>
               {token.text.trim()}
             </span>
           );
@@ -248,7 +259,8 @@ export const GtaDirector: React.FC = () => {
           <Sfx name="whoosh" at={shotFrom(i)} volume={0.22} />
           {shot.bass ? <Sfx name="bass" at={shotFrom(i)} volume={0.42} /> : null}
           {shot.glitch ? <Sfx name="lib/glitch" at={shotFrom(i)} volume={0.32} /> : null}
-          {shot.bg.kind === 'paper' || shot.fx?.includes('poll') ? <Sfx name="pop" at={shotFrom(i) + 6} volume={0.4} /> : null}
+          {shot.bg.kind === 'paper' ? <Sfx name="bass" at={shotFrom(i) + 8} volume={0.7} /> : null}
+          {shot.bg.kind === 'paper' || shot.bg.kind === 'mission' || shot.fx?.includes('poll') || shot.fx?.includes('hero') ? <Sfx name="pop" at={shotFrom(i) + (shot.bg.kind === 'paper' ? 8 : 4)} volume={0.45} /> : null}
         </AbsoluteFill>
       ))}
       <Sfx name="shimmer" at={OUTRO_AT} volume={0.35} />

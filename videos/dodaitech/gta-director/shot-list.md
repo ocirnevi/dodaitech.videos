@@ -12,24 +12,29 @@ Timecode is the shot start. Karaoke runs under every shot until the outro.
 | 0:06.9 | cops | Night action. Five wanted stars. |
 | 0:08.2 | crime | Bandana close-up. Red **CRIME** box once that word leaves the caption. |
 | 0:09.4 | wagon | White truck. Family glyphs. Pill **BEATER**. |
-| 0:10.4 | getaway | Top-down 2D wagon, 4x4 closing. Pill **THE GETAWAY**. |
-| 0:11.7 | arrive | Side view, 4x4 pulls up. Glow **NEON**. |
-| 0:13.1 | glow | Wheel close-up, purple underglow. |
-| 0:14.4 | beside | Side view, alongside. Pill **SIDE BY SIDE**. |
-| 0:15.5 | window | Window rolls down, two figures. |
-| 0:16.9 | taunt | Side view. Pill **THE PAIR**. |
+| 0:10.4 | getaway | Top-down, both cars large. Pill **THE GETAWAY**. |
+| 0:11.2 | getaway-low | Low side, wagon. |
+| 0:11.9 | arrive | Side view, 4x4 pulls up. Glow **NEON**. |
+| 0:12.9 | glow | Wheel close-up, purple underglow. |
+| 0:13.7 | beside | Side view, alongside. Pill **SIDE BY SIDE**. |
+| 0:14.5 | beside-low | Low angle. |
+| 0:15.3 | window | Window rolls down, two figures. |
+| 0:16.4 | taunt | Side view. Pill **THE PAIR**. |
+| 0:17.3 | taunt-close | Passenger pose. |
 | 0:18.2 | light | Top-down plus traffic light. |
 | 0:19.5 | nelson | Driving POV. Pill **ROB NELSON** (no photo). |
 | 0:21.0 | keep | Bridge traffic. |
 | 0:22.4 | react | Club, glitch. Pill **PUSHBACK**. |
 | 0:23.9 | unseen | Red interior. Glow **UNSEEN**. |
 | 0:25.1 | box | Top-down, 4x4 boxes the wagon. Pill **PINNED**. |
+| 0:25.9 | box-hit | Side impact, sparks. |
 | 0:26.6 | forced | Front view, both vehicles. Pill **FORCED**. |
-| 0:28.0 | floor | Side view, speedometer climbing. |
-| 0:29.6 | nochance | Speedometer near the top. Pill **OUTMATCHED**. |
-| 0:31.2 | pass | 4x4 overtakes. Glow **OVERTAKE**. |
-| 0:32.8 | lean | Passenger starts out the window. |
-| 0:34.4 | face | Passenger leaning out. Glow **TAUNT**. |
+| 0:27.7 | floor | Low side, speedometer climbing. |
+| 0:29.2 | nochance | Side view, speedometer high. Pill **OUTMATCHED**. |
+| 0:30.6 | pass | 4x4 overtakes. Glow **OVERTAKE**. |
+| 0:31.7 | pass-rear | Top view pulling away. |
+| 0:32.7 | lean | Passenger starts out the window. |
+| 0:34.2 | face | Passenger leaning out, arm up. Glow **TAUNT**. |
 | 0:36.1 | twist | Trailer, someone at a car window. Glow **THE TWIST**. |
 | 0:37.6 | mission | Mission card, red X, **NOT SCRIPTED** (hidden while that word is spoken). |
 | 0:39.2 | edge | Magazine card, masthead EDGE, trailer still. Pill **THE ISSUE**. |
