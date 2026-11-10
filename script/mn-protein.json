@@ -1,0 +1,110 @@
+{
+  "id": "mn-protein",
+  "channel": "minutriologo",
+  "title": "Desayuno con proteína: más saciedad",
+  "language": "es-MX",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade, multilingual)",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
+  "frame1Text": "Un desayuno que rinde.",
+  "armature": "La proteína en el desayuno te mantiene lleno más tiempo: activa hormonas de saciedad y se digiere más lento que los carbohidratos; agrega huevo, yogur griego o queso cottage a tu pan o cereal.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Un desayuno que rinde.",
+      "narration": "¿Sabías que agregar proteína a tu desayuno puede ayudarte a sentirte lleno por más tiempo?",
+      "beats": []
+    },
+    {
+      "id": "why",
+      "kind": "why",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Te explico por qué.",
+      "beats": []
+    },
+    {
+      "id": "hormones",
+      "kind": "hormones",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "la señal",
+      "title": "",
+      "narration": "La proteína ayuda a tu cuerpo a liberar hormonas que le avisan a tu cerebro que ya estás lleno.",
+      "beats": [],
+      "sources": [
+        "Batterham et al., Cell Metab 2006; Leidy et al., Am J Clin Nutr 2013: la proteína eleva PYY/GLP-1 y baja el hambre"
+      ]
+    },
+    {
+      "id": "digest",
+      "kind": "digest",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "A fuego lento.",
+      "narration": "Y tarda más en digerirse que los carbohidratos solos.",
+      "beats": []
+    },
+    {
+      "id": "swap",
+      "kind": "swap",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— el cambio",
+      "title": "Mejora tu plato:",
+      "narration": "Así que, en lugar de desayunar solo pan tostado o cereal, prueba agregar huevos, yogur griego o queso cottage.",
+      "beats": []
+    },
+    {
+      "id": "satisfied",
+      "kind": "satisfied",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "Hasta el mediodía.",
+      "narration": "Podrías sentirte más satisfecho y con menos hambre antes de la comida.",
+      "beats": [],
+      "sources": [
+        "Leidy et al., Am J Clin Nutr 2013: el desayuno alto en proteína redujo el hambre antes de la comida"
+      ]
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "¡Sigue a Mi Nutriólogo para más consejos de nutrición!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Leidy H.J. et al. Beneficial effects of a higher-protein breakfast on the appetitive, hormonal, and neural signals controlling energy intake regulation in overweight/obese, 'breakfast-skipping,' late-adolescent girls. Am J Clin Nutr. 2013;97(4):677-688.",
+    "Batterham R.L. et al. Critical role for peptide YY in protein-mediated satiation and body-weight regulation. Cell Metab. 2006;4(3):223-233.",
+    "Westerterp-Plantenga M.S. et al. Dietary protein, weight loss, and weight maintenance. Annu Rev Nutr. 2009;29:21-41 (protein is the most satiating macronutrient).",
+    "Nota: traducción del guion hn-protein de Enrico; referencias de memoria, verificar antes de publicar."
+  ]
+}

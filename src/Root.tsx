@@ -9,6 +9,8 @@ import {MN_KIWIS, MnKiwis, mnKiwisTimeline} from './shorts/MnKiwis';
 import {HN_LEMON, HnLemon, hnLemonTimeline} from './shorts/HnLemon';
 import {MN_LEMON, MnLemon, mnLemonTimeline} from './shorts/MnLemon';
 import {AI_OVERNIGHT, AiOvernight, aiOvernightTimeline} from './shorts/AiOvernight';
+import {HN_PROTEIN, HnProtein, hnProteinTimeline} from './shorts/HnProtein';
+import {MN_PROTEIN, MnProtein, mnProteinTimeline} from './shorts/MnProtein';
 import {SHORT, buildShortTimeline} from './shorts/script';
 import {ChipSupplyChain} from './Video';
 import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
@@ -24,8 +26,12 @@ export const RemotionRoot: React.FC = () => {
   const hnLemon = hnLemonTimeline();
   const mnLemon = mnLemonTimeline();
   const aiOvernight = aiOvernightTimeline();
+  const hnProtein = hnProteinTimeline();
+  const mnProtein = mnProteinTimeline();
   return (
     <>
+    <Composition id="HnProtein" component={HnProtein} durationInFrames={hnProtein.totalFrames} fps={HN_PROTEIN.fps} width={HN_PROTEIN.width} height={HN_PROTEIN.height} />
+    <Composition id="MnProtein" component={MnProtein} durationInFrames={mnProtein.totalFrames} fps={MN_PROTEIN.fps} width={MN_PROTEIN.width} height={MN_PROTEIN.height} />
     <Composition id="AiOvernight" component={AiOvernight} durationInFrames={aiOvernight.totalFrames} fps={AI_OVERNIGHT.fps} width={AI_OVERNIGHT.width} height={AI_OVERNIGHT.height} />
     <Composition id="HnLemon" component={HnLemon} durationInFrames={hnLemon.totalFrames} fps={HN_LEMON.fps} width={HN_LEMON.width} height={HN_LEMON.height} />
     <Composition id="MnLemon" component={MnLemon} durationInFrames={mnLemon.totalFrames} fps={MN_LEMON.fps} width={MN_LEMON.width} height={MN_LEMON.height} />

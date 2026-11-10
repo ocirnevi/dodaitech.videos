@@ -1,0 +1,30 @@
+{
+  "hook": {
+    "src": "narration/hn-protein/hook.wav",
+    "durationInSeconds": 3.690792
+  },
+  "why": {
+    "src": "narration/hn-protein/why.wav",
+    "durationInSeconds": 0.689396
+  },
+  "hormones": {
+    "src": "narration/hn-protein/hormones.wav",
+    "durationInSeconds": 3.697875
+  },
+  "digest": {
+    "src": "narration/hn-protein/digest.wav",
+    "durationInSeconds": 2.833458
+  },
+  "swap": {
+    "src": "narration/hn-protein/swap.wav",
+    "durationInSeconds": 6.568625
+  },
+  "satisfied": {
+    "src": "narration/hn-protein/satisfied.wav",
+    "durationInSeconds": 2.712521
+  },
+  "follow": {
+    "src": "narration/hn-protein/follow.wav",
+    "durationInSeconds": 2.718313
+  }
+}

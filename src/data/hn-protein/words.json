@@ -1,0 +1,386 @@
+{
+ "hook": [
+  {
+   "word": "Did",
+   "start": 0.0,
+   "end": 0.138
+  },
+  {
+   "word": "you",
+   "start": 0.17,
+   "end": 0.245
+  },
+  {
+   "word": "know",
+   "start": 0.289,
+   "end": 0.428
+  },
+  {
+   "word": "that",
+   "start": 0.471,
+   "end": 0.59
+  },
+  {
+   "word": "adding",
+   "start": 0.643,
+   "end": 0.89
+  },
+  {
+   "word": "protein",
+   "start": 0.944,
+   "end": 1.278
+  },
+  {
+   "word": "to",
+   "start": 1.331,
+   "end": 1.381
+  },
+  {
+   "word": "your",
+   "start": 1.428,
+   "end": 1.525
+  },
+  {
+   "word": "breakfast",
+   "start": 1.556,
+   "end": 2.052
+  },
+  {
+   "word": "can",
+   "start": 2.266,
+   "end": 2.406
+  },
+  {
+   "word": "help",
+   "start": 2.46,
+   "end": 2.6
+  },
+  {
+   "word": "you",
+   "start": 2.642,
+   "end": 2.707
+  },
+  {
+   "word": "feel",
+   "start": 2.75,
+   "end": 2.911
+  },
+  {
+   "word": "full",
+   "start": 2.965,
+   "end": 3.148
+  },
+  {
+   "word": "longer?",
+   "start": 3.202,
+   "end": 3.664
+  }
+ ],
+ "why": [
+  {
+   "word": "Here's",
+   "start": 0.0,
+   "end": 0.246
+  },
+  {
+   "word": "why.",
+   "start": 0.278,
+   "end": 0.633
+  }
+ ],
+ "hormones": [
+  {
+   "word": "Protein",
+   "start": 0.0,
+   "end": 0.424
+  },
+  {
+   "word": "helps",
+   "start": 0.5,
+   "end": 0.737
+  },
+  {
+   "word": "your",
+   "start": 0.769,
+   "end": 0.876
+  },
+  {
+   "word": "body",
+   "start": 0.909,
+   "end": 1.124
+  },
+  {
+   "word": "release",
+   "start": 1.188,
+   "end": 1.478
+  },
+  {
+   "word": "hormones",
+   "start": 1.511,
+   "end": 1.962
+  },
+  {
+   "word": "that",
+   "start": 2.016,
+   "end": 2.145
+  },
+  {
+   "word": "signal",
+   "start": 2.21,
+   "end": 2.511
+  },
+  {
+   "word": "fullness",
+   "start": 2.586,
+   "end": 2.951
+  },
+  {
+   "word": "to",
+   "start": 2.984,
+   "end": 3.034
+  },
+  {
+   "word": "your",
+   "start": 3.091,
+   "end": 3.187
+  },
+  {
+   "word": "brain.",
+   "start": 3.22,
+   "end": 3.639
+  }
+ ],
+ "digest": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.12
+  },
+  {
+   "word": "it",
+   "start": 0.173,
+   "end": 0.227
+  },
+  {
+   "word": "takes",
+   "start": 0.259,
+   "end": 0.484
+  },
+  {
+   "word": "longer",
+   "start": 0.549,
+   "end": 0.818
+  },
+  {
+   "word": "to",
+   "start": 0.883,
+   "end": 0.936
+  },
+  {
+   "word": "digest",
+   "start": 0.99,
+   "end": 1.409
+  },
+  {
+   "word": "than",
+   "start": 1.474,
+   "end": 1.614
+  },
+  {
+   "word": "carbohydrates",
+   "start": 1.668,
+   "end": 2.323
+  },
+  {
+   "word": "alone.",
+   "start": 2.356,
+   "end": 2.833
+  }
+ ],
+ "swap": [
+  {
+   "word": "So",
+   "start": 0.021,
+   "end": 0.161
+  },
+  {
+   "word": "instead",
+   "start": 0.236,
+   "end": 0.537
+  },
+  {
+   "word": "of",
+   "start": 0.569,
+   "end": 0.623
+  },
+  {
+   "word": "having",
+   "start": 0.676,
+   "end": 0.924
+  },
+  {
+   "word": "just",
+   "start": 0.978,
+   "end": 1.182
+  },
+  {
+   "word": "toast",
+   "start": 1.247,
+   "end": 1.623
+  },
+  {
+   "word": "or",
+   "start": 1.688,
+   "end": 1.805
+  },
+  {
+   "word": "cereal",
+   "start": 1.87,
+   "end": 2.214
+  },
+  {
+   "word": "for",
+   "start": 2.268,
+   "end": 2.364
+  },
+  {
+   "word": "breakfast,",
+   "start": 2.408,
+   "end": 3.052
+  },
+  {
+   "word": "try",
+   "start": 3.343,
+   "end": 3.547
+  },
+  {
+   "word": "adding",
+   "start": 3.612,
+   "end": 3.848
+  },
+  {
+   "word": "eggs,",
+   "start": 3.924,
+   "end": 4.396
+  },
+  {
+   "word": "Greek",
+   "start": 4.547,
+   "end": 4.794
+  },
+  {
+   "word": "yogurt,",
+   "start": 4.848,
+   "end": 5.342
+  },
+  {
+   "word": "or",
+   "start": 5.45,
+   "end": 5.568
+  },
+  {
+   "word": "cottage",
+   "start": 5.633,
+   "end": 5.966
+  },
+  {
+   "word": "cheese.",
+   "start": 6.009,
+   "end": 6.525
+  }
+ ],
+ "satisfied": [
+  {
+   "word": "You",
+   "start": 0.0,
+   "end": 0.099
+  },
+  {
+   "word": "may",
+   "start": 0.153,
+   "end": 0.281
+  },
+  {
+   "word": "feel",
+   "start": 0.335,
+   "end": 0.496
+  },
+  {
+   "word": "more",
+   "start": 0.551,
+   "end": 0.712
+  },
+  {
+   "word": "satisfied",
+   "start": 0.744,
+   "end": 1.292
+  },
+  {
+   "word": "and",
+   "start": 1.324,
+   "end": 1.389
+  },
+  {
+   "word": "less",
+   "start": 1.432,
+   "end": 1.593
+  },
+  {
+   "word": "hungry",
+   "start": 1.626,
+   "end": 1.904
+  },
+  {
+   "word": "before",
+   "start": 1.958,
+   "end": 2.205
+  },
+  {
+   "word": "lunch.",
+   "start": 2.249,
+   "end": 2.701
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.011,
+   "end": 0.29
+  },
+  {
+   "word": "Hello",
+   "start": 0.344,
+   "end": 0.548
+  },
+  {
+   "word": "Nutrition",
+   "start": 0.613,
+   "end": 1.0
+  },
+  {
+   "word": "AI",
+   "start": 1.032,
+   "end": 1.365
+  },
+  {
+   "word": "for",
+   "start": 1.419,
+   "end": 1.548
+  },
+  {
+   "word": "more",
+   "start": 1.591,
+   "end": 1.731
+  },
+  {
+   "word": "nutrition",
+   "start": 1.774,
+   "end": 2.171
+  },
+  {
+   "word": "tips!",
+   "start": 2.215,
+   "end": 2.656
+  }
+ ]
+}

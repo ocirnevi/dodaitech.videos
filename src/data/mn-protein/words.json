@@ -1,0 +1,451 @@
+{
+ "hook": [
+  {
+   "word": "¿Sabías",
+   "start": 0.021,
+   "end": 0.452
+  },
+  {
+   "word": "que",
+   "start": 0.516,
+   "end": 0.581
+  },
+  {
+   "word": "agregar",
+   "start": 0.602,
+   "end": 0.924
+  },
+  {
+   "word": "proteína",
+   "start": 0.979,
+   "end": 1.516
+  },
+  {
+   "word": "a",
+   "start": 1.537,
+   "end": 1.587
+  },
+  {
+   "word": "tu",
+   "start": 1.602,
+   "end": 1.688
+  },
+  {
+   "word": "desayuno",
+   "start": 1.731,
+   "end": 2.29
+  },
+  {
+   "word": "puede",
+   "start": 2.505,
+   "end": 2.742
+  },
+  {
+   "word": "ayudarte",
+   "start": 2.763,
+   "end": 3.171
+  },
+  {
+   "word": "a",
+   "start": 3.193,
+   "end": 3.243
+  },
+  {
+   "word": "sentirte",
+   "start": 3.246,
+   "end": 3.687
+  },
+  {
+   "word": "lleno",
+   "start": 3.708,
+   "end": 3.967
+  },
+  {
+   "word": "por",
+   "start": 4.01,
+   "end": 4.118
+  },
+  {
+   "word": "más",
+   "start": 4.171,
+   "end": 4.311
+  },
+  {
+   "word": "tiempo?",
+   "start": 4.354,
+   "end": 4.816
+  }
+ ],
+ "why": [
+  {
+   "word": "Te",
+   "start": 0.0,
+   "end": 0.074
+  },
+  {
+   "word": "explico",
+   "start": 0.106,
+   "end": 0.515
+  },
+  {
+   "word": "por",
+   "start": 0.557,
+   "end": 0.676
+  },
+  {
+   "word": "qué.",
+   "start": 0.741,
+   "end": 1.03
+  }
+ ],
+ "hormones": [
+  {
+   "word": "La",
+   "start": 0.005,
+   "end": 0.101
+  },
+  {
+   "word": "proteína",
+   "start": 0.134,
+   "end": 0.618
+  },
+  {
+   "word": "ayuda",
+   "start": 0.682,
+   "end": 1.015
+  },
+  {
+   "word": "a",
+   "start": 1.036,
+   "end": 1.086
+  },
+  {
+   "word": "tu",
+   "start": 1.101,
+   "end": 1.187
+  },
+  {
+   "word": "cuerpo",
+   "start": 1.23,
+   "end": 1.607
+  },
+  {
+   "word": "a",
+   "start": 1.693,
+   "end": 1.743
+  },
+  {
+   "word": "liberar",
+   "start": 1.789,
+   "end": 2.111
+  },
+  {
+   "word": "hormonas",
+   "start": 2.144,
+   "end": 2.703
+  },
+  {
+   "word": "que",
+   "start": 2.993,
+   "end": 3.09
+  },
+  {
+   "word": "le",
+   "start": 3.144,
+   "end": 3.198
+  },
+  {
+   "word": "avisan",
+   "start": 3.23,
+   "end": 3.531
+  },
+  {
+   "word": "a",
+   "start": 3.585,
+   "end": 3.635
+  },
+  {
+   "word": "tu",
+   "start": 3.638,
+   "end": 3.724
+  },
+  {
+   "word": "cerebro",
+   "start": 3.767,
+   "end": 4.144
+  },
+  {
+   "word": "que",
+   "start": 4.219,
+   "end": 4.315
+  },
+  {
+   "word": "ya",
+   "start": 4.401,
+   "end": 4.52
+  },
+  {
+   "word": "estás",
+   "start": 4.585,
+   "end": 4.853
+  },
+  {
+   "word": "lleno.",
+   "start": 4.874,
+   "end": 5.335
+  }
+ ],
+ "digest": [
+  {
+   "word": "Y",
+   "start": 0.0,
+   "end": 0.05
+  },
+  {
+   "word": "tarda",
+   "start": 0.136,
+   "end": 0.373
+  },
+  {
+   "word": "más",
+   "start": 0.426,
+   "end": 0.598
+  },
+  {
+   "word": "en",
+   "start": 0.652,
+   "end": 0.706
+  },
+  {
+   "word": "digerirse",
+   "start": 0.738,
+   "end": 1.233
+  },
+  {
+   "word": "que",
+   "start": 1.276,
+   "end": 1.34
+  },
+  {
+   "word": "los",
+   "start": 1.373,
+   "end": 1.48
+  },
+  {
+   "word": "carbohidratos",
+   "start": 1.523,
+   "end": 2.072
+  },
+  {
+   "word": "solos.",
+   "start": 2.093,
+   "end": 2.641
+  }
+ ],
+ "swap": [
+  {
+   "word": "Así",
+   "start": 0.0,
+   "end": 0.223
+  },
+  {
+   "word": "que,",
+   "start": 0.277,
+   "end": 0.547
+  },
+  {
+   "word": "en",
+   "start": 0.654,
+   "end": 0.75
+  },
+  {
+   "word": "lugar",
+   "start": 0.804,
+   "end": 1.041
+  },
+  {
+   "word": "de",
+   "start": 1.095,
+   "end": 1.145
+  },
+  {
+   "word": "desayunar",
+   "start": 1.191,
+   "end": 1.664
+  },
+  {
+   "word": "solo",
+   "start": 1.729,
+   "end": 1.954
+  },
+  {
+   "word": "pan",
+   "start": 1.998,
+   "end": 2.137
+  },
+  {
+   "word": "tostado",
+   "start": 2.18,
+   "end": 2.611
+  },
+  {
+   "word": "o",
+   "start": 2.642,
+   "end": 2.692
+  },
+  {
+   "word": "cereal,",
+   "start": 2.707,
+   "end": 3.234
+  },
+  {
+   "word": "prueba",
+   "start": 3.481,
+   "end": 3.749
+  },
+  {
+   "word": "agregar",
+   "start": 3.772,
+   "end": 4.115
+  },
+  {
+   "word": "huevos,",
+   "start": 4.148,
+   "end": 4.631
+  },
+  {
+   "word": "yogur",
+   "start": 4.847,
+   "end": 5.115
+  },
+  {
+   "word": "griego",
+   "start": 5.158,
+   "end": 5.512
+  },
+  {
+   "word": "o",
+   "start": 5.598,
+   "end": 5.663
+  },
+  {
+   "word": "queso",
+   "start": 5.728,
+   "end": 5.964
+  },
+  {
+   "word": "cottage.",
+   "start": 6.018,
+   "end": 6.549
+  }
+ ],
+ "satisfied": [
+  {
+   "word": "Podrías",
+   "start": 0.0,
+   "end": 0.358
+  },
+  {
+   "word": "sentirte",
+   "start": 0.38,
+   "end": 0.81
+  },
+  {
+   "word": "más",
+   "start": 0.863,
+   "end": 1.014
+  },
+  {
+   "word": "satisfecho",
+   "start": 1.036,
+   "end": 1.659
+  },
+  {
+   "word": "y",
+   "start": 1.766,
+   "end": 1.842
+  },
+  {
+   "word": "con",
+   "start": 1.917,
+   "end": 2.036
+  },
+  {
+   "word": "menos",
+   "start": 2.078,
+   "end": 2.304
+  },
+  {
+   "word": "hambre",
+   "start": 2.368,
+   "end": 2.659
+  },
+  {
+   "word": "antes",
+   "start": 2.724,
+   "end": 3.013
+  },
+  {
+   "word": "de",
+   "start": 3.035,
+   "end": 3.085
+  },
+  {
+   "word": "la",
+   "start": 3.121,
+   "end": 3.186
+  },
+  {
+   "word": "comida.",
+   "start": 3.228,
+   "end": 3.723
+  }
+ ],
+ "follow": [
+  {
+   "word": "¡Sigue",
+   "start": 0.0,
+   "end": 0.315
+  },
+  {
+   "word": "a",
+   "start": 0.348,
+   "end": 0.398
+  },
+  {
+   "word": "Mi",
+   "start": 0.423,
+   "end": 0.499
+  },
+  {
+   "word": "Nutriólogo",
+   "start": 0.541,
+   "end": 1.079
+  },
+  {
+   "word": "para",
+   "start": 1.133,
+   "end": 1.315
+  },
+  {
+   "word": "más",
+   "start": 1.369,
+   "end": 1.551
+  },
+  {
+   "word": "consejos",
+   "start": 1.605,
+   "end": 2.025
+  },
+  {
+   "word": "de",
+   "start": 2.057,
+   "end": 2.107
+  },
+  {
+   "word": "nutrición!",
+   "start": 2.132,
+   "end": 2.756
+  }
+ ]
+}
