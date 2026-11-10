@@ -1,0 +1,25 @@
+{
+  "id": "gta-director",
+  "channel": "dodaitech",
+  "title": "Rockstar's director got humiliated inside GTA 6",
+  "language": "en-US",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/gta-director/bed.wav",
+  "frame1Text": "Wrecked inside his own game",
+  "armature": "A mechanic Rob Nelson approved himself boxed his test car in and forced a race, because Leonida is built out of unscripted events that ruin a clean plan.",
+  "privateTest": true,
+  "doNotPublish": "Capability test only. Official GTA VI trailer frames are used as footage. Do not publish.",
+  "narration": "public/narration/gta-director/alex-vo-v1.mp3",
+  "words": "src/data/gta-director/words.json",
+  "notes": "Single ElevenLabs file, used as-is. tighten-narration was skipped so the supplied word timestamps stay locked to the mp3.",
+  "sources": [
+    "Narration supplied for this test (Alex, ElevenLabs word timings).",
+    "Edge magazine is named in the supplied narration; issue number was not re-verified here.",
+    "Footage: official Rockstar GTA VI Trailer 1 and Trailer 2, private test only."
+  ],
+  "scenes": []
+}

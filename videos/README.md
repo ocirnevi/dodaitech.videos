@@ -15,6 +15,7 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | `ai-memory` | Would you want AI to remember your entire life? | v5 final con voz Alex y host P2 |
 | `ai-agents` | Don't let AI replace you. Make it work for you. | v2 final (feedback de ritmo aplicado) |
 | `ai-overnight` | AI that works while you sleep | v1 final, voz Alex, host P2 en hook y cierre |
+| `gta-director` | Rockstar's director got humiliated inside GTA 6 | prueba privada de estilo, no publicar |
 
 ## hellonutrition (`videos/hellonutrition/`) — Hello Nutrition AI, nutrición con base científica, inglés, sin cara
 

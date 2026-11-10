@@ -9,6 +9,7 @@ import {MN_KIWIS, MnKiwis, mnKiwisTimeline} from './shorts/MnKiwis';
 import {HN_LEMON, HnLemon, hnLemonTimeline} from './shorts/HnLemon';
 import {MN_LEMON, MnLemon, mnLemonTimeline} from './shorts/MnLemon';
 import {AI_OVERNIGHT, AiOvernight, aiOvernightTimeline} from './shorts/AiOvernight';
+import {GTA_DIRECTOR, GtaDirector} from './shorts/GtaDirector';
 import {SHORT, buildShortTimeline} from './shorts/script';
 import {ChipSupplyChain} from './Video';
 import {buildTimeline, FPS, HEIGHT, WIDTH} from './script';
@@ -27,6 +28,7 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
     <Composition id="AiOvernight" component={AiOvernight} durationInFrames={aiOvernight.totalFrames} fps={AI_OVERNIGHT.fps} width={AI_OVERNIGHT.width} height={AI_OVERNIGHT.height} />
+    <Composition id="GtaDirector" component={GtaDirector} durationInFrames={GTA_DIRECTOR.durationInFrames} fps={GTA_DIRECTOR.fps} width={GTA_DIRECTOR.width} height={GTA_DIRECTOR.height} />
     <Composition id="HnLemon" component={HnLemon} durationInFrames={hnLemon.totalFrames} fps={HN_LEMON.fps} width={HN_LEMON.width} height={HN_LEMON.height} />
     <Composition id="MnLemon" component={MnLemon} durationInFrames={mnLemon.totalFrames} fps={MN_LEMON.fps} width={MN_LEMON.width} height={MN_LEMON.height} />
     <Composition id="MnKiwis" component={MnKiwis} durationInFrames={mnKiwis.totalFrames} fps={MN_KIWIS.fps} width={MN_KIWIS.width} height={MN_KIWIS.height} />
