@@ -1,0 +1,230 @@
+{
+  "id": "ibm-cold",
+  "title": "Why IBM freezes its quantum computers",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "language": "en-US",
+  "channel": "dodaitech",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": true,
+    "layout": "split",
+    "split": 960,
+    "focusY": 0.18,
+    "clips": {
+      "hook": "avatar/ibm-cold/hook-p2.mp4",
+      "follow": "avatar/ibm-cold/follow-p2.mp4"
+    },
+    "heygen": {
+      "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+      "look_id": "329327dec229991ace01dff9237155b2",
+      "look_name": "P2 · escritorio neutro",
+      "engine": "avatar_iv",
+      "expressiveness": "high",
+      "videos": {
+        "hook": "5ec2bc6ce44eaec0844bfa05d87acd4c",
+        "follow": "057e1f4cfd29dd6a39236d844089c653"
+      },
+      "motion_prompt_hook": "Asks the question to the viewer with a curious eyebrow raise.",
+      "motion_prompt_follow": "Explains calmly with a small nod."
+    }
+  },
+  "frame1Text": "−273 °C. On purpose.",
+  "armature": "Qubits can hold a mix of 0 and 1, but heat scrambles them, so IBM chills its chips to a hair above absolute zero: the most advanced computers are also the coldest machines on Earth.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Why does IBM cool its quantum computers to almost absolute zero?",
+      "beats": []
+    },
+    {
+      "id": "space",
+      "kind": "space",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "We're talking colder than outer space.",
+      "beats": [],
+      "sources": [
+        "Fondo cósmico de microondas ≈ 2.7 K (Fixsen 2009, ApJ 707:916). Cámara de mezcla de los refrigeradores de dilución de IBM ≈ 15 mK (IBM Quantum)."
+      ]
+    },
+    {
+      "id": "why",
+      "kind": "why",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Here's why.",
+      "beats": []
+    },
+    {
+      "id": "bits",
+      "kind": "bits",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Normal computers use bits. Each bit is either a zero or a one.",
+      "beats": []
+    },
+    {
+      "id": "qubits",
+      "kind": "qubits",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "the quantum version",
+      "title": "",
+      "narration": "But quantum computers use something called qubits.",
+      "beats": []
+    },
+    {
+      "id": "super",
+      "kind": "super",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "And thanks to quantum physics, a qubit can exist in a combination of zero and one.",
+      "beats": []
+    },
+    {
+      "id": "powerful",
+      "kind": "powerful",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Sounds powerful, right?",
+      "beats": []
+    },
+    {
+      "id": "problem",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Here's the problem.",
+      "beats": []
+    },
+    {
+      "id": "sensitive",
+      "kind": "sensitive",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Qubits are incredibly sensitive.",
+      "beats": []
+    },
+    {
+      "id": "heat",
+      "kind": "heat",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Even tiny amounts of heat can disturb their quantum states, causing errors.",
+      "beats": []
+    },
+    {
+      "id": "cool",
+      "kind": "cool",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "inside the fridge",
+      "title": "",
+      "narration": "So IBM cools its superconducting quantum chips to temperatures just a fraction of a degree above absolute zero.",
+      "beats": [],
+      "sources": [
+        "Etapas típicas de un refrigerador de dilución: 50 K, 4 K, 0.8 K, 0.1 K, ≈ 0.015 K (IBM Quantum, Bluefors)."
+      ]
+    },
+    {
+      "id": "minus",
+      "kind": "minus",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "That's around minus 273 degrees Celsius!",
+      "beats": [],
+      "sources": [
+        "0 K = −273.15 °C; 15 mK ≈ −273.135 °C."
+      ]
+    },
+    {
+      "id": "maintain",
+      "kind": "maintain",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "At these temperatures, the circuits can maintain the delicate quantum behavior needed for computation.",
+      "beats": []
+    },
+    {
+      "id": "crazy",
+      "kind": "turn2",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "The crazy part?",
+      "beats": []
+    },
+    {
+      "id": "coldest",
+      "kind": "coldest",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "We're building some of the world's most advanced computers by making them some of the coldest machines on Earth.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Follow Dodai Tech for more tech news!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Guion de Enrico (10 nov 2026).",
+    "Fixsen D.J. The Temperature of the Cosmic Microwave Background. ApJ 2009;707:916 (2.7255 K).",
+    "IBM Quantum: los procesadores superconductores operan a ≈ 15 mK en refrigeradores de dilución. Verificar cifra exacta antes de publicar."
+  ]
+}

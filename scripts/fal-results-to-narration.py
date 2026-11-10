@@ -12,8 +12,12 @@ ap = argparse.ArgumentParser(); ap.add_argument('results'); ap.add_argument('slu
 a = ap.parse_args()
 ROOT = Path(__file__).resolve().parent.parent
 raw = open(a.results).read()
-data = json.loads(raw[raw.index('{'):raw.rindex('}') + 1])
+try:
+    data = json.loads(raw)
+except json.JSONDecodeError:
+    data = json.loads(raw[raw.index('{'):raw.rindex('}') + 1])
 if isinstance(data, list): data = json.loads(data[0]['text'])
+if 'jobs' not in data and 'text' in data: data = json.loads(data['text'])
 script = json.load(open(ROOT / 'script' / f'{a.slug}.json'))
 OUT = ROOT / 'public' / 'narration' / a.slug; DATA = ROOT / 'src' / 'data' / a.slug
 OUT.mkdir(parents=True, exist_ok=True); DATA.mkdir(parents=True, exist_ok=True)

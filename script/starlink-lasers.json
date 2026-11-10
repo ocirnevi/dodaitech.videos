@@ -1,0 +1,207 @@
+{
+  "id": "starlink-lasers",
+  "title": "How Starlink beams internet from space",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "language": "en-US",
+  "channel": "dodaitech",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": true,
+    "layout": "split",
+    "split": 960,
+    "focusY": 0.18,
+    "clips": {
+      "hook": "avatar/starlink-lasers/hook-p2.mp4",
+      "follow": "avatar/starlink-lasers/follow-p2.mp4"
+    },
+    "heygen": {
+      "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+      "look_id": "329327dec229991ace01dff9237155b2",
+      "look_name": "P2 · escritorio neutro",
+      "engine": "avatar_iv",
+      "expressiveness": "high",
+      "videos": {
+        "hook": "81351079c5c4ba63ddcbddc10c898924",
+        "follow": "a570b8500746a1eb628fbc3f70576e5e"
+      },
+      "motion_prompt_hook": "Asks the question to the viewer with a curious eyebrow raise.",
+      "motion_prompt_follow": "Explains calmly with a small nod."
+    }
+  },
+  "frame1Text": "Wi-Fi from orbit.",
+  "armature": "Starlink sends your data by radio to satellites overhead, down to ground stations, and when there's none nearby, across space between satellites by laser: an internet network in the sky.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "How does SpaceX deliver internet from space without cables?",
+      "beats": []
+    },
+    {
+      "id": "answer",
+      "kind": "answer",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "The answer is pretty incredible.",
+      "beats": []
+    },
+    {
+      "id": "thousands",
+      "kind": "thousands",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Starlink uses thousands of satellites orbiting Earth.",
+      "beats": []
+    },
+    {
+      "id": "how",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "But here's how it actually works.",
+      "beats": []
+    },
+    {
+      "id": "antenna",
+      "kind": "antenna",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "When you open a website, your Starlink antenna sends a radio signal to a satellite hundreds of kilometers above you.",
+      "beats": [],
+      "sources": [
+        "Órbita de los satélites Starlink ≈ 340–570 km (SpaceX, solicitudes a la FCC)."
+      ]
+    },
+    {
+      "id": "ground",
+      "kind": "ground",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "That satellite can send the data down to a ground station connected to the internet.",
+      "beats": []
+    },
+    {
+      "id": "nostation",
+      "kind": "nostation",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "But what if there's no ground station nearby?",
+      "beats": []
+    },
+    {
+      "id": "interesting",
+      "kind": "turn2",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "That's where things get interesting.",
+      "beats": []
+    },
+    {
+      "id": "lasers",
+      "kind": "lasers",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Starlink satellites can communicate with each other using lasers!",
+      "beats": []
+    },
+    {
+      "id": "speed",
+      "kind": "speed",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "These invisible beams transfer data between satellites at the speed of light.",
+      "beats": [],
+      "sources": [
+        "Velocidad de la luz en el vacío: 299,792 km/s."
+      ]
+    },
+    {
+      "id": "hop",
+      "kind": "hop",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Your data can travel across space, hopping between satellites, before returning to Earth.",
+      "beats": []
+    },
+    {
+      "id": "fast",
+      "kind": "fast",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "And all of this happens in fractions of a second.",
+      "beats": [],
+      "sources": [
+        "Latencia típica de Starlink ≈ 25–60 ms (Starlink, actualizaciones de red 2024–2025). Rango, no cifra única."
+      ]
+    },
+    {
+      "id": "network",
+      "kind": "network",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "SpaceX is essentially building an internet network in the sky.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Follow Dodai Tech for more tech news!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Guion de Enrico (10 nov 2026).",
+    "SpaceX/Starlink: órbita baja ≈ 340–570 km; enlaces láser entre satélites; latencia ≈ 25–60 ms. Verificar antes de publicar."
+  ]
+}

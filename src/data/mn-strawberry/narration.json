@@ -1,0 +1,34 @@
+{
+  "hook": {
+    "src": "narration/mn-strawberry/hook.wav",
+    "durationInSeconds": 3.114021
+  },
+  "yep": {
+    "src": "narration/mn-strawberry/yep.wav",
+    "durationInSeconds": 3.883
+  },
+  "numbers": {
+    "src": "narration/mn-strawberry/numbers.wav",
+    "durationInSeconds": 6.012813
+  },
+  "more": {
+    "src": "narration/mn-strawberry/more.wav",
+    "durationInSeconds": 3.050188
+  },
+  "collagen": {
+    "src": "narration/mn-strawberry/collagen.wav",
+    "durationInSeconds": 6.73875
+  },
+  "iron": {
+    "src": "narration/mn-strawberry/iron.wav",
+    "durationInSeconds": 4.84725
+  },
+  "boost": {
+    "src": "narration/mn-strawberry/boost.wav",
+    "durationInSeconds": 4.562813
+  },
+  "follow": {
+    "src": "narration/mn-strawberry/follow.wav",
+    "durationInSeconds": 2.653771
+  }
+}

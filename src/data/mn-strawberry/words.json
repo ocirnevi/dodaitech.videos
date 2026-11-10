@@ -1,0 +1,563 @@
+{
+ "hook": [
+  {
+   "word": "¿Sabías",
+   "start": 0.032,
+   "end": 0.441
+  },
+  {
+   "word": "que",
+   "start": 0.494,
+   "end": 0.559
+  },
+  {
+   "word": "las",
+   "start": 0.602,
+   "end": 0.709
+  },
+  {
+   "word": "fresas",
+   "start": 0.763,
+   "end": 1.064
+  },
+  {
+   "word": "tienen",
+   "start": 1.118,
+   "end": 1.355
+  },
+  {
+   "word": "más",
+   "start": 1.397,
+   "end": 1.548
+  },
+  {
+   "word": "vitamina",
+   "start": 1.602,
+   "end": 1.999
+  },
+  {
+   "word": "C",
+   "start": 2.043,
+   "end": 2.107
+  },
+  {
+   "word": "que",
+   "start": 2.193,
+   "end": 2.257
+  },
+  {
+   "word": "las",
+   "start": 2.301,
+   "end": 2.408
+  },
+  {
+   "word": "naranjas?",
+   "start": 2.451,
+   "end": 3.064
+  }
+ ],
+ "yep": [
+  {
+   "word": "¡Sí!",
+   "start": 0.0,
+   "end": 0.717
+  },
+  {
+   "word": "Gramo",
+   "start": 1.104,
+   "end": 1.416
+  },
+  {
+   "word": "por",
+   "start": 1.47,
+   "end": 1.599
+  },
+  {
+   "word": "gramo,",
+   "start": 1.642,
+   "end": 2.104
+  },
+  {
+   "word": "¡las",
+   "start": 2.179,
+   "end": 2.459
+  },
+  {
+   "word": "fresas",
+   "start": 2.524,
+   "end": 2.888
+  },
+  {
+   "word": "ganan!",
+   "start": 2.943,
+   "end": 3.469
+  }
+ ],
+ "numbers": [
+  {
+   "word": "100",
+   "start": 0.012,
+   "end": 0.238
+  },
+  {
+   "word": "gramos",
+   "start": 0.271,
+   "end": 0.55
+  },
+  {
+   "word": "de",
+   "start": 0.583,
+   "end": 0.633
+  },
+  {
+   "word": "fresas",
+   "start": 0.669,
+   "end": 1.045
+  },
+  {
+   "word": "tienen",
+   "start": 1.131,
+   "end": 1.389
+  },
+  {
+   "word": "unos",
+   "start": 1.443,
+   "end": 1.604
+  },
+  {
+   "word": "59",
+   "start": 1.625,
+   "end": 2.012
+  },
+  {
+   "word": "miligramos",
+   "start": 2.034,
+   "end": 2.797
+  },
+  {
+   "word": "de",
+   "start": 2.829,
+   "end": 2.879
+  },
+  {
+   "word": "vitamina",
+   "start": 2.905,
+   "end": 3.281
+  },
+  {
+   "word": "C,",
+   "start": 3.323,
+   "end": 3.668
+  },
+  {
+   "word": "frente",
+   "start": 4.055,
+   "end": 4.335
+  },
+  {
+   "word": "a",
+   "start": 4.356,
+   "end": 4.406
+  },
+  {
+   "word": "53",
+   "start": 4.41,
+   "end": 4.818
+  },
+  {
+   "word": "en",
+   "start": 4.839,
+   "end": 5.097
+  },
+  {
+   "word": "las",
+   "start": 5.151,
+   "end": 5.312
+  },
+  {
+   "word": "naranjas.",
+   "start": 5.366,
+   "end": 5.99
+  }
+ ],
+ "more": [
+  {
+   "word": "Y",
+   "start": 0.0,
+   "end": 0.051
+  },
+  {
+   "word": "la",
+   "start": 0.127,
+   "end": 0.181
+  },
+  {
+   "word": "vitamina",
+   "start": 0.223,
+   "end": 0.621
+  },
+  {
+   "word": "C",
+   "start": 0.675,
+   "end": 0.729
+  },
+  {
+   "word": "hace",
+   "start": 1.019,
+   "end": 1.309
+  },
+  {
+   "word": "más",
+   "start": 1.384,
+   "end": 1.589
+  },
+  {
+   "word": "que",
+   "start": 1.632,
+   "end": 1.696
+  },
+  {
+   "word": "apoyar",
+   "start": 1.718,
+   "end": 2.03
+  },
+  {
+   "word": "tu",
+   "start": 2.084,
+   "end": 2.147
+  },
+  {
+   "word": "sistema",
+   "start": 2.191,
+   "end": 2.524
+  },
+  {
+   "word": "inmune.",
+   "start": 2.546,
+   "end": 3.019
+  }
+ ],
+ "collagen": [
+  {
+   "word": "Tu",
+   "start": 0.0,
+   "end": 0.082
+  },
+  {
+   "word": "cuerpo",
+   "start": 0.126,
+   "end": 0.373
+  },
+  {
+   "word": "también",
+   "start": 0.415,
+   "end": 0.728
+  },
+  {
+   "word": "la",
+   "start": 0.77,
+   "end": 0.82
+  },
+  {
+   "word": "necesita",
+   "start": 0.867,
+   "end": 1.34
+  },
+  {
+   "word": "para",
+   "start": 1.394,
+   "end": 1.544
+  },
+  {
+   "word": "producir",
+   "start": 1.588,
+   "end": 1.964
+  },
+  {
+   "word": "colágeno,",
+   "start": 2.006,
+   "end": 2.663
+  },
+  {
+   "word": "que",
+   "start": 2.845,
+   "end": 2.931
+  },
+  {
+   "word": "ayuda",
+   "start": 2.953,
+   "end": 3.211
+  },
+  {
+   "word": "a",
+   "start": 3.232,
+   "end": 3.282
+  },
+  {
+   "word": "mantener",
+   "start": 3.297,
+   "end": 3.683
+  },
+  {
+   "word": "sanos",
+   "start": 3.748,
+   "end": 4.049
+  },
+  {
+   "word": "tu",
+   "start": 4.103,
+   "end": 4.167
+  },
+  {
+   "word": "piel,",
+   "start": 4.21,
+   "end": 4.619
+  },
+  {
+   "word": "tus",
+   "start": 4.802,
+   "end": 4.974
+  },
+  {
+   "word": "huesos",
+   "start": 5.006,
+   "end": 5.382
+  },
+  {
+   "word": "y",
+   "start": 5.49,
+   "end": 5.543
+  },
+  {
+   "word": "tus",
+   "start": 5.608,
+   "end": 5.737
+  },
+  {
+   "word": "vasos",
+   "start": 5.79,
+   "end": 6.038
+  },
+  {
+   "word": "sanguíneos.",
+   "start": 6.059,
+   "end": 6.739
+  }
+ ],
+ "iron": [
+  {
+   "word": "Además,",
+   "start": 0.0,
+   "end": 0.655
+  },
+  {
+   "word": "ayuda",
+   "start": 1.042,
+   "end": 1.407
+  },
+  {
+   "word": "a",
+   "start": 1.44,
+   "end": 1.49
+  },
+  {
+   "word": "tu",
+   "start": 1.515,
+   "end": 1.59
+  },
+  {
+   "word": "cuerpo",
+   "start": 1.633,
+   "end": 2.02
+  },
+  {
+   "word": "a",
+   "start": 2.095,
+   "end": 2.149
+  },
+  {
+   "word": "absorber",
+   "start": 2.181,
+   "end": 2.611
+  },
+  {
+   "word": "el",
+   "start": 2.665,
+   "end": 2.719
+  },
+  {
+   "word": "hierro",
+   "start": 2.773,
+   "end": 3.02
+  },
+  {
+   "word": "de",
+   "start": 3.063,
+   "end": 3.117
+  },
+  {
+   "word": "los",
+   "start": 3.149,
+   "end": 3.256
+  },
+  {
+   "word": "alimentos",
+   "start": 3.321,
+   "end": 3.794
+  },
+  {
+   "word": "de",
+   "start": 3.837,
+   "end": 3.891
+  },
+  {
+   "word": "origen",
+   "start": 3.923,
+   "end": 4.203
+  },
+  {
+   "word": "vegetal.",
+   "start": 4.224,
+   "end": 4.847
+  }
+ ],
+ "boost": [
+  {
+   "word": "Así",
+   "start": 0.0,
+   "end": 0.223
+  },
+  {
+   "word": "que",
+   "start": 0.266,
+   "end": 0.331
+  },
+  {
+   "word": "la",
+   "start": 0.374,
+   "end": 0.438
+  },
+  {
+   "word": "próxima",
+   "start": 0.492,
+   "end": 0.869
+  },
+  {
+   "word": "vez",
+   "start": 0.911,
+   "end": 1.03
+  },
+  {
+   "word": "que",
+   "start": 1.083,
+   "end": 1.158
+  },
+  {
+   "word": "quieras",
+   "start": 1.212,
+   "end": 1.449
+  },
+  {
+   "word": "un",
+   "start": 1.524,
+   "end": 1.588
+  },
+  {
+   "word": "extra",
+   "start": 1.653,
+   "end": 1.921
+  },
+  {
+   "word": "de",
+   "start": 1.965,
+   "end": 2.015
+  },
+  {
+   "word": "vitamina",
+   "start": 2.04,
+   "end": 2.448
+  },
+  {
+   "word": "C,",
+   "start": 2.502,
+   "end": 2.793
+  },
+  {
+   "word": "¡no",
+   "start": 2.9,
+   "end": 3.201
+  },
+  {
+   "word": "te",
+   "start": 3.266,
+   "end": 3.32
+  },
+  {
+   "word": "olvides",
+   "start": 3.362,
+   "end": 3.684
+  },
+  {
+   "word": "de",
+   "start": 3.717,
+   "end": 3.767
+  },
+  {
+   "word": "las",
+   "start": 3.803,
+   "end": 3.91
+  },
+  {
+   "word": "fresas!",
+   "start": 3.964,
+   "end": 4.556
+  }
+ ],
+ "follow": [
+  {
+   "word": "¡Sigue",
+   "start": 0.0,
+   "end": 0.286
+  },
+  {
+   "word": "a",
+   "start": 0.319,
+   "end": 0.369
+  },
+  {
+   "word": "Mi",
+   "start": 0.383,
+   "end": 0.448
+  },
+  {
+   "word": "Nutriólogo",
+   "start": 0.491,
+   "end": 1.007
+  },
+  {
+   "word": "para",
+   "start": 1.05,
+   "end": 1.221
+  },
+  {
+   "word": "más",
+   "start": 1.265,
+   "end": 1.415
+  },
+  {
+   "word": "consejos",
+   "start": 1.458,
+   "end": 1.867
+  },
+  {
+   "word": "de",
+   "start": 1.899,
+   "end": 1.949
+  },
+  {
+   "word": "nutrición!",
+   "start": 1.985,
+   "end": 2.587
+  }
+ ]
+}

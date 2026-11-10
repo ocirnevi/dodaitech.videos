@@ -1,0 +1,557 @@
+{
+ "hook": [
+  {
+   "word": "Did",
+   "start": 0.0,
+   "end": 0.136
+  },
+  {
+   "word": "you",
+   "start": 0.168,
+   "end": 0.233
+  },
+  {
+   "word": "know",
+   "start": 0.276,
+   "end": 0.427
+  },
+  {
+   "word": "eating",
+   "start": 0.513,
+   "end": 0.739
+  },
+  {
+   "word": "chocolate",
+   "start": 0.781,
+   "end": 1.157
+  },
+  {
+   "word": "could",
+   "start": 1.179,
+   "end": 1.297
+  },
+  {
+   "word": "actually",
+   "start": 1.351,
+   "end": 1.684
+  },
+  {
+   "word": "be",
+   "start": 1.728,
+   "end": 1.814
+  },
+  {
+   "word": "good",
+   "start": 1.845,
+   "end": 2.007
+  },
+  {
+   "word": "for",
+   "start": 2.039,
+   "end": 2.125
+  },
+  {
+   "word": "your",
+   "start": 2.157,
+   "end": 2.265
+  },
+  {
+   "word": "health?",
+   "start": 2.308,
+   "end": 2.759
+  }
+ ],
+ "catch": [
+  {
+   "word": "But",
+   "start": 0.0,
+   "end": 0.085
+  },
+  {
+   "word": "there's",
+   "start": 0.106,
+   "end": 0.3
+  },
+  {
+   "word": "a",
+   "start": 0.322,
+   "end": 0.372
+  },
+  {
+   "word": "catch.",
+   "start": 0.397,
+   "end": 0.88
+  },
+  {
+   "word": "Not",
+   "start": 1.095,
+   "end": 1.3
+  },
+  {
+   "word": "all",
+   "start": 1.353,
+   "end": 1.526
+  },
+  {
+   "word": "chocolate",
+   "start": 1.59,
+   "end": 1.988
+  },
+  {
+   "word": "is",
+   "start": 2.02,
+   "end": 2.085
+  },
+  {
+   "word": "created",
+   "start": 2.127,
+   "end": 2.45
+  },
+  {
+   "word": "equal!",
+   "start": 2.493,
+   "end": 2.955
+  }
+ ],
+ "flavanols": [
+  {
+   "word": "Cocoa",
+   "start": 0.0,
+   "end": 0.41
+  },
+  {
+   "word": "contains",
+   "start": 0.454,
+   "end": 0.809
+  },
+  {
+   "word": "natural",
+   "start": 0.895,
+   "end": 1.228
+  },
+  {
+   "word": "compounds",
+   "start": 1.292,
+   "end": 1.744
+  },
+  {
+   "word": "called",
+   "start": 1.797,
+   "end": 2.002
+  },
+  {
+   "word": "flavanols,",
+   "start": 2.034,
+   "end": 2.733
+  },
+  {
+   "word": "which",
+   "start": 2.884,
+   "end": 3.055
+  },
+  {
+   "word": "can",
+   "start": 3.098,
+   "end": 3.195
+  },
+  {
+   "word": "help",
+   "start": 3.259,
+   "end": 3.442
+  },
+  {
+   "word": "improve",
+   "start": 3.507,
+   "end": 3.85
+  },
+  {
+   "word": "blood",
+   "start": 3.883,
+   "end": 4.066
+  },
+  {
+   "word": "flow",
+   "start": 4.097,
+   "end": 4.345
+  },
+  {
+   "word": "and",
+   "start": 4.453,
+   "end": 4.582
+  },
+  {
+   "word": "support",
+   "start": 4.635,
+   "end": 4.979
+  },
+  {
+   "word": "healthy",
+   "start": 5.034,
+   "end": 5.291
+  },
+  {
+   "word": "blood",
+   "start": 5.345,
+   "end": 5.528
+  },
+  {
+   "word": "vessels.",
+   "start": 5.559,
+   "end": 6.086
+  }
+ ],
+ "sugar": [
+  {
+   "word": "But",
+   "start": 0.0,
+   "end": 0.115
+  },
+  {
+   "word": "many",
+   "start": 0.147,
+   "end": 0.34
+  },
+  {
+   "word": "chocolate",
+   "start": 0.394,
+   "end": 0.739
+  },
+  {
+   "word": "bars",
+   "start": 0.76,
+   "end": 0.986
+  },
+  {
+   "word": "are",
+   "start": 1.018,
+   "end": 1.115
+  },
+  {
+   "word": "loaded",
+   "start": 1.147,
+   "end": 1.394
+  },
+  {
+   "word": "with",
+   "start": 1.427,
+   "end": 1.544
+  },
+  {
+   "word": "added",
+   "start": 1.588,
+   "end": 1.846
+  },
+  {
+   "word": "sugar",
+   "start": 1.889,
+   "end": 2.19
+  },
+  {
+   "word": "and",
+   "start": 2.404,
+   "end": 2.63
+  },
+  {
+   "word": "contain",
+   "start": 2.674,
+   "end": 3.006
+  },
+  {
+   "word": "very",
+   "start": 3.092,
+   "end": 3.372
+  },
+  {
+   "word": "little",
+   "start": 3.437,
+   "end": 3.64
+  },
+  {
+   "word": "cocoa.",
+   "start": 3.673,
+   "end": 4.2
+  }
+ ],
+ "look": [
+  {
+   "word": "So",
+   "start": 0.022,
+   "end": 0.131
+  },
+  {
+   "word": "here's",
+   "start": 0.195,
+   "end": 0.378
+  },
+  {
+   "word": "what",
+   "start": 0.399,
+   "end": 0.507
+  },
+  {
+   "word": "to",
+   "start": 0.539,
+   "end": 0.589
+  },
+  {
+   "word": "look",
+   "start": 0.614,
+   "end": 0.765
+  },
+  {
+   "word": "for.",
+   "start": 0.819,
+   "end": 1.162
+  }
+ ],
+ "checklist": [
+  {
+   "word": "Choose",
+   "start": 0.009,
+   "end": 0.332
+  },
+  {
+   "word": "dark",
+   "start": 0.375,
+   "end": 0.6
+  },
+  {
+   "word": "chocolate",
+   "start": 0.644,
+   "end": 1.02
+  },
+  {
+   "word": "with",
+   "start": 1.041,
+   "end": 1.148
+  },
+  {
+   "word": "70%",
+   "start": 1.192,
+   "end": 1.482
+  },
+  {
+   "word": "cocoa",
+   "start": 1.535,
+   "end": 1.826
+  },
+  {
+   "word": "or",
+   "start": 1.869,
+   "end": 2.223
+  },
+  {
+   "word": "higher,",
+   "start": 2.256,
+   "end": 2.857
+  },
+  {
+   "word": "check",
+   "start": 3.106,
+   "end": 3.32
+  },
+  {
+   "word": "the",
+   "start": 3.374,
+   "end": 3.438
+  },
+  {
+   "word": "added",
+   "start": 3.482,
+   "end": 3.685
+  },
+  {
+   "word": "sugar,",
+   "start": 3.729,
+   "end": 4.148
+  },
+  {
+   "word": "and",
+   "start": 4.363,
+   "end": 4.503
+  },
+  {
+   "word": "keep",
+   "start": 4.557,
+   "end": 4.718
+  },
+  {
+   "word": "your",
+   "start": 4.76,
+   "end": 4.846
+  },
+  {
+   "word": "portions",
+   "start": 4.89,
+   "end": 5.255
+  },
+  {
+   "word": "small.",
+   "start": 5.298,
+   "end": 5.814
+  }
+ ],
+ "remember": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.1
+  },
+  {
+   "word": "remember,",
+   "start": 0.154,
+   "end": 0.637
+  },
+  {
+   "word": "more",
+   "start": 0.788,
+   "end": 0.992
+  },
+  {
+   "word": "cocoa",
+   "start": 1.035,
+   "end": 1.347
+  },
+  {
+   "word": "doesn't",
+   "start": 1.379,
+   "end": 1.595
+  },
+  {
+   "word": "always",
+   "start": 1.626,
+   "end": 1.884
+  },
+  {
+   "word": "mean",
+   "start": 1.938,
+   "end": 2.089
+  },
+  {
+   "word": "more",
+   "start": 2.132,
+   "end": 2.304
+  },
+  {
+   "word": "flavanols.",
+   "start": 2.346,
+   "end": 3.078
+  }
+ ],
+ "enjoy": [
+  {
+   "word": "So",
+   "start": 0.03,
+   "end": 0.149
+  },
+  {
+   "word": "yes,",
+   "start": 0.202,
+   "end": 0.428
+  },
+  {
+   "word": "you",
+   "start": 0.45,
+   "end": 0.514
+  },
+  {
+   "word": "can",
+   "start": 0.557,
+   "end": 0.654
+  },
+  {
+   "word": "enjoy",
+   "start": 0.697,
+   "end": 0.966
+  },
+  {
+   "word": "chocolate!",
+   "start": 1.02,
+   "end": 1.536
+  }
+ ],
+ "right": [
+  {
+   "word": "Just",
+   "start": 0.006,
+   "end": 0.209
+  },
+  {
+   "word": "make",
+   "start": 0.263,
+   "end": 0.414
+  },
+  {
+   "word": "sure",
+   "start": 0.446,
+   "end": 0.596
+  },
+  {
+   "word": "you're",
+   "start": 0.629,
+   "end": 0.79
+  },
+  {
+   "word": "choosing",
+   "start": 0.812,
+   "end": 1.113
+  },
+  {
+   "word": "the",
+   "start": 1.145,
+   "end": 1.209
+  },
+  {
+   "word": "right",
+   "start": 1.253,
+   "end": 1.435
+  },
+  {
+   "word": "kind.",
+   "start": 1.478,
+   "end": 1.951
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.011,
+   "end": 0.312
+  },
+  {
+   "word": "Hello",
+   "start": 0.366,
+   "end": 0.581
+  },
+  {
+   "word": "Nutrition",
+   "start": 0.634,
+   "end": 1.021
+  },
+  {
+   "word": "AI",
+   "start": 1.086,
+   "end": 1.397
+  },
+  {
+   "word": "for",
+   "start": 1.451,
+   "end": 1.581
+  },
+  {
+   "word": "more",
+   "start": 1.634,
+   "end": 1.795
+  },
+  {
+   "word": "nutrition",
+   "start": 1.828,
+   "end": 2.236
+  },
+  {
+   "word": "tips!",
+   "start": 2.279,
+   "end": 2.623
+  }
+ ]
+}

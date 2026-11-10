@@ -1,0 +1,478 @@
+{
+ "hook": [
+  {
+   "word": "Did",
+   "start": 0.0,
+   "end": 0.138
+  },
+  {
+   "word": "you",
+   "start": 0.18,
+   "end": 0.245
+  },
+  {
+   "word": "know",
+   "start": 0.289,
+   "end": 0.427
+  },
+  {
+   "word": "strawberries",
+   "start": 0.492,
+   "end": 0.965
+  },
+  {
+   "word": "actually",
+   "start": 1.04,
+   "end": 1.395
+  },
+  {
+   "word": "have",
+   "start": 1.427,
+   "end": 1.546
+  },
+  {
+   "word": "more",
+   "start": 1.6,
+   "end": 1.761
+  },
+  {
+   "word": "vitamin",
+   "start": 1.793,
+   "end": 2.105
+  },
+  {
+   "word": "C",
+   "start": 2.148,
+   "end": 2.213
+  },
+  {
+   "word": "than",
+   "start": 2.32,
+   "end": 2.439
+  },
+  {
+   "word": "oranges?",
+   "start": 2.514,
+   "end": 3.115
+  }
+ ],
+ "yep": [
+  {
+   "word": "Yep!",
+   "start": 0.008,
+   "end": 0.405
+  },
+  {
+   "word": "Gram",
+   "start": 1.018,
+   "end": 1.244
+  },
+  {
+   "word": "for",
+   "start": 1.298,
+   "end": 1.384
+  },
+  {
+   "word": "gram,",
+   "start": 1.416,
+   "end": 1.76
+  },
+  {
+   "word": "strawberries",
+   "start": 1.792,
+   "end": 2.265
+  },
+  {
+   "word": "win!",
+   "start": 2.308,
+   "end": 2.662
+  }
+ ],
+ "numbers": [
+  {
+   "word": "100",
+   "start": 0.0,
+   "end": 0.222
+  },
+  {
+   "word": "grams",
+   "start": 0.265,
+   "end": 0.512
+  },
+  {
+   "word": "of",
+   "start": 0.545,
+   "end": 0.835
+  },
+  {
+   "word": "strawberries",
+   "start": 0.868,
+   "end": 1.47
+  },
+  {
+   "word": "contain",
+   "start": 1.523,
+   "end": 1.813
+  },
+  {
+   "word": "about",
+   "start": 1.857,
+   "end": 2.072
+  },
+  {
+   "word": "59",
+   "start": 2.136,
+   "end": 2.685
+  },
+  {
+   "word": "milligrams",
+   "start": 2.717,
+   "end": 3.222
+  },
+  {
+   "word": "of",
+   "start": 3.275,
+   "end": 3.34
+  },
+  {
+   "word": "vitamin",
+   "start": 3.383,
+   "end": 3.695
+  },
+  {
+   "word": "C,",
+   "start": 3.748,
+   "end": 4.157
+  },
+  {
+   "word": "compared",
+   "start": 4.447,
+   "end": 4.802
+  },
+  {
+   "word": "to",
+   "start": 4.823,
+   "end": 4.873
+  },
+  {
+   "word": "53",
+   "start": 4.931,
+   "end": 5.436
+  },
+  {
+   "word": "in",
+   "start": 5.469,
+   "end": 5.522
+  },
+  {
+   "word": "oranges.",
+   "start": 5.576,
+   "end": 6.167
+  }
+ ],
+ "more": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.113
+  },
+  {
+   "word": "vitamin",
+   "start": 0.167,
+   "end": 0.489
+  },
+  {
+   "word": "C",
+   "start": 0.543,
+   "end": 0.618
+  },
+  {
+   "word": "does",
+   "start": 0.769,
+   "end": 0.93
+  },
+  {
+   "word": "more",
+   "start": 1.016,
+   "end": 1.231
+  },
+  {
+   "word": "than",
+   "start": 1.263,
+   "end": 1.382
+  },
+  {
+   "word": "support",
+   "start": 1.424,
+   "end": 1.725
+  },
+  {
+   "word": "your",
+   "start": 1.758,
+   "end": 1.865
+  },
+  {
+   "word": "immune",
+   "start": 1.898,
+   "end": 2.156
+  },
+  {
+   "word": "system.",
+   "start": 2.177,
+   "end": 2.693
+  }
+ ],
+ "collagen": [
+  {
+   "word": "Your",
+   "start": 0.0,
+   "end": 0.112
+  },
+  {
+   "word": "body",
+   "start": 0.156,
+   "end": 0.381
+  },
+  {
+   "word": "also",
+   "start": 0.434,
+   "end": 0.79
+  },
+  {
+   "word": "needs",
+   "start": 0.865,
+   "end": 1.08
+  },
+  {
+   "word": "it",
+   "start": 1.133,
+   "end": 1.208
+  },
+  {
+   "word": "to",
+   "start": 1.252,
+   "end": 1.316
+  },
+  {
+   "word": "produce",
+   "start": 1.371,
+   "end": 1.649
+  },
+  {
+   "word": "collagen,",
+   "start": 1.693,
+   "end": 2.306
+  },
+  {
+   "word": "which",
+   "start": 2.456,
+   "end": 2.628
+  },
+  {
+   "word": "helps",
+   "start": 2.671,
+   "end": 2.886
+  },
+  {
+   "word": "keep",
+   "start": 2.961,
+   "end": 3.133
+  },
+  {
+   "word": "your",
+   "start": 3.176,
+   "end": 3.295
+  },
+  {
+   "word": "skin,",
+   "start": 3.337,
+   "end": 3.746
+  },
+  {
+   "word": "bones,",
+   "start": 3.853,
+   "end": 4.23
+  },
+  {
+   "word": "and",
+   "start": 4.251,
+   "end": 4.337
+  },
+  {
+   "word": "blood",
+   "start": 4.391,
+   "end": 4.573
+  },
+  {
+   "word": "vessels",
+   "start": 4.606,
+   "end": 4.918
+  },
+  {
+   "word": "healthy.",
+   "start": 4.982,
+   "end": 5.477
+  }
+ ],
+ "iron": [
+  {
+   "word": "Plus,",
+   "start": 0.0,
+   "end": 0.532
+  },
+  {
+   "word": "it",
+   "start": 0.746,
+   "end": 0.865
+  },
+  {
+   "word": "helps",
+   "start": 0.908,
+   "end": 1.112
+  },
+  {
+   "word": "your",
+   "start": 1.144,
+   "end": 1.241
+  },
+  {
+   "word": "body",
+   "start": 1.284,
+   "end": 1.509
+  },
+  {
+   "word": "absorb",
+   "start": 1.563,
+   "end": 1.854
+  },
+  {
+   "word": "iron",
+   "start": 1.918,
+   "end": 2.165
+  },
+  {
+   "word": "from",
+   "start": 2.209,
+   "end": 2.337
+  },
+  {
+   "word": "plant-based",
+   "start": 2.391,
+   "end": 2.885
+  },
+  {
+   "word": "foods.",
+   "start": 2.918,
+   "end": 3.423
+  }
+ ],
+ "boost": [
+  {
+   "word": "So",
+   "start": 0.021,
+   "end": 0.151
+  },
+  {
+   "word": "next",
+   "start": 0.215,
+   "end": 0.398
+  },
+  {
+   "word": "time",
+   "start": 0.43,
+   "end": 0.613
+  },
+  {
+   "word": "you",
+   "start": 0.645,
+   "end": 0.709
+  },
+  {
+   "word": "want",
+   "start": 0.774,
+   "end": 0.914
+  },
+  {
+   "word": "a",
+   "start": 0.946,
+   "end": 0.996
+  },
+  {
+   "word": "vitamin",
+   "start": 1.01,
+   "end": 1.344
+  },
+  {
+   "word": "C",
+   "start": 1.408,
+   "end": 1.473
+  },
+  {
+   "word": "boost,",
+   "start": 1.602,
+   "end": 2.043
+  },
+  {
+   "word": "don't",
+   "start": 2.29,
+   "end": 2.494
+  },
+  {
+   "word": "forget",
+   "start": 2.537,
+   "end": 2.763
+  },
+  {
+   "word": "about",
+   "start": 2.795,
+   "end": 2.978
+  },
+  {
+   "word": "strawberries!",
+   "start": 3.031,
+   "end": 3.794
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.018,
+   "end": 0.341
+  },
+  {
+   "word": "Hello",
+   "start": 0.395,
+   "end": 0.642
+  },
+  {
+   "word": "Nutrition",
+   "start": 0.706,
+   "end": 1.104
+  },
+  {
+   "word": "AI",
+   "start": 1.147,
+   "end": 1.384
+  },
+  {
+   "word": "for",
+   "start": 1.449,
+   "end": 1.556
+  },
+  {
+   "word": "more",
+   "start": 1.61,
+   "end": 1.771
+  },
+  {
+   "word": "nutrition",
+   "start": 1.803,
+   "end": 2.201
+  },
+  {
+   "word": "tips!",
+   "start": 2.244,
+   "end": 2.641
+  }
+ ]
+}

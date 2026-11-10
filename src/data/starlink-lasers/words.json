@@ -1,0 +1,710 @@
+{
+ "hook": [
+  {
+   "word": "How",
+   "start": 0.017,
+   "end": 0.156
+  },
+  {
+   "word": "does",
+   "start": 0.199,
+   "end": 0.329
+  },
+  {
+   "word": "SpaceX",
+   "start": 0.361,
+   "end": 0.887
+  },
+  {
+   "word": "deliver",
+   "start": 0.995,
+   "end": 1.296
+  },
+  {
+   "word": "internet",
+   "start": 1.36,
+   "end": 1.693
+  },
+  {
+   "word": "from",
+   "start": 1.747,
+   "end": 1.887
+  },
+  {
+   "word": "space",
+   "start": 1.962,
+   "end": 2.349
+  },
+  {
+   "word": "without",
+   "start": 2.381,
+   "end": 2.704
+  },
+  {
+   "word": "cables?",
+   "start": 2.758,
+   "end": 3.339
+  }
+ ],
+ "answer": [
+  {
+   "word": "The",
+   "start": 0.021,
+   "end": 0.14
+  },
+  {
+   "word": "answer",
+   "start": 0.194,
+   "end": 0.441
+  },
+  {
+   "word": "is",
+   "start": 0.483,
+   "end": 0.537
+  },
+  {
+   "word": "pretty",
+   "start": 0.581,
+   "end": 0.763
+  },
+  {
+   "word": "incredible.",
+   "start": 0.795,
+   "end": 1.322
+  }
+ ],
+ "thousands": [
+  {
+   "word": "Starlink",
+   "start": 0.043,
+   "end": 0.462
+  },
+  {
+   "word": "uses",
+   "start": 0.527,
+   "end": 0.763
+  },
+  {
+   "word": "thousands",
+   "start": 0.828,
+   "end": 1.269
+  },
+  {
+   "word": "of",
+   "start": 1.311,
+   "end": 1.365
+  },
+  {
+   "word": "satellites",
+   "start": 1.419,
+   "end": 1.935
+  },
+  {
+   "word": "orbiting",
+   "start": 1.978,
+   "end": 2.311
+  },
+  {
+   "word": "Earth.",
+   "start": 2.419,
+   "end": 2.763
+  }
+ ],
+ "how": [
+  {
+   "word": "But",
+   "start": 0.0,
+   "end": 0.116
+  },
+  {
+   "word": "here's",
+   "start": 0.17,
+   "end": 0.396
+  },
+  {
+   "word": "how",
+   "start": 0.429,
+   "end": 0.504
+  },
+  {
+   "word": "it",
+   "start": 0.557,
+   "end": 0.611
+  },
+  {
+   "word": "actually",
+   "start": 0.643,
+   "end": 0.923
+  },
+  {
+   "word": "works.",
+   "start": 0.977,
+   "end": 1.439
+  }
+ ],
+ "antenna": [
+  {
+   "word": "When",
+   "start": 0.043,
+   "end": 0.182
+  },
+  {
+   "word": "you",
+   "start": 0.215,
+   "end": 0.29
+  },
+  {
+   "word": "open",
+   "start": 0.366,
+   "end": 0.581
+  },
+  {
+   "word": "a",
+   "start": 0.623,
+   "end": 0.673
+  },
+  {
+   "word": "website,",
+   "start": 0.709,
+   "end": 1.171
+  },
+  {
+   "word": "your",
+   "start": 1.194,
+   "end": 1.311
+  },
+  {
+   "word": "Starlink",
+   "start": 1.376,
+   "end": 1.838
+  },
+  {
+   "word": "antenna",
+   "start": 1.881,
+   "end": 2.29
+  },
+  {
+   "word": "sends",
+   "start": 2.355,
+   "end": 2.569
+  },
+  {
+   "word": "a",
+   "start": 2.602,
+   "end": 2.652
+  },
+  {
+   "word": "radio",
+   "start": 2.719,
+   "end": 3.074
+  },
+  {
+   "word": "signal",
+   "start": 3.129,
+   "end": 3.407
+  },
+  {
+   "word": "to",
+   "start": 3.451,
+   "end": 3.505
+  },
+  {
+   "word": "a",
+   "start": 3.58,
+   "end": 3.63
+  },
+  {
+   "word": "satellite",
+   "start": 3.666,
+   "end": 4.128
+  },
+  {
+   "word": "hundreds",
+   "start": 4.181,
+   "end": 4.547
+  },
+  {
+   "word": "of",
+   "start": 4.59,
+   "end": 4.64
+  },
+  {
+   "word": "kilometers",
+   "start": 4.698,
+   "end": 5.203
+  },
+  {
+   "word": "above",
+   "start": 5.246,
+   "end": 5.536
+  },
+  {
+   "word": "you.",
+   "start": 5.59,
+   "end": 5.827
+  }
+ ],
+ "ground": [
+  {
+   "word": "That",
+   "start": 0.043,
+   "end": 0.194
+  },
+  {
+   "word": "satellite",
+   "start": 0.258,
+   "end": 0.731
+  },
+  {
+   "word": "can",
+   "start": 0.753,
+   "end": 0.87
+  },
+  {
+   "word": "send",
+   "start": 0.946,
+   "end": 1.14
+  },
+  {
+   "word": "the",
+   "start": 1.182,
+   "end": 1.247
+  },
+  {
+   "word": "data",
+   "start": 1.301,
+   "end": 1.548
+  },
+  {
+   "word": "down",
+   "start": 1.612,
+   "end": 1.87
+  },
+  {
+   "word": "to",
+   "start": 1.924,
+   "end": 1.999
+  },
+  {
+   "word": "a",
+   "start": 2.075,
+   "end": 2.125
+  },
+  {
+   "word": "ground",
+   "start": 2.15,
+   "end": 2.397
+  },
+  {
+   "word": "station",
+   "start": 2.451,
+   "end": 2.795
+  },
+  {
+   "word": "connected",
+   "start": 2.859,
+   "end": 3.268
+  },
+  {
+   "word": "to",
+   "start": 3.3,
+   "end": 3.354
+  },
+  {
+   "word": "the",
+   "start": 3.419,
+   "end": 3.483
+  },
+  {
+   "word": "internet.",
+   "start": 3.558,
+   "end": 4.01
+  }
+ ],
+ "nostation": [
+  {
+   "word": "But",
+   "start": 0.043,
+   "end": 0.161
+  },
+  {
+   "word": "what",
+   "start": 0.194,
+   "end": 0.344
+  },
+  {
+   "word": "if",
+   "start": 0.376,
+   "end": 0.441
+  },
+  {
+   "word": "there's",
+   "start": 0.473,
+   "end": 0.667
+  },
+  {
+   "word": "no",
+   "start": 0.72,
+   "end": 0.87
+  },
+  {
+   "word": "ground",
+   "start": 0.979,
+   "end": 1.269
+  },
+  {
+   "word": "station",
+   "start": 1.322,
+   "end": 1.644
+  },
+  {
+   "word": "nearby?",
+   "start": 1.698,
+   "end": 2.29
+  }
+ ],
+ "interesting": [
+  {
+   "word": "That's",
+   "start": 0.0,
+   "end": 0.18
+  },
+  {
+   "word": "where",
+   "start": 0.202,
+   "end": 0.342
+  },
+  {
+   "word": "things",
+   "start": 0.395,
+   "end": 0.62
+  },
+  {
+   "word": "get",
+   "start": 0.664,
+   "end": 0.783
+  },
+  {
+   "word": "interesting.",
+   "start": 0.836,
+   "end": 1.417
+  }
+ ],
+ "lasers": [
+  {
+   "word": "Starlink",
+   "start": 0.021,
+   "end": 0.441
+  },
+  {
+   "word": "satellites",
+   "start": 0.483,
+   "end": 0.914
+  },
+  {
+   "word": "can",
+   "start": 0.946,
+   "end": 1.054
+  },
+  {
+   "word": "communicate",
+   "start": 1.107,
+   "end": 1.612
+  },
+  {
+   "word": "with",
+   "start": 1.634,
+   "end": 1.752
+  },
+  {
+   "word": "each",
+   "start": 1.795,
+   "end": 1.945
+  },
+  {
+   "word": "other",
+   "start": 1.989,
+   "end": 2.171
+  },
+  {
+   "word": "using",
+   "start": 2.246,
+   "end": 2.494
+  },
+  {
+   "word": "lasers!",
+   "start": 2.569,
+   "end": 3.171
+  }
+ ],
+ "speed": [
+  {
+   "word": "These",
+   "start": 0.008,
+   "end": 0.223
+  },
+  {
+   "word": "invisible",
+   "start": 0.255,
+   "end": 0.696
+  },
+  {
+   "word": "beams",
+   "start": 0.739,
+   "end": 1.029
+  },
+  {
+   "word": "transfer",
+   "start": 1.083,
+   "end": 1.46
+  },
+  {
+   "word": "data",
+   "start": 1.535,
+   "end": 1.803
+  },
+  {
+   "word": "between",
+   "start": 1.857,
+   "end": 2.125
+  },
+  {
+   "word": "satellites",
+   "start": 2.179,
+   "end": 2.717
+  },
+  {
+   "word": "at",
+   "start": 2.749,
+   "end": 2.824
+  },
+  {
+   "word": "the",
+   "start": 2.857,
+   "end": 2.922
+  },
+  {
+   "word": "speed",
+   "start": 2.953,
+   "end": 3.19
+  },
+  {
+   "word": "of",
+   "start": 3.233,
+   "end": 3.287
+  },
+  {
+   "word": "light.",
+   "start": 3.373,
+   "end": 3.749
+  }
+ ],
+ "hop": [
+  {
+   "word": "Your",
+   "start": 0.0,
+   "end": 0.14
+  },
+  {
+   "word": "data",
+   "start": 0.194,
+   "end": 0.409
+  },
+  {
+   "word": "can",
+   "start": 0.462,
+   "end": 0.57
+  },
+  {
+   "word": "travel",
+   "start": 0.623,
+   "end": 0.968
+  },
+  {
+   "word": "across",
+   "start": 1.022,
+   "end": 1.344
+  },
+  {
+   "word": "space,",
+   "start": 1.376,
+   "end": 1.881
+  },
+  {
+   "word": "hopping",
+   "start": 1.946,
+   "end": 2.258
+  },
+  {
+   "word": "between",
+   "start": 2.29,
+   "end": 2.559
+  },
+  {
+   "word": "satellites,",
+   "start": 2.612,
+   "end": 3.193
+  },
+  {
+   "word": "before",
+   "start": 3.247,
+   "end": 3.569
+  },
+  {
+   "word": "returning",
+   "start": 3.612,
+   "end": 3.988
+  },
+  {
+   "word": "to",
+   "start": 4.042,
+   "end": 4.092
+  },
+  {
+   "word": "Earth.",
+   "start": 4.192,
+   "end": 4.504
+  }
+ ],
+ "fast": [
+  {
+   "word": "And",
+   "start": 0.012,
+   "end": 0.109
+  },
+  {
+   "word": "all",
+   "start": 0.174,
+   "end": 0.345
+  },
+  {
+   "word": "of",
+   "start": 0.388,
+   "end": 0.438
+  },
+  {
+   "word": "this",
+   "start": 0.475,
+   "end": 0.603
+  },
+  {
+   "word": "happens",
+   "start": 0.657,
+   "end": 0.99
+  },
+  {
+   "word": "in",
+   "start": 1.033,
+   "end": 1.087
+  },
+  {
+   "word": "fractions",
+   "start": 1.151,
+   "end": 1.55
+  },
+  {
+   "word": "of",
+   "start": 1.592,
+   "end": 1.646
+  },
+  {
+   "word": "a",
+   "start": 1.7,
+   "end": 1.75
+  },
+  {
+   "word": "second.",
+   "start": 1.797,
+   "end": 2.184
+  }
+ ],
+ "network": [
+  {
+   "word": "SpaceX",
+   "start": 0.011,
+   "end": 0.516
+  },
+  {
+   "word": "is",
+   "start": 0.623,
+   "end": 0.677
+  },
+  {
+   "word": "essentially",
+   "start": 0.742,
+   "end": 1.161
+  },
+  {
+   "word": "building",
+   "start": 1.215,
+   "end": 1.505
+  },
+  {
+   "word": "an",
+   "start": 1.548,
+   "end": 1.602
+  },
+  {
+   "word": "internet",
+   "start": 1.667,
+   "end": 2.031
+  },
+  {
+   "word": "network",
+   "start": 2.096,
+   "end": 2.451
+  },
+  {
+   "word": "in",
+   "start": 2.483,
+   "end": 2.548
+  },
+  {
+   "word": "the",
+   "start": 2.591,
+   "end": 2.656
+  },
+  {
+   "word": "sky.",
+   "start": 2.698,
+   "end": 3.171
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.021,
+   "end": 0.322
+  },
+  {
+   "word": "Dodai",
+   "start": 0.387,
+   "end": 0.742
+  },
+  {
+   "word": "Tech",
+   "start": 0.817,
+   "end": 1.064
+  },
+  {
+   "word": "for",
+   "start": 1.129,
+   "end": 1.257
+  },
+  {
+   "word": "more",
+   "start": 1.322,
+   "end": 1.527
+  },
+  {
+   "word": "tech",
+   "start": 1.569,
+   "end": 1.817
+  },
+  {
+   "word": "news!",
+   "start": 1.903,
+   "end": 2.483
+  }
+ ]
+}

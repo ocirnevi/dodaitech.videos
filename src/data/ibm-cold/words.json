@@ -1,0 +1,754 @@
+{
+ "hook": [
+  {
+   "word": "Why",
+   "start": 0.0,
+   "end": 0.15
+  },
+  {
+   "word": "does",
+   "start": 0.194,
+   "end": 0.334
+  },
+  {
+   "word": "IBM",
+   "start": 0.387,
+   "end": 0.892
+  },
+  {
+   "word": "cool",
+   "start": 0.978,
+   "end": 1.204
+  },
+  {
+   "word": "its",
+   "start": 1.258,
+   "end": 1.355
+  },
+  {
+   "word": "quantum",
+   "start": 1.409,
+   "end": 1.741
+  },
+  {
+   "word": "computers",
+   "start": 1.796,
+   "end": 2.29
+  },
+  {
+   "word": "to",
+   "start": 2.344,
+   "end": 2.419
+  },
+  {
+   "word": "almost",
+   "start": 2.526,
+   "end": 2.924
+  },
+  {
+   "word": "absolute",
+   "start": 2.978,
+   "end": 3.45
+  },
+  {
+   "word": "zero?",
+   "start": 3.494,
+   "end": 3.967
+  }
+ ],
+ "space": [
+  {
+   "word": "We're",
+   "start": 0.0,
+   "end": 0.178
+  },
+  {
+   "word": "talking",
+   "start": 0.2,
+   "end": 0.479
+  },
+  {
+   "word": "colder",
+   "start": 0.544,
+   "end": 0.877
+  },
+  {
+   "word": "than",
+   "start": 0.909,
+   "end": 1.016
+  },
+  {
+   "word": "outer",
+   "start": 1.07,
+   "end": 1.296
+  },
+  {
+   "word": "space.",
+   "start": 1.35,
+   "end": 1.802
+  }
+ ],
+ "why": [
+  {
+   "word": "Here's",
+   "start": 0.001,
+   "end": 0.259
+  },
+  {
+   "word": "why.",
+   "start": 0.313,
+   "end": 0.7
+  }
+ ],
+ "bits": [
+  {
+   "word": "Normal",
+   "start": 0.021,
+   "end": 0.29
+  },
+  {
+   "word": "computers",
+   "start": 0.322,
+   "end": 0.709
+  },
+  {
+   "word": "use",
+   "start": 0.763,
+   "end": 0.924
+  },
+  {
+   "word": "bits.",
+   "start": 0.989,
+   "end": 1.483
+  },
+  {
+   "word": "Each",
+   "start": 1.537,
+   "end": 1.709
+  },
+  {
+   "word": "bit",
+   "start": 1.763,
+   "end": 1.924
+  },
+  {
+   "word": "is",
+   "start": 1.956,
+   "end": 2.021
+  },
+  {
+   "word": "either",
+   "start": 2.064,
+   "end": 2.257
+  },
+  {
+   "word": "a",
+   "start": 2.301,
+   "end": 2.351
+  },
+  {
+   "word": "zero",
+   "start": 2.386,
+   "end": 2.763
+  },
+  {
+   "word": "or",
+   "start": 2.87,
+   "end": 2.989
+  },
+  {
+   "word": "a",
+   "start": 3.043,
+   "end": 3.093
+  },
+  {
+   "word": "one.",
+   "start": 3.15,
+   "end": 3.505
+  }
+ ],
+ "qubits": [
+  {
+   "word": "But",
+   "start": 0.0,
+   "end": 0.116
+  },
+  {
+   "word": "quantum",
+   "start": 0.17,
+   "end": 0.513
+  },
+  {
+   "word": "computers",
+   "start": 0.557,
+   "end": 0.986
+  },
+  {
+   "word": "use",
+   "start": 1.051,
+   "end": 1.191
+  },
+  {
+   "word": "something",
+   "start": 1.212,
+   "end": 1.47
+  },
+  {
+   "word": "called",
+   "start": 1.513,
+   "end": 1.718
+  },
+  {
+   "word": "qubits.",
+   "start": 1.76,
+   "end": 2.373
+  }
+ ],
+ "super": [
+  {
+   "word": "And",
+   "start": 0.0,
+   "end": 0.09
+  },
+  {
+   "word": "thanks",
+   "start": 0.132,
+   "end": 0.337
+  },
+  {
+   "word": "to",
+   "start": 0.368,
+   "end": 0.422
+  },
+  {
+   "word": "quantum",
+   "start": 0.487,
+   "end": 0.788
+  },
+  {
+   "word": "physics,",
+   "start": 0.841,
+   "end": 1.228
+  },
+  {
+   "word": "a",
+   "start": 1.25,
+   "end": 1.303
+  },
+  {
+   "word": "qubit",
+   "start": 1.39,
+   "end": 1.69
+  },
+  {
+   "word": "can",
+   "start": 1.734,
+   "end": 1.916
+  },
+  {
+   "word": "exist",
+   "start": 1.97,
+   "end": 2.271
+  },
+  {
+   "word": "in",
+   "start": 2.325,
+   "end": 2.378
+  },
+  {
+   "word": "a",
+   "start": 2.422,
+   "end": 2.472
+  },
+  {
+   "word": "combination",
+   "start": 2.497,
+   "end": 3.045
+  },
+  {
+   "word": "of",
+   "start": 3.089,
+   "end": 3.142
+  },
+  {
+   "word": "zero",
+   "start": 3.217,
+   "end": 3.637
+  },
+  {
+   "word": "and",
+   "start": 3.744,
+   "end": 3.97
+  },
+  {
+   "word": "one.",
+   "start": 4.077,
+   "end": 4.465
+  }
+ ],
+ "powerful": [
+  {
+   "word": "Sounds",
+   "start": 0.043,
+   "end": 0.312
+  },
+  {
+   "word": "powerful,",
+   "start": 0.366,
+   "end": 0.806
+  },
+  {
+   "word": "right?",
+   "start": 0.839,
+   "end": 1.107
+  }
+ ],
+ "problem": [
+  {
+   "word": "Here's",
+   "start": 0.008,
+   "end": 0.234
+  },
+  {
+   "word": "the",
+   "start": 0.267,
+   "end": 0.332
+  },
+  {
+   "word": "problem.",
+   "start": 0.374,
+   "end": 0.836
+  }
+ ],
+ "sensitive": [
+  {
+   "word": "Qubits",
+   "start": 0.02,
+   "end": 0.343
+  },
+  {
+   "word": "are",
+   "start": 0.375,
+   "end": 0.471
+  },
+  {
+   "word": "incredibly",
+   "start": 0.504,
+   "end": 1.02
+  },
+  {
+   "word": "sensitive.",
+   "start": 1.063,
+   "end": 1.589
+  }
+ ],
+ "heat": [
+  {
+   "word": "Even",
+   "start": 0.01,
+   "end": 0.247
+  },
+  {
+   "word": "tiny",
+   "start": 0.312,
+   "end": 0.688
+  },
+  {
+   "word": "amounts",
+   "start": 0.721,
+   "end": 0.968
+  },
+  {
+   "word": "of",
+   "start": 1.0,
+   "end": 1.054
+  },
+  {
+   "word": "heat",
+   "start": 1.129,
+   "end": 1.355
+  },
+  {
+   "word": "can",
+   "start": 1.409,
+   "end": 1.526
+  },
+  {
+   "word": "disturb",
+   "start": 1.57,
+   "end": 1.882
+  },
+  {
+   "word": "their",
+   "start": 1.935,
+   "end": 2.064
+  },
+  {
+   "word": "quantum",
+   "start": 2.107,
+   "end": 2.451
+  },
+  {
+   "word": "states,",
+   "start": 2.516,
+   "end": 3.01
+  },
+  {
+   "word": "causing",
+   "start": 3.064,
+   "end": 3.386
+  },
+  {
+   "word": "errors.",
+   "start": 3.461,
+   "end": 3.913
+  }
+ ],
+ "cool": [
+  {
+   "word": "So",
+   "start": 0.043,
+   "end": 0.194
+  },
+  {
+   "word": "IBM",
+   "start": 0.301,
+   "end": 0.828
+  },
+  {
+   "word": "cools",
+   "start": 0.903,
+   "end": 1.118
+  },
+  {
+   "word": "its",
+   "start": 1.15,
+   "end": 1.269
+  },
+  {
+   "word": "superconducting",
+   "start": 1.322,
+   "end": 2.054
+  },
+  {
+   "word": "quantum",
+   "start": 2.118,
+   "end": 2.462
+  },
+  {
+   "word": "chips",
+   "start": 2.526,
+   "end": 2.817
+  },
+  {
+   "word": "to",
+   "start": 2.859,
+   "end": 2.924
+  },
+  {
+   "word": "temperatures",
+   "start": 2.999,
+   "end": 3.515
+  },
+  {
+   "word": "just",
+   "start": 3.569,
+   "end": 3.741
+  },
+  {
+   "word": "a",
+   "start": 3.784,
+   "end": 3.834
+  },
+  {
+   "word": "fraction",
+   "start": 3.87,
+   "end": 4.225
+  },
+  {
+   "word": "of",
+   "start": 4.268,
+   "end": 4.318
+  },
+  {
+   "word": "a",
+   "start": 4.354,
+   "end": 4.404
+  },
+  {
+   "word": "degree",
+   "start": 4.429,
+   "end": 4.827
+  },
+  {
+   "word": "above",
+   "start": 4.869,
+   "end": 5.181
+  },
+  {
+   "word": "absolute",
+   "start": 5.235,
+   "end": 5.805
+  },
+  {
+   "word": "zero.",
+   "start": 5.848,
+   "end": 6.396
+  }
+ ],
+ "minus": [
+  {
+   "word": "That's",
+   "start": 0.0,
+   "end": 0.163
+  },
+  {
+   "word": "around",
+   "start": 0.185,
+   "end": 0.389
+  },
+  {
+   "word": "minus",
+   "start": 0.432,
+   "end": 0.69
+  },
+  {
+   "word": "273",
+   "start": 0.755,
+   "end": 0.884
+  },
+  {
+   "word": "degrees",
+   "start": 0.927,
+   "end": 1.131
+  },
+  {
+   "word": "Celsius!",
+   "start": 1.174,
+   "end": 1.625
+  }
+ ],
+ "maintain": [
+  {
+   "word": "At",
+   "start": 0.009,
+   "end": 0.137
+  },
+  {
+   "word": "these",
+   "start": 0.181,
+   "end": 0.342
+  },
+  {
+   "word": "temperatures,",
+   "start": 0.385,
+   "end": 0.869
+  },
+  {
+   "word": "the",
+   "start": 0.89,
+   "end": 0.955
+  },
+  {
+   "word": "circuits",
+   "start": 1.009,
+   "end": 1.331
+  },
+  {
+   "word": "can",
+   "start": 1.363,
+   "end": 1.471
+  },
+  {
+   "word": "maintain",
+   "start": 1.524,
+   "end": 1.922
+  },
+  {
+   "word": "the",
+   "start": 1.986,
+   "end": 2.051
+  },
+  {
+   "word": "delicate",
+   "start": 2.115,
+   "end": 2.492
+  },
+  {
+   "word": "quantum",
+   "start": 2.524,
+   "end": 2.868
+  },
+  {
+   "word": "behavior",
+   "start": 2.911,
+   "end": 3.341
+  },
+  {
+   "word": "needed",
+   "start": 3.406,
+   "end": 3.717
+  },
+  {
+   "word": "for",
+   "start": 3.771,
+   "end": 3.878
+  },
+  {
+   "word": "computation.",
+   "start": 3.932,
+   "end": 4.749
+  }
+ ],
+ "crazy": [
+  {
+   "word": "The",
+   "start": 0.043,
+   "end": 0.119
+  },
+  {
+   "word": "crazy",
+   "start": 0.161,
+   "end": 0.473
+  },
+  {
+   "word": "part?",
+   "start": 0.527,
+   "end": 0.817
+  }
+ ],
+ "coldest": [
+  {
+   "word": "We're",
+   "start": 0.0,
+   "end": 0.157
+  },
+  {
+   "word": "building",
+   "start": 0.189,
+   "end": 0.458
+  },
+  {
+   "word": "some",
+   "start": 0.49,
+   "end": 0.598
+  },
+  {
+   "word": "of",
+   "start": 0.619,
+   "end": 0.669
+  },
+  {
+   "word": "the",
+   "start": 0.695,
+   "end": 0.759
+  },
+  {
+   "word": "world's",
+   "start": 0.802,
+   "end": 1.103
+  },
+  {
+   "word": "most",
+   "start": 1.157,
+   "end": 1.329
+  },
+  {
+   "word": "advanced",
+   "start": 1.383,
+   "end": 1.737
+  },
+  {
+   "word": "computers",
+   "start": 1.759,
+   "end": 2.253
+  },
+  {
+   "word": "by",
+   "start": 2.297,
+   "end": 2.372
+  },
+  {
+   "word": "making",
+   "start": 2.436,
+   "end": 2.673
+  },
+  {
+   "word": "them",
+   "start": 2.715,
+   "end": 2.823
+  },
+  {
+   "word": "some",
+   "start": 2.866,
+   "end": 2.985
+  },
+  {
+   "word": "of",
+   "start": 3.016,
+   "end": 3.066
+  },
+  {
+   "word": "the",
+   "start": 3.092,
+   "end": 3.156
+  },
+  {
+   "word": "coldest",
+   "start": 3.232,
+   "end": 3.608
+  },
+  {
+   "word": "machines",
+   "start": 3.661,
+   "end": 4.048
+  },
+  {
+   "word": "on",
+   "start": 4.091,
+   "end": 4.199
+  },
+  {
+   "word": "Earth.",
+   "start": 4.263,
+   "end": 4.564
+  }
+ ],
+ "follow": [
+  {
+   "word": "Follow",
+   "start": 0.003,
+   "end": 0.282
+  },
+  {
+   "word": "Dodai",
+   "start": 0.358,
+   "end": 0.669
+  },
+  {
+   "word": "Tech",
+   "start": 0.734,
+   "end": 0.96
+  },
+  {
+   "word": "for",
+   "start": 1.025,
+   "end": 1.132
+  },
+  {
+   "word": "more",
+   "start": 1.175,
+   "end": 1.357
+  },
+  {
+   "word": "tech",
+   "start": 1.39,
+   "end": 1.616
+  },
+  {
+   "word": "news!",
+   "start": 1.691,
+   "end": 2.228
+  }
+ ]
+}

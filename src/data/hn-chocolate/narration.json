@@ -1,0 +1,42 @@
+{
+  "hook": {
+    "src": "narration/hn-chocolate/hook.wav",
+    "durationInSeconds": 2.776646
+  },
+  "catch": {
+    "src": "narration/hn-chocolate/catch.wav",
+    "durationInSeconds": 2.979396
+  },
+  "flavanols": {
+    "src": "narration/hn-chocolate/flavanols.wav",
+    "durationInSeconds": 6.133083
+  },
+  "sugar": {
+    "src": "narration/hn-chocolate/sugar.wav",
+    "durationInSeconds": 4.207
+  },
+  "look": {
+    "src": "narration/hn-chocolate/look.wav",
+    "durationInSeconds": 1.219625
+  },
+  "checklist": {
+    "src": "narration/hn-chocolate/checklist.wav",
+    "durationInSeconds": 5.842333
+  },
+  "remember": {
+    "src": "narration/hn-chocolate/remember.wav",
+    "durationInSeconds": 3.426083
+  },
+  "enjoy": {
+    "src": "narration/hn-chocolate/enjoy.wav",
+    "durationInSeconds": 1.591708
+  },
+  "right": {
+    "src": "narration/hn-chocolate/right.wav",
+    "durationInSeconds": 2.369542
+  },
+  "follow": {
+    "src": "narration/hn-chocolate/follow.wav",
+    "durationInSeconds": 2.713292
+  }
+}

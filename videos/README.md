@@ -15,6 +15,9 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | `ai-memory` | Would you want AI to remember your entire life? | v5 final con voz Alex y host P2 |
 | `ai-agents` | Don't let AI replace you. Make it work for you. | v2 final (feedback de ritmo aplicado) |
 | `ai-overnight` | AI that works while you sleep | v1 final, voz Alex, host P2 en hook y cierre |
+| `robot-watch` | Robots that learn by watching you | v1 final, voz Alex, host P2 en hook y cierre |
+| `ibm-cold` | Why IBM freezes its quantum computers | v1 final, voz Alex, host P2 en hook y cierre |
+| `starlink-lasers` | How Starlink beams internet from space | v1 final, voz Alex, host P2 en hook y cierre |
 
 ## hellonutrition (`videos/hellonutrition/`) — Hello Nutrition AI, nutrición con base científica, inglés, sin cara
 
@@ -23,6 +26,8 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | `hn-kiwis` | Two kiwis a day | v2 final (silencios recortados, tempo 1.08), voz Matilda |
 | `hn-lemon` | Lemon unlocks plant iron | v2 final (silencios recortados, tempo 1.08), voz Matilda |
 | `hn-protein` | Protein breakfast keeps you full | v1 final, voz Matilda |
+| `hn-strawberry` | Strawberries beat oranges on vitamin C | v1 final, voz Matilda |
+| `hn-chocolate` | Dark chocolate: the right kind matters | v1 final, voz Matilda |
 
 ## minutriologo (`videos/minutriologo/`) — Mi Nutriólogo, marca propia en español (misma identidad visual que Hello Nutrition AI), sin cara
 
@@ -31,3 +36,5 @@ Tema visual por canal en `src/brands/` (dodaitech por defecto; hellonutrition pa
 | `mn-kiwis` | Dos kiwis al día (traducción de `hn-kiwis`) | v4 final (silencios recortados, tempo 1.08), voz Matilda |
 | `mn-lemon` | El limón libera el hierro vegetal (traducción de `hn-lemon`) | v2 final (silencios recortados, tempo 1.08), voz Matilda |
 | `mn-protein` | Desayuno con proteína: más saciedad (traducción de `hn-protein`) | v1 final, voz Matilda |
+| `mn-strawberry` | Las fresas le ganan a la naranja en vitamina C (versión de `hn-strawberry`) | v1 final, voz Matilda |
+| `mn-chocolate` | Chocolate oscuro: el tipo correcto importa (versión de `hn-chocolate`) | v1 final, voz Matilda |

@@ -1,0 +1,592 @@
+{
+ "hook": [
+  {
+   "word": "¿Sabías",
+   "start": 0.028,
+   "end": 0.404
+  },
+  {
+   "word": "que",
+   "start": 0.458,
+   "end": 0.523
+  },
+  {
+   "word": "comer",
+   "start": 0.577,
+   "end": 0.791
+  },
+  {
+   "word": "chocolate",
+   "start": 0.835,
+   "end": 1.286
+  },
+  {
+   "word": "podría",
+   "start": 1.34,
+   "end": 1.619
+  },
+  {
+   "word": "ser",
+   "start": 1.663,
+   "end": 1.77
+  },
+  {
+   "word": "bueno",
+   "start": 1.813,
+   "end": 2.017
+  },
+  {
+   "word": "para",
+   "start": 2.06,
+   "end": 2.211
+  },
+  {
+   "word": "tu",
+   "start": 2.242,
+   "end": 2.318
+  },
+  {
+   "word": "salud?",
+   "start": 2.361,
+   "end": 2.797
+  }
+ ],
+ "catch": [
+  {
+   "word": "Pero",
+   "start": 0.0,
+   "end": 0.158
+  },
+  {
+   "word": "hay",
+   "start": 0.18,
+   "end": 0.288
+  },
+  {
+   "word": "un",
+   "start": 0.33,
+   "end": 0.384
+  },
+  {
+   "word": "detalle.",
+   "start": 0.417,
+   "end": 0.986
+  },
+  {
+   "word": "¡No",
+   "start": 1.277,
+   "end": 1.61
+  },
+  {
+   "word": "todos",
+   "start": 1.674,
+   "end": 1.976
+  },
+  {
+   "word": "los",
+   "start": 2.03,
+   "end": 2.137
+  },
+  {
+   "word": "chocolates",
+   "start": 2.191,
+   "end": 2.685
+  },
+  {
+   "word": "son",
+   "start": 2.706,
+   "end": 2.846
+  },
+  {
+   "word": "iguales!",
+   "start": 2.889,
+   "end": 3.48
+  }
+ ],
+ "flavanols": [
+  {
+   "word": "El",
+   "start": 0.0,
+   "end": 0.114
+  },
+  {
+   "word": "cacao",
+   "start": 0.158,
+   "end": 0.448
+  },
+  {
+   "word": "contiene",
+   "start": 0.49,
+   "end": 0.835
+  },
+  {
+   "word": "compuestos",
+   "start": 0.888,
+   "end": 1.373
+  },
+  {
+   "word": "naturales",
+   "start": 1.415,
+   "end": 1.985
+  },
+  {
+   "word": "llamados",
+   "start": 2.038,
+   "end": 2.511
+  },
+  {
+   "word": "flavanoles,",
+   "start": 2.565,
+   "end": 3.393
+  },
+  {
+   "word": "que",
+   "start": 3.726,
+   "end": 3.812
+  },
+  {
+   "word": "pueden",
+   "start": 3.855,
+   "end": 4.092
+  },
+  {
+   "word": "ayudar",
+   "start": 4.135,
+   "end": 4.414
+  },
+  {
+   "word": "a",
+   "start": 4.458,
+   "end": 4.508
+  },
+  {
+   "word": "mejorar",
+   "start": 4.511,
+   "end": 4.866
+  },
+  {
+   "word": "el",
+   "start": 4.909,
+   "end": 4.959
+  },
+  {
+   "word": "flujo",
+   "start": 4.995,
+   "end": 5.242
+  },
+  {
+   "word": "sanguíneo",
+   "start": 5.286,
+   "end": 5.758
+  },
+  {
+   "word": "y",
+   "start": 5.941,
+   "end": 6.005
+  },
+  {
+   "word": "a",
+   "start": 6.048,
+   "end": 6.098
+  },
+  {
+   "word": "mantener",
+   "start": 6.113,
+   "end": 6.499
+  },
+  {
+   "word": "sanos",
+   "start": 6.564,
+   "end": 6.886
+  },
+  {
+   "word": "los",
+   "start": 6.94,
+   "end": 7.059
+  },
+  {
+   "word": "vasos",
+   "start": 7.112,
+   "end": 7.349
+  },
+  {
+   "word": "sanguíneos.",
+   "start": 7.371,
+   "end": 8.048
+  }
+ ],
+ "sugar": [
+  {
+   "word": "Pero",
+   "start": 0.0,
+   "end": 0.159
+  },
+  {
+   "word": "muchas",
+   "start": 0.191,
+   "end": 0.503
+  },
+  {
+   "word": "barras",
+   "start": 0.557,
+   "end": 0.804
+  },
+  {
+   "word": "de",
+   "start": 0.836,
+   "end": 0.886
+  },
+  {
+   "word": "chocolate",
+   "start": 0.922,
+   "end": 1.481
+  },
+  {
+   "word": "están",
+   "start": 1.546,
+   "end": 1.825
+  },
+  {
+   "word": "cargadas",
+   "start": 1.868,
+   "end": 2.255
+  },
+  {
+   "word": "de",
+   "start": 2.298,
+   "end": 2.348
+  },
+  {
+   "word": "azúcar",
+   "start": 2.373,
+   "end": 2.664
+  },
+  {
+   "word": "añadida",
+   "start": 2.696,
+   "end": 3.136
+  },
+  {
+   "word": "y",
+   "start": 3.427,
+   "end": 3.513
+  },
+  {
+   "word": "tienen",
+   "start": 3.588,
+   "end": 3.814
+  },
+  {
+   "word": "muy",
+   "start": 3.868,
+   "end": 4.018
+  },
+  {
+   "word": "poco",
+   "start": 4.083,
+   "end": 4.319
+  },
+  {
+   "word": "cacao.",
+   "start": 4.362,
+   "end": 4.857
+  }
+ ],
+ "look": [
+  {
+   "word": "Así",
+   "start": 0.0,
+   "end": 0.203
+  },
+  {
+   "word": "que",
+   "start": 0.257,
+   "end": 0.332
+  },
+  {
+   "word": "esto",
+   "start": 0.375,
+   "end": 0.579
+  },
+  {
+   "word": "es",
+   "start": 0.633,
+   "end": 0.708
+  },
+  {
+   "word": "lo",
+   "start": 0.762,
+   "end": 0.838
+  },
+  {
+   "word": "que",
+   "start": 0.88,
+   "end": 0.945
+  },
+  {
+   "word": "debes",
+   "start": 0.988,
+   "end": 1.202
+  },
+  {
+   "word": "buscar.",
+   "start": 1.256,
+   "end": 1.794
+  }
+ ],
+ "checklist": [
+  {
+   "word": "Elige",
+   "start": 0.0,
+   "end": 0.352
+  },
+  {
+   "word": "chocolate",
+   "start": 0.394,
+   "end": 0.825
+  },
+  {
+   "word": "oscuro",
+   "start": 0.857,
+   "end": 1.191
+  },
+  {
+   "word": "con",
+   "start": 1.244,
+   "end": 1.352
+  },
+  {
+   "word": "70%",
+   "start": 1.405,
+   "end": 1.76
+  },
+  {
+   "word": "de",
+   "start": 1.803,
+   "end": 1.921
+  },
+  {
+   "word": "cacao",
+   "start": 1.964,
+   "end": 2.211
+  },
+  {
+   "word": "o",
+   "start": 2.255,
+   "end": 2.308
+  },
+  {
+   "word": "más,",
+   "start": 2.351,
+   "end": 2.77
+  },
+  {
+   "word": "revisa",
+   "start": 2.954,
+   "end": 4.136
+  },
+  {
+   "word": "el",
+   "start": 4.157,
+   "end": 4.211
+  },
+  {
+   "word": "azúcar",
+   "start": 4.276,
+   "end": 4.587
+  },
+  {
+   "word": "añadida",
+   "start": 4.609,
+   "end": 5.05
+  },
+  {
+   "word": "y",
+   "start": 5.2,
+   "end": 5.286
+  },
+  {
+   "word": "come",
+   "start": 5.372,
+   "end": 5.576
+  },
+  {
+   "word": "porciones",
+   "start": 5.63,
+   "end": 6.028
+  },
+  {
+   "word": "pequeñas.",
+   "start": 6.07,
+   "end": 6.738
+  }
+ ],
+ "remember": [
+  {
+   "word": "Y",
+   "start": 0.0,
+   "end": 0.052
+  },
+  {
+   "word": "recuerda:",
+   "start": 0.138,
+   "end": 0.675
+  },
+  {
+   "word": "más",
+   "start": 0.966,
+   "end": 1.148
+  },
+  {
+   "word": "cacao",
+   "start": 1.202,
+   "end": 1.61
+  },
+  {
+   "word": "no",
+   "start": 1.739,
+   "end": 1.879
+  },
+  {
+   "word": "siempre",
+   "start": 1.933,
+   "end": 2.223
+  },
+  {
+   "word": "significa",
+   "start": 2.245,
+   "end": 2.729
+  },
+  {
+   "word": "más",
+   "start": 2.793,
+   "end": 2.954
+  },
+  {
+   "word": "flavanoles.",
+   "start": 2.997,
+   "end": 3.728
+  }
+ ],
+ "enjoy": [
+  {
+   "word": "¡Así",
+   "start": 0.0,
+   "end": 0.26
+  },
+  {
+   "word": "que",
+   "start": 0.304,
+   "end": 0.379
+  },
+  {
+   "word": "sí,",
+   "start": 0.421,
+   "end": 0.733
+  },
+  {
+   "word": "puedes",
+   "start": 0.884,
+   "end": 1.174
+  },
+  {
+   "word": "disfrutar",
+   "start": 1.195,
+   "end": 1.582
+  },
+  {
+   "word": "el",
+   "start": 1.615,
+   "end": 1.665
+  },
+  {
+   "word": "chocolate!",
+   "start": 1.701,
+   "end": 2.356
+  }
+ ],
+ "right": [
+  {
+   "word": "Solo",
+   "start": 0.016,
+   "end": 0.253
+  },
+  {
+   "word": "asegúrate",
+   "start": 0.274,
+   "end": 0.748
+  },
+  {
+   "word": "de",
+   "start": 0.79,
+   "end": 0.844
+  },
+  {
+   "word": "elegir",
+   "start": 0.865,
+   "end": 1.177
+  },
+  {
+   "word": "el",
+   "start": 1.21,
+   "end": 1.26
+  },
+  {
+   "word": "tipo",
+   "start": 1.306,
+   "end": 1.51
+  },
+  {
+   "word": "correcto.",
+   "start": 1.553,
+   "end": 2.112
+  }
+ ],
+ "follow": [
+  {
+   "word": "¡Sigue",
+   "start": 0.0,
+   "end": 0.329
+  },
+  {
+   "word": "a",
+   "start": 0.362,
+   "end": 0.412
+  },
+  {
+   "word": "Mi",
+   "start": 0.427,
+   "end": 0.502
+  },
+  {
+   "word": "Nutriólogo",
+   "start": 0.544,
+   "end": 1.125
+  },
+  {
+   "word": "para",
+   "start": 1.19,
+   "end": 1.372
+  },
+  {
+   "word": "más",
+   "start": 1.426,
+   "end": 1.619
+  },
+  {
+   "word": "consejos",
+   "start": 1.673,
+   "end": 2.167
+  },
+  {
+   "word": "de",
+   "start": 2.19,
+   "end": 2.24
+  },
+  {
+   "word": "nutrición!",
+   "start": 2.275,
+   "end": 2.909
+  }
+ ]
+}

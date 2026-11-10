@@ -1,0 +1,58 @@
+{
+  "hook": {
+    "src": "narration/starlink-lasers/hook.wav",
+    "durationInSeconds": 3.448125
+  },
+  "answer": {
+    "src": "narration/starlink-lasers/answer.wav",
+    "durationInSeconds": 1.416938
+  },
+  "thousands": {
+    "src": "narration/starlink-lasers/thousands.wav",
+    "durationInSeconds": 2.842396
+  },
+  "how": {
+    "src": "narration/starlink-lasers/how.wav",
+    "durationInSeconds": 1.512771
+  },
+  "antenna": {
+    "src": "narration/starlink-lasers/antenna.wav",
+    "durationInSeconds": 5.890896
+  },
+  "ground": {
+    "src": "narration/starlink-lasers/ground.wav",
+    "durationInSeconds": 4.093875
+  },
+  "nostation": {
+    "src": "narration/starlink-lasers/nostation.wav",
+    "durationInSeconds": 2.355208
+  },
+  "interesting": {
+    "src": "narration/starlink-lasers/interesting.wav",
+    "durationInSeconds": 1.532917
+  },
+  "lasers": {
+    "src": "narration/starlink-lasers/lasers.wav",
+    "durationInSeconds": 3.282813
+  },
+  "speed": {
+    "src": "narration/starlink-lasers/speed.wav",
+    "durationInSeconds": 3.862229
+  },
+  "hop": {
+    "src": "narration/starlink-lasers/hop.wav",
+    "durationInSeconds": 4.590354
+  },
+  "fast": {
+    "src": "narration/starlink-lasers/fast.wav",
+    "durationInSeconds": 2.301521
+  },
+  "network": {
+    "src": "narration/starlink-lasers/network.wav",
+    "durationInSeconds": 3.283708
+  },
+  "follow": {
+    "src": "narration/starlink-lasers/follow.wav",
+    "durationInSeconds": 2.602125
+  }
+}

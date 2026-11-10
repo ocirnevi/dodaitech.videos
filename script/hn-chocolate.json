@@ -1,0 +1,144 @@
+{
+  "id": "hn-chocolate",
+  "title": "Dark chocolate: the right kind matters",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade)",
+  "language": "en-US",
+  "channel": "hellonutrition",
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "frame1Text": "A sweet surprise.",
+  "armature": "Cocoa flavanols can support blood flow, but most bars are mostly sugar: pick 70%+ dark chocolate, check added sugar, keep portions small, and remember processing can strip flavanols.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Did you know eating chocolate could actually be good for your health?",
+      "beats": []
+    },
+    {
+      "id": "catch",
+      "kind": "catch",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "But there's a catch. Not all chocolate is created equal!",
+      "beats": []
+    },
+    {
+      "id": "flavanols",
+      "kind": "flavanols",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "inside cocoa",
+      "title": "",
+      "narration": "Cocoa contains natural compounds called flavanols, which can help improve blood flow and support healthy blood vessels.",
+      "beats": [],
+      "sources": [
+        "EFSA NDA Panel 2012: 200 mg de flavanoles de cacao al día contribuyen a mantener la elasticidad de los vasos sanguíneos (EFSA Journal 10(7):2809).",
+        "Hooper L. et al. Effects of chocolate, cocoa, and flavan-3-ols on cardiovascular health: a systematic review and meta-analysis. Am J Clin Nutr 2012;95(3):740-751."
+      ]
+    },
+    {
+      "id": "sugar",
+      "kind": "sugar",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "But many chocolate bars are loaded with added sugar and contain very little cocoa.",
+      "beats": []
+    },
+    {
+      "id": "look",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— label check",
+      "title": "",
+      "narration": "So here's what to look for.",
+      "beats": []
+    },
+    {
+      "id": "checklist",
+      "kind": "checklist",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Choose dark chocolate with 70% cocoa or higher, check the added sugar, and keep your portions small.",
+      "beats": []
+    },
+    {
+      "id": "remember",
+      "kind": "remember",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "processing matters",
+      "title": "",
+      "narration": "And remember, more cocoa doesn't always mean more flavanols.",
+      "beats": [],
+      "sources": [
+        "Miller K.B. et al. Impact of alkalization on the antioxidant and flavanol content of commercial cocoa powders. J Agric Food Chem 2008;56(18):8527-8533 (el procesado alcalino reduce mucho los flavanoles)."
+      ]
+    },
+    {
+      "id": "enjoy",
+      "kind": "enjoy",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "So yes, you can enjoy chocolate!",
+      "beats": []
+    },
+    {
+      "id": "right",
+      "kind": "right",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Just make sure you're choosing the right kind.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Follow Hello Nutrition AI for more nutrition tips!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "EFSA NDA Panel 2012: 200 mg de flavanoles de cacao al día contribuyen a mantener la elasticidad de los vasos sanguíneos (EFSA Journal 10(7):2809).",
+    "Hooper L. et al. Effects of chocolate, cocoa, and flavan-3-ols on cardiovascular health: a systematic review and meta-analysis. Am J Clin Nutr 2012;95(3):740-751.",
+    "Miller K.B. et al. Impact of alkalization on the antioxidant and flavanol content of commercial cocoa powders. J Agric Food Chem 2008;56(18):8527-8533 (el procesado alcalino reduce mucho los flavanoles).",
+    "Nota: referencias añadidas por Claude de memoria; verificar antes de publicar."
+  ]
+}

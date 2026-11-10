@@ -1,0 +1,66 @@
+{
+  "hook": {
+    "src": "narration/ibm-cold/hook.wav",
+    "durationInSeconds": 4.051188
+  },
+  "space": {
+    "src": "narration/ibm-cold/space.wav",
+    "durationInSeconds": 1.895417
+  },
+  "why": {
+    "src": "narration/ibm-cold/why.wav",
+    "durationInSeconds": 0.809542
+  },
+  "bits": {
+    "src": "narration/ibm-cold/bits.wav",
+    "durationInSeconds": 3.619417
+  },
+  "qubits": {
+    "src": "narration/ibm-cold/qubits.wav",
+    "durationInSeconds": 2.448792
+  },
+  "super": {
+    "src": "narration/ibm-cold/super.wav",
+    "durationInSeconds": 4.602
+  },
+  "powerful": {
+    "src": "narration/ibm-cold/powerful.wav",
+    "durationInSeconds": 1.202813
+  },
+  "problem": {
+    "src": "narration/ibm-cold/problem.wav",
+    "durationInSeconds": 0.919688
+  },
+  "sensitive": {
+    "src": "narration/ibm-cold/sensitive.wav",
+    "durationInSeconds": 1.697417
+  },
+  "heat": {
+    "src": "narration/ibm-cold/heat.wav",
+    "durationInSeconds": 4.025188
+  },
+  "cool": {
+    "src": "narration/ibm-cold/cool.wav",
+    "durationInSeconds": 6.495875
+  },
+  "minus": {
+    "src": "narration/ibm-cold/minus.wav",
+    "durationInSeconds": 2.744146
+  },
+  "maintain": {
+    "src": "narration/ibm-cold/maintain.wav",
+    "durationInSeconds": 4.840313
+  },
+  "crazy": {
+    "src": "narration/ibm-cold/crazy.wav",
+    "durationInSeconds": 0.900396
+  },
+  "coldest": {
+    "src": "narration/ibm-cold/coldest.wav",
+    "durationInSeconds": 4.627583
+  },
+  "follow": {
+    "src": "narration/ibm-cold/follow.wav",
+    "durationInSeconds": 2.328542
+  }
+}

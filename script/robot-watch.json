@@ -1,0 +1,234 @@
+{
+  "id": "robot-watch",
+  "title": "Robots that learn by watching you",
+  "voice": "yl2ZDV1MzN4HbQJbMihG",
+  "voiceName": "Alex - Upbeat, Energetic and Clear",
+  "language": "en-US",
+  "channel": "dodaitech",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "host": {
+    "enabled": true,
+    "layout": "split",
+    "split": 960,
+    "focusY": 0.18,
+    "clips": {
+      "hook": "avatar/robot-watch/hook-p2.mp4",
+      "follow": "avatar/robot-watch/follow-p2.mp4"
+    },
+    "heygen": {
+      "group_id": "d058fd46feb6439c24a9fa9c6291ae87",
+      "look_id": "329327dec229991ace01dff9237155b2",
+      "look_name": "P2 · escritorio neutro",
+      "engine": "avatar_iv",
+      "expressiveness": "high",
+      "videos": {
+        "hook": "2433cf390419e8634baf7398b1284941",
+        "follow": "f56d1f2f024b382a96354f47d211ffdc"
+      },
+      "motion_prompt_hook": "Asks the question to the viewer with a curious eyebrow raise.",
+      "motion_prompt_follow": "Explains calmly with a small nod."
+    }
+  },
+  "frame1Text": "Monkey see, robot do.",
+  "armature": "Robots can learn from watching people, but seeing isn't doing: they must turn pixels into hands, objects and motion, then adapt the movement to their own body and the right force through practice.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "What if robots could learn just by watching you?",
+      "beats": []
+    },
+    {
+      "id": "nvidia",
+      "kind": "nvidia",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "the research",
+      "title": "",
+      "narration": "Well, Nvidia is working on exactly that.",
+      "beats": [],
+      "sources": [
+        "NVIDIA Research (robótica: aprendizaje por imitación desde video humano, p. ej. GR00T / DexMimicGen). Nombre como texto, sin logo."
+      ]
+    },
+    {
+      "id": "glass",
+      "kind": "glass",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Imagine watching someone pick up a glass.",
+      "beats": []
+    },
+    {
+      "id": "instant",
+      "kind": "instant",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "You instantly understand the movement.",
+      "beats": []
+    },
+    {
+      "id": "sees",
+      "kind": "sees",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "But a robot sees something completely different.",
+      "beats": []
+    },
+    {
+      "id": "pixels",
+      "kind": "pixels",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Pixels.",
+      "beats": []
+    },
+    {
+      "id": "recognize",
+      "kind": "recognize",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "step 1 · perception",
+      "title": "",
+      "narration": "So first, AI has to recognize the hand, the glass, and how they're moving through space.",
+      "beats": []
+    },
+    {
+      "id": "patterns",
+      "kind": "patterns",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "step 2 · learning",
+      "title": "",
+      "narration": "Then it learns patterns from thousands of examples.",
+      "beats": []
+    },
+    {
+      "id": "tricky",
+      "kind": "turn",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "— not so fast",
+      "title": "",
+      "narration": "But here's the tricky part.",
+      "beats": []
+    },
+    {
+      "id": "copy",
+      "kind": "copy",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "A robot can't simply copy your movements.",
+      "beats": []
+    },
+    {
+      "id": "body",
+      "kind": "body",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Its arms are different. Its joints move differently. And it needs to calculate how much force to use.",
+      "beats": []
+    },
+    {
+      "id": "little",
+      "kind": "little",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Too little, and the glass slips.",
+      "beats": []
+    },
+    {
+      "id": "much",
+      "kind": "much",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Too much, and it breaks.",
+      "beats": []
+    },
+    {
+      "id": "feedback",
+      "kind": "feedback",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "step 3 · practice",
+      "title": "",
+      "narration": "That's why robots also need to practice and adjust their movements using feedback.",
+      "beats": []
+    },
+    {
+      "id": "research",
+      "kind": "research",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "And this is what makes Nvidia's research so interesting.",
+      "beats": []
+    },
+    {
+      "id": "turn",
+      "kind": "seedo",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "We're teaching machines to turn what they see into what they can physically do.",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Follow Dodai Tech for more tech news!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "Guion de Enrico (10 nov 2026). Sin cifras en pantalla.",
+    "NVIDIA Research en aprendizaje de robots por imitación de video humano (GR00T, DexMimicGen, 2024–2025). Verificar el proyecto concreto antes de publicar."
+  ]
+}

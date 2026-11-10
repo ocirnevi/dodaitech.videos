@@ -1,0 +1,70 @@
+{
+  "hook": {
+    "src": "narration/robot-watch/hook.wav",
+    "durationInSeconds": 2.533021
+  },
+  "nvidia": {
+    "src": "narration/robot-watch/nvidia.wav",
+    "durationInSeconds": 2.360583
+  },
+  "glass": {
+    "src": "narration/robot-watch/glass.wav",
+    "durationInSeconds": 2.081979
+  },
+  "instant": {
+    "src": "narration/robot-watch/instant.wav",
+    "durationInSeconds": 1.813604
+  },
+  "sees": {
+    "src": "narration/robot-watch/sees.wav",
+    "durationInSeconds": 2.428438
+  },
+  "pixels": {
+    "src": "narration/robot-watch/pixels.wav",
+    "durationInSeconds": 0.733396
+  },
+  "recognize": {
+    "src": "narration/robot-watch/recognize.wav",
+    "durationInSeconds": 4.658083
+  },
+  "patterns": {
+    "src": "narration/robot-watch/patterns.wav",
+    "durationInSeconds": 2.346688
+  },
+  "tricky": {
+    "src": "narration/robot-watch/tricky.wav",
+    "durationInSeconds": 1.146104
+  },
+  "copy": {
+    "src": "narration/robot-watch/copy.wav",
+    "durationInSeconds": 2.419792
+  },
+  "body": {
+    "src": "narration/robot-watch/body.wav",
+    "durationInSeconds": 4.869771
+  },
+  "little": {
+    "src": "narration/robot-watch/little.wav",
+    "durationInSeconds": 1.707333
+  },
+  "much": {
+    "src": "narration/robot-watch/much.wav",
+    "durationInSeconds": 1.557313
+  },
+  "feedback": {
+    "src": "narration/robot-watch/feedback.wav",
+    "durationInSeconds": 3.830625
+  },
+  "research": {
+    "src": "narration/robot-watch/research.wav",
+    "durationInSeconds": 2.788563
+  },
+  "turn": {
+    "src": "narration/robot-watch/turn.wav",
+    "durationInSeconds": 4.179938
+  },
+  "follow": {
+    "src": "narration/robot-watch/follow.wav",
+    "durationInSeconds": 2.673958
+  }
+}

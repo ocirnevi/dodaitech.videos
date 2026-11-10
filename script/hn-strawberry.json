@@ -1,0 +1,120 @@
+{
+  "id": "hn-strawberry",
+  "title": "Strawberries beat oranges on vitamin C",
+  "voice": "Matilda",
+  "voiceName": "Matilda - warm, friendly (ElevenLabs premade)",
+  "language": "en-US",
+  "channel": "hellonutrition",
+  "host": {
+    "enabled": false,
+    "clips": {}
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": "music/muted-pulse.mp3",
+  "beatsFile": "music/muted-pulse.beats.json",
+  "frame1Text": "The unexpected champion.",
+  "armature": "Gram for gram, strawberries have more vitamin C than oranges (59 vs 53 mg/100 g), and vitamin C builds collagen and helps absorb plant iron, not just immunity.",
+  "scenes": [
+    {
+      "id": "hook",
+      "kind": "hook",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Did you know strawberries actually have more vitamin C than oranges?",
+      "beats": []
+    },
+    {
+      "id": "yep",
+      "kind": "yep",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Yep! Gram for gram, strawberries win!",
+      "beats": []
+    },
+    {
+      "id": "numbers",
+      "kind": "numbers",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "per 100 g",
+      "title": "",
+      "narration": "100 grams of strawberries contain about 59 milligrams of vitamin C, compared to 53 in oranges.",
+      "beats": [],
+      "sources": [
+        "USDA FoodData Central: Strawberries, raw (FDC 167762): vitamina C 58.8 mg/100 g; Oranges, raw, all commercial varieties (FDC 169097): 53.2 mg/100 g."
+      ]
+    },
+    {
+      "id": "more",
+      "kind": "more",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "And vitamin C does more than support your immune system.",
+      "beats": []
+    },
+    {
+      "id": "collagen",
+      "kind": "collagen",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "the builder",
+      "title": "",
+      "narration": "Your body also needs it to produce collagen, which helps keep your skin, bones, and blood vessels healthy.",
+      "beats": [],
+      "sources": [
+        "NIH Office of Dietary Supplements, Vitamin C fact sheet: colágeno, función inmune y absorción de hierro no hemo."
+      ]
+    },
+    {
+      "id": "iron",
+      "kind": "iron",
+      "targetStart": 0,
+      "mode": "dark",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Plus, it helps your body absorb iron from plant-based foods.",
+      "beats": []
+    },
+    {
+      "id": "boost",
+      "kind": "boost",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "So next time you want a vitamin C boost, don't forget about strawberries!",
+      "beats": []
+    },
+    {
+      "id": "follow",
+      "kind": "close",
+      "targetStart": 0,
+      "mode": "light",
+      "depth": 0,
+      "label": "",
+      "title": "",
+      "narration": "Follow Hello Nutrition AI for more nutrition tips!",
+      "beats": []
+    }
+  ],
+  "sources": [
+    "USDA FoodData Central: Strawberries, raw (FDC 167762): vitamina C 58.8 mg/100 g; Oranges, raw, all commercial varieties (FDC 169097): 53.2 mg/100 g.",
+    "NIH Office of Dietary Supplements, Vitamin C fact sheet: colágeno, función inmune y absorción de hierro no hemo.",
+    "Nota: referencias añadidas por Claude de memoria; verificar antes de publicar."
+  ]
+}
