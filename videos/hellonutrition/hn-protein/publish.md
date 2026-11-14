@@ -4,7 +4,7 @@
 Add this to breakfast and stay full till lunch #shorts #nutrition #protein
 
 ## Descripción corta
-Protein at breakfast helps you stay full longer: it triggers fullness hormones and digests slower than carbs alone. Add eggs, Greek yogurt or cottage cheese to your toast or cereal.
+Protein at breakfast helps you stay full longer: it triggers fullness hormones that tell your brain you have had enough. Add eggs, Greek yogurt or cottage cheese to your toast or cereal.
 
 Studies: Leidy et al., Am J Clin Nutr 2013; Batterham et al., Cell Metab 2006; Westerterp-Plantenga et al., Annu Rev Nutr 2009.
 Not medical advice. AI voice. More at hellonutrition.ai

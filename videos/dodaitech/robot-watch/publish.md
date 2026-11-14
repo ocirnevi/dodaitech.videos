@@ -6,7 +6,7 @@ Robots that learn by watching you #shorts #robotics #ai
 ## Descripción corta
 What if a robot could learn just by watching you? NVIDIA is working on it: AI first has to find the hand and the object, learn patterns from thousands of examples, then translate that into its own body and the right amount of force, practicing with feedback until it gets it right.
 
-Research: NVIDIA Research on robot learning from human video (verify the exact project before publishing).
+Research: NVIDIA GR00T 2 (learning from human video).
 AI avatar and AI voice. More at dodaitech.com
 
 #shorts #robotics #ai #nvidia #robots #machinelearning #physicalai #technews #future #dodaitech

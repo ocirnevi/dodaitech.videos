@@ -4,7 +4,7 @@
 Agrega esto a tu desayuno y llega sin hambre a la comida #shorts #nutricion #proteina
 
 ## Descripción corta
-La proteína en el desayuno te ayuda a sentirte lleno por más tiempo: activa hormonas de saciedad y se digiere más lento que los carbohidratos solos. Agrega huevo, yogur griego o queso cottage a tu pan o cereal.
+La proteína en el desayuno te ayuda a sentirte lleno por más tiempo: activa hormonas de saciedad que le avisan a tu cerebro que ya comiste suficiente. Agrega huevo, yogur griego o queso cottage a tu pan o cereal.
 
 Estudios: Leidy et al., Am J Clin Nutr 2013; Batterham et al., Cell Metab 2006; Westerterp-Plantenga et al., Annu Rev Nutr 2009.
 No es consejo médico. Voz generada con IA.
